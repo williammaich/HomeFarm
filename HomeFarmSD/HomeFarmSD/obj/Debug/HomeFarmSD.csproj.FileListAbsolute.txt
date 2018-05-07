@@ -1,0 +1,10 @@
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\bin\Debug\HomeFarmSD.exe.config
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\bin\Debug\HomeFarmSD.exe
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\bin\Debug\HomeFarmSD.pdb
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csprojResolveAssemblyReference.cache
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.Carregamento.resources
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.Properties.Resources.resources
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csproj.GenerateResource.cache
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csproj.CoreCompileInputs.cache
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.exe
+C:\Users\william\source\repos\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.pdb

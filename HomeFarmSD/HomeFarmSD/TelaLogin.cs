@@ -38,8 +38,8 @@ namespace HomeFarmSD
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-           // Registrar registro = new Registrar();
-           // registro.Show();
+           Registrar registro = new Registrar();
+            registro.Show();
             this.Visible = false;
         }
     }

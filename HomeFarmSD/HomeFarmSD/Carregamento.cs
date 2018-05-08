@@ -41,17 +41,22 @@ namespace HomeFarmSD
             else
             {
                 timer1.Enabled = false; //desativa timer
-                                         Application.Exit(); //encerra aplicação aqui manda para proxima tela
+                                         //Application.Exit(); //encerra aplicação aqui manda para proxima tela
 
 
 
 
-                //Form2 AbrirForm = new Form2();
+                TelaLogin AbrirForm = new TelaLogin();
 
-                //AbrirForm.Show();
+                AbrirForm.Show();
                 this.Visible = false;
 
             }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -21,5 +21,26 @@ namespace HomeFarmSD
         {
             Application.Exit();
         }
+
+        private void btnLogar_Click(object sender, EventArgs e)
+        {
+            if ((textSenha.Text == "william") && (textEmail.Text == "williammaich"))
+            {
+               // TelaPrincipalSIS telaSis = new TelaPrincipalSIS();
+                //telaSis.Show();
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Login ou Senha invalidas ");
+            }
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+           // Registrar registro = new Registrar();
+           // registro.Show();
+            this.Visible = false;
+        }
     }
 }

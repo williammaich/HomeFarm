@@ -43,11 +43,12 @@ namespace HomeFarmSD
                 INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
                 INSERT.Parameters.AddWithValue("@Login", txtEmail.Text);
                 INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
-                INSERT.ExecuteNonQuery();
+              
 
 
-                if (txtEmail.Equals(txtConfirmarEmail))
+                if (txtEmail.Text == txtConfirmarEmail.Text)
                 {
+                    INSERT.ExecuteNonQuery();
                     Cnexao.Close();
 
                     MessageBox.Show("seu cadastro foi concluido");

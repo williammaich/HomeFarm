@@ -44,10 +44,11 @@ namespace HomeFarmSD
                 INSERT.Parameters.AddWithValue("@Login", txtEmail.Text);
                 INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
               
+                
 
-
-                if (txtEmail.Text == txtConfirmarEmail.Text)
+                if (txtEmail.Text == txtConfirmarEmail.Text )
                 {
+
                     INSERT.ExecuteNonQuery();
                     Cnexao.Close();
 

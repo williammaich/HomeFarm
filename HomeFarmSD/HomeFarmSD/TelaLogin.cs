@@ -26,8 +26,8 @@ namespace HomeFarmSD
         {
             if ((textSenha.Text == "william") && (textEmail.Text == "williammaich"))
             {
-               // TelaPrincipalSIS telaSis = new TelaPrincipalSIS();
-                //telaSis.Show();
+               TelaPrincipalSIS telaSis = new TelaPrincipalSIS();
+                telaSis.Show();
                 this.Visible = false;
             }
             else
@@ -41,6 +41,21 @@ namespace HomeFarmSD
            Registrar registro = new Registrar();
             registro.Show();
             this.Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            pictureBox3.Parent = pictureBox1;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+         
         }
     }
 }

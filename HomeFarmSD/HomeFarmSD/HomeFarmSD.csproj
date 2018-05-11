@@ -90,6 +90,9 @@
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TelaPrincipalSIS.resx">
+      <DependentUpon>TelaPrincipalSIS.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

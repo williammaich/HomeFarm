@@ -24,3 +24,4 @@ C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\Google.Pr
 C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\MySql.Data.xml
 C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.Registrar.resources
 C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csproj.CopyComplete
+C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.TelaPrincipalSIS.resources

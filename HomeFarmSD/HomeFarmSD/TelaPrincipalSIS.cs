@@ -16,5 +16,12 @@ namespace HomeFarmSD
         {
             InitializeComponent();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
     }
 }

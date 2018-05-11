@@ -52,11 +52,29 @@
     <Compile Include="AnimalUserControl1.Designer.cs">
       <DependentUpon>AnimalUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrosUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastrosUserControl1.Designer.cs">
+      <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carregamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Carregamento.Designer.cs">
       <DependentUpon>Carregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfiguracoesUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfiguracoesUserControl1.Designer.cs">
+      <DependentUpon>ConfiguracoesUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EstoqueUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EstoqueUserControl1.Designer.cs">
+      <DependentUpon>EstoqueUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="HomeUserControl1.cs">
       <SubType>UserControl</SubType>
@@ -71,6 +89,12 @@
     </Compile>
     <Compile Include="Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RelatoriosUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RelatoriosUserControl1.Designer.cs">
+      <DependentUpon>RelatoriosUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="TelaLogin.cs">
       <SubType>Form</SubType>
@@ -87,8 +111,17 @@
     <EmbeddedResource Include="AnimalUserControl1.resx">
       <DependentUpon>AnimalUserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosUserControl1.resx">
+      <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Carregamento.resx">
       <DependentUpon>Carregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfiguracoesUserControl1.resx">
+      <DependentUpon>ConfiguracoesUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstoqueUserControl1.resx">
+      <DependentUpon>EstoqueUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HomeUserControl1.resx">
       <DependentUpon>HomeUserControl1.cs</DependentUpon>
@@ -104,6 +137,9 @@
     </Compile>
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RelatoriosUserControl1.resx">
+      <DependentUpon>RelatoriosUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>

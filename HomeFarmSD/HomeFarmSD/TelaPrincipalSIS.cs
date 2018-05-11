@@ -38,5 +38,33 @@ namespace HomeFarmSD
             PainelDeslisante.Top = btnAnimais.Top;
             animalUserControl11.BringToFront();
         }
+
+        private void btnCadastros_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnCadastros.Height;
+            PainelDeslisante.Top = btnCadastros.Top;
+            cadastrosUserControl11.BringToFront();
+        }
+
+        private void btnEstoque_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnEstoque.Height;
+            PainelDeslisante.Top = btnEstoque.Top;
+            estoqueUserControl11.BringToFront();
+        }
+
+        private void btnRelatorios_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnRelatorios.Height;
+            PainelDeslisante.Top = btnRelatorios.Top;
+            relatoriosUserControl11.BringToFront();
+        }
+
+        private void btnConfiguracao_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnConfiguracao.Height;
+            PainelDeslisante.Top = btnConfiguracao.Top;
+            configuracoesUserControl11.BringToFront();
+        }
     }
 }

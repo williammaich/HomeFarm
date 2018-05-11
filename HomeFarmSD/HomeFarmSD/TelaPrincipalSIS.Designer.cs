@@ -39,6 +39,8 @@
             this.PainelDeslisante = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.homeUserControl11 = new HomeFarmSD.HomeUserControl1();
+            this.animalUserControl11 = new HomeFarmSD.AnimalUserControl1();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -57,7 +59,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(157, 450);
+            this.panel1.Size = new System.Drawing.Size(133, 450);
             this.panel1.TabIndex = 0;
             // 
             // btnHome
@@ -74,7 +76,9 @@
             this.btnHome.Size = new System.Drawing.Size(133, 33);
             this.btnHome.TabIndex = 0;
             this.btnHome.Text = "Home";
+            this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // btnAnimais
             // 
@@ -90,7 +94,9 @@
             this.btnAnimais.Size = new System.Drawing.Size(133, 33);
             this.btnAnimais.TabIndex = 1;
             this.btnAnimais.Text = "Animais";
+            this.btnAnimais.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAnimais.UseVisualStyleBackColor = true;
+            this.btnAnimais.Click += new System.EventHandler(this.btnAnimais_Click);
             // 
             // btnCadastros
             // 
@@ -106,6 +112,7 @@
             this.btnCadastros.Size = new System.Drawing.Size(133, 33);
             this.btnCadastros.TabIndex = 2;
             this.btnCadastros.Text = "Cadastros";
+            this.btnCadastros.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCadastros.UseVisualStyleBackColor = true;
             // 
             // btnEstoque
@@ -122,6 +129,7 @@
             this.btnEstoque.Size = new System.Drawing.Size(133, 33);
             this.btnEstoque.TabIndex = 3;
             this.btnEstoque.Text = "Estoque";
+            this.btnEstoque.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEstoque.UseVisualStyleBackColor = true;
             // 
             // btnRelatorios
@@ -138,6 +146,7 @@
             this.btnRelatorios.Size = new System.Drawing.Size(133, 33);
             this.btnRelatorios.TabIndex = 4;
             this.btnRelatorios.Text = "Relatórios";
+            this.btnRelatorios.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRelatorios.UseVisualStyleBackColor = true;
             // 
             // btnConfiguracao
@@ -154,6 +163,7 @@
             this.btnConfiguracao.Size = new System.Drawing.Size(133, 33);
             this.btnConfiguracao.TabIndex = 5;
             this.btnConfiguracao.Text = "Configurações";
+            this.btnConfiguracao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnConfiguracao.UseVisualStyleBackColor = true;
             // 
             // PainelDeslisante
@@ -169,15 +179,15 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(157, 0);
+            this.panel2.Location = new System.Drawing.Point(133, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(643, 37);
+            this.panel2.Size = new System.Drawing.Size(667, 37);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(607, 3);
+            this.pictureBox2.Location = new System.Drawing.Point(631, 4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 30);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -185,14 +195,34 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // homeUserControl11
+            // 
+            this.homeUserControl11.BackColor = System.Drawing.Color.White;
+            this.homeUserControl11.Location = new System.Drawing.Point(133, 37);
+            this.homeUserControl11.Name = "homeUserControl11";
+            this.homeUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.homeUserControl11.TabIndex = 2;
+            // 
+            // animalUserControl11
+            // 
+            this.animalUserControl11.BackColor = System.Drawing.Color.White;
+            this.animalUserControl11.Location = new System.Drawing.Point(133, 37);
+            this.animalUserControl11.Name = "animalUserControl11";
+            this.animalUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.animalUserControl11.TabIndex = 3;
+            // 
             // TelaPrincipalSIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.animalUserControl11);
+            this.Controls.Add(this.homeUserControl11);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TelaPrincipalSIS";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipalSIS";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -213,5 +243,7 @@
         private System.Windows.Forms.Panel PainelDeslisante;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private HomeUserControl1 homeUserControl11;
+        private AnimalUserControl1 animalUserControl11;
     }
 }

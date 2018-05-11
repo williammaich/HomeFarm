@@ -46,11 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnimalUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnimalUserControl1.Designer.cs">
+      <DependentUpon>AnimalUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carregamento.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Carregamento.Designer.cs">
       <DependentUpon>Carregamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HomeUserControl1.Designer.cs">
+      <DependentUpon>HomeUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -72,8 +84,14 @@
     <Compile Include="TelaPrincipalSIS.Designer.cs">
       <DependentUpon>TelaPrincipalSIS.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnimalUserControl1.resx">
+      <DependentUpon>AnimalUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Carregamento.resx">
       <DependentUpon>Carregamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeUserControl1.resx">
+      <DependentUpon>HomeUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

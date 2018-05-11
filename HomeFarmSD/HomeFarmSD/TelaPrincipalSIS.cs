@@ -15,6 +15,9 @@ namespace HomeFarmSD
         public TelaPrincipalSIS()
         {
             InitializeComponent();
+            PainelDeslisante.Height = btnHome.Height;
+            PainelDeslisante.Top = btnHome.Top;
+            homeUserControl11.BringToFront();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -22,6 +25,18 @@ namespace HomeFarmSD
             Application.Exit();
         }
 
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnHome.Height;
+            PainelDeslisante.Top = btnHome.Top;
+            homeUserControl11.BringToFront(); 
+        }
 
+        private void btnAnimais_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnAnimais.Height;
+            PainelDeslisante.Top = btnAnimais.Top;
+            animalUserControl11.BringToFront();
+        }
     }
 }

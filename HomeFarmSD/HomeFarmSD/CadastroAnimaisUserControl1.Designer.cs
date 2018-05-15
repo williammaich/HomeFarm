@@ -1,6 +1,6 @@
 ﻿namespace HomeFarmSD
 {
-    partial class AnimalUserControl1
+    partial class CadastroAnimaisUserControl1
     {
         /// <summary> 
         /// Variável de designer necessária.
@@ -28,19 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // AnimalUserControl1
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(256, 210);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "cadastro do ";
+            // 
+            // CadastroAnimaisUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Name = "AnimalUserControl1";
-            this.Size = new System.Drawing.Size(667, 413);
+            this.Controls.Add(this.label1);
+            this.Name = "CadastroAnimaisUserControl1";
+            this.Size = new System.Drawing.Size(601, 413);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
     }
 }

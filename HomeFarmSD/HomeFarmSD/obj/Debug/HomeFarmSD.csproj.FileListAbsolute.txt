@@ -31,3 +31,4 @@ C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmS
 C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ConfiguracoesUserControl1.resources
 C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.EstoqueUserControl1.resources
 C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.RelatoriosUserControl1.resources
+C:\Users\william\source\repos\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.CadastroAnimaisUserControl1.resources

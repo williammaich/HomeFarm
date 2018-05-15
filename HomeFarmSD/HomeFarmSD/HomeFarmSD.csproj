@@ -52,6 +52,12 @@
     <Compile Include="AnimalUserControl1.Designer.cs">
       <DependentUpon>AnimalUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroAnimaisUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroAnimaisUserControl1.Designer.cs">
+      <DependentUpon>CadastroAnimaisUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrosUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </Compile>
     <EmbeddedResource Include="AnimalUserControl1.resx">
       <DependentUpon>AnimalUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroAnimaisUserControl1.resx">
+      <DependentUpon>CadastroAnimaisUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosUserControl1.resx">
       <DependentUpon>CadastrosUserControl1.cs</DependentUpon>

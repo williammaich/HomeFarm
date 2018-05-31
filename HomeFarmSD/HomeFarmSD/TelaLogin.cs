@@ -24,7 +24,7 @@ namespace HomeFarmSD
 
         private void btnLogar_Click(object sender, EventArgs e)
         {
-            if ((textSenha.Text == "william") && (textEmail.Text == "williammaich"))
+            if ((textSenha.Text == "william") && (textEmail.Text == "williammaich@hotmail.com"))
             {
                TelaPrincipalSIS telaSis = new TelaPrincipalSIS();
                 telaSis.Show();
@@ -56,6 +56,11 @@ namespace HomeFarmSD
         private void label2_Click(object sender, EventArgs e)
         {
          
+        }
+
+        private void textEmail_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCadastroAnimais = new System.Windows.Forms.Button();
-            this.btnCadastroFuncionarios = new System.Windows.Forms.Button();
-            this.btnCadastroCampos = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCadastroCampos = new System.Windows.Forms.Button();
+            this.btnCadastroFuncionarios = new System.Windows.Forms.Button();
+            this.btnCadastroAnimais = new System.Windows.Forms.Button();
             this.cadastroAnimaisUserControl11 = new HomeFarmSD.CadastroAnimaisUserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -49,23 +49,14 @@
             this.panel1.Size = new System.Drawing.Size(133, 413);
             this.panel1.TabIndex = 0;
             // 
-            // btnCadastroAnimais
+            // label1
             // 
-            this.btnCadastroAnimais.Location = new System.Drawing.Point(3, 53);
-            this.btnCadastroAnimais.Name = "btnCadastroAnimais";
-            this.btnCadastroAnimais.Size = new System.Drawing.Size(130, 23);
-            this.btnCadastroAnimais.TabIndex = 0;
-            this.btnCadastroAnimais.Text = "Animais";
-            this.btnCadastroAnimais.UseVisualStyleBackColor = true;
-            // 
-            // btnCadastroFuncionarios
-            // 
-            this.btnCadastroFuncionarios.Location = new System.Drawing.Point(3, 113);
-            this.btnCadastroFuncionarios.Name = "btnCadastroFuncionarios";
-            this.btnCadastroFuncionarios.Size = new System.Drawing.Size(130, 23);
-            this.btnCadastroFuncionarios.TabIndex = 1;
-            this.btnCadastroFuncionarios.Text = "Funcionarios";
-            this.btnCadastroFuncionarios.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 15);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(54, 13);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Cadastros";
             // 
             // btnCadastroCampos
             // 
@@ -76,22 +67,34 @@
             this.btnCadastroCampos.Text = "Campos";
             this.btnCadastroCampos.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // btnCadastroFuncionarios
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Cadastros";
+            this.btnCadastroFuncionarios.Location = new System.Drawing.Point(3, 113);
+            this.btnCadastroFuncionarios.Name = "btnCadastroFuncionarios";
+            this.btnCadastroFuncionarios.Size = new System.Drawing.Size(130, 23);
+            this.btnCadastroFuncionarios.TabIndex = 1;
+            this.btnCadastroFuncionarios.Text = "Funcionarios";
+            this.btnCadastroFuncionarios.UseVisualStyleBackColor = true;
+            // 
+            // btnCadastroAnimais
+            // 
+            this.btnCadastroAnimais.Location = new System.Drawing.Point(3, 53);
+            this.btnCadastroAnimais.Name = "btnCadastroAnimais";
+            this.btnCadastroAnimais.Size = new System.Drawing.Size(130, 23);
+            this.btnCadastroAnimais.TabIndex = 0;
+            this.btnCadastroAnimais.Text = "Animais";
+            this.btnCadastroAnimais.UseVisualStyleBackColor = true;
+            this.btnCadastroAnimais.Click += new System.EventHandler(this.btnCadastroAnimais_Click);
             // 
             // cadastroAnimaisUserControl11
             // 
             this.cadastroAnimaisUserControl11.BackColor = System.Drawing.Color.White;
-            this.cadastroAnimaisUserControl11.Location = new System.Drawing.Point(139, 0);
+            this.cadastroAnimaisUserControl11.Dock = System.Windows.Forms.DockStyle.Left;
+            this.cadastroAnimaisUserControl11.Location = new System.Drawing.Point(133, 0);
             this.cadastroAnimaisUserControl11.Name = "cadastroAnimaisUserControl11";
             this.cadastroAnimaisUserControl11.Size = new System.Drawing.Size(601, 413);
             this.cadastroAnimaisUserControl11.TabIndex = 1;
+            this.cadastroAnimaisUserControl11.Load += new System.EventHandler(this.cadastroAnimaisUserControl11_Load);
             // 
             // CadastrosUserControl1
             // 

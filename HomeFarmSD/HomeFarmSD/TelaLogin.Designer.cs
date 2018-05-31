@@ -122,8 +122,7 @@
             // 
             // pictureBox3
             // 
-
-            this.pictureBox3.BackColor = System.Drawing.Color.Thistle;//Transparent;
+            this.pictureBox3.BackColor = System.Drawing.Color.Thistle;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(281, 22);
@@ -148,6 +147,7 @@
             this.textEmail.Name = "textEmail";
             this.textEmail.Size = new System.Drawing.Size(299, 20);
             this.textEmail.TabIndex = 4;
+            this.textEmail.TextChanged += new System.EventHandler(this.textEmail_TextChanged);
             // 
             // label2
             // 

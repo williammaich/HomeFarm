@@ -21,5 +21,15 @@ namespace HomeFarmSD
         {
 
         }
+
+        private void btnCadastroAnimais_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cadastroAnimaisUserControl11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

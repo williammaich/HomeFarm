@@ -34,6 +34,7 @@
             this.btnCadastroFuncionarios = new System.Windows.Forms.Button();
             this.btnCadastroAnimais = new System.Windows.Forms.Button();
             this.cadastroAnimaisUserControl11 = new HomeFarmSD.CadastroAnimaisUserControl1();
+            this.cadastroFuncionarioUserControl11 = new HomeFarmSD.CadastroFuncionarioUserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -75,6 +76,7 @@
             this.btnCadastroFuncionarios.TabIndex = 1;
             this.btnCadastroFuncionarios.Text = "Funcionarios";
             this.btnCadastroFuncionarios.UseVisualStyleBackColor = true;
+            this.btnCadastroFuncionarios.Click += new System.EventHandler(this.btnCadastroFuncionarios_Click);
             // 
             // btnCadastroAnimais
             // 
@@ -96,11 +98,20 @@
             this.cadastroAnimaisUserControl11.TabIndex = 1;
             this.cadastroAnimaisUserControl11.Load += new System.EventHandler(this.cadastroAnimaisUserControl11_Load);
             // 
+            // cadastroFuncionarioUserControl11
+            // 
+            this.cadastroFuncionarioUserControl11.BackColor = System.Drawing.Color.White;
+            this.cadastroFuncionarioUserControl11.Location = new System.Drawing.Point(133, 0);
+            this.cadastroFuncionarioUserControl11.Name = "cadastroFuncionarioUserControl11";
+            this.cadastroFuncionarioUserControl11.Size = new System.Drawing.Size(601, 413);
+            this.cadastroFuncionarioUserControl11.TabIndex = 2;
+            // 
             // CadastrosUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.cadastroFuncionarioUserControl11);
             this.Controls.Add(this.cadastroAnimaisUserControl11);
             this.Controls.Add(this.panel1);
             this.Name = "CadastrosUserControl1";
@@ -119,5 +130,6 @@
         private System.Windows.Forms.Button btnCadastroFuncionarios;
         private System.Windows.Forms.Button btnCadastroAnimais;
         private CadastroAnimaisUserControl1 cadastroAnimaisUserControl11;
+        private CadastroFuncionarioUserControl1 cadastroFuncionarioUserControl11;
     }
 }

@@ -39,12 +39,14 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.homeUserControl11 = new HomeFarmSD.HomeUserControl1();
-            this.animalUserControl11 = new HomeFarmSD.AnimalUserControl1();
-            this.cadastrosUserControl11 = new HomeFarmSD.CadastrosUserControl1();
-            this.estoqueUserControl11 = new HomeFarmSD.EstoqueUserControl1();
-            this.relatoriosUserControl11 = new HomeFarmSD.RelatoriosUserControl1();
+            this.btnProducao = new System.Windows.Forms.Button();
             this.configuracoesUserControl11 = new HomeFarmSD.ConfiguracoesUserControl1();
+            this.relatoriosUserControl11 = new HomeFarmSD.RelatoriosUserControl1();
+            this.estoqueUserControl11 = new HomeFarmSD.EstoqueUserControl1();
+            this.cadastrosUserControl11 = new HomeFarmSD.CadastrosUserControl1();
+            this.animalUserControl11 = new HomeFarmSD.AnimalUserControl1();
+            this.homeUserControl11 = new HomeFarmSD.HomeUserControl1();
+            this.producaoUserControl11 = new HomeFarmSD.ProducaoUserControl1();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -53,6 +55,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel1.Controls.Add(this.btnProducao);
             this.panel1.Controls.Add(this.PainelDeslisante);
             this.panel1.Controls.Add(this.btnConfiguracao);
             this.panel1.Controls.Add(this.btnRelatorios);
@@ -83,7 +86,7 @@
             this.btnConfiguracao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnConfiguracao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracao.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfiguracao.Location = new System.Drawing.Point(24, 304);
+            this.btnConfiguracao.Location = new System.Drawing.Point(23, 338);
             this.btnConfiguracao.Name = "btnConfiguracao";
             this.btnConfiguracao.Size = new System.Drawing.Size(103, 33);
             this.btnConfiguracao.TabIndex = 5;
@@ -101,7 +104,7 @@
             this.btnRelatorios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelatorios.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorios.Location = new System.Drawing.Point(24, 246);
+            this.btnRelatorios.Location = new System.Drawing.Point(23, 280);
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Size = new System.Drawing.Size(103, 33);
             this.btnRelatorios.TabIndex = 4;
@@ -119,7 +122,7 @@
             this.btnEstoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoque.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstoque.Location = new System.Drawing.Point(24, 195);
+            this.btnEstoque.Location = new System.Drawing.Point(23, 229);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(103, 33);
             this.btnEstoque.TabIndex = 3;
@@ -137,7 +140,7 @@
             this.btnCadastros.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnCadastros.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastros.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastros.Location = new System.Drawing.Point(24, 143);
+            this.btnCadastros.Location = new System.Drawing.Point(23, 177);
             this.btnCadastros.Name = "btnCadastros";
             this.btnCadastros.Size = new System.Drawing.Size(103, 33);
             this.btnCadastros.TabIndex = 2;
@@ -203,45 +206,23 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
-            // homeUserControl11
+            // btnProducao
             // 
-            this.homeUserControl11.BackColor = System.Drawing.Color.White;
-            this.homeUserControl11.Location = new System.Drawing.Point(131, 37);
-            this.homeUserControl11.Name = "homeUserControl11";
-            this.homeUserControl11.Size = new System.Drawing.Size(667, 413);
-            this.homeUserControl11.TabIndex = 2;
-            // 
-            // animalUserControl11
-            // 
-            this.animalUserControl11.BackColor = System.Drawing.Color.White;
-            this.animalUserControl11.Location = new System.Drawing.Point(131, 37);
-            this.animalUserControl11.Name = "animalUserControl11";
-            this.animalUserControl11.Size = new System.Drawing.Size(667, 413);
-            this.animalUserControl11.TabIndex = 3;
-            // 
-            // cadastrosUserControl11
-            // 
-            this.cadastrosUserControl11.BackColor = System.Drawing.Color.White;
-            this.cadastrosUserControl11.Location = new System.Drawing.Point(132, 37);
-            this.cadastrosUserControl11.Name = "cadastrosUserControl11";
-            this.cadastrosUserControl11.Size = new System.Drawing.Size(667, 413);
-            this.cadastrosUserControl11.TabIndex = 4;
-            // 
-            // estoqueUserControl11
-            // 
-            this.estoqueUserControl11.BackColor = System.Drawing.Color.White;
-            this.estoqueUserControl11.Location = new System.Drawing.Point(132, 37);
-            this.estoqueUserControl11.Name = "estoqueUserControl11";
-            this.estoqueUserControl11.Size = new System.Drawing.Size(667, 413);
-            this.estoqueUserControl11.TabIndex = 5;
-            // 
-            // relatoriosUserControl11
-            // 
-            this.relatoriosUserControl11.BackColor = System.Drawing.Color.White;
-            this.relatoriosUserControl11.Location = new System.Drawing.Point(131, 37);
-            this.relatoriosUserControl11.Name = "relatoriosUserControl11";
-            this.relatoriosUserControl11.Size = new System.Drawing.Size(667, 413);
-            this.relatoriosUserControl11.TabIndex = 6;
+            this.btnProducao.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnProducao.FlatAppearance.BorderSize = 0;
+            this.btnProducao.FlatAppearance.CheckedBackColor = System.Drawing.Color.LimeGreen;
+            this.btnProducao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnProducao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnProducao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProducao.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProducao.Location = new System.Drawing.Point(24, 138);
+            this.btnProducao.Name = "btnProducao";
+            this.btnProducao.Size = new System.Drawing.Size(103, 33);
+            this.btnProducao.TabIndex = 6;
+            this.btnProducao.Text = "Produção";
+            this.btnProducao.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProducao.UseVisualStyleBackColor = true;
+            this.btnProducao.Click += new System.EventHandler(this.btnProducao_Click);
             // 
             // configuracoesUserControl11
             // 
@@ -251,11 +232,60 @@
             this.configuracoesUserControl11.Size = new System.Drawing.Size(667, 413);
             this.configuracoesUserControl11.TabIndex = 7;
             // 
+            // relatoriosUserControl11
+            // 
+            this.relatoriosUserControl11.BackColor = System.Drawing.Color.White;
+            this.relatoriosUserControl11.Location = new System.Drawing.Point(131, 37);
+            this.relatoriosUserControl11.Name = "relatoriosUserControl11";
+            this.relatoriosUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.relatoriosUserControl11.TabIndex = 6;
+            // 
+            // estoqueUserControl11
+            // 
+            this.estoqueUserControl11.BackColor = System.Drawing.Color.White;
+            this.estoqueUserControl11.Location = new System.Drawing.Point(132, 37);
+            this.estoqueUserControl11.Name = "estoqueUserControl11";
+            this.estoqueUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.estoqueUserControl11.TabIndex = 5;
+            // 
+            // cadastrosUserControl11
+            // 
+            this.cadastrosUserControl11.BackColor = System.Drawing.Color.White;
+            this.cadastrosUserControl11.Location = new System.Drawing.Point(132, 37);
+            this.cadastrosUserControl11.Name = "cadastrosUserControl11";
+            this.cadastrosUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.cadastrosUserControl11.TabIndex = 4;
+            // 
+            // animalUserControl11
+            // 
+            this.animalUserControl11.BackColor = System.Drawing.Color.White;
+            this.animalUserControl11.Location = new System.Drawing.Point(131, 37);
+            this.animalUserControl11.Name = "animalUserControl11";
+            this.animalUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.animalUserControl11.TabIndex = 3;
+            // 
+            // homeUserControl11
+            // 
+            this.homeUserControl11.BackColor = System.Drawing.Color.White;
+            this.homeUserControl11.Location = new System.Drawing.Point(131, 37);
+            this.homeUserControl11.Name = "homeUserControl11";
+            this.homeUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.homeUserControl11.TabIndex = 2;
+            // 
+            // producaoUserControl11
+            // 
+            this.producaoUserControl11.BackColor = System.Drawing.Color.White;
+            this.producaoUserControl11.Location = new System.Drawing.Point(132, 37);
+            this.producaoUserControl11.Name = "producaoUserControl11";
+            this.producaoUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.producaoUserControl11.TabIndex = 8;
+            // 
             // TelaPrincipalSIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.producaoUserControl11);
             this.Controls.Add(this.configuracoesUserControl11);
             this.Controls.Add(this.relatoriosUserControl11);
             this.Controls.Add(this.estoqueUserControl11);
@@ -293,5 +323,7 @@
         private EstoqueUserControl1 estoqueUserControl11;
         private RelatoriosUserControl1 relatoriosUserControl11;
         private ConfiguracoesUserControl1 configuracoesUserControl11;
+        private System.Windows.Forms.Button btnProducao;
+        private ProducaoUserControl1 producaoUserControl11;
     }
 }

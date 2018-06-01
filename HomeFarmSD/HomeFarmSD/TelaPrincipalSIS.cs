@@ -66,5 +66,12 @@ namespace HomeFarmSD
             PainelDeslisante.Top = btnConfiguracao.Top;
             configuracoesUserControl11.BringToFront();
         }
+
+        private void btnProducao_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnProducao.Height;
+            PainelDeslisante.Top = btnProducao.Top;
+            producaoUserControl11.BringToFront();
+        }
     }
 }

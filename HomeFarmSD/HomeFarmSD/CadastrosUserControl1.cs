@@ -24,12 +24,17 @@ namespace HomeFarmSD
 
         private void btnCadastroAnimais_Click(object sender, EventArgs e)
         {
-
+            cadastroAnimaisUserControl11.BringToFront();
         }
 
         private void cadastroAnimaisUserControl11_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCadastroFuncionarios_Click(object sender, EventArgs e)
+        {
+            cadastroFuncionarioUserControl11.BringToFront();
         }
     }
 }

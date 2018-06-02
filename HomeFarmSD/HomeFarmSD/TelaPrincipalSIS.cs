@@ -32,13 +32,7 @@ namespace HomeFarmSD
             homeUserControl11.BringToFront(); 
         }
 
-        private void btnAnimais_Click(object sender, EventArgs e)
-        {
-            PainelDeslisante.Height = btnAnimais.Height;
-            PainelDeslisante.Top = btnAnimais.Top;
-            animalUserControl11.BringToFront();
-        }
-
+     
         private void btnCadastros_Click(object sender, EventArgs e)
         {
             PainelDeslisante.Height = btnCadastros.Height;
@@ -72,6 +66,11 @@ namespace HomeFarmSD
             PainelDeslisante.Height = btnProducao.Height;
             PainelDeslisante.Top = btnProducao.Top;
             producaoUserControl11.BringToFront();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

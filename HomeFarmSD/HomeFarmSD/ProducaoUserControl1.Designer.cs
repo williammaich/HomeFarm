@@ -39,6 +39,7 @@
             this.producaoEquinosUserControl11 = new HomeFarmSD.ProducaoEquinosUserControl1();
             this.producaoOvinosUserControl11 = new HomeFarmSD.ProducaoOvinosUserControl1();
             this.producaoSuinosUserControl11 = new HomeFarmSD.ProducaoSuinosUserControl1();
+            this.producaoHomeUserControl11 = new HomeFarmSD.ProducaoHomeUserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,11 +146,20 @@
             this.producaoSuinosUserControl11.Size = new System.Drawing.Size(667, 384);
             this.producaoSuinosUserControl11.TabIndex = 5;
             // 
+            // producaoHomeUserControl11
+            // 
+            this.producaoHomeUserControl11.BackColor = System.Drawing.Color.White;
+            this.producaoHomeUserControl11.Location = new System.Drawing.Point(0, 29);
+            this.producaoHomeUserControl11.Name = "producaoHomeUserControl11";
+            this.producaoHomeUserControl11.Size = new System.Drawing.Size(667, 384);
+            this.producaoHomeUserControl11.TabIndex = 6;
+            // 
             // ProducaoUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.producaoHomeUserControl11);
             this.Controls.Add(this.producaoSuinosUserControl11);
             this.Controls.Add(this.producaoOvinosUserControl11);
             this.Controls.Add(this.producaoEquinosUserControl11);
@@ -176,5 +186,6 @@
         private ProducaoEquinosUserControl1 producaoEquinosUserControl11;
         private ProducaoOvinosUserControl1 producaoOvinosUserControl11;
         private ProducaoSuinosUserControl1 producaoSuinosUserControl11;
+        private ProducaoHomeUserControl1 producaoHomeUserControl11;
     }
 }

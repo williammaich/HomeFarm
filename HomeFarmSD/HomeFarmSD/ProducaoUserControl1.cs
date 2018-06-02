@@ -15,6 +15,7 @@ namespace HomeFarmSD
         public ProducaoUserControl1()
         {
             InitializeComponent();
+            producaoHomeUserControl11.BringToFront();
         }
 
         private void btnProducaoCampos_Click(object sender, EventArgs e)

@@ -92,6 +92,12 @@
     <Compile Include="CadastroFuncionarioUserControl1.Designer.cs">
       <DependentUpon>CadastroFuncionarioUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastrosHomeUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastrosHomeUserControl1.Designer.cs">
+      <DependentUpon>CadastrosHomeUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrosUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +145,12 @@
     </Compile>
     <Compile Include="ProducaoEquinosUserControl1.Designer.cs">
       <DependentUpon>ProducaoEquinosUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProducaoHomeUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProducaoHomeUserControl1.Designer.cs">
+      <DependentUpon>ProducaoHomeUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="ProducaoOvinosUserControl1.cs">
       <SubType>UserControl</SubType>
@@ -193,6 +205,9 @@
     <EmbeddedResource Include="CadastroFuncionarioUserControl1.resx">
       <DependentUpon>CadastroFuncionarioUserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastrosHomeUserControl1.resx">
+      <DependentUpon>CadastrosHomeUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastrosUserControl1.resx">
       <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
     </EmbeddedResource>
@@ -216,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ProducaoEquinosUserControl1.resx">
       <DependentUpon>ProducaoEquinosUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProducaoHomeUserControl1.resx">
+      <DependentUpon>ProducaoHomeUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProducaoOvinosUserControl1.resx">
       <DependentUpon>ProducaoOvinosUserControl1.cs</DependentUpon>

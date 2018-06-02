@@ -46,7 +46,6 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\Ho
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\MySql.Data.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\Google.Protobuf.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\MySql.Data.xml
-C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csprojResolveAssemblyReference.cache
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.AnimalUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.CadastroAnimaisUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.CadastroFuncionarioUserControl1.resources
@@ -73,3 +72,6 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\Ho
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoEquinosUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoOvinosUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoSuinosUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoHomeUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csprojResolveAssemblyReference.cache
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.CadastrosHomeUserControl1.resources

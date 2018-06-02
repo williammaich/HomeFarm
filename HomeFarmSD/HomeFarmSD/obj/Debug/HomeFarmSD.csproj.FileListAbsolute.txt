@@ -68,3 +68,8 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\Ho
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csproj.CopyComplete
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.exe
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.pdb
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoBovinosUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoCamposUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoEquinosUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoOvinosUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoSuinosUserControl1.resources

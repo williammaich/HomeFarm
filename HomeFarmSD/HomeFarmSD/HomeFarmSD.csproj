@@ -92,6 +92,12 @@
     <Compile Include="CadastroFuncionarioUserControl1.Designer.cs">
       <DependentUpon>CadastroFuncionarioUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroRacaUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CadastroRacaUserControl1.Designer.cs">
+      <DependentUpon>CadastroRacaUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastrosHomeUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroFuncionarioUserControl1.resx">
       <DependentUpon>CadastroFuncionarioUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroRacaUserControl1.resx">
+      <DependentUpon>CadastroRacaUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosHomeUserControl1.resx">
       <DependentUpon>CadastrosHomeUserControl1.cs</DependentUpon>

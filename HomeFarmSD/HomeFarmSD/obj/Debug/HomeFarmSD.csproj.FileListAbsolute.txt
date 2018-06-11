@@ -73,5 +73,5 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\Ho
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoOvinosUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoSuinosUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ProducaoHomeUserControl1.resources
-C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csprojResolveAssemblyReference.cache
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.CadastrosHomeUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.CadastroRacaUserControl1.resources

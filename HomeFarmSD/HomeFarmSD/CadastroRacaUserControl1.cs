@@ -9,22 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
-
 namespace HomeFarmSD
 {
-    public partial class CadastroAnimaisUserControl1 : UserControl
+    public partial class CadastroRacaUserControl1 : UserControl
     {
-        public CadastroAnimaisUserControl1()
+        public CadastroRacaUserControl1()
         {
             InitializeComponent();
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnRegistrar_Click(object sender, EventArgs e)
+        private void btnCadastrar_Click(object sender, EventArgs e)
         {
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conexao = new MySqlConnection(Conection);
@@ -32,8 +26,15 @@ namespace HomeFarmSD
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIFOBRINCO,NOME,DATANAC,NOMEPAI,NOMEMAE,SEXO,PESO,MORTOVENDIDA)", Conexao);
-              //  MySqlCommand INSERT = new MySqlCommand("INSERT INTO raca (NomeRaca)",Conexao);
+
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO raca (ORIGEM, NOMERACA) VALUES (@origem, @nomeraca)", Conexao);
+                INSERT.Parameters.AddWithValue("@nomeraca", textNomeRaca.Text);
+                INSERT.Parameters.AddWithValue("@origem", textOrigemRaca.Text);
+                INSERT.ExecuteNonQuery();
+                Conexao.Close();
+
+                MessageBox.Show("Cadastro Realizado com Sucesso!!");
+
             }
             catch
             {
@@ -42,6 +43,9 @@ namespace HomeFarmSD
                 MessageBox.Show("ERRO DE CONEXÃO");
 
             }
+
+
+
 
         }
     }

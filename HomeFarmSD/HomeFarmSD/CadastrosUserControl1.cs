@@ -36,5 +36,15 @@ namespace HomeFarmSD
         {
             cadastroFuncionarioUserControl11.BringToFront();
         }
+
+        private void btnCadastroRaca_Click(object sender, EventArgs e)
+        {
+            cadastroRacaUserControl11.BringToFront();
+        }
+
+        private void cadastroRacaUserControl11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

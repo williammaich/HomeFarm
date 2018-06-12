@@ -39,13 +39,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textCodigo = new System.Windows.Forms.TextBox();
+            this.textNome = new System.Windows.Forms.TextBox();
+            this.textDataNascimento = new System.Windows.Forms.TextBox();
+            this.textNomePai = new System.Windows.Forms.TextBox();
+            this.textNomeMae = new System.Windows.Forms.TextBox();
+            this.textPeso = new System.Windows.Forms.TextBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -63,6 +62,7 @@
             this.radioButton12 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.domainRaca = new System.Windows.Forms.DomainUpDown();
             this.SuspendLayout();
             // 
             // label1
@@ -165,54 +165,47 @@
             this.label11.TabIndex = 10;
             this.label11.Text = "Raça";
             // 
-            // textBox1
+            // textCodigo
             // 
-            this.textBox1.Location = new System.Drawing.Point(126, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(116, 20);
-            this.textBox1.TabIndex = 11;
+            this.textCodigo.Location = new System.Drawing.Point(126, 12);
+            this.textCodigo.Name = "textCodigo";
+            this.textCodigo.Size = new System.Drawing.Size(116, 20);
+            this.textCodigo.TabIndex = 11;
             // 
-            // textBox2
+            // textNome
             // 
-            this.textBox2.Location = new System.Drawing.Point(126, 42);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(271, 20);
-            this.textBox2.TabIndex = 12;
+            this.textNome.Location = new System.Drawing.Point(126, 42);
+            this.textNome.Name = "textNome";
+            this.textNome.Size = new System.Drawing.Size(271, 20);
+            this.textNome.TabIndex = 12;
             // 
-            // textBox3
+            // textDataNascimento
             // 
-            this.textBox3.Location = new System.Drawing.Point(126, 72);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(116, 20);
-            this.textBox3.TabIndex = 13;
+            this.textDataNascimento.Location = new System.Drawing.Point(126, 72);
+            this.textDataNascimento.Name = "textDataNascimento";
+            this.textDataNascimento.Size = new System.Drawing.Size(116, 20);
+            this.textDataNascimento.TabIndex = 13;
             // 
-            // textBox4
+            // textNomePai
             // 
-            this.textBox4.Location = new System.Drawing.Point(126, 101);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(271, 20);
-            this.textBox4.TabIndex = 14;
+            this.textNomePai.Location = new System.Drawing.Point(126, 101);
+            this.textNomePai.Name = "textNomePai";
+            this.textNomePai.Size = new System.Drawing.Size(271, 20);
+            this.textNomePai.TabIndex = 14;
             // 
-            // textBox5
+            // textNomeMae
             // 
-            this.textBox5.Location = new System.Drawing.Point(126, 133);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(271, 20);
-            this.textBox5.TabIndex = 15;
+            this.textNomeMae.Location = new System.Drawing.Point(126, 133);
+            this.textNomeMae.Name = "textNomeMae";
+            this.textNomeMae.Size = new System.Drawing.Size(271, 20);
+            this.textNomeMae.TabIndex = 15;
             // 
-            // textBox6
+            // textPeso
             // 
-            this.textBox6.Location = new System.Drawing.Point(126, 188);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
-            this.textBox6.TabIndex = 16;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(127, 314);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(231, 20);
-            this.textBox7.TabIndex = 17;
+            this.textPeso.Location = new System.Drawing.Point(126, 188);
+            this.textPeso.Name = "textPeso";
+            this.textPeso.Size = new System.Drawing.Size(100, 20);
+            this.textPeso.TabIndex = 16;
             // 
             // radioButton1
             // 
@@ -394,11 +387,20 @@
             this.radioButton13.Text = "Não";
             this.radioButton13.UseVisualStyleBackColor = true;
             // 
+            // domainRaca
+            // 
+            this.domainRaca.Location = new System.Drawing.Point(126, 314);
+            this.domainRaca.Name = "domainRaca";
+            this.domainRaca.Size = new System.Drawing.Size(180, 20);
+            this.domainRaca.TabIndex = 35;
+            this.domainRaca.Text = "domainUpDown1";
+            // 
             // CadastroAnimaisUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.domainRaca);
             this.Controls.Add(this.radioButton13);
             this.Controls.Add(this.radioButton11);
             this.Controls.Add(this.radioButton12);
@@ -416,13 +418,12 @@
             this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textPeso);
+            this.Controls.Add(this.textNomeMae);
+            this.Controls.Add(this.textNomePai);
+            this.Controls.Add(this.textDataNascimento);
+            this.Controls.Add(this.textNome);
+            this.Controls.Add(this.textCodigo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -454,13 +455,12 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textCodigo;
+        private System.Windows.Forms.TextBox textNome;
+        private System.Windows.Forms.TextBox textDataNascimento;
+        private System.Windows.Forms.TextBox textNomePai;
+        private System.Windows.Forms.TextBox textNomeMae;
+        private System.Windows.Forms.TextBox textPeso;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton3;
@@ -478,5 +478,6 @@
         private System.Windows.Forms.RadioButton radioButton12;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.DomainUpDown domainRaca;
     }
 }

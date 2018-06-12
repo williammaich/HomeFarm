@@ -32,8 +32,18 @@ namespace HomeFarmSD
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIFOBRINCO,NOME,DATANAC,NOMEPAI,NOMEMAE,SEXO,PESO,MORTOVENDIDA)", Conexao);
-              //  MySqlCommand INSERT = new MySqlCommand("INSERT INTO raca (NomeRaca)",Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIFOBRINCO,NOME,DATANAC,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA) VALUES (@codigo,@nome,@datanasc,@nomepai, @nomemae,@sexo,@peso,@morto,@vendida)", Conexao);
+
+                INSERT.Parameters.AddWithValue("@codigo", textCodigo.Text);
+                INSERT.Parameters.AddWithValue("@nome", textNome.Text);
+                INSERT.Parameters.AddWithValue("@datanasc", textDataNascimento.Text);
+                INSERT.Parameters.AddWithValue("@nomepai", textNomePai.Text);
+                INSERT.Parameters.AddWithValue("@nomemae", textNomeMae.Text);
+
+                INSERT.ExecuteNonQuery();
+                Conexao.Close();
+
+                MessageBox.Show("Cadastro Realizado com Sucesso!!");
             }
             catch
             {

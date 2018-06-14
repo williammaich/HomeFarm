@@ -45,23 +45,23 @@
             this.textNomePai = new System.Windows.Forms.TextBox();
             this.textNomeMae = new System.Windows.Forms.TextBox();
             this.textPeso = new System.Windows.Forms.TextBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.radioButtonMasculino = new System.Windows.Forms.RadioButton();
+            this.radioButtonFeminino = new System.Windows.Forms.RadioButton();
+            this.radioButtonSimMorto = new System.Windows.Forms.RadioButton();
+            this.radioButtonNaoMorto = new System.Windows.Forms.RadioButton();
+            this.radioButtonVendidaSim = new System.Windows.Forms.RadioButton();
+            this.radioButtonVendidaNao = new System.Windows.Forms.RadioButton();
+            this.radioButtonBovino = new System.Windows.Forms.RadioButton();
+            this.radioButtonEquino = new System.Windows.Forms.RadioButton();
+            this.radioButtonOvino = new System.Windows.Forms.RadioButton();
+            this.radioButtonSuino = new System.Windows.Forms.RadioButton();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
+            this.radioButtonPOsim = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
+            this.radioButtonPOnao = new System.Windows.Forms.RadioButton();
             this.domainRaca = new System.Windows.Forms.DomainUpDown();
             this.SuspendLayout();
             // 
@@ -207,115 +207,115 @@
             this.textPeso.Size = new System.Drawing.Size(100, 20);
             this.textPeso.TabIndex = 16;
             // 
-            // radioButton1
+            // radioButtonMasculino
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(126, 161);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 18;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Masculino";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonMasculino.AutoSize = true;
+            this.radioButtonMasculino.Location = new System.Drawing.Point(126, 161);
+            this.radioButtonMasculino.Name = "radioButtonMasculino";
+            this.radioButtonMasculino.Size = new System.Drawing.Size(73, 17);
+            this.radioButtonMasculino.TabIndex = 18;
+            this.radioButtonMasculino.TabStop = true;
+            this.radioButtonMasculino.Text = "Masculino";
+            this.radioButtonMasculino.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // radioButtonFeminino
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(239, 163);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(67, 17);
-            this.radioButton2.TabIndex = 19;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Feminino";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonFeminino.AutoSize = true;
+            this.radioButtonFeminino.Location = new System.Drawing.Point(239, 163);
+            this.radioButtonFeminino.Name = "radioButtonFeminino";
+            this.radioButtonFeminino.Size = new System.Drawing.Size(67, 17);
+            this.radioButtonFeminino.TabIndex = 19;
+            this.radioButtonFeminino.TabStop = true;
+            this.radioButtonFeminino.Text = "Feminino";
+            this.radioButtonFeminino.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButtonSimMorto
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(126, 225);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(42, 17);
-            this.radioButton3.TabIndex = 20;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Sim";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButtonSimMorto.AutoSize = true;
+            this.radioButtonSimMorto.Location = new System.Drawing.Point(126, 225);
+            this.radioButtonSimMorto.Name = "radioButtonSimMorto";
+            this.radioButtonSimMorto.Size = new System.Drawing.Size(42, 17);
+            this.radioButtonSimMorto.TabIndex = 20;
+            this.radioButtonSimMorto.TabStop = true;
+            this.radioButtonSimMorto.Text = "Sim";
+            this.radioButtonSimMorto.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // radioButtonNaoMorto
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(239, 225);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(45, 17);
-            this.radioButton4.TabIndex = 21;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Não";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.radioButtonNaoMorto.AutoSize = true;
+            this.radioButtonNaoMorto.Location = new System.Drawing.Point(239, 225);
+            this.radioButtonNaoMorto.Name = "radioButtonNaoMorto";
+            this.radioButtonNaoMorto.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonNaoMorto.TabIndex = 21;
+            this.radioButtonNaoMorto.TabStop = true;
+            this.radioButtonNaoMorto.Text = "Não";
+            this.radioButtonNaoMorto.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // radioButtonVendidaSim
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(126, 255);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(45, 17);
-            this.radioButton5.TabIndex = 22;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Sim ";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radioButtonVendidaSim.AutoSize = true;
+            this.radioButtonVendidaSim.Location = new System.Drawing.Point(126, 255);
+            this.radioButtonVendidaSim.Name = "radioButtonVendidaSim";
+            this.radioButtonVendidaSim.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonVendidaSim.TabIndex = 22;
+            this.radioButtonVendidaSim.TabStop = true;
+            this.radioButtonVendidaSim.Text = "Sim ";
+            this.radioButtonVendidaSim.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // radioButtonVendidaNao
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(239, 257);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(45, 17);
-            this.radioButton6.TabIndex = 23;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Não";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radioButtonVendidaNao.AutoSize = true;
+            this.radioButtonVendidaNao.Location = new System.Drawing.Point(239, 257);
+            this.radioButtonVendidaNao.Name = "radioButtonVendidaNao";
+            this.radioButtonVendidaNao.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonVendidaNao.TabIndex = 23;
+            this.radioButtonVendidaNao.TabStop = true;
+            this.radioButtonVendidaNao.Text = "Não";
+            this.radioButtonVendidaNao.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // radioButtonBovino
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(126, 345);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(58, 17);
-            this.radioButton7.TabIndex = 24;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "Bovino";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.radioButtonBovino.AutoSize = true;
+            this.radioButtonBovino.Location = new System.Drawing.Point(126, 345);
+            this.radioButtonBovino.Name = "radioButtonBovino";
+            this.radioButtonBovino.Size = new System.Drawing.Size(58, 17);
+            this.radioButtonBovino.TabIndex = 24;
+            this.radioButtonBovino.TabStop = true;
+            this.radioButtonBovino.Text = "Bovino";
+            this.radioButtonBovino.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // radioButtonEquino
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(239, 345);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(58, 17);
-            this.radioButton8.TabIndex = 25;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "Equino";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.radioButtonEquino.AutoSize = true;
+            this.radioButtonEquino.Location = new System.Drawing.Point(239, 345);
+            this.radioButtonEquino.Name = "radioButtonEquino";
+            this.radioButtonEquino.Size = new System.Drawing.Size(58, 17);
+            this.radioButtonEquino.TabIndex = 25;
+            this.radioButtonEquino.TabStop = true;
+            this.radioButtonEquino.Text = "Equino";
+            this.radioButtonEquino.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // radioButtonOvino
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(344, 343);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(53, 17);
-            this.radioButton9.TabIndex = 26;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "Ovino";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.radioButtonOvino.AutoSize = true;
+            this.radioButtonOvino.Location = new System.Drawing.Point(344, 343);
+            this.radioButtonOvino.Name = "radioButtonOvino";
+            this.radioButtonOvino.Size = new System.Drawing.Size(53, 17);
+            this.radioButtonOvino.TabIndex = 26;
+            this.radioButtonOvino.TabStop = true;
+            this.radioButtonOvino.Text = "Ovino";
+            this.radioButtonOvino.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // radioButtonSuino
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Location = new System.Drawing.Point(457, 343);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(52, 17);
-            this.radioButton10.TabIndex = 27;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Suino";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radioButtonSuino.AutoSize = true;
+            this.radioButtonSuino.Location = new System.Drawing.Point(457, 343);
+            this.radioButtonSuino.Name = "radioButtonSuino";
+            this.radioButtonSuino.Size = new System.Drawing.Size(52, 17);
+            this.radioButtonSuino.TabIndex = 27;
+            this.radioButtonSuino.TabStop = true;
+            this.radioButtonSuino.Text = "Suino";
+            this.radioButtonSuino.UseVisualStyleBackColor = true;
             // 
             // btnRegistrar
             // 
@@ -356,16 +356,16 @@
             this.radioButton11.Text = "Não";
             this.radioButton11.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // radioButtonPOsim
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(126, 287);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(45, 17);
-            this.radioButton12.TabIndex = 32;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "Sim ";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radioButtonPOsim.AutoSize = true;
+            this.radioButtonPOsim.Location = new System.Drawing.Point(126, 287);
+            this.radioButtonPOsim.Name = "radioButtonPOsim";
+            this.radioButtonPOsim.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonPOsim.TabIndex = 32;
+            this.radioButtonPOsim.TabStop = true;
+            this.radioButtonPOsim.Text = "Sim ";
+            this.radioButtonPOsim.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -376,16 +376,16 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "PO";
             // 
-            // radioButton13
+            // radioButtonPOnao
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(239, 287);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(45, 17);
-            this.radioButton13.TabIndex = 34;
-            this.radioButton13.TabStop = true;
-            this.radioButton13.Text = "Não";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.radioButtonPOnao.AutoSize = true;
+            this.radioButtonPOnao.Location = new System.Drawing.Point(239, 287);
+            this.radioButtonPOnao.Name = "radioButtonPOnao";
+            this.radioButtonPOnao.Size = new System.Drawing.Size(45, 17);
+            this.radioButtonPOnao.TabIndex = 34;
+            this.radioButtonPOnao.TabStop = true;
+            this.radioButtonPOnao.Text = "Não";
+            this.radioButtonPOnao.UseVisualStyleBackColor = true;
             // 
             // domainRaca
             // 
@@ -401,23 +401,23 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.domainRaca);
-            this.Controls.Add(this.radioButton13);
+            this.Controls.Add(this.radioButtonPOnao);
             this.Controls.Add(this.radioButton11);
-            this.Controls.Add(this.radioButton12);
+            this.Controls.Add(this.radioButtonPOsim);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.radioButton10);
-            this.Controls.Add(this.radioButton9);
-            this.Controls.Add(this.radioButton8);
-            this.Controls.Add(this.radioButton7);
-            this.Controls.Add(this.radioButton6);
-            this.Controls.Add(this.radioButton5);
-            this.Controls.Add(this.radioButton4);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButtonSuino);
+            this.Controls.Add(this.radioButtonOvino);
+            this.Controls.Add(this.radioButtonEquino);
+            this.Controls.Add(this.radioButtonBovino);
+            this.Controls.Add(this.radioButtonVendidaNao);
+            this.Controls.Add(this.radioButtonVendidaSim);
+            this.Controls.Add(this.radioButtonNaoMorto);
+            this.Controls.Add(this.radioButtonSimMorto);
+            this.Controls.Add(this.radioButtonFeminino);
+            this.Controls.Add(this.radioButtonMasculino);
             this.Controls.Add(this.textPeso);
             this.Controls.Add(this.textNomeMae);
             this.Controls.Add(this.textNomePai);
@@ -461,23 +461,23 @@
         private System.Windows.Forms.TextBox textNomePai;
         private System.Windows.Forms.TextBox textNomeMae;
         private System.Windows.Forms.TextBox textPeso;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.RadioButton radioButtonMasculino;
+        private System.Windows.Forms.RadioButton radioButtonFeminino;
+        private System.Windows.Forms.RadioButton radioButtonSimMorto;
+        private System.Windows.Forms.RadioButton radioButtonNaoMorto;
+        private System.Windows.Forms.RadioButton radioButtonVendidaSim;
+        private System.Windows.Forms.RadioButton radioButtonVendidaNao;
+        private System.Windows.Forms.RadioButton radioButtonBovino;
+        private System.Windows.Forms.RadioButton radioButtonEquino;
+        private System.Windows.Forms.RadioButton radioButtonOvino;
+        private System.Windows.Forms.RadioButton radioButtonSuino;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton radioButtonPOsim;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.RadioButton radioButton13;
+        private System.Windows.Forms.RadioButton radioButtonPOnao;
         private System.Windows.Forms.DomainUpDown domainRaca;
     }
 }

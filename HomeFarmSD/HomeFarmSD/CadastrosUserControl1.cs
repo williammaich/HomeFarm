@@ -46,5 +46,10 @@ namespace HomeFarmSD
         {
 
         }
+
+        private void cadastroTipo_Click(object sender, EventArgs e)
+        {
+            cadastroTipoUserControl11.BringToFront();
+        }
     }
 }

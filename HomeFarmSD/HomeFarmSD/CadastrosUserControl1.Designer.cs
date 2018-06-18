@@ -34,15 +34,18 @@
             this.btnCadastroCampos = new System.Windows.Forms.Button();
             this.btnCadastroFuncionarios = new System.Windows.Forms.Button();
             this.btnCadastroAnimais = new System.Windows.Forms.Button();
+            this.cadastroTipo = new System.Windows.Forms.Button();
+            this.cadastroRacaUserControl11 = new HomeFarmSD.CadastroRacaUserControl1();
+            this.cadastrosHomeUserControl11 = new HomeFarmSD.CadastrosHomeUserControl1();
             this.cadastroFuncionarioUserControl11 = new HomeFarmSD.CadastroFuncionarioUserControl1();
             this.cadastroAnimaisUserControl11 = new HomeFarmSD.CadastroAnimaisUserControl1();
-            this.cadastrosHomeUserControl11 = new HomeFarmSD.CadastrosHomeUserControl1();
-            this.cadastroRacaUserControl11 = new HomeFarmSD.CadastroRacaUserControl1();
+            this.cadastroTipoUserControl11 = new HomeFarmSD.cadastroTipoUserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.cadastroTipo);
             this.panel1.Controls.Add(this.btnCadastroRaca);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCadastroCampos);
@@ -102,6 +105,33 @@
             this.btnCadastroAnimais.UseVisualStyleBackColor = true;
             this.btnCadastroAnimais.Click += new System.EventHandler(this.btnCadastroAnimais_Click);
             // 
+            // cadastroTipo
+            // 
+            this.cadastroTipo.Location = new System.Drawing.Point(3, 281);
+            this.cadastroTipo.Name = "cadastroTipo";
+            this.cadastroTipo.Size = new System.Drawing.Size(130, 23);
+            this.cadastroTipo.TabIndex = 5;
+            this.cadastroTipo.Text = "Tipos";
+            this.cadastroTipo.UseVisualStyleBackColor = true;
+            this.cadastroTipo.Click += new System.EventHandler(this.cadastroTipo_Click);
+            // 
+            // cadastroRacaUserControl11
+            // 
+            this.cadastroRacaUserControl11.BackColor = System.Drawing.Color.White;
+            this.cadastroRacaUserControl11.Location = new System.Drawing.Point(133, 0);
+            this.cadastroRacaUserControl11.Name = "cadastroRacaUserControl11";
+            this.cadastroRacaUserControl11.Size = new System.Drawing.Size(601, 413);
+            this.cadastroRacaUserControl11.TabIndex = 4;
+            this.cadastroRacaUserControl11.Load += new System.EventHandler(this.cadastroRacaUserControl11_Load);
+            // 
+            // cadastrosHomeUserControl11
+            // 
+            this.cadastrosHomeUserControl11.BackColor = System.Drawing.Color.White;
+            this.cadastrosHomeUserControl11.Location = new System.Drawing.Point(133, 0);
+            this.cadastrosHomeUserControl11.Name = "cadastrosHomeUserControl11";
+            this.cadastrosHomeUserControl11.Size = new System.Drawing.Size(601, 413);
+            this.cadastrosHomeUserControl11.TabIndex = 3;
+            // 
             // cadastroFuncionarioUserControl11
             // 
             this.cadastroFuncionarioUserControl11.BackColor = System.Drawing.Color.White;
@@ -120,28 +150,20 @@
             this.cadastroAnimaisUserControl11.TabIndex = 1;
             this.cadastroAnimaisUserControl11.Load += new System.EventHandler(this.cadastroAnimaisUserControl11_Load);
             // 
-            // cadastrosHomeUserControl11
+            // cadastroTipoUserControl11
             // 
-            this.cadastrosHomeUserControl11.BackColor = System.Drawing.Color.White;
-            this.cadastrosHomeUserControl11.Location = new System.Drawing.Point(133, 0);
-            this.cadastrosHomeUserControl11.Name = "cadastrosHomeUserControl11";
-            this.cadastrosHomeUserControl11.Size = new System.Drawing.Size(601, 413);
-            this.cadastrosHomeUserControl11.TabIndex = 3;
-            // 
-            // cadastroRacaUserControl11
-            // 
-            this.cadastroRacaUserControl11.BackColor = System.Drawing.Color.White;
-            this.cadastroRacaUserControl11.Location = new System.Drawing.Point(133, 0);
-            this.cadastroRacaUserControl11.Name = "cadastroRacaUserControl11";
-            this.cadastroRacaUserControl11.Size = new System.Drawing.Size(601, 413);
-            this.cadastroRacaUserControl11.TabIndex = 4;
-            this.cadastroRacaUserControl11.Load += new System.EventHandler(this.cadastroRacaUserControl11_Load);
+            this.cadastroTipoUserControl11.BackColor = System.Drawing.Color.White;
+            this.cadastroTipoUserControl11.Location = new System.Drawing.Point(133, 0);
+            this.cadastroTipoUserControl11.Name = "cadastroTipoUserControl11";
+            this.cadastroTipoUserControl11.Size = new System.Drawing.Size(601, 413);
+            this.cadastroTipoUserControl11.TabIndex = 5;
             // 
             // CadastrosUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.cadastroTipoUserControl11);
             this.Controls.Add(this.cadastroRacaUserControl11);
             this.Controls.Add(this.cadastrosHomeUserControl11);
             this.Controls.Add(this.cadastroFuncionarioUserControl11);
@@ -167,5 +189,7 @@
         private CadastrosHomeUserControl1 cadastrosHomeUserControl11;
         private System.Windows.Forms.Button btnCadastroRaca;
         private CadastroRacaUserControl1 cadastroRacaUserControl11;
+        private System.Windows.Forms.Button cadastroTipo;
+        private cadastroTipoUserControl1 cadastroTipoUserControl11;
     }
 }

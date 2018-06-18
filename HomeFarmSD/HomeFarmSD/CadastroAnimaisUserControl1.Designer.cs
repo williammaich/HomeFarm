@@ -51,10 +51,6 @@
             this.radioButtonNaoMorto = new System.Windows.Forms.RadioButton();
             this.radioButtonVendidaSim = new System.Windows.Forms.RadioButton();
             this.radioButtonVendidaNao = new System.Windows.Forms.RadioButton();
-            this.radioButtonBovino = new System.Windows.Forms.RadioButton();
-            this.radioButtonEquino = new System.Windows.Forms.RadioButton();
-            this.radioButtonOvino = new System.Windows.Forms.RadioButton();
-            this.radioButtonSuino = new System.Windows.Forms.RadioButton();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnLimpar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -62,7 +58,16 @@
             this.radioButtonPOsim = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.radioButtonPOnao = new System.Windows.Forms.RadioButton();
-            this.domainRaca = new System.Windows.Forms.DomainUpDown();
+            this.groupMorto = new System.Windows.Forms.GroupBox();
+            this.groupSexo = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cmbRaca = new System.Windows.Forms.ComboBox();
+            this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.groupMorto.SuspendLayout();
+            this.groupSexo.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -210,7 +215,7 @@
             // radioButtonMasculino
             // 
             this.radioButtonMasculino.AutoSize = true;
-            this.radioButtonMasculino.Location = new System.Drawing.Point(126, 161);
+            this.radioButtonMasculino.Location = new System.Drawing.Point(0, 6);
             this.radioButtonMasculino.Name = "radioButtonMasculino";
             this.radioButtonMasculino.Size = new System.Drawing.Size(73, 17);
             this.radioButtonMasculino.TabIndex = 18;
@@ -221,7 +226,7 @@
             // radioButtonFeminino
             // 
             this.radioButtonFeminino.AutoSize = true;
-            this.radioButtonFeminino.Location = new System.Drawing.Point(239, 163);
+            this.radioButtonFeminino.Location = new System.Drawing.Point(79, 6);
             this.radioButtonFeminino.Name = "radioButtonFeminino";
             this.radioButtonFeminino.Size = new System.Drawing.Size(67, 17);
             this.radioButtonFeminino.TabIndex = 19;
@@ -232,29 +237,31 @@
             // radioButtonSimMorto
             // 
             this.radioButtonSimMorto.AutoSize = true;
-            this.radioButtonSimMorto.Location = new System.Drawing.Point(126, 225);
+            this.radioButtonSimMorto.Location = new System.Drawing.Point(113, 5);
             this.radioButtonSimMorto.Name = "radioButtonSimMorto";
             this.radioButtonSimMorto.Size = new System.Drawing.Size(42, 17);
             this.radioButtonSimMorto.TabIndex = 20;
             this.radioButtonSimMorto.TabStop = true;
             this.radioButtonSimMorto.Text = "Sim";
             this.radioButtonSimMorto.UseVisualStyleBackColor = true;
+            this.radioButtonSimMorto.CheckedChanged += new System.EventHandler(this.radioButtonSimMorto_CheckedChanged);
             // 
             // radioButtonNaoMorto
             // 
             this.radioButtonNaoMorto.AutoSize = true;
-            this.radioButtonNaoMorto.Location = new System.Drawing.Point(239, 225);
+            this.radioButtonNaoMorto.Location = new System.Drawing.Point(6, 10);
             this.radioButtonNaoMorto.Name = "radioButtonNaoMorto";
             this.radioButtonNaoMorto.Size = new System.Drawing.Size(45, 17);
             this.radioButtonNaoMorto.TabIndex = 21;
             this.radioButtonNaoMorto.TabStop = true;
             this.radioButtonNaoMorto.Text = "Não";
             this.radioButtonNaoMorto.UseVisualStyleBackColor = true;
+            this.radioButtonNaoMorto.CheckedChanged += new System.EventHandler(this.radioButtonNaoMorto_CheckedChanged);
             // 
             // radioButtonVendidaSim
             // 
             this.radioButtonVendidaSim.AutoSize = true;
-            this.radioButtonVendidaSim.Location = new System.Drawing.Point(126, 255);
+            this.radioButtonVendidaSim.Location = new System.Drawing.Point(113, 7);
             this.radioButtonVendidaSim.Name = "radioButtonVendidaSim";
             this.radioButtonVendidaSim.Size = new System.Drawing.Size(45, 17);
             this.radioButtonVendidaSim.TabIndex = 22;
@@ -265,57 +272,13 @@
             // radioButtonVendidaNao
             // 
             this.radioButtonVendidaNao.AutoSize = true;
-            this.radioButtonVendidaNao.Location = new System.Drawing.Point(239, 257);
+            this.radioButtonVendidaNao.Location = new System.Drawing.Point(6, 7);
             this.radioButtonVendidaNao.Name = "radioButtonVendidaNao";
             this.radioButtonVendidaNao.Size = new System.Drawing.Size(45, 17);
             this.radioButtonVendidaNao.TabIndex = 23;
             this.radioButtonVendidaNao.TabStop = true;
             this.radioButtonVendidaNao.Text = "Não";
             this.radioButtonVendidaNao.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonBovino
-            // 
-            this.radioButtonBovino.AutoSize = true;
-            this.radioButtonBovino.Location = new System.Drawing.Point(126, 345);
-            this.radioButtonBovino.Name = "radioButtonBovino";
-            this.radioButtonBovino.Size = new System.Drawing.Size(58, 17);
-            this.radioButtonBovino.TabIndex = 24;
-            this.radioButtonBovino.TabStop = true;
-            this.radioButtonBovino.Text = "Bovino";
-            this.radioButtonBovino.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonEquino
-            // 
-            this.radioButtonEquino.AutoSize = true;
-            this.radioButtonEquino.Location = new System.Drawing.Point(239, 345);
-            this.radioButtonEquino.Name = "radioButtonEquino";
-            this.radioButtonEquino.Size = new System.Drawing.Size(58, 17);
-            this.radioButtonEquino.TabIndex = 25;
-            this.radioButtonEquino.TabStop = true;
-            this.radioButtonEquino.Text = "Equino";
-            this.radioButtonEquino.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonOvino
-            // 
-            this.radioButtonOvino.AutoSize = true;
-            this.radioButtonOvino.Location = new System.Drawing.Point(344, 343);
-            this.radioButtonOvino.Name = "radioButtonOvino";
-            this.radioButtonOvino.Size = new System.Drawing.Size(53, 17);
-            this.radioButtonOvino.TabIndex = 26;
-            this.radioButtonOvino.TabStop = true;
-            this.radioButtonOvino.Text = "Ovino";
-            this.radioButtonOvino.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonSuino
-            // 
-            this.radioButtonSuino.AutoSize = true;
-            this.radioButtonSuino.Location = new System.Drawing.Point(457, 343);
-            this.radioButtonSuino.Name = "radioButtonSuino";
-            this.radioButtonSuino.Size = new System.Drawing.Size(52, 17);
-            this.radioButtonSuino.TabIndex = 27;
-            this.radioButtonSuino.TabStop = true;
-            this.radioButtonSuino.Text = "Suino";
-            this.radioButtonSuino.UseVisualStyleBackColor = true;
             // 
             // btnRegistrar
             // 
@@ -359,7 +322,7 @@
             // radioButtonPOsim
             // 
             this.radioButtonPOsim.AutoSize = true;
-            this.radioButtonPOsim.Location = new System.Drawing.Point(126, 287);
+            this.radioButtonPOsim.Location = new System.Drawing.Point(110, 5);
             this.radioButtonPOsim.Name = "radioButtonPOsim";
             this.radioButtonPOsim.Size = new System.Drawing.Size(45, 17);
             this.radioButtonPOsim.TabIndex = 32;
@@ -379,7 +342,7 @@
             // radioButtonPOnao
             // 
             this.radioButtonPOnao.AutoSize = true;
-            this.radioButtonPOnao.Location = new System.Drawing.Point(239, 287);
+            this.radioButtonPOnao.Location = new System.Drawing.Point(6, 5);
             this.radioButtonPOnao.Name = "radioButtonPOnao";
             this.radioButtonPOnao.Size = new System.Drawing.Size(45, 17);
             this.radioButtonPOnao.TabIndex = 34;
@@ -387,37 +350,87 @@
             this.radioButtonPOnao.Text = "Não";
             this.radioButtonPOnao.UseVisualStyleBackColor = true;
             // 
-            // domainRaca
+            // groupMorto
             // 
-            this.domainRaca.Location = new System.Drawing.Point(126, 314);
-            this.domainRaca.Name = "domainRaca";
-            this.domainRaca.Size = new System.Drawing.Size(180, 20);
-            this.domainRaca.TabIndex = 35;
-            this.domainRaca.Text = "domainUpDown1";
+            this.groupMorto.BackColor = System.Drawing.Color.White;
+            this.groupMorto.Controls.Add(this.radioButtonNaoMorto);
+            this.groupMorto.Controls.Add(this.radioButtonSimMorto);
+            this.groupMorto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupMorto.Location = new System.Drawing.Point(126, 211);
+            this.groupMorto.Margin = new System.Windows.Forms.Padding(0);
+            this.groupMorto.Name = "groupMorto";
+            this.groupMorto.Size = new System.Drawing.Size(171, 28);
+            this.groupMorto.TabIndex = 36;
+            this.groupMorto.TabStop = false;
+            // 
+            // groupSexo
+            // 
+            this.groupSexo.Controls.Add(this.radioButtonMasculino);
+            this.groupSexo.Controls.Add(this.radioButtonFeminino);
+            this.groupSexo.Location = new System.Drawing.Point(126, 159);
+            this.groupSexo.Name = "groupSexo";
+            this.groupSexo.Size = new System.Drawing.Size(142, 23);
+            this.groupSexo.TabIndex = 37;
+            this.groupSexo.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.radioButtonVendidaNao);
+            this.groupBox1.Controls.Add(this.radioButtonVendidaSim);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Location = new System.Drawing.Point(126, 242);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(171, 28);
+            this.groupBox1.TabIndex = 37;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.White;
+            this.groupBox2.Controls.Add(this.radioButtonPOnao);
+            this.groupBox2.Controls.Add(this.radioButtonPOsim);
+            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox2.Location = new System.Drawing.Point(126, 274);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(171, 28);
+            this.groupBox2.TabIndex = 38;
+            this.groupBox2.TabStop = false;
+            // 
+            // cmbRaca
+            // 
+            this.cmbRaca.FormattingEnabled = true;
+            this.cmbRaca.Location = new System.Drawing.Point(126, 314);
+            this.cmbRaca.Name = "cmbRaca";
+            this.cmbRaca.Size = new System.Drawing.Size(121, 21);
+            this.cmbRaca.TabIndex = 39;
+            // 
+            // cmbTipo
+            // 
+            this.cmbTipo.FormattingEnabled = true;
+            this.cmbTipo.Location = new System.Drawing.Point(126, 345);
+            this.cmbTipo.Name = "cmbTipo";
+            this.cmbTipo.Size = new System.Drawing.Size(121, 21);
+            this.cmbTipo.TabIndex = 40;
             // 
             // CadastroAnimaisUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.domainRaca);
-            this.Controls.Add(this.radioButtonPOnao);
+            this.Controls.Add(this.cmbTipo);
+            this.Controls.Add(this.cmbRaca);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.groupSexo);
+            this.Controls.Add(this.groupMorto);
             this.Controls.Add(this.radioButton11);
-            this.Controls.Add(this.radioButtonPOsim);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnRegistrar);
-            this.Controls.Add(this.radioButtonSuino);
-            this.Controls.Add(this.radioButtonOvino);
-            this.Controls.Add(this.radioButtonEquino);
-            this.Controls.Add(this.radioButtonBovino);
-            this.Controls.Add(this.radioButtonVendidaNao);
-            this.Controls.Add(this.radioButtonVendidaSim);
-            this.Controls.Add(this.radioButtonNaoMorto);
-            this.Controls.Add(this.radioButtonSimMorto);
-            this.Controls.Add(this.radioButtonFeminino);
-            this.Controls.Add(this.radioButtonMasculino);
             this.Controls.Add(this.textPeso);
             this.Controls.Add(this.textNomeMae);
             this.Controls.Add(this.textNomePai);
@@ -437,6 +450,14 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastroAnimaisUserControl1";
             this.Size = new System.Drawing.Size(601, 413);
+            this.groupMorto.ResumeLayout(false);
+            this.groupMorto.PerformLayout();
+            this.groupSexo.ResumeLayout(false);
+            this.groupSexo.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -467,10 +488,6 @@
         private System.Windows.Forms.RadioButton radioButtonNaoMorto;
         private System.Windows.Forms.RadioButton radioButtonVendidaSim;
         private System.Windows.Forms.RadioButton radioButtonVendidaNao;
-        private System.Windows.Forms.RadioButton radioButtonBovino;
-        private System.Windows.Forms.RadioButton radioButtonEquino;
-        private System.Windows.Forms.RadioButton radioButtonOvino;
-        private System.Windows.Forms.RadioButton radioButtonSuino;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnLimpar;
         private System.Windows.Forms.Button btnCancelar;
@@ -478,6 +495,11 @@
         private System.Windows.Forms.RadioButton radioButtonPOsim;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.RadioButton radioButtonPOnao;
-        private System.Windows.Forms.DomainUpDown domainRaca;
+        private System.Windows.Forms.GroupBox groupMorto;
+        private System.Windows.Forms.GroupBox groupSexo;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.ComboBox cmbRaca;
+        private System.Windows.Forms.ComboBox cmbTipo;
     }
 }

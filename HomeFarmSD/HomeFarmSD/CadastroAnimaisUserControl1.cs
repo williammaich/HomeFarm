@@ -17,6 +17,17 @@ namespace HomeFarmSD
         public CadastroAnimaisUserControl1()
         {
             InitializeComponent();
+            
+            cmbTipo.Items.Add("Bovino");
+            cmbTipo.Items.Add("Equino");
+            cmbTipo.Items.Add("Ovino");
+            cmbTipo.Items.Add("Suino");
+
+            cmbRaca.Items.Add("Holandes");
+            cmbRaca.Items.Add("Red Angus");
+            cmbRaca.Items.Add("Angus");
+            cmbRaca.Items.Add("Gedor");
+            
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -28,66 +39,64 @@ namespace HomeFarmSD
         {
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conexao = new MySqlConnection(Conection);
+            
 
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIFOBRINCO,NOME,DATANAC,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,BOVINO,EQUINO,SUINO,OVINO) VALUES (@codigo,@nome,@datanasc,@nomepai, @nomemae,@sexo,@peso,@morto,@vendida,@po,@bovino,@equino,@suino,@suino )", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO) VALUES (@codigo,@nome,@datanasc,@nomepai, @nomemae,@sexo,@peso,@morto,@vendida,@po,@raca,@tipo )", Conexao);
 
                 INSERT.Parameters.AddWithValue("@codigo", textCodigo.Text);
                 INSERT.Parameters.AddWithValue("@nome", textNome.Text);
-                INSERT.Parameters.AddWithValue("@datanasc", textDataNascimento.Text);
+                INSERT.Parameters.Add("@datanasc", MySqlDbType.VarChar,45).Value = textDataNascimento;
+               // INSERT.Parameters.AddWithValue("@datanasc", textDataNascimento.Text);
                 INSERT.Parameters.AddWithValue("@nomepai", textNomePai.Text);
                 INSERT.Parameters.AddWithValue("@nomemae", textNomeMae.Text);
+
                 if (radioButtonMasculino.Checked)
                 {
 
-                    INSERT.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "Masculino";
+                    INSERT.Parameters.Add("@sexo", MySqlDbType.VarChar, 45).Value = "Masculino";
 
                 }else if (radioButtonFeminino.Checked)
                 {
-                    INSERT.Parameters.Add("@sexo", MySqlDbType.VarChar, 1).Value = "Feminino";
+                    INSERT.Parameters.Add("@sexo", MySqlDbType.VarChar, 45).Value = "Feminino";
                 }
 
-                INSERT.Parameters.AddWithValue("@peso", textPeso.Text);
+                INSERT.Parameters.Add("@peso", MySqlDbType.Double).Value=textPeso.Text;
+
 
                 if (radioButtonSimMorto.Checked)
                 {
-                    INSERT.Parameters.Add("@morto", MySqlDbType.VarChar, 1).Value = "Vivo";
+                    INSERT.Parameters.Add("@morto", MySqlDbType.VarChar, 45).Value = "Morto";
                 }else if (radioButtonNaoMorto.Checked)
                 {
-                    INSERT.Parameters.Add("@morto", MySqlDbType.VarChar, 1).Value = "Morto";
+                    INSERT.Parameters.Add("@morto", MySqlDbType.VarChar, 45).Value = "Vivo";
                 }
 
                 if (radioButtonVendidaSim.Checked)
                 {
-                    INSERT.Parameters.Add("@vendida", MySqlDbType.VarChar, 1).Value = "Vendida";
+                    INSERT.Parameters.Add("@vendida", MySqlDbType.VarChar, 45).Value = "Vendida";
                 } else if (radioButtonVendidaNao.Checked)
                 {
-                    INSERT.Parameters.Add("@vendida", MySqlDbType.VarChar, 1).Value = "Não vendida";
+                    INSERT.Parameters.Add("@vendida", MySqlDbType.VarChar, 45).Value = "Não vendida";
                 }
 
                 if (radioButtonPOsim.Checked)
                 {
-                    INSERT.Parameters.Add("@po", MySqlDbType.VarChar, 1).Value = "Puro";
-                }else if (radioButtonPOnao.Checked)
+                    INSERT.Parameters.Add("@po", MySqlDbType.VarChar, 45).Value = "Puro";
+                }
+                else if (radioButtonPOnao.Checked)
                 {
-                    INSERT.Parameters.Add("@po", MySqlDbType.VarChar, 1).Value = "naoPuro";
+                    INSERT.Parameters.Add("@po", MySqlDbType.VarChar, 45).Value = "naoPuro";
                 }
 
-                if (radioButtonBovino.Checked)
-                {
-                    INSERT.Parameters.Add("@bovino", MySqlDbType.VarChar, 1).Value = "Bovino";
-                }else if (radioButtonEquino.Checked)
-                {
-                    INSERT.Parameters.Add("@equino", MySqlDbType.VarChar, 1).Value = "Equino";
-                }else if (radioButtonSuino.Checked)
-                {
-                    INSERT.Parameters.Add("@suino", MySqlDbType.VarChar, 1).Value = "Suino";
-                }else if (radioButtonOvino.Checked)
-                {
-                    INSERT.Parameters.Add("@ovino", MySqlDbType.VarChar, 1).Value = "Ovino";
-                }
+                INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value = cmbRaca.SelectedItem.ToString();
+               // INSERT.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = textraca.Text;
+               // INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = texttipo.Text;
+
+
+                INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = cmbTipo.SelectedItem.ToString();
 
 
 
@@ -97,13 +106,23 @@ namespace HomeFarmSD
 
                 MessageBox.Show("Cadastro Realizado com Sucesso!!");
             }
-            catch
+            catch (Exception erro)
             {
 
 
-                MessageBox.Show("ERRO DE CONEXÃO");
+                MessageBox.Show("ERRO DE CONEXÃO " + erro);
 
             }
+
+        }
+
+        private void radioButtonSimMorto_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButtonNaoMorto_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }

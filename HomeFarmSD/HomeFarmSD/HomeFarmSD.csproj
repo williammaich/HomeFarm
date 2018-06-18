@@ -110,6 +110,12 @@
     <Compile Include="CadastrosUserControl1.Designer.cs">
       <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="cadastroTipoUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="cadastroTipoUserControl1.Designer.cs">
+      <DependentUpon>cadastroTipoUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Carregamento.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -219,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosUserControl1.resx">
       <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cadastroTipoUserControl1.resx">
+      <DependentUpon>cadastroTipoUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carregamento.resx">
       <DependentUpon>Carregamento.cs</DependentUpon>

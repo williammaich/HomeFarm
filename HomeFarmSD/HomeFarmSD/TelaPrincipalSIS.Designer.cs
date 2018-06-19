@@ -46,6 +46,8 @@
             this.cadastrosUserControl11 = new HomeFarmSD.CadastrosUserControl1();
             this.animalUserControl11 = new HomeFarmSD.AnimalUserControl1();
             this.homeUserControl11 = new HomeFarmSD.HomeUserControl1();
+            this.btnListagem = new System.Windows.Forms.Button();
+            this.listagemUserControl11 = new HomeFarmSD.ListagemUserControl1();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -54,6 +56,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel1.Controls.Add(this.btnListagem);
             this.panel1.Controls.Add(this.btnProducao);
             this.panel1.Controls.Add(this.PainelDeslisante);
             this.panel1.Controls.Add(this.btnConfiguracao);
@@ -103,7 +106,7 @@
             this.btnConfiguracao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnConfiguracao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnConfiguracao.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConfiguracao.Location = new System.Drawing.Point(22, 322);
+            this.btnConfiguracao.Location = new System.Drawing.Point(23, 343);
             this.btnConfiguracao.Name = "btnConfiguracao";
             this.btnConfiguracao.Size = new System.Drawing.Size(103, 33);
             this.btnConfiguracao.TabIndex = 5;
@@ -121,7 +124,7 @@
             this.btnRelatorios.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnRelatorios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRelatorios.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRelatorios.Location = new System.Drawing.Point(22, 258);
+            this.btnRelatorios.Location = new System.Drawing.Point(23, 293);
             this.btnRelatorios.Name = "btnRelatorios";
             this.btnRelatorios.Size = new System.Drawing.Size(103, 33);
             this.btnRelatorios.TabIndex = 4;
@@ -139,7 +142,7 @@
             this.btnEstoque.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
             this.btnEstoque.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEstoque.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEstoque.Location = new System.Drawing.Point(22, 200);
+            this.btnEstoque.Location = new System.Drawing.Point(23, 244);
             this.btnEstoque.Name = "btnEstoque";
             this.btnEstoque.Size = new System.Drawing.Size(103, 33);
             this.btnEstoque.TabIndex = 3;
@@ -261,11 +264,38 @@
             this.homeUserControl11.Size = new System.Drawing.Size(667, 413);
             this.homeUserControl11.TabIndex = 2;
             // 
+            // btnListagem
+            // 
+            this.btnListagem.FlatAppearance.BorderColor = System.Drawing.Color.ForestGreen;
+            this.btnListagem.FlatAppearance.BorderSize = 0;
+            this.btnListagem.FlatAppearance.CheckedBackColor = System.Drawing.Color.LimeGreen;
+            this.btnListagem.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LimeGreen;
+            this.btnListagem.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LimeGreen;
+            this.btnListagem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListagem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnListagem.Location = new System.Drawing.Point(22, 205);
+            this.btnListagem.Name = "btnListagem";
+            this.btnListagem.Size = new System.Drawing.Size(103, 33);
+            this.btnListagem.TabIndex = 7;
+            this.btnListagem.Text = "Listagem";
+            this.btnListagem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListagem.UseVisualStyleBackColor = true;
+            this.btnListagem.Click += new System.EventHandler(this.btnListagem_Click);
+            // 
+            // listagemUserControl11
+            // 
+            this.listagemUserControl11.BackColor = System.Drawing.Color.White;
+            this.listagemUserControl11.Location = new System.Drawing.Point(131, 37);
+            this.listagemUserControl11.Name = "listagemUserControl11";
+            this.listagemUserControl11.Size = new System.Drawing.Size(667, 413);
+            this.listagemUserControl11.TabIndex = 9;
+            // 
             // TelaPrincipalSIS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.listagemUserControl11);
             this.Controls.Add(this.producaoUserControl11);
             this.Controls.Add(this.configuracoesUserControl11);
             this.Controls.Add(this.relatoriosUserControl11);
@@ -305,5 +335,7 @@
         private ConfiguracoesUserControl1 configuracoesUserControl11;
         private System.Windows.Forms.Button btnProducao;
         private ProducaoUserControl1 producaoUserControl11;
+        private System.Windows.Forms.Button btnListagem;
+        private ListagemUserControl1 listagemUserControl11;
     }
 }

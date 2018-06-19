@@ -414,6 +414,7 @@
             this.cmbTipo.Name = "cmbTipo";
             this.cmbTipo.Size = new System.Drawing.Size(121, 21);
             this.cmbTipo.TabIndex = 40;
+            this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // CadastroAnimaisUserControl1
             // 
@@ -450,6 +451,7 @@
             this.Controls.Add(this.label1);
             this.Name = "CadastroAnimaisUserControl1";
             this.Size = new System.Drawing.Size(601, 413);
+            this.Load += new System.EventHandler(this.CadastroAnimaisUserControl1_Load);
             this.groupMorto.ResumeLayout(false);
             this.groupMorto.PerformLayout();
             this.groupSexo.ResumeLayout(false);

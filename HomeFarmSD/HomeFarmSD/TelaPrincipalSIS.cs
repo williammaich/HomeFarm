@@ -72,5 +72,12 @@ namespace HomeFarmSD
         {
 
         }
+
+        private void btnListagem_Click(object sender, EventArgs e)
+        {
+            PainelDeslisante.Height = btnListagem.Height;
+            PainelDeslisante.Top = btnListagem.Top;
+            listagemUserControl11.BringToFront();
+        }
     }
 }

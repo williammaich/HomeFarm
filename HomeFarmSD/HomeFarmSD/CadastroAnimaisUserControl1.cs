@@ -17,23 +17,19 @@ namespace HomeFarmSD
         public CadastroAnimaisUserControl1()
         {
             InitializeComponent();
-            
-            cmbTipo.Items.Add("Bovino");
-            cmbTipo.Items.Add("Equino");
-            cmbTipo.Items.Add("Ovino");
-            cmbTipo.Items.Add("Suino");
 
-            cmbRaca.Items.Add("Holandes");
-            cmbRaca.Items.Add("Red Angus");
-            cmbRaca.Items.Add("Angus");
-            cmbRaca.Items.Add("Gedor");
-            
+
+      
+
+          
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
 
         }
+
+       
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -91,6 +87,8 @@ namespace HomeFarmSD
                     INSERT.Parameters.Add("@po", MySqlDbType.VarChar, 45).Value = "naoPuro";
                 }
 
+                
+
                 INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value = cmbRaca.SelectedItem.ToString();
                // INSERT.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = textraca.Text;
                // INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = texttipo.Text;
@@ -122,6 +120,43 @@ namespace HomeFarmSD
         }
 
         private void radioButtonNaoMorto_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CadastroAnimaisUserControl1_Load(object sender, EventArgs e)
+        {
+
+
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Ligar = new MySqlConnection(Conector);
+            try
+            {
+                Ligar.Open();
+
+                MySqlCommand com = new MySqlCommand();
+                com.Connection = Ligar;
+                com.CommandText = "SELECT nomeraca FROM raca";
+
+                MySqlDataReader dr = com.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                cmbRaca.DisplayMember = "nomeraca";
+                cmbRaca.DataSource = dt;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("ERRO DE CONEXÃO " + erro);
+            }
+
+           
+            cmbTipo.Items.Add("Bovino");
+            cmbTipo.Items.Add("Equino");
+            cmbTipo.Items.Add("Ovino");
+            cmbTipo.Items.Add("Suino");
+        }
+
+        private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

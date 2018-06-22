@@ -16,5 +16,29 @@ namespace HomeFarmSD
         {
             InitializeComponent();
         }
+
+        private void dataGridBovino_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+          
+
+
+        }
+
+        private void btnConecta_Click(object sender, EventArgs e)
+        {
+            ClassDLL dll = new ClassDLL();
+            try
+            {
+
+                dataGridBovino.DataSource = dll.ExibirDadosDal();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+        }
     }
 }

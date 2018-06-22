@@ -19,9 +19,8 @@ namespace HomeFarmSD
             InitializeComponent();
 
 
-      
 
-          
+
         }
 
         private void label7_Click(object sender, EventArgs e)
@@ -44,8 +43,8 @@ namespace HomeFarmSD
 
                 INSERT.Parameters.AddWithValue("@codigo", textCodigo.Text);
                 INSERT.Parameters.AddWithValue("@nome", textNome.Text);
-                INSERT.Parameters.Add("@datanasc", MySqlDbType.VarChar,45).Value = textDataNascimento;
-               // INSERT.Parameters.AddWithValue("@datanasc", textDataNascimento.Text);
+               
+                INSERT.Parameters.AddWithValue("@datanasc", textDataNascimento.Text);
                 INSERT.Parameters.AddWithValue("@nomepai", textNomePai.Text);
                 INSERT.Parameters.AddWithValue("@nomemae", textNomeMae.Text);
 
@@ -89,10 +88,10 @@ namespace HomeFarmSD
 
                 
 
-                INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value = cmbRaca.SelectedItem.ToString();
-               // INSERT.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = textraca.Text;
-               // INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = texttipo.Text;
+                //INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value = cmbRaca.SelectedItem.ToString();
+                INSERT.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = cmbRaca;
 
+                
 
                 INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = cmbTipo.SelectedItem.ToString();
 
@@ -159,6 +158,30 @@ namespace HomeFarmSD
         private void cmbTipo_SelectedIndexChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCarregar_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Ligar = new MySqlConnection(Conector);
+            try
+            {
+                Ligar.Open();
+
+                MySqlCommand com = new MySqlCommand();
+                com.Connection = Ligar;
+                com.CommandText = "SELECT nomeraca FROM raca";
+
+                MySqlDataReader dr = com.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Load(dr);
+                cmbRaca.DisplayMember = "nomeraca";
+                cmbRaca.DataSource = dt;
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("ERRO DE CONEXÃO " + erro);
+            }
         }
     }
 }

@@ -64,6 +64,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbRaca = new System.Windows.Forms.ComboBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
+            this.btnCarregar = new System.Windows.Forms.Button();
             this.groupMorto.SuspendLayout();
             this.groupSexo.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -282,7 +283,7 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(80, 377);
+            this.btnRegistrar.Location = new System.Drawing.Point(28, 377);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(75, 23);
             this.btnRegistrar.TabIndex = 28;
@@ -292,7 +293,7 @@
             // 
             // btnLimpar
             // 
-            this.btnLimpar.Location = new System.Drawing.Point(222, 377);
+            this.btnLimpar.Location = new System.Drawing.Point(126, 377);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(75, 23);
             this.btnLimpar.TabIndex = 29;
@@ -301,7 +302,7 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(361, 377);
+            this.btnCancelar.Location = new System.Drawing.Point(222, 377);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(75, 23);
             this.btnCancelar.TabIndex = 30;
@@ -416,11 +417,22 @@
             this.cmbTipo.TabIndex = 40;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
+            // btnCarregar
+            // 
+            this.btnCarregar.Location = new System.Drawing.Point(322, 377);
+            this.btnCarregar.Name = "btnCarregar";
+            this.btnCarregar.Size = new System.Drawing.Size(75, 23);
+            this.btnCarregar.TabIndex = 41;
+            this.btnCarregar.Text = "Carregar";
+            this.btnCarregar.UseVisualStyleBackColor = true;
+            this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
+            // 
             // CadastroAnimaisUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.btnCarregar);
             this.Controls.Add(this.cmbTipo);
             this.Controls.Add(this.cmbRaca);
             this.Controls.Add(this.groupBox2);
@@ -503,5 +515,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cmbRaca;
         private System.Windows.Forms.ComboBox cmbTipo;
+        private System.Windows.Forms.Button btnCarregar;
     }
 }

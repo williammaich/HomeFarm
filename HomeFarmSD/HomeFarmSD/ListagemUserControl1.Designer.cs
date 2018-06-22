@@ -35,6 +35,7 @@
             this.btnProducaoBovinos = new System.Windows.Forms.Button();
             this.btnProducaoCampos = new System.Windows.Forms.Button();
             this.listagemHomeUserControl11 = new HomeFarmSD.ListagemHomeUserControl1();
+            this.listagemBovinoUserControl11 = new HomeFarmSD.ListagemBovinoUserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +87,7 @@
             this.btnProducaoBovinos.TabIndex = 1;
             this.btnProducaoBovinos.Text = "Bovinos";
             this.btnProducaoBovinos.UseVisualStyleBackColor = true;
+            this.btnProducaoBovinos.Click += new System.EventHandler(this.btnProducaoBovinos_Click);
             // 
             // btnProducaoCampos
             // 
@@ -104,11 +106,20 @@
             this.listagemHomeUserControl11.Size = new System.Drawing.Size(664, 377);
             this.listagemHomeUserControl11.TabIndex = 2;
             // 
+            // listagemBovinoUserControl11
+            // 
+            this.listagemBovinoUserControl11.BackColor = System.Drawing.Color.White;
+            this.listagemBovinoUserControl11.Location = new System.Drawing.Point(0, 33);
+            this.listagemBovinoUserControl11.Name = "listagemBovinoUserControl11";
+            this.listagemBovinoUserControl11.Size = new System.Drawing.Size(664, 377);
+            this.listagemBovinoUserControl11.TabIndex = 3;
+            // 
             // ListagemUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.listagemBovinoUserControl11);
             this.Controls.Add(this.listagemHomeUserControl11);
             this.Controls.Add(this.panel1);
             this.Name = "ListagemUserControl1";
@@ -128,5 +139,6 @@
         private System.Windows.Forms.Button btnProducaoBovinos;
         private System.Windows.Forms.Button btnProducaoCampos;
         private ListagemHomeUserControl1 listagemHomeUserControl11;
+        private ListagemBovinoUserControl1 listagemBovinoUserControl11;
     }
 }

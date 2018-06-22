@@ -122,6 +122,8 @@
     <Compile Include="Carregamento.Designer.cs">
       <DependentUpon>Carregamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClassDAL.cs" />
+    <Compile Include="ClassDLL.cs" />
     <Compile Include="ConfiguracoesUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>

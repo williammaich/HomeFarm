@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace HomeFarmSD
 {
     public partial class CadastrosUserControl1 : UserControl
     {
+
+
         public CadastrosUserControl1()
         {
             InitializeComponent();
+
+                   
+
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -148,11 +148,23 @@
     <Compile Include="ListagemBovinoUserControl1.Designer.cs">
       <DependentUpon>ListagemBovinoUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListagemEquinoUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListagemEquinoUserControl1.Designer.cs">
+      <DependentUpon>ListagemEquinoUserControl1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ListagemHomeUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ListagemHomeUserControl1.Designer.cs">
       <DependentUpon>ListagemHomeUserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListagemOvinosUserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ListagemOvinosUserControl1.Designer.cs">
+      <DependentUpon>ListagemOvinosUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="ListagemUserControl1.cs">
       <SubType>UserControl</SubType>
@@ -264,8 +276,14 @@
     <EmbeddedResource Include="ListagemBovinoUserControl1.resx">
       <DependentUpon>ListagemBovinoUserControl1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ListagemEquinoUserControl1.resx">
+      <DependentUpon>ListagemEquinoUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ListagemHomeUserControl1.resx">
       <DependentUpon>ListagemHomeUserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListagemOvinosUserControl1.resx">
+      <DependentUpon>ListagemOvinosUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListagemUserControl1.resx">
       <DependentUpon>ListagemUserControl1.cs</DependentUpon>

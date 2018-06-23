@@ -15,6 +15,7 @@ namespace HomeFarmSD
         public ListagemUserControl1()
         {
             InitializeComponent();
+            listagemHomeUserControl11.BringToFront();
         }
 
         private void ListagemUserControl1_Load(object sender, EventArgs e)
@@ -25,6 +26,11 @@ namespace HomeFarmSD
         private void btnProducaoBovinos_Click(object sender, EventArgs e)
         {
             listagemBovinoUserControl11.BringToFront();
+        }
+
+        private void btnProducaoEquinos_Click(object sender, EventArgs e)
+        {
+            listagemEquinoUserControl11.BringToFront();
         }
     }
 }

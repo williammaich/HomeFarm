@@ -32,5 +32,20 @@ namespace HomeFarmSD
         {
             listagemEquinoUserControl11.BringToFront();
         }
+
+        private void btnProducaoOvinos_Click(object sender, EventArgs e)
+        {
+            listagemOvinosUserControl11.BringToFront();
+        }
+
+        private void btnProducaoSuinos_Click(object sender, EventArgs e)
+        {
+            listagemSuinoUserControl11.BringToFront();
+        }
+
+        private void btnProducaoCampos_Click(object sender, EventArgs e)
+        {
+            listagemCamposUserControl11.BringToFront();
+        }
     }
 }

@@ -34,9 +34,12 @@
             this.btnProducaoEquinos = new System.Windows.Forms.Button();
             this.btnProducaoBovinos = new System.Windows.Forms.Button();
             this.btnProducaoCampos = new System.Windows.Forms.Button();
+            this.listagemSuinoUserControl11 = new HomeFarmSD.ListagemSuinoUserControl1();
+            this.listagemOvinosUserControl11 = new HomeFarmSD.ListagemOvinosUserControl1();
+            this.listagemEquinoUserControl11 = new HomeFarmSD.ListagemEquinoUserControl1();
             this.listagemBovinoUserControl11 = new HomeFarmSD.ListagemBovinoUserControl1();
             this.listagemHomeUserControl11 = new HomeFarmSD.ListagemHomeUserControl1();
-            this.listagemEquinoUserControl11 = new HomeFarmSD.ListagemEquinoUserControl1();
+            this.listagemCamposUserControl11 = new HomeFarmSD.ListagemCamposUserControl1();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,6 +64,7 @@
             this.btnProducaoSuinos.TabIndex = 4;
             this.btnProducaoSuinos.Text = "Suinos";
             this.btnProducaoSuinos.UseVisualStyleBackColor = true;
+            this.btnProducaoSuinos.Click += new System.EventHandler(this.btnProducaoSuinos_Click);
             // 
             // btnProducaoOvinos
             // 
@@ -70,6 +74,7 @@
             this.btnProducaoOvinos.TabIndex = 3;
             this.btnProducaoOvinos.Text = "Ovinos";
             this.btnProducaoOvinos.UseVisualStyleBackColor = true;
+            this.btnProducaoOvinos.Click += new System.EventHandler(this.btnProducaoOvinos_Click);
             // 
             // btnProducaoEquinos
             // 
@@ -99,6 +104,28 @@
             this.btnProducaoCampos.TabIndex = 0;
             this.btnProducaoCampos.Text = "Campos";
             this.btnProducaoCampos.UseVisualStyleBackColor = true;
+            this.btnProducaoCampos.Click += new System.EventHandler(this.btnProducaoCampos_Click);
+            // 
+            // listagemSuinoUserControl11
+            // 
+            this.listagemSuinoUserControl11.Location = new System.Drawing.Point(3, 33);
+            this.listagemSuinoUserControl11.Name = "listagemSuinoUserControl11";
+            this.listagemSuinoUserControl11.Size = new System.Drawing.Size(664, 377);
+            this.listagemSuinoUserControl11.TabIndex = 6;
+            // 
+            // listagemOvinosUserControl11
+            // 
+            this.listagemOvinosUserControl11.Location = new System.Drawing.Point(3, 33);
+            this.listagemOvinosUserControl11.Name = "listagemOvinosUserControl11";
+            this.listagemOvinosUserControl11.Size = new System.Drawing.Size(664, 377);
+            this.listagemOvinosUserControl11.TabIndex = 5;
+            // 
+            // listagemEquinoUserControl11
+            // 
+            this.listagemEquinoUserControl11.Location = new System.Drawing.Point(0, 33);
+            this.listagemEquinoUserControl11.Name = "listagemEquinoUserControl11";
+            this.listagemEquinoUserControl11.Size = new System.Drawing.Size(664, 377);
+            this.listagemEquinoUserControl11.TabIndex = 4;
             // 
             // listagemBovinoUserControl11
             // 
@@ -116,18 +143,21 @@
             this.listagemHomeUserControl11.Size = new System.Drawing.Size(664, 377);
             this.listagemHomeUserControl11.TabIndex = 2;
             // 
-            // listagemEquinoUserControl11
+            // listagemCamposUserControl11
             // 
-            this.listagemEquinoUserControl11.Location = new System.Drawing.Point(0, 33);
-            this.listagemEquinoUserControl11.Name = "listagemEquinoUserControl11";
-            this.listagemEquinoUserControl11.Size = new System.Drawing.Size(664, 377);
-            this.listagemEquinoUserControl11.TabIndex = 4;
+            this.listagemCamposUserControl11.Location = new System.Drawing.Point(0, 33);
+            this.listagemCamposUserControl11.Name = "listagemCamposUserControl11";
+            this.listagemCamposUserControl11.Size = new System.Drawing.Size(664, 377);
+            this.listagemCamposUserControl11.TabIndex = 7;
             // 
             // ListagemUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.listagemCamposUserControl11);
+            this.Controls.Add(this.listagemSuinoUserControl11);
+            this.Controls.Add(this.listagemOvinosUserControl11);
             this.Controls.Add(this.listagemEquinoUserControl11);
             this.Controls.Add(this.listagemBovinoUserControl11);
             this.Controls.Add(this.listagemHomeUserControl11);
@@ -151,5 +181,8 @@
         private ListagemHomeUserControl1 listagemHomeUserControl11;
         private ListagemBovinoUserControl1 listagemBovinoUserControl11;
         private ListagemEquinoUserControl1 listagemEquinoUserControl11;
+        private ListagemOvinosUserControl1 listagemOvinosUserControl11;
+        private ListagemSuinoUserControl1 listagemSuinoUserControl11;
+        private ListagemCamposUserControl1 listagemCamposUserControl11;
     }
 }

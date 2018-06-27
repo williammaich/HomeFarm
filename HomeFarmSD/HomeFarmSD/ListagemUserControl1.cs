@@ -15,6 +15,7 @@ namespace HomeFarmSD
         public ListagemUserControl1()
         {
             InitializeComponent();
+
             listagemHomeUserControl11.BringToFront();
         }
 

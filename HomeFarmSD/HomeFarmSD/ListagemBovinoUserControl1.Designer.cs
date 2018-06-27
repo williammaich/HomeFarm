@@ -30,6 +30,7 @@
         {
             this.dataGridBovino = new System.Windows.Forms.DataGridView();
             this.btnConecta = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBovino)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,17 +53,30 @@
             this.btnConecta.UseVisualStyleBackColor = true;
             this.btnConecta.Click += new System.EventHandler(this.btnConecta_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(231, 20);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(148, 20);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Listagem de Bovinos";
+            // 
             // ListagemBovinoUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btnConecta);
             this.Controls.Add(this.dataGridBovino);
             this.Name = "ListagemBovinoUserControl1";
             this.Size = new System.Drawing.Size(664, 377);
+            this.Load += new System.EventHandler(this.ListagemBovinoUserControl1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBovino)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -70,5 +84,6 @@
 
         private System.Windows.Forms.DataGridView dataGridBovino;
         private System.Windows.Forms.Button btnConecta;
+        private System.Windows.Forms.Label label1;
     }
 }

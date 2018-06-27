@@ -40,5 +40,22 @@ namespace HomeFarmSD
                 MessageBox.Show("erro" + erro);
             }
         }
+
+        private void ListagemBovinoUserControl1_Load(object sender, EventArgs e)
+        {
+            ClassDLL dll = new ClassDLL();
+            try
+            {
+
+                dataGridBovino.DataSource = dll.ExibirDadosDal();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
+        }
     }
 }

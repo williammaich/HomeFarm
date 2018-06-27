@@ -19,7 +19,7 @@ namespace HomeFarmSD
         {
             InitializeComponent();
 
-                   
+            cadastrosHomeUserControl11.BringToFront();
 
         }
 

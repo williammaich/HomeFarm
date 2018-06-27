@@ -32,5 +32,22 @@ namespace HomeFarmSD
                 MessageBox.Show("erro" + erro);
             }
         }
+
+        private void ListagemCamposUserControl1_Load(object sender, EventArgs e)
+        {
+            ClassDLL dll = new ClassDLL();
+            try
+            {
+
+                dataGridCampos.DataSource = dll.ExibirDadosDalCampo();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
+        }
     }
 }

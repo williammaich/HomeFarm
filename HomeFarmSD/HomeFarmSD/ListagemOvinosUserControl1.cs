@@ -32,5 +32,22 @@ namespace HomeFarmSD
                 MessageBox.Show("erro" + erro);
             }
         }
+
+        private void ListagemOvinosUserControl1_Load(object sender, EventArgs e)
+        {
+            ClassDLL dll = new ClassDLL();
+            try
+            {
+
+                dataGridOvino.DataSource = dll.ExibirDadosDalOvino();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
+        }
     }
 }

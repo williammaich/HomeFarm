@@ -105,7 +105,7 @@ namespace HomeFarmSD
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT * FROM campos;", conexao);
+                comando = new MySqlCommand("SELECT cep,logradouro,numero,complemento,bairro,cidade,estado FROM propriedade;", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;

@@ -32,5 +32,23 @@ namespace HomeFarmSD
                 MessageBox.Show("erro" + erro);
             }
         }
+
+        private void ListagemEquinoUserControl1_Load(object sender, EventArgs e)
+        {
+
+            ClassDLL dll = new ClassDLL();
+            try
+            {
+
+                dataGridEquino.DataSource = dll.ExibirDadosDalEquino();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
+        }
     }
 }

@@ -32,5 +32,22 @@ namespace HomeFarmSD
                 MessageBox.Show("erro" + erro);
             }
         }
+
+        private void ListagemSuinoUserControl1_Load(object sender, EventArgs e)
+        {
+            ClassDLL dll = new ClassDLL();
+            try
+            {
+
+                dataGridSuino.DataSource = dll.ExibirDadosDalSuino();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
+        }
     }
 }

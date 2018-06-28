@@ -219,7 +219,7 @@ namespace HomeFarmSD
             {
                 Conecta.Open();
 
-                MySqlCommand comando = new MySqlCommand("UPDATE animal SET NOME=?,DATANASCIMENTO=?,NOMEPAI=?,NOMEMAE=?,SEXO=?,PESO=?,MORTO=?,VENDIDA=?,PO=?,RACA=?,TIPO= ? WHERE CODIGOBRINCO", Conecta);
+                MySqlCommand comando = new MySqlCommand("UPDATE animal SET CODIGOBRINCO=?, NOME=?,DATANASCIMENTO=?,NOMEPAI=?,NOMEMAE=?,SEXO=?,PESO=?,MORTO=?,VENDIDA=?,PO=?,RACA=?,TIPO= ? WHERE ID", Conecta);
 
                 comando.Parameters.Clear();
 
@@ -240,8 +240,8 @@ namespace HomeFarmSD
                 comando.Parameters.AddWithValue("@tipo", cmbTipo.SelectedItem.ToString());
                 */
 
-                
-              
+
+                comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = textCodigo.Text;
                 comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = textNome.Text;
                 comando.Parameters.Add("@dadanascimento", MySqlDbType.VarChar, 45).Value = textDataNascimento.Text;
                 comando.Parameters.Add("@nomepai", MySqlDbType.VarChar, 85).Value = textNomePai.Text;
@@ -294,18 +294,18 @@ namespace HomeFarmSD
 
                 dr.Read();
 
-             
-                textNome.Text = dr.GetString(0);
-                textDataNascimento.Text = dr.GetString(1);
-                textNomePai.Text = dr.GetString(2);
-                textNomeMae.Text = dr.GetString(3);
-                cmbSexo.Text = dr.GetString(4);
-                textPeso.Text = dr.GetString(5);
-                cmbMorto.Text = dr.GetString(6);
-                cmbVendida.Text = dr.GetString(7);
-                cmbPO.Text = dr.GetString(8);
-                cmbRaca.Text = dr.GetString(9);
-                cmbTipo.Text = dr.GetString(10);
+                textCodigo.Text = dr.GetString(0);
+                textNome.Text = dr.GetString(1);
+                textDataNascimento.Text = dr.GetString(2);
+                textNomePai.Text = dr.GetString(3);
+                textNomeMae.Text = dr.GetString(4);
+                cmbSexo.Text = dr.GetString(5);
+                textPeso.Text = dr.GetString(6);
+                cmbMorto.Text = dr.GetString(7);
+                cmbVendida.Text = dr.GetString(8);
+                cmbPO.Text = dr.GetString(9);
+                cmbRaca.Text = dr.GetString(10);
+                cmbTipo.Text = dr.GetString(11);
 
                 Ligar.Close();
             }

@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HomeFarmSD.exe" size="1829360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HomeFarmSD.exe" size="1831920">
       <assemblyIdentity name="HomeFarmSD" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>F7wnQEesOKjeclUV13DFGj2crYhi52tIueP1sLF6ozc=</dsig:DigestValue>
+        <dsig:DigestValue>384Z/OVByGp8+6luRr33JW48msu4isnFAv2ggPf5jAM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

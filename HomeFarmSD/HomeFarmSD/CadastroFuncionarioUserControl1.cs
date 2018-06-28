@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace HomeFarmSD
 {
@@ -15,6 +17,8 @@ namespace HomeFarmSD
         public CadastroFuncionarioUserControl1()
         {
             InitializeComponent();
+            cmbADM.Items.Add("Sim");
+            cmbADM.Items.Add("Não");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -24,6 +28,49 @@ namespace HomeFarmSD
 
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
+            String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Cnexao = new MySqlConnection(Conection);
+
+            try
+            {
+                Cnexao.Open();
+
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN) VALUES (@Nome, @Sobrenome, @Login, @Senha, @admin)", Cnexao);
+                INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
+                INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
+                INSERT.Parameters.AddWithValue("@Login", txtEmail.Text);
+                INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+                INSERT.Parameters.AddWithValue("@admin", cmbADM.SelectedItem.ToString());
+
+
+
+                if (txtEmail.Text == txtConfirmarEmail.Text)
+                {
+
+                    INSERT.ExecuteNonQuery();
+                    Cnexao.Close();
+
+                    MessageBox.Show("seu cadastro foi concluido");
+                    TelaLogin volta = new TelaLogin();
+                    volta.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Email não confere");
+                }
+
+
+
+
+            }
+            catch
+            {
+
+
+                MessageBox.Show("ERRO DE CONEXÃO");
+
+            }
 
         }
 
@@ -90,6 +137,12 @@ namespace HomeFarmSD
         private void btnLimpar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void cmbADM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+           
         }
     }
 }

@@ -84,3 +84,8 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\Ho
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ListagemSuinoUserControl1.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.csprojResolveAssemblyReference.cache
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\obj\Debug\HomeFarmSD.ListagemCamposUserControl1.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\mono.security.dll
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\Npgsql.dll
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\Npgsql.xml
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarmSD\HomeFarmSD\bin\Debug\System.Threading.Tasks.Extensions.xml

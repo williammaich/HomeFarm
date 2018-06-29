@@ -6,20 +6,29 @@ using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
 using System.Data;
 
+
 namespace HomeFarmSD
+
 {
     class ClassDAL
     {
+        
+
+
         string conectaBanco = "server=localhost; userid=root; database=homefarm; SslMode=none";
         MySqlConnection conexao = null;
         MySqlCommand comando;
+
+
+
+
 
         public DataTable ExibirDados()
         {
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT * FROM animal WHERE tipo='bovino';", conexao);
+                comando = new MySqlCommand("SELECT codigobrinco,nome,datanascimento,nomepai,nomemae,sexo,peso,morto,vendida,po,raca,tipo FROM animal WHERE tipo='bovino';", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;

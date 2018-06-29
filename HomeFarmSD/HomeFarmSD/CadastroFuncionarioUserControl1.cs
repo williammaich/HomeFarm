@@ -46,14 +46,23 @@ namespace HomeFarmSD
 
                 if (txtEmail.Text == txtConfirmarEmail.Text)
                 {
+                    if (txtSenha.Text == txtConfirmarSenha.Text)
+                    {
+                        INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+                        INSERT.ExecuteNonQuery();
+                        Cnexao.Close();
 
-                    INSERT.ExecuteNonQuery();
-                    Cnexao.Close();
+                        MessageBox.Show("seu cadastro foi concluido");
+                        TelaLogin volta = new TelaLogin();
+                        volta.Show();
+                        this.Visible = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Senha não confere");
+                    }
 
-                    MessageBox.Show("seu cadastro foi concluido");
-                    TelaLogin volta = new TelaLogin();
-                    volta.Show();
-                    this.Visible = false;
+
                 }
                 else
                 {

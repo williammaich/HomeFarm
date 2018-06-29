@@ -42,20 +42,30 @@ namespace HomeFarmSD
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
                 INSERT.Parameters.AddWithValue("@Login", txtEmail.Text);
-                INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+                
               
                 
 
                 if (txtEmail.Text == txtConfirmarEmail.Text )
                 {
 
-                    INSERT.ExecuteNonQuery();
-                    Cnexao.Close();
 
-                    MessageBox.Show("seu cadastro foi concluido");
-                    TelaLogin volta = new TelaLogin();
-                    volta.Show();
-                    this.Visible = false;
+                 
+                    if (txtSenha.Text == txtConfirmarSenha.Text)
+                    {
+                        INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+                        INSERT.ExecuteNonQuery();
+                        Cnexao.Close();
+
+                        MessageBox.Show("seu cadastro foi concluido");
+                        TelaLogin volta = new TelaLogin();
+                        volta.Show();
+                        this.Visible = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Senha não confere");
+                    }
                 }
                 else
                 {

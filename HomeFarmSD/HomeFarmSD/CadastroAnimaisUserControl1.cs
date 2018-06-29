@@ -28,10 +28,13 @@ namespace HomeFarmSD
 
         }
 
-
+       
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+
+           
+           
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conexao = new MySqlConnection(Conection);
 
@@ -84,7 +87,7 @@ namespace HomeFarmSD
                 MessageBox.Show("ERRO DE CONEXÃO " + erro);
 
             }
-
+            
         }
 
         private void radioButtonSimMorto_CheckedChanged(object sender, EventArgs e)
@@ -96,6 +99,7 @@ namespace HomeFarmSD
         {
 
         }
+
 
         private void CadastroAnimaisUserControl1_Load(object sender, EventArgs e)
         {
@@ -223,23 +227,7 @@ namespace HomeFarmSD
 
                 comando.Parameters.Clear();
 
-                /*
-                //comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = textCodigo.Text;
-               // comando.Parameters.AddWithValue("@codigo", textCodigo.Text);
-                comando.Parameters.AddWithValue("@nome", textNome.Text);
-                comando.Parameters.AddWithValue("@datanascimento", textDataNascimento.Text);
-                comando.Parameters.AddWithValue("@nomepai", textNomePai.Text);
-                comando.Parameters.AddWithValue("@nomemae", textNomeMae.Text);
-                //comando.Parameters.Add("@sexo", MySqlDbType.VarChar, 45).Value = cmbSexo.SelectedItem.ToString();
-                comando.Parameters.AddWithValue("@sexo", cmbSexo.SelectedItem.ToString());
-                comando.Parameters.AddWithValue("@peso", textPeso.Text);
-                comando.Parameters.AddWithValue("@morto", cmbMorto.SelectedItem.ToString());
-                comando.Parameters.AddWithValue("@vendida", cmbVendida.SelectedItem.ToString());
-                comando.Parameters.AddWithValue("@po", cmbPO.SelectedItem.ToString());
-                comando.Parameters.AddWithValue("@raca", cmbRaca.SelectedItem.ToString());
-                comando.Parameters.AddWithValue("@tipo", cmbTipo.SelectedItem.ToString());
-                */
-
+              
 
                 comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = textCodigo.Text;
                 comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = textNome.Text;

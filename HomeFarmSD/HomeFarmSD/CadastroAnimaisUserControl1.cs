@@ -65,8 +65,8 @@ namespace HomeFarmSD
 
 
 
-                INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value = cmbRaca.SelectedItem.ToString();
-               // INSERT.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = cmbRaca;
+
+                INSERT.Parameters.AddWithValue("@raca", textRaca.Text); 
 
 
 
@@ -104,69 +104,11 @@ namespace HomeFarmSD
         private void CadastroAnimaisUserControl1_Load(object sender, EventArgs e)
         {
 
-            /*
-            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
-            MySqlConnection Ligar = new MySqlConnection(Conector);
-            try
-            {
-                Ligar.Open();
-
-                MySqlCommand com = new MySqlCommand();
-                com.Connection = Ligar;
-                com.CommandText = "SELECT nomeraca FROM raca";
-
-                MySqlDataReader dr = com.ExecuteReader();
-                DataTable dt = new DataTable();
-                dt.Load(dr);
-                cmbRaca.DisplayMember = "nomeraca";
-                cmbRaca.DataSource = dt;
-
-                Ligar.Close();
-                
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show("ERRO DE CONEXÃO " + erro);
-            }
-
-
+          
             cmbTipo.Items.Add("Bovino");
             cmbTipo.Items.Add("Equino");
             cmbTipo.Items.Add("Ovino");
             cmbTipo.Items.Add("Suino");
-
-            cmbSexo.Items.Add("Masculino");
-            cmbSexo.Items.Add("Feminino");
-
-
-            cmbMorto.Items.Add("Sim");
-            cmbMorto.Items.Add("Não");
-
-            cmbVendida.Items.Add("Sim");
-            cmbVendida.Items.Add("Não");
-
-            cmbPO.Items.Add("Sim");
-            cmbPO.Items.Add("Não");
-        */
-            cmbTipo.Items.Add("Bovino");
-            cmbTipo.Items.Add("Equino");
-            cmbTipo.Items.Add("Ovino");
-            cmbTipo.Items.Add("Suino");
-
-            cmbRaca.Items.Add("Holandes");
-            cmbRaca.Items.Add("Gersey");
-            cmbRaca.Items.Add("Mustangue");
-            cmbRaca.Items.Add("Cavalos arabes");
-            cmbRaca.Items.Add("Brudy");
-            cmbRaca.Items.Add("Zebu");
-            cmbRaca.Items.Add("Gusera");
-            cmbRaca.Items.Add("Angus");
-            cmbRaca.Items.Add("Red Angus");
-            cmbRaca.Items.Add("Merino");
-            cmbRaca.Items.Add("Dorper");
-            cmbRaca.Items.Add("Corriedale");
-            cmbRaca.Items.Add("LargeWhite");
-            cmbRaca.Items.Add("Durock");
 
 
             cmbSexo.Items.Add("Masculino");
@@ -188,32 +130,7 @@ namespace HomeFarmSD
 
         }
 
-        private void btnCarregar_Click(object sender, EventArgs e)
-        {
-            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
-            MySqlConnection Ligar = new MySqlConnection(Conector);
-            try
-            {
-                Ligar.Open();
-
-                MySqlCommand com = new MySqlCommand();
-                com.Connection = Ligar;
-                com.CommandText = "SELECT nomeraca FROM raca";
-
-                MySqlDataReader dr = com.ExecuteReader();
-                DataTable dt = new DataTable();
-                dt.Load(dr);
-                cmbRaca.DisplayMember = "nomeraca";
-                cmbRaca.DataSource = dt;
-
-                com.ExecuteNonQuery();
-                Ligar.Close();
-            }
-            catch (Exception erro)
-            {
-                MessageBox.Show("ERRO DE CONEXÃO " + erro);
-            }
-        }
+        
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
@@ -239,7 +156,7 @@ namespace HomeFarmSD
                 comando.Parameters.Add("@morto", MySqlDbType.VarChar, 45).Value = cmbMorto.SelectedItem.ToString();
                 comando.Parameters.Add("@vendida", MySqlDbType.VarChar, 45).Value = cmbVendida.SelectedItem.ToString();
                 comando.Parameters.Add("@po", MySqlDbType.VarChar, 45).Value = cmbPO.SelectedItem.ToString();
-                comando.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = cmbRaca.SelectedItem.ToString();
+                comando.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = textRaca.Text;
                 comando.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = cmbTipo.SelectedItem.ToString();
                
                 
@@ -271,7 +188,7 @@ namespace HomeFarmSD
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
+                com.CommandText = "SELECT CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
 
                 com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = textNome.Text;
                 com.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = textCodigo.Text;
@@ -282,6 +199,7 @@ namespace HomeFarmSD
 
                 dr.Read();
 
+                
                 textCodigo.Text = dr.GetString(0);
                 textNome.Text = dr.GetString(1);
                 textDataNascimento.Text = dr.GetString(2);
@@ -292,9 +210,11 @@ namespace HomeFarmSD
                 cmbMorto.Text = dr.GetString(7);
                 cmbVendida.Text = dr.GetString(8);
                 cmbPO.Text = dr.GetString(9);
-                cmbRaca.Text = dr.GetString(10);
+                textRaca.Text = dr.GetString(10);
                 cmbTipo.Text = dr.GetString(11);
 
+
+              
                 Ligar.Close();
             }
             catch(Exception erro)
@@ -337,5 +257,7 @@ namespace HomeFarmSD
 
 
         }
+
+     
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnCadastroRaca = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnCadastroCampos = new System.Windows.Forms.Button();
             this.btnCadastroFuncionarios = new System.Windows.Forms.Button();
@@ -44,7 +43,6 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btnCadastroRaca);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnCadastroCampos);
             this.panel1.Controls.Add(this.btnCadastroFuncionarios);
@@ -54,16 +52,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(133, 413);
             this.panel1.TabIndex = 0;
-            // 
-            // btnCadastroRaca
-            // 
-            this.btnCadastroRaca.Location = new System.Drawing.Point(3, 237);
-            this.btnCadastroRaca.Name = "btnCadastroRaca";
-            this.btnCadastroRaca.Size = new System.Drawing.Size(130, 23);
-            this.btnCadastroRaca.TabIndex = 4;
-            this.btnCadastroRaca.Text = "Raças";
-            this.btnCadastroRaca.UseVisualStyleBackColor = true;
-            this.btnCadastroRaca.Click += new System.EventHandler(this.btnCadastroRaca_Click);
             // 
             // label1
             // 
@@ -128,7 +116,6 @@
             this.cadastroRacaUserControl11.Name = "cadastroRacaUserControl11";
             this.cadastroRacaUserControl11.Size = new System.Drawing.Size(601, 413);
             this.cadastroRacaUserControl11.TabIndex = 4;
-            this.cadastroRacaUserControl11.Load += new System.EventHandler(this.cadastroRacaUserControl11_Load);
             // 
             // cadastrosHomeUserControl11
             // 
@@ -175,7 +162,6 @@
         private CadastroAnimaisUserControl1 cadastroAnimaisUserControl11;
         private CadastroFuncionarioUserControl1 cadastroFuncionarioUserControl11;
         private CadastrosHomeUserControl1 cadastrosHomeUserControl11;
-        private System.Windows.Forms.Button btnCadastroRaca;
         private CadastroRacaUserControl1 cadastroRacaUserControl11;
         private cadastroTipoUserControl1 cadastroTipoUserControl11;
     }

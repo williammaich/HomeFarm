@@ -50,14 +50,13 @@
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
-            this.cmbRaca = new System.Windows.Forms.ComboBox();
             this.cmbTipo = new System.Windows.Forms.ComboBox();
-            this.btnCarregar = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.cmbSexo = new System.Windows.Forms.ComboBox();
             this.cmbMorto = new System.Windows.Forms.ComboBox();
             this.cmbVendida = new System.Windows.Forms.ComboBox();
             this.cmbPO = new System.Windows.Forms.ComboBox();
+            this.textRaca = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -214,7 +213,7 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(272, 377);
+            this.btnExcluir.Location = new System.Drawing.Point(287, 377);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(75, 23);
             this.btnExcluir.TabIndex = 29;
@@ -224,7 +223,7 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(100, 377);
+            this.btnAtualizar.Location = new System.Drawing.Point(151, 377);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(75, 23);
             this.btnAtualizar.TabIndex = 30;
@@ -252,14 +251,6 @@
             this.label12.TabIndex = 31;
             this.label12.Text = "PO";
             // 
-            // cmbRaca
-            // 
-            this.cmbRaca.FormattingEnabled = true;
-            this.cmbRaca.Location = new System.Drawing.Point(126, 314);
-            this.cmbRaca.Name = "cmbRaca";
-            this.cmbRaca.Size = new System.Drawing.Size(121, 21);
-            this.cmbRaca.TabIndex = 39;
-            // 
             // cmbTipo
             // 
             this.cmbTipo.FormattingEnabled = true;
@@ -268,16 +259,6 @@
             this.cmbTipo.Size = new System.Drawing.Size(121, 21);
             this.cmbTipo.TabIndex = 40;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
-            // 
-            // btnCarregar
-            // 
-            this.btnCarregar.Location = new System.Drawing.Point(181, 377);
-            this.btnCarregar.Name = "btnCarregar";
-            this.btnCarregar.Size = new System.Drawing.Size(75, 23);
-            this.btnCarregar.TabIndex = 41;
-            this.btnCarregar.Text = "Carregar";
-            this.btnCarregar.UseVisualStyleBackColor = true;
-            this.btnCarregar.Click += new System.EventHandler(this.btnCarregar_Click);
             // 
             // btnBuscar
             // 
@@ -321,19 +302,25 @@
             this.cmbPO.Size = new System.Drawing.Size(121, 21);
             this.cmbPO.TabIndex = 46;
             // 
+            // textRaca
+            // 
+            this.textRaca.Location = new System.Drawing.Point(126, 314);
+            this.textRaca.Name = "textRaca";
+            this.textRaca.Size = new System.Drawing.Size(160, 20);
+            this.textRaca.TabIndex = 47;
+            // 
             // CadastroAnimaisUserControl1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.textRaca);
             this.Controls.Add(this.cmbPO);
             this.Controls.Add(this.cmbVendida);
             this.Controls.Add(this.cmbMorto);
             this.Controls.Add(this.cmbSexo);
             this.Controls.Add(this.btnBuscar);
-            this.Controls.Add(this.btnCarregar);
             this.Controls.Add(this.cmbTipo);
-            this.Controls.Add(this.cmbRaca);
             this.Controls.Add(this.radioButton11);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btnAtualizar);
@@ -388,13 +375,12 @@
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.RadioButton radioButton11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox cmbRaca;
         private System.Windows.Forms.ComboBox cmbTipo;
-        private System.Windows.Forms.Button btnCarregar;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.ComboBox cmbSexo;
         private System.Windows.Forms.ComboBox cmbMorto;
         private System.Windows.Forms.ComboBox cmbVendida;
         private System.Windows.Forms.ComboBox cmbPO;
+        private System.Windows.Forms.TextBox textRaca;
     }
 }

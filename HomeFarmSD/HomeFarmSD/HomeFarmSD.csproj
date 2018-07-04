@@ -101,12 +101,6 @@
     <Compile Include="CadastroFuncionarioUserControl1.Designer.cs">
       <DependentUpon>CadastroFuncionarioUserControl1.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroRacaUserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="CadastroRacaUserControl1.Designer.cs">
-      <DependentUpon>CadastroRacaUserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="CadastrosHomeUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -118,12 +112,6 @@
     </Compile>
     <Compile Include="CadastrosUserControl1.Designer.cs">
       <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="cadastroTipoUserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="cadastroTipoUserControl1.Designer.cs">
-      <DependentUpon>cadastroTipoUserControl1.cs</DependentUpon>
     </Compile>
     <Compile Include="Carregamento.cs">
       <SubType>Form</SubType>
@@ -193,6 +181,7 @@
     <Compile Include="ListagemUserControl1.Designer.cs">
       <DependentUpon>ListagemUserControl1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs" />
     <Compile Include="ProducaoBovinosUserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -270,17 +259,11 @@
     <EmbeddedResource Include="CadastroFuncionarioUserControl1.resx">
       <DependentUpon>CadastroFuncionarioUserControl1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroRacaUserControl1.resx">
-      <DependentUpon>CadastroRacaUserControl1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="CadastrosHomeUserControl1.resx">
       <DependentUpon>CadastrosHomeUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastrosUserControl1.resx">
       <DependentUpon>CadastrosUserControl1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="cadastroTipoUserControl1.resx">
-      <DependentUpon>cadastroTipoUserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Carregamento.resx">
       <DependentUpon>Carregamento.cs</DependentUpon>

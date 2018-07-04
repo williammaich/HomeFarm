@@ -34,8 +34,8 @@
             this.btnCadastroFuncionarios = new System.Windows.Forms.Button();
             this.btnCadastroAnimais = new System.Windows.Forms.Button();
             this.cadastroAnimaisUserControl11 = new HomeFarmSD.CadastroAnimaisUserControl1();
-            this.cadastroTipoUserControl11 = new HomeFarmSD.cadastroTipoUserControl1();
-            this.cadastroRacaUserControl11 = new HomeFarmSD.CadastroRacaUserControl1();
+          
+         
             this.cadastrosHomeUserControl11 = new HomeFarmSD.CadastrosHomeUserControl1();
             this.cadastroFuncionarioUserControl11 = new HomeFarmSD.CadastroFuncionarioUserControl1();
             this.panel1.SuspendLayout();
@@ -100,22 +100,9 @@
             this.cadastroAnimaisUserControl11.Size = new System.Drawing.Size(601, 413);
             this.cadastroAnimaisUserControl11.TabIndex = 1;
             this.cadastroAnimaisUserControl11.Load += new System.EventHandler(this.cadastroAnimaisUserControl11_Load);
-            // 
-            // cadastroTipoUserControl11
-            // 
-            this.cadastroTipoUserControl11.BackColor = System.Drawing.Color.White;
-            this.cadastroTipoUserControl11.Location = new System.Drawing.Point(133, 0);
-            this.cadastroTipoUserControl11.Name = "cadastroTipoUserControl11";
-            this.cadastroTipoUserControl11.Size = new System.Drawing.Size(601, 413);
-            this.cadastroTipoUserControl11.TabIndex = 5;
-            // 
-            // cadastroRacaUserControl11
-            // 
-            this.cadastroRacaUserControl11.BackColor = System.Drawing.Color.White;
-            this.cadastroRacaUserControl11.Location = new System.Drawing.Point(133, 0);
-            this.cadastroRacaUserControl11.Name = "cadastroRacaUserControl11";
-            this.cadastroRacaUserControl11.Size = new System.Drawing.Size(601, 413);
-            this.cadastroRacaUserControl11.TabIndex = 4;
+          
+            
+  
             // 
             // cadastrosHomeUserControl11
             // 
@@ -139,8 +126,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.cadastroAnimaisUserControl11);
-            this.Controls.Add(this.cadastroTipoUserControl11);
-            this.Controls.Add(this.cadastroRacaUserControl11);
+          
+         
             this.Controls.Add(this.cadastrosHomeUserControl11);
             this.Controls.Add(this.cadastroFuncionarioUserControl11);
             this.Controls.Add(this.panel1);
@@ -162,7 +149,7 @@
         private CadastroAnimaisUserControl1 cadastroAnimaisUserControl11;
         private CadastroFuncionarioUserControl1 cadastroFuncionarioUserControl11;
         private CadastrosHomeUserControl1 cadastrosHomeUserControl11;
-        private CadastroRacaUserControl1 cadastroRacaUserControl11;
-        private cadastroTipoUserControl1 cadastroTipoUserControl11;
+  
+    
     }
 }

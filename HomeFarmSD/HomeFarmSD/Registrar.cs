@@ -51,6 +51,7 @@ namespace HomeFarmSD
 
 
                  
+
                     if (txtSenha.Text == txtConfirmarSenha.Text)
                     {
                         INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);

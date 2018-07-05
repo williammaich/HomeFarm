@@ -7,7 +7,7 @@ Home Farm projeto para gerenciamento e auxílio ao homem do campo, ele se propõ
 
 * Fazer download do arquivo rar
 
- [Download](https://drive.google.com/file/d/1Z7aLKh3v3ypiKM3X0_UGrGn9hdpRfK6Z/view?usp=sharing)
+ [Download](https://drive.google.com/open?id=1eyhMZr3x9cdSEM8pBw3D_Y0ZUDgXFbPW)
  
  * No mysql copiar o script do arquivo e rodar no mysql
  

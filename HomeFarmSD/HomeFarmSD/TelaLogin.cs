@@ -49,7 +49,30 @@ namespace HomeFarmSD
 
                     com.CommandType = CommandType.Text;
 
-                    com.CommandText = "select * from usuario where login='" + textEmail.Text + "' and senha='" + textSenha.Text + "'";
+                    String palavra = "";
+                    int paa;
+                    String frase;
+
+                    frase = textSenha.Text;
+
+                    for (int j = 0; j < frase.Length; j++)
+                    {
+                        int pa = (int)frase[j];
+                        paa = pa + 10;
+
+                        if (j % 2 == 1)
+                        {
+                            palavra += Char.ConvertFromUtf32(paa).ToLower();
+                        }
+                        else
+                        {
+                            palavra += Char.ConvertFromUtf32(paa).ToUpper();
+                        }
+
+                    }
+
+                   // com.CommandText = "select * from usuario where login='" + textEmail.Text + "' and senha='" + textSenha.Text + "'";
+                    com.CommandText = "select * from usuario where login='" + textEmail.Text + "' and senha='" + palavra + "'";
                     com.ExecuteNonQuery();
 
                     DataTable dt = new DataTable();

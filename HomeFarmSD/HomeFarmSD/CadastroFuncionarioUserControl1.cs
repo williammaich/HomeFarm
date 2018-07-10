@@ -53,9 +53,7 @@ namespace HomeFarmSD
                         Cnexao.Close();
 
                         MessageBox.Show("seu cadastro foi concluido");
-                        TelaLogin volta = new TelaLogin();
-                        volta.Show();
-                        this.Visible = false;
+                       
                     }
                     else
                     {

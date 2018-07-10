@@ -50,11 +50,35 @@ namespace HomeFarmSD
                 {
 
 
-                 
+                
 
                     if (txtSenha.Text == txtConfirmarSenha.Text)
                     {
-                        INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+
+                        String palavra ="";
+                        int paa;
+                        String frase;
+
+                        frase = txtSenha.Text;
+
+                        for (int i = 0; i < frase.Length; i++)
+                        {
+                            int pa = (int)frase[i];
+                            paa = pa + 10;
+
+                            if (i % 2 == 1)
+                            {
+                                palavra += Char.ConvertFromUtf32(paa).ToLower();
+                            }
+                            else
+                            {
+                                palavra += Char.ConvertFromUtf32(paa).ToUpper();
+                            }
+
+                        }
+
+
+                        INSERT.Parameters.AddWithValue("@Senha", palavra);
                         INSERT.ExecuteNonQuery();
                         Cnexao.Close();
 

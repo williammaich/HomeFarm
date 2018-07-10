@@ -117,6 +117,7 @@
             this.txtConfirmarSenha.PasswordChar = '*';
             this.txtConfirmarSenha.Size = new System.Drawing.Size(246, 20);
             this.txtConfirmarSenha.TabIndex = 13;
+            this.txtConfirmarSenha.UseSystemPasswordChar = true;
             // 
             // txtSenha
             // 
@@ -125,6 +126,7 @@
             this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(246, 20);
             this.txtSenha.TabIndex = 12;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtConfirmarEmail
             // 

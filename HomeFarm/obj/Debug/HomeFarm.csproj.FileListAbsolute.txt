@@ -1,0 +1,10 @@
+C:\Users\william\source\repos\HomeFarm\HomeFarm\bin\Debug\HomeFarm.exe.config
+C:\Users\william\source\repos\HomeFarm\HomeFarm\bin\Debug\HomeFarm.exe
+C:\Users\william\source\repos\HomeFarm\HomeFarm\bin\Debug\HomeFarm.pdb
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.csprojResolveAssemblyReference.cache
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Properties.Resources.resources
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.TelaLogin.resources
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.csproj.GenerateResource.cache
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.csproj.CoreCompileInputs.cache
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.exe
+C:\Users\william\source\repos\HomeFarm\HomeFarm\obj\Debug\HomeFarm.pdb

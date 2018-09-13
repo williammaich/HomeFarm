@@ -63,6 +63,26 @@ namespace HomeFarm.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap configuracos {
+            get {
+                object obj = ResourceManager.GetObject("configuracos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap estoque {
+            get {
+                object obj = ResourceManager.GetObject("estoque", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap greeen {
             get {
                 object obj = ResourceManager.GetObject("greeen", resourceCulture);
@@ -76,6 +96,16 @@ namespace HomeFarm.Properties {
         internal static System.Drawing.Bitmap greeen_horizonte {
             get {
                 object obj = ResourceManager.GetObject("greeen horizonte", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap home2 {
+            get {
+                object obj = ResourceManager.GetObject("home2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +156,46 @@ namespace HomeFarm.Properties {
         internal static System.Drawing.Bitmap oie_transparent_4_ {
             get {
                 object obj = ResourceManager.GetObject("oie_transparent(4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent_5_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent(5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent_6_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent(6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent_7_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent(7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap relatorios {
+            get {
+                object obj = ResourceManager.GetObject("relatorios", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -22,9 +22,11 @@ namespace HomeFarm
             ImgMinimizar.BackColor = Color.Transparent;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
+  
 
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

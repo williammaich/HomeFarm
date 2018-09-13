@@ -21,5 +21,10 @@ namespace HomeFarm
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
         }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

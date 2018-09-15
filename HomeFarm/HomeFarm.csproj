@@ -45,6 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroAnimais.Designer.cs">
+      <DependentUpon>CadastroAnimais.cs</DependentUpon>
+    </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     <Compile Include="Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaCadastros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaCadastros.Designer.cs">
+      <DependentUpon>TelaCadastros.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,6 +77,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CadastroAnimais.resx">
+      <DependentUpon>CadastroAnimais.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -80,6 +95,9 @@
     </Compile>
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaCadastros.resx">
+      <DependentUpon>TelaCadastros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
@@ -138,6 +156,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\oie_transparent%287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cow-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enable_user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%289%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

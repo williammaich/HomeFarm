@@ -63,9 +63,39 @@ namespace HomeFarm.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap animal {
+            get {
+                object obj = ResourceManager.GetObject("animal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap configuracos {
             get {
                 object obj = ResourceManager.GetObject("configuracos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap cow_white {
+            get {
+                object obj = ResourceManager.GetObject("cow-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap enable_user {
+            get {
+                object obj = ResourceManager.GetObject("enable_user", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +216,26 @@ namespace HomeFarm.Properties {
         internal static System.Drawing.Bitmap oie_transparent_7_ {
             get {
                 object obj = ResourceManager.GetObject("oie_transparent(7)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent_8_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent(8)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent_9_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent(9)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

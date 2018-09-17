@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using System.Security.Cryptography;
 
 namespace HomeFarm
 {
@@ -25,6 +27,76 @@ namespace HomeFarm
         private void ImgFechar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+          
+
+        
+
+
+            private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+            //estabelece conexão com o bando de dados
+            String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conexao = new MySqlConnection(Conection);
+
+            //verificação se a conexão foi ok ele insere os dados se não apresenta erro
+            try
+            {
+                Conexao.Open();
+
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA) VALUES (@Nome, @Sobrenome, @Login, @Senha)", Conexao);
+                INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
+                INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
+                
+              
+
+                if(txtEmail.Text == txtCEmail.Text)
+                {
+                    INSERT.Parameters.AddWithValue("@Login", txtEmail.Text);
+                    if (txtSenha.Text == txtCSenha.Text)
+                    {
+                        INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+
+
+
+
+                        INSERT.ExecuteNonQuery();
+                        Conexao.Close();
+
+                        MessageBox.Show("seu cadastro foi concluido");
+                        TelaLogin volta = new TelaLogin();
+                        volta.Show();
+                        this.Visible = false;
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Senha não conferem");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Email ou Senha não conferem");
+                }
+
+            }catch
+            {
+
+
+                MessageBox.Show("ERRO DE CONEXÃO");
+
+            }
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtNome.Text = " ";
+            txtSobrenome.Text = " ";
+            txtEmail.Text = " ";
+            txtCEmail.Text = " ";
+            txtSenha.Text = " ";
+            txtCSenha.Text = " ";
+
+            
         }
     }
 }

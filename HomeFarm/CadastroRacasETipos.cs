@@ -99,5 +99,140 @@ namespace HomeFarm
             }
 
         }
+
+        private void ImgProcurar_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Ligar = new MySqlConnection(Conector);
+            try
+            {
+                Ligar.Open();
+
+                MySqlCommand com = new MySqlCommand();
+                com.Connection = Ligar;
+                com.CommandText = "SELECT NOME, ORIGEM FROM raca WHERE NOME= ?";
+
+                com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
+                com.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtOrigem.Text;
+                com.CommandType = CommandType.Text;
+
+                MySqlDataReader dr;
+                dr = com.ExecuteReader();
+
+                dr.Read();
+
+                txtNome.Text = dr.GetString(0);
+                txtOrigem.Text = dr.GetString(1);
+              
+               
+
+
+
+                Ligar.Close();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro de conexão" + erro);
+            }
+
+        }
+
+        private void btnExcluirRaca_Click(object sender, EventArgs e)
+        {
+
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conecta = new MySqlConnection(Conector);
+
+            try
+            {
+
+
+                Conecta.Open();
+                MySqlCommand Comando = new MySqlCommand("DELETE FROM raca WHERE nome = ?", Conecta);
+                Comando.Parameters.Clear();
+              
+                Comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
+
+                Comando.CommandType = CommandType.Text;
+                Comando.ExecuteNonQuery();
+                MessageBox.Show("Registro removido !");
+                Conecta.Close();
+
+
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro " + erro);
+            }
+        }
+
+        private void ImgBuscar_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Ligar = new MySqlConnection(Conector);
+            try
+            {
+                Ligar.Open();
+
+                MySqlCommand com = new MySqlCommand();
+                com.Connection = Ligar;
+                com.CommandText = "SELECT TIPO FROM tipo WHERE TIPO= ? ";
+
+                com.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = txtTipo.Text;
+               
+                com.CommandType = CommandType.Text;
+
+                MySqlDataReader dr;
+                dr = com.ExecuteReader();
+
+                dr.Read();
+
+
+                txtTipo.Text = dr.GetString(0);
+              
+
+
+
+                Ligar.Close();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro de conexão" + erro);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conecta = new MySqlConnection(Conector);
+
+            try
+            {
+
+
+                Conecta.Open();
+                MySqlCommand Comando = new MySqlCommand("DELETE FROM tipo WHERE tipo = ?", Conecta);
+                Comando.Parameters.Clear();
+
+                Comando.Parameters.Add("@tipo", MySqlDbType.VarChar, 85).Value = txtTipo.Text;
+
+                Comando.CommandType = CommandType.Text;
+                Comando.ExecuteNonQuery();
+                MessageBox.Show("Registro removido !");
+                Conecta.Close();
+
+
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro " + erro);
+            }
+        }
     }
 }

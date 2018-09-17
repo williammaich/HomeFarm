@@ -125,5 +125,125 @@ namespace HomeFarm
             Application.Exit();
 
         }
+
+        private void ImgProcurar_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Ligar = new MySqlConnection(Conector);
+            try
+            {
+                Ligar.Open();
+
+                MySqlCommand com = new MySqlCommand();
+                com.Connection = Ligar;
+                com.CommandText = "SELECT CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
+
+                com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
+                com.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtCodigo.Text;
+                com.CommandType = CommandType.Text;
+
+                MySqlDataReader dr;
+                dr = com.ExecuteReader();
+
+                dr.Read();
+
+
+                txtCodigo.Text = dr.GetString(0);
+                txtNome.Text = dr.GetString(1);
+                txtDataNascimento.Text = dr.GetString(2);
+                txtNomePai.Text = dr.GetString(3);
+                txtNomeMae.Text = dr.GetString(4);
+                comboSexo.Text = dr.GetString(5);
+                txtPeso.Text = dr.GetString(6);
+                comboMorto.Text = dr.GetString(7);
+                comboVendida.Text = dr.GetString(8);
+                comboPo.Text = dr.GetString(9);
+                comboRaca.Text = dr.GetString(10);
+                comboTipo.Text = dr.GetString(11);
+
+
+
+                Ligar.Close();
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro de conexão" + erro);
+            }
+
+
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conecta = new MySqlConnection(Conector);
+
+            try
+            {
+
+
+                Conecta.Open();
+                MySqlCommand Comando = new MySqlCommand("DELETE FROM animal WHERE codigobrinco = ? or nome = ?", Conecta);
+                Comando.Parameters.Clear();
+                Comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = textCodigo.Text;
+                Comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = textNome.Text;
+
+                Comando.CommandType = CommandType.Text;
+                Comando.ExecuteNonQuery();
+                MessageBox.Show("Registro removido !");
+                Conecta.Close();
+
+
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro " + erro);
+            }
+
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conecta = new MySqlConnection(Conector);
+            try
+            {
+                Conecta.Open();
+
+                MySqlCommand comando = new MySqlCommand("UPDATE animal SET CODIGOBRINCO=?, NOME=?,DATANASCIMENTO=?,NOMEPAI=?,NOMEMAE=?,SEXO=?,PESO=?,MORTO=?,VENDIDA=?,PO=?,RACA=?,TIPO= ? WHERE ID", Conecta);
+
+                comando.Parameters.Clear();
+
+
+
+                comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtCodigo.Text;
+                comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
+                comando.Parameters.Add("@dadanascimento", MySqlDbType.VarChar, 45).Value = txtDataNascimento.Text;
+                comando.Parameters.Add("@nomepai", MySqlDbType.VarChar, 85).Value = txtNomePai.Text;
+                comando.Parameters.Add("@nomemae", MySqlDbType.VarChar, 85).Value = txtNomeMae.Text;
+                comando.Parameters.Add("@sexo", MySqlDbType.VarChar, 45).Value = comboSexo.SelectedItem.ToString();
+                comando.Parameters.Add("@peso", MySqlDbType.VarChar, 877).Value = txtPeso.Text;
+                comando.Parameters.Add("@morto", MySqlDbType.VarChar, 45).Value = comboMorto.SelectedItem.ToString();
+                comando.Parameters.Add("@vendida", MySqlDbType.VarChar, 45).Value = comboVendida.SelectedItem.ToString();
+                comando.Parameters.Add("@po", MySqlDbType.VarChar, 45).Value = comboPo.SelectedItem.ToString();
+                comando.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = comboRaca.Text;
+                comando.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = comboTipo.SelectedItem.ToString();
+
+
+                comando.CommandType = CommandType.Text;
+                comando.ExecuteNonQuery();
+
+                Conecta.Close();
+                MessageBox.Show("Atualizado com sucesso!");
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("ERRO DE CONEXÃO " + erro);
+            }
+
+        }
     }
 }

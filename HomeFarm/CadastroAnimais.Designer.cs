@@ -264,6 +264,7 @@
             this.btnExcluir.TabIndex = 50;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnAtualizar
             // 
@@ -276,6 +277,7 @@
             this.btnAtualizar.TabIndex = 49;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnRegistrar
             // 
@@ -300,6 +302,7 @@
             this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgProcurar.TabIndex = 47;
             this.ImgProcurar.TabStop = false;
+            this.ImgProcurar.Click += new System.EventHandler(this.ImgProcurar_Click);
             // 
             // comboPo
             // 

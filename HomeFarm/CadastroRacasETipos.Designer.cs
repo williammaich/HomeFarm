@@ -33,6 +33,8 @@
             this.ImgMinimizar = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ImgBuscar = new System.Windows.Forms.PictureBox();
+            this.ImgProcurar = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.txtTipo = new System.Windows.Forms.TextBox();
@@ -52,18 +54,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ImgProcurar = new System.Windows.Forms.PictureBox();
-            this.ImgBuscar = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgBuscar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgBuscar)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -85,6 +85,7 @@
             this.ImgFechar.Size = new System.Drawing.Size(33, 31);
             this.ImgFechar.TabIndex = 4;
             this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
             // 
             // ImgMinimizar
             // 
@@ -135,6 +136,30 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 488);
             this.panel2.TabIndex = 1;
+            // 
+            // ImgBuscar
+            // 
+            this.ImgBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgBuscar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
+            this.ImgBuscar.Location = new System.Drawing.Point(728, 343);
+            this.ImgBuscar.Name = "ImgBuscar";
+            this.ImgBuscar.Size = new System.Drawing.Size(49, 36);
+            this.ImgBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgBuscar.TabIndex = 59;
+            this.ImgBuscar.TabStop = false;
+            this.ImgBuscar.Click += new System.EventHandler(this.ImgBuscar_Click);
+            // 
+            // ImgProcurar
+            // 
+            this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
+            this.ImgProcurar.Location = new System.Drawing.Point(728, 90);
+            this.ImgProcurar.Name = "ImgProcurar";
+            this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
+            this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgProcurar.TabIndex = 58;
+            this.ImgProcurar.TabStop = false;
+            this.ImgProcurar.Click += new System.EventHandler(this.ImgProcurar_Click);
             // 
             // button1
             // 
@@ -347,30 +372,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Cadastro de Raças e Tipos";
             // 
-            // ImgProcurar
-            // 
-            this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurar.Location = new System.Drawing.Point(728, 90);
-            this.ImgProcurar.Name = "ImgProcurar";
-            this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
-            this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgProcurar.TabIndex = 58;
-            this.ImgProcurar.TabStop = false;
-            this.ImgProcurar.Click += new System.EventHandler(this.ImgProcurar_Click);
-            // 
-            // ImgBuscar
-            // 
-            this.ImgBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgBuscar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgBuscar.Location = new System.Drawing.Point(728, 343);
-            this.ImgBuscar.Name = "ImgBuscar";
-            this.ImgBuscar.Size = new System.Drawing.Size(49, 36);
-            this.ImgBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgBuscar.TabIndex = 59;
-            this.ImgBuscar.TabStop = false;
-            this.ImgBuscar.Click += new System.EventHandler(this.ImgBuscar_Click);
-            // 
             // CadastroRacasETipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -388,11 +389,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgBuscar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgBuscar)).EndInit();
             this.ResumeLayout(false);
 
         }

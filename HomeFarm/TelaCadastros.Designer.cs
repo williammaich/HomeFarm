@@ -93,6 +93,7 @@
             this.ImgFechar.Size = new System.Drawing.Size(33, 31);
             this.ImgFechar.TabIndex = 2;
             this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
             // 
             // ImgLogo
             // 
@@ -179,6 +180,7 @@
             this.ImgRaca.Name = "ImgRaca";
             this.ImgRaca.Size = new System.Drawing.Size(135, 114);
             this.ImgRaca.TabIndex = 10;
+            this.ImgRaca.Paint += new System.Windows.Forms.PaintEventHandler(this.ImgRaca_Paint);
             // 
             // pictureBox1
             // 

@@ -234,5 +234,10 @@ namespace HomeFarm
                 MessageBox.Show("Erro " + erro);
             }
         }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

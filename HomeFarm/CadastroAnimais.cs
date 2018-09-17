@@ -185,8 +185,8 @@ namespace HomeFarm
                 Conecta.Open();
                 MySqlCommand Comando = new MySqlCommand("DELETE FROM animal WHERE codigobrinco = ? or nome = ?", Conecta);
                 Comando.Parameters.Clear();
-                Comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = textCodigo.Text;
-                Comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = textNome.Text;
+                Comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtCodigo.Text;
+                Comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
 
                 Comando.CommandType = CommandType.Text;
                 Comando.ExecuteNonQuery();

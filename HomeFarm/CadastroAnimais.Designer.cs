@@ -33,6 +33,13 @@
             this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.ImgRaca = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.comboTipo = new System.Windows.Forms.ComboBox();
             this.comboRaca = new System.Windows.Forms.ComboBox();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
@@ -65,26 +72,19 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboTipo = new System.Windows.Forms.ComboBox();
-            this.ImgRaca = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             this.ImgRaca.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -116,6 +116,7 @@
             this.ImgFechar.Size = new System.Drawing.Size(33, 29);
             this.ImgFechar.TabIndex = 7;
             this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
             // 
             // ImgLogo
             // 
@@ -170,11 +171,84 @@
             this.panel2.Size = new System.Drawing.Size(767, 726);
             this.panel2.TabIndex = 1;
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.Color.White;
+            this.label16.Location = new System.Drawing.Point(3, 361);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(146, 17);
+            this.label16.TabIndex = 54;
+            this.label16.Text = "Cadastro Raças e Tipos";
+            // 
+            // ImgRaca
+            // 
+            this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgRaca.Controls.Add(this.pictureBox1);
+            this.ImgRaca.Controls.Add(this.pictureBox5);
+            this.ImgRaca.Controls.Add(this.pictureBox3);
+            this.ImgRaca.Controls.Add(this.pictureBox4);
+            this.ImgRaca.Location = new System.Drawing.Point(25, 282);
+            this.ImgRaca.Name = "ImgRaca";
+            this.ImgRaca.Size = new System.Drawing.Size(88, 77);
+            this.ImgRaca.TabIndex = 53;
+            this.ImgRaca.Paint += new System.Windows.Forms.PaintEventHandler(this.ImgRaca_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.animal;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(21, 24);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::HomeFarm.Properties.Resources.animal;
+            this.pictureBox5.Location = new System.Drawing.Point(58, 46);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(19, 22);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox5.TabIndex = 9;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::HomeFarm.Properties.Resources.animal;
+            this.pictureBox3.Location = new System.Drawing.Point(58, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(19, 24);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::HomeFarm.Properties.Resources.animal;
+            this.pictureBox4.Location = new System.Drawing.Point(13, 46);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(21, 22);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // comboTipo
+            // 
+            this.comboTipo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboTipo.FormattingEnabled = true;
+            this.comboTipo.Location = new System.Drawing.Point(362, 599);
+            this.comboTipo.Name = "comboTipo";
+            this.comboTipo.Size = new System.Drawing.Size(252, 33);
+            this.comboTipo.TabIndex = 52;
+            // 
             // comboRaca
             // 
             this.comboRaca.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboRaca.FormattingEnabled = true;
-            this.comboRaca.Location = new System.Drawing.Point(359, 565);
+            this.comboRaca.Location = new System.Drawing.Point(362, 548);
             this.comboRaca.Name = "comboRaca";
             this.comboRaca.Size = new System.Drawing.Size(252, 33);
             this.comboRaca.TabIndex = 51;
@@ -184,7 +258,7 @@
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(436, 675);
+            this.btnExcluir.Location = new System.Drawing.Point(439, 658);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(116, 39);
             this.btnExcluir.TabIndex = 50;
@@ -196,7 +270,7 @@
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.btnAtualizar.Location = new System.Drawing.Point(272, 675);
+            this.btnAtualizar.Location = new System.Drawing.Point(275, 658);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(116, 39);
             this.btnAtualizar.TabIndex = 49;
@@ -208,7 +282,7 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(106, 675);
+            this.btnRegistrar.Location = new System.Drawing.Point(109, 658);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(116, 39);
             this.btnRegistrar.TabIndex = 48;
@@ -220,7 +294,7 @@
             // 
             this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurar.Location = new System.Drawing.Point(706, 70);
+            this.ImgProcurar.Location = new System.Drawing.Point(709, 53);
             this.ImgProcurar.Name = "ImgProcurar";
             this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
             this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -231,7 +305,7 @@
             // 
             this.comboPo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPo.FormattingEnabled = true;
-            this.comboPo.Location = new System.Drawing.Point(359, 515);
+            this.comboPo.Location = new System.Drawing.Point(362, 498);
             this.comboPo.Name = "comboPo";
             this.comboPo.Size = new System.Drawing.Size(158, 33);
             this.comboPo.TabIndex = 46;
@@ -240,7 +314,7 @@
             // 
             this.comboVendida.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboVendida.FormattingEnabled = true;
-            this.comboVendida.Location = new System.Drawing.Point(359, 466);
+            this.comboVendida.Location = new System.Drawing.Point(362, 449);
             this.comboVendida.Name = "comboVendida";
             this.comboVendida.Size = new System.Drawing.Size(158, 33);
             this.comboVendida.TabIndex = 45;
@@ -249,7 +323,7 @@
             // 
             this.comboMorto.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMorto.FormattingEnabled = true;
-            this.comboMorto.Location = new System.Drawing.Point(359, 420);
+            this.comboMorto.Location = new System.Drawing.Point(362, 403);
             this.comboMorto.Name = "comboMorto";
             this.comboMorto.Size = new System.Drawing.Size(158, 33);
             this.comboMorto.TabIndex = 44;
@@ -258,7 +332,7 @@
             // 
             this.comboSexo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboSexo.FormattingEnabled = true;
-            this.comboSexo.Location = new System.Drawing.Point(359, 329);
+            this.comboSexo.Location = new System.Drawing.Point(362, 312);
             this.comboSexo.Name = "comboSexo";
             this.comboSexo.Size = new System.Drawing.Size(158, 33);
             this.comboSexo.TabIndex = 43;
@@ -266,7 +340,7 @@
             // txtPeso
             // 
             this.txtPeso.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPeso.Location = new System.Drawing.Point(359, 375);
+            this.txtPeso.Location = new System.Drawing.Point(362, 358);
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(252, 33);
             this.txtPeso.TabIndex = 40;
@@ -274,7 +348,7 @@
             // txtNomeMae
             // 
             this.txtNomeMae.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomeMae.Location = new System.Drawing.Point(359, 282);
+            this.txtNomeMae.Location = new System.Drawing.Point(362, 265);
             this.txtNomeMae.Name = "txtNomeMae";
             this.txtNomeMae.Size = new System.Drawing.Size(313, 33);
             this.txtNomeMae.TabIndex = 39;
@@ -282,7 +356,7 @@
             // txtNomePai
             // 
             this.txtNomePai.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNomePai.Location = new System.Drawing.Point(359, 231);
+            this.txtNomePai.Location = new System.Drawing.Point(362, 214);
             this.txtNomePai.Name = "txtNomePai";
             this.txtNomePai.Size = new System.Drawing.Size(313, 33);
             this.txtNomePai.TabIndex = 38;
@@ -290,7 +364,7 @@
             // txtDataNascimento
             // 
             this.txtDataNascimento.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataNascimento.Location = new System.Drawing.Point(359, 176);
+            this.txtDataNascimento.Location = new System.Drawing.Point(362, 159);
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(252, 33);
             this.txtDataNascimento.TabIndex = 37;
@@ -298,7 +372,7 @@
             // txtNome
             // 
             this.txtNome.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNome.Location = new System.Drawing.Point(359, 125);
+            this.txtNome.Location = new System.Drawing.Point(362, 108);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(313, 33);
             this.txtNome.TabIndex = 36;
@@ -306,7 +380,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(359, 77);
+            this.txtCodigo.Location = new System.Drawing.Point(362, 60);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(252, 33);
             this.txtCodigo.TabIndex = 35;
@@ -316,7 +390,7 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Location = new System.Drawing.Point(164, 76);
+            this.label15.Location = new System.Drawing.Point(167, 59);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(79, 30);
             this.label15.TabIndex = 34;
@@ -327,7 +401,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.White;
-            this.label14.Location = new System.Drawing.Point(164, 175);
+            this.label14.Location = new System.Drawing.Point(167, 158);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(174, 30);
             this.label14.TabIndex = 33;
@@ -338,7 +412,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(164, 230);
+            this.label13.Location = new System.Drawing.Point(167, 213);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(104, 30);
             this.label13.TabIndex = 32;
@@ -349,7 +423,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(164, 281);
+            this.label12.Location = new System.Drawing.Point(167, 264);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(117, 30);
             this.label12.TabIndex = 31;
@@ -360,7 +434,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(164, 328);
+            this.label11.Location = new System.Drawing.Point(167, 311);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(57, 30);
             this.label11.TabIndex = 30;
@@ -371,7 +445,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(164, 374);
+            this.label10.Location = new System.Drawing.Point(167, 357);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(57, 30);
             this.label10.TabIndex = 29;
@@ -382,7 +456,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(164, 419);
+            this.label9.Location = new System.Drawing.Point(167, 402);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(70, 30);
             this.label9.TabIndex = 28;
@@ -393,7 +467,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(164, 465);
+            this.label8.Location = new System.Drawing.Point(167, 448);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(89, 30);
             this.label8.TabIndex = 27;
@@ -404,7 +478,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(164, 514);
+            this.label6.Location = new System.Drawing.Point(167, 497);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(41, 30);
             this.label6.TabIndex = 26;
@@ -415,7 +489,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(164, 564);
+            this.label5.Location = new System.Drawing.Point(167, 547);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(58, 30);
             this.label5.TabIndex = 25;
@@ -426,7 +500,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(164, 615);
+            this.label4.Location = new System.Drawing.Point(167, 598);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 30);
             this.label4.TabIndex = 24;
@@ -437,7 +511,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(164, 124);
+            this.label3.Location = new System.Drawing.Point(167, 107);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 30);
             this.label3.TabIndex = 23;
@@ -500,79 +574,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Cadastro de Animais";
             // 
-            // comboTipo
-            // 
-            this.comboTipo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboTipo.FormattingEnabled = true;
-            this.comboTipo.Location = new System.Drawing.Point(359, 616);
-            this.comboTipo.Name = "comboTipo";
-            this.comboTipo.Size = new System.Drawing.Size(252, 33);
-            this.comboTipo.TabIndex = 52;
-            // 
-            // ImgRaca
-            // 
-            this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRaca.Controls.Add(this.pictureBox1);
-            this.ImgRaca.Controls.Add(this.pictureBox5);
-            this.ImgRaca.Controls.Add(this.pictureBox3);
-            this.ImgRaca.Controls.Add(this.pictureBox4);
-            this.ImgRaca.Location = new System.Drawing.Point(25, 282);
-            this.ImgRaca.Name = "ImgRaca";
-            this.ImgRaca.Size = new System.Drawing.Size(88, 77);
-            this.ImgRaca.TabIndex = 53;
-            this.ImgRaca.Paint += new System.Windows.Forms.PaintEventHandler(this.ImgRaca_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox5.Location = new System.Drawing.Point(58, 46);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(19, 22);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox3.Location = new System.Drawing.Point(58, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(19, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 46);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(3, 361);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(146, 17);
-            this.label16.TabIndex = 54;
-            this.label16.Text = "Cadastro Raças e Tipos";
-            // 
             // CadastroAnimais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -590,14 +591,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             this.ImgRaca.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             this.ResumeLayout(false);
 
         }

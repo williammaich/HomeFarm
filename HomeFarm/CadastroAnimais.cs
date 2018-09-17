@@ -20,6 +20,19 @@ namespace HomeFarm
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+            comboSexo.Items.Add("Macho");
+            comboSexo.Items.Add("Femea");
+
+
+            comboMorto.Items.Add("Sim");
+            comboMorto.Items.Add("Não");
+
+            comboVendida.Items.Add("Sim");
+            comboVendida.Items.Add("Não");
+
+            comboPo.Items.Add("Sim");
+            comboPo.Items.Add("Não");
         }
 
         private void ImgHome_Click(object sender, EventArgs e)
@@ -100,6 +113,16 @@ namespace HomeFarm
 
         private void ImgRaca_Paint(object sender, PaintEventArgs e)
         {
+            CadastroRacasETipos raca = new CadastroRacasETipos();
+            raca.Show();
+            this.Visible = false;
+
+        }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+
+            Application.Exit();
 
         }
     }

@@ -214,5 +214,8 @@
   <ItemGroup>
     <None Include="Resources\oie_transparent%289%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raca.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

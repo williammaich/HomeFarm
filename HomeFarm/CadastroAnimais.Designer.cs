@@ -33,12 +33,8 @@
             this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ImgRaca = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.ImgRaca = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.comboTipo = new System.Windows.Forms.ComboBox();
             this.comboRaca = new System.Windows.Forms.ComboBox();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -77,11 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.panel2.SuspendLayout();
-            this.ImgRaca.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
@@ -130,8 +122,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.ImgRaca);
+            this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.comboTipo);
             this.panel2.Controls.Add(this.comboRaca);
             this.panel2.Controls.Add(this.btnExcluir);
@@ -171,6 +163,18 @@
             this.panel2.Size = new System.Drawing.Size(767, 726);
             this.panel2.TabIndex = 1;
             // 
+            // ImgRaca
+            // 
+            this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgRaca.Image = global::HomeFarm.Properties.Resources.raca;
+            this.ImgRaca.Location = new System.Drawing.Point(25, 279);
+            this.ImgRaca.Name = "ImgRaca";
+            this.ImgRaca.Size = new System.Drawing.Size(88, 79);
+            this.ImgRaca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgRaca.TabIndex = 55;
+            this.ImgRaca.TabStop = false;
+            this.ImgRaca.Click += new System.EventHandler(this.ImgRaca_Click);
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
@@ -181,59 +185,6 @@
             this.label16.Size = new System.Drawing.Size(146, 17);
             this.label16.TabIndex = 54;
             this.label16.Text = "Cadastro Raças e Tipos";
-            // 
-            // ImgRaca
-            // 
-            this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRaca.Controls.Add(this.pictureBox1);
-            this.ImgRaca.Controls.Add(this.pictureBox5);
-            this.ImgRaca.Controls.Add(this.pictureBox3);
-            this.ImgRaca.Controls.Add(this.pictureBox4);
-            this.ImgRaca.Location = new System.Drawing.Point(25, 282);
-            this.ImgRaca.Name = "ImgRaca";
-            this.ImgRaca.Size = new System.Drawing.Size(88, 77);
-            this.ImgRaca.TabIndex = 53;
-            this.ImgRaca.Paint += new System.Windows.Forms.PaintEventHandler(this.ImgRaca_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(21, 24);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox5.Location = new System.Drawing.Point(58, 46);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(19, 22);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox5.TabIndex = 9;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox3.Location = new System.Drawing.Point(58, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(19, 24);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::HomeFarm.Properties.Resources.animal;
-            this.pictureBox4.Location = new System.Drawing.Point(13, 46);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(21, 22);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
             // 
             // comboTipo
             // 
@@ -594,11 +545,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.ImgRaca.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
@@ -647,10 +594,6 @@
         private System.Windows.Forms.ComboBox comboRaca;
         private System.Windows.Forms.ComboBox comboTipo;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel ImgRaca;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox ImgRaca;
     }
 }

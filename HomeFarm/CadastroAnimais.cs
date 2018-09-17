@@ -111,11 +111,10 @@ namespace HomeFarm
 
         }
 
-        private void ImgRaca_Paint(object sender, PaintEventArgs e)
+        private void ImgRaca_Click(object sender, PaintEventArgs e)
         {
-            CadastroRacasETipos raca = new CadastroRacasETipos();
-            raca.Show();
-            this.Visible = false;
+            
+            
 
         }
 
@@ -244,6 +243,13 @@ namespace HomeFarm
                 MessageBox.Show("ERRO DE CONEXÃO " + erro);
             }
 
+        }
+
+        private void ImgRaca_Click(object sender, EventArgs e)
+        {
+            CadastroRacasETipos raca = new CadastroRacasETipos();
+            raca.Show();
+            this.Visible = false;
         }
     }
 }

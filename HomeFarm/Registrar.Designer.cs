@@ -159,16 +159,20 @@
             this.txtSenha.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(346, 227);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(362, 29);
             this.txtSenha.TabIndex = 11;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // txtCEmail
             // 
             this.txtCEmail.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCEmail.Location = new System.Drawing.Point(346, 189);
             this.txtCEmail.Name = "txtCEmail";
+            this.txtCEmail.PasswordChar = '*';
             this.txtCEmail.Size = new System.Drawing.Size(362, 29);
             this.txtCEmail.TabIndex = 10;
+            this.txtCEmail.UseSystemPasswordChar = true;
             // 
             // txtEmail
             // 

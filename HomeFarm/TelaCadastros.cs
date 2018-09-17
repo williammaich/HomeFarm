@@ -37,16 +37,18 @@ namespace HomeFarm
             this.Visible = false;
         }
 
-        private void ImgRaca_Paint(object sender, PaintEventArgs e)
-        {
-            CadastroRacasETipos cadRacasETipos = new CadastroRacasETipos();
-            cadRacasETipos.Show();
-            this.Visible = false;
-        }
+     
 
         private void ImgFechar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ImgRaca_Click(object sender, EventArgs e)
+        {
+            CadastroRacasETipos cadRacasETipos = new CadastroRacasETipos();
+            cadRacasETipos.Show();
+            this.Visible = false;
         }
     }
 }

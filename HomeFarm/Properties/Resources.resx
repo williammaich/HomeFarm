@@ -136,8 +136,8 @@
   <data name="configuracos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\configuracos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cow-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\cow-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="oie_transparent(9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\oie_transparent(9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="oie_transparent(3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oie_transparent(3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -147,6 +147,9 @@
   </data>
   <data name="oie_transparent(8)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\oie_transparent(8).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="animal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\animal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="estoque" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\estoque.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,13 +169,13 @@
   <data name="logijn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logijn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="animal" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\animal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cow-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cow-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="greeen horizonte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\greeen horizonte.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="oie_transparent(9)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\oie_transparent(9).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="raca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\raca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

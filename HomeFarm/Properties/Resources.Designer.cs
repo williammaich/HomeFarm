@@ -243,6 +243,16 @@ namespace HomeFarm.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap raca {
+            get {
+                object obj = ResourceManager.GetObject("raca", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap relatorios {
             get {
                 object obj = ResourceManager.GetObject("relatorios", resourceCulture);

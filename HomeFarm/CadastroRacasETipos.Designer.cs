@@ -29,41 +29,41 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgFechar = new System.Windows.Forms.PictureBox();
-            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ImgBuscar = new System.Windows.Forms.PictureBox();
-            this.ImgProcurar = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnExcluiTipo = new System.Windows.Forms.Button();
+            this.btnRegistraTipo = new System.Windows.Forms.Button();
             this.txtTipo = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnExcluirRaca = new System.Windows.Forms.Button();
             this.btnRegistrarRaca = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.ImgAnimais = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ImgCadastros = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.txtOrigem = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ImgBuscar = new System.Windows.Forms.PictureBox();
+            this.ImgProcurar = new System.Windows.Forms.PictureBox();
+            this.ImgAnimais = new System.Windows.Forms.PictureBox();
+            this.ImgCadastros = new System.Windows.Forms.PictureBox();
+            this.ImgHome = new System.Windows.Forms.PictureBox();
+            this.ImgFechar = new System.Windows.Forms.PictureBox();
+            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBuscar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -77,43 +77,13 @@
             this.panel1.Size = new System.Drawing.Size(800, 40);
             this.panel1.TabIndex = 0;
             // 
-            // ImgFechar
-            // 
-            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
-            this.ImgFechar.Location = new System.Drawing.Point(755, 6);
-            this.ImgFechar.Name = "ImgFechar";
-            this.ImgFechar.Size = new System.Drawing.Size(33, 31);
-            this.ImgFechar.TabIndex = 4;
-            this.ImgFechar.TabStop = false;
-            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
-            // 
-            // ImgMinimizar
-            // 
-            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
-            this.ImgMinimizar.Location = new System.Drawing.Point(718, 6);
-            this.ImgMinimizar.Name = "ImgMinimizar";
-            this.ImgMinimizar.Size = new System.Drawing.Size(31, 28);
-            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgMinimizar.TabIndex = 5;
-            this.ImgMinimizar.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.greeen_horizonte;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(800, 40);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.ImgBuscar);
             this.panel2.Controls.Add(this.ImgProcurar);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnExcluiTipo);
+            this.panel2.Controls.Add(this.btnRegistraTipo);
             this.panel2.Controls.Add(this.txtTipo);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
@@ -137,55 +107,31 @@
             this.panel2.Size = new System.Drawing.Size(800, 488);
             this.panel2.TabIndex = 1;
             // 
-            // ImgBuscar
+            // btnExcluiTipo
             // 
-            this.ImgBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgBuscar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgBuscar.Location = new System.Drawing.Point(728, 343);
-            this.ImgBuscar.Name = "ImgBuscar";
-            this.ImgBuscar.Size = new System.Drawing.Size(49, 36);
-            this.ImgBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgBuscar.TabIndex = 59;
-            this.ImgBuscar.TabStop = false;
-            this.ImgBuscar.Click += new System.EventHandler(this.ImgBuscar_Click);
+            this.btnExcluiTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExcluiTipo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExcluiTipo.ForeColor = System.Drawing.Color.White;
+            this.btnExcluiTipo.Location = new System.Drawing.Point(450, 415);
+            this.btnExcluiTipo.Name = "btnExcluiTipo";
+            this.btnExcluiTipo.Size = new System.Drawing.Size(116, 39);
+            this.btnExcluiTipo.TabIndex = 57;
+            this.btnExcluiTipo.Text = "Excluir";
+            this.btnExcluiTipo.UseVisualStyleBackColor = true;
+            this.btnExcluiTipo.Click += new System.EventHandler(this.button1_Click);
             // 
-            // ImgProcurar
+            // btnRegistraTipo
             // 
-            this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurar.Location = new System.Drawing.Point(728, 90);
-            this.ImgProcurar.Name = "ImgProcurar";
-            this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
-            this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgProcurar.TabIndex = 58;
-            this.ImgProcurar.TabStop = false;
-            this.ImgProcurar.Click += new System.EventHandler(this.ImgProcurar_Click);
-            // 
-            // button1
-            // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(450, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 39);
-            this.button1.TabIndex = 57;
-            this.button1.Text = "Excluir";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(290, 415);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 39);
-            this.button2.TabIndex = 56;
-            this.button2.Text = "Registrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnRegistraTipo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistraTipo.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistraTipo.ForeColor = System.Drawing.Color.White;
+            this.btnRegistraTipo.Location = new System.Drawing.Point(290, 415);
+            this.btnRegistraTipo.Name = "btnRegistraTipo";
+            this.btnRegistraTipo.Size = new System.Drawing.Size(116, 39);
+            this.btnRegistraTipo.TabIndex = 56;
+            this.btnRegistraTipo.Text = "Registrar";
+            this.btnRegistraTipo.UseVisualStyleBackColor = true;
+            this.btnRegistraTipo.Click += new System.EventHandler(this.btnRegistraTipo_Click);
             // 
             // txtTipo
             // 
@@ -254,18 +200,6 @@
             this.label6.TabIndex = 28;
             this.label6.Text = "Cadastros Animais";
             // 
-            // ImgAnimais
-            // 
-            this.ImgAnimais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgAnimais.Image = global::HomeFarm.Properties.Resources.cow_white;
-            this.ImgAnimais.Location = new System.Drawing.Point(28, 291);
-            this.ImgAnimais.Name = "ImgAnimais";
-            this.ImgAnimais.Size = new System.Drawing.Size(89, 72);
-            this.ImgAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgAnimais.TabIndex = 27;
-            this.ImgAnimais.TabStop = false;
-            this.ImgAnimais.Click += new System.EventHandler(this.ImgAnimais_Click);
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -277,18 +211,6 @@
             this.label7.TabIndex = 26;
             this.label7.Text = "Cadastros";
             // 
-            // ImgCadastros
-            // 
-            this.ImgCadastros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgCadastros.Image = global::HomeFarm.Properties.Resources.oie_transparent_5_;
-            this.ImgCadastros.Location = new System.Drawing.Point(28, 164);
-            this.ImgCadastros.Name = "ImgCadastros";
-            this.ImgCadastros.Size = new System.Drawing.Size(87, 85);
-            this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgCadastros.TabIndex = 25;
-            this.ImgCadastros.TabStop = false;
-            this.ImgCadastros.Click += new System.EventHandler(this.ImgCadastros_Click);
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -299,18 +221,6 @@
             this.label5.Size = new System.Drawing.Size(43, 17);
             this.label5.TabIndex = 24;
             this.label5.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(28, 55);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 23;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
             // txtOrigem
             // 
@@ -327,6 +237,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(291, 33);
             this.txtNome.TabIndex = 5;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label4
             // 
@@ -372,6 +283,96 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Cadastro de Raças e Tipos";
             // 
+            // ImgBuscar
+            // 
+            this.ImgBuscar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgBuscar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
+            this.ImgBuscar.Location = new System.Drawing.Point(728, 343);
+            this.ImgBuscar.Name = "ImgBuscar";
+            this.ImgBuscar.Size = new System.Drawing.Size(49, 36);
+            this.ImgBuscar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgBuscar.TabIndex = 59;
+            this.ImgBuscar.TabStop = false;
+            this.ImgBuscar.Click += new System.EventHandler(this.ImgBuscar_Click);
+            // 
+            // ImgProcurar
+            // 
+            this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
+            this.ImgProcurar.Location = new System.Drawing.Point(728, 90);
+            this.ImgProcurar.Name = "ImgProcurar";
+            this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
+            this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgProcurar.TabIndex = 58;
+            this.ImgProcurar.TabStop = false;
+            this.ImgProcurar.Click += new System.EventHandler(this.ImgProcurar_Click);
+            // 
+            // ImgAnimais
+            // 
+            this.ImgAnimais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgAnimais.Image = global::HomeFarm.Properties.Resources.cow_white;
+            this.ImgAnimais.Location = new System.Drawing.Point(28, 291);
+            this.ImgAnimais.Name = "ImgAnimais";
+            this.ImgAnimais.Size = new System.Drawing.Size(89, 72);
+            this.ImgAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgAnimais.TabIndex = 27;
+            this.ImgAnimais.TabStop = false;
+            this.ImgAnimais.Click += new System.EventHandler(this.ImgAnimais_Click);
+            // 
+            // ImgCadastros
+            // 
+            this.ImgCadastros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgCadastros.Image = global::HomeFarm.Properties.Resources.oie_transparent_5_;
+            this.ImgCadastros.Location = new System.Drawing.Point(28, 164);
+            this.ImgCadastros.Name = "ImgCadastros";
+            this.ImgCadastros.Size = new System.Drawing.Size(87, 85);
+            this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgCadastros.TabIndex = 25;
+            this.ImgCadastros.TabStop = false;
+            this.ImgCadastros.Click += new System.EventHandler(this.ImgCadastros_Click);
+            // 
+            // ImgHome
+            // 
+            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
+            this.ImgHome.Location = new System.Drawing.Point(28, 55);
+            this.ImgHome.Name = "ImgHome";
+            this.ImgHome.Size = new System.Drawing.Size(88, 71);
+            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgHome.TabIndex = 23;
+            this.ImgHome.TabStop = false;
+            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
+            // 
+            // ImgFechar
+            // 
+            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
+            this.ImgFechar.Location = new System.Drawing.Point(755, 6);
+            this.ImgFechar.Name = "ImgFechar";
+            this.ImgFechar.Size = new System.Drawing.Size(33, 31);
+            this.ImgFechar.TabIndex = 4;
+            this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
+            // 
+            // ImgMinimizar
+            // 
+            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
+            this.ImgMinimizar.Location = new System.Drawing.Point(718, 6);
+            this.ImgMinimizar.Name = "ImgMinimizar";
+            this.ImgMinimizar.Size = new System.Drawing.Size(31, 28);
+            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgMinimizar.TabIndex = 5;
+            this.ImgMinimizar.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.greeen_horizonte;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 40);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // CadastroRacasETipos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -384,9 +385,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CadastroRacasETipos";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBuscar)).EndInit();
@@ -394,6 +392,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,8 +418,8 @@
         private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox ImgAnimais;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnExcluiTipo;
+        private System.Windows.Forms.Button btnRegistraTipo;
         private System.Windows.Forms.TextBox txtTipo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;

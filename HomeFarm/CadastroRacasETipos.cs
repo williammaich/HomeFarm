@@ -58,9 +58,9 @@ namespace HomeFarm
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO raca (NOME, ORIGEM) VALUES (@nome,@origem )", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO raca (RACA, ORIGEM) VALUES (@Raca,@origem )", Conexao);
 
-                INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
+                INSERT.Parameters.AddWithValue("@Raca", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Origem", txtOrigem.Text);
 
                 INSERT.ExecuteNonQuery();
@@ -74,7 +74,7 @@ namespace HomeFarm
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnRegistraTipo_Click(object sender, EventArgs e)
         {
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conexao = new MySqlConnection(Conection);
@@ -83,9 +83,9 @@ namespace HomeFarm
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO tipo (NOME) VALUES (@nome )", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO tipo (TIPOANIMAL) VALUES (@TipoAnimal )", Conexao);
 
-                INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
+                INSERT.Parameters.AddWithValue("@TipoAnimal", txtNome.Text);
                 
 
                 INSERT.ExecuteNonQuery();
@@ -110,10 +110,10 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT NOME, ORIGEM FROM raca WHERE NOME= ?";
+                com.CommandText = "SELECT RACA, ORIGEM FROM raca WHERE RACA= ?";
 
-                com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
-                com.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtOrigem.Text;
+                com.Parameters.Add("@Raca", MySqlDbType.VarChar, 45).Value = txtNome.Text;
+                com.Parameters.Add("@Origem", MySqlDbType.VarChar, 45).Value = txtOrigem.Text;
                 com.CommandType = CommandType.Text;
 
                 MySqlDataReader dr;
@@ -148,10 +148,10 @@ namespace HomeFarm
 
 
                 Conecta.Open();
-                MySqlCommand Comando = new MySqlCommand("DELETE FROM raca WHERE nome = ?", Conecta);
+                MySqlCommand Comando = new MySqlCommand("DELETE FROM raca WHERE raca = ?", Conecta);
                 Comando.Parameters.Clear();
               
-                Comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
+                Comando.Parameters.Add("@raca", MySqlDbType.VarChar, 85).Value = txtNome.Text;
 
                 Comando.CommandType = CommandType.Text;
                 Comando.ExecuteNonQuery();
@@ -179,9 +179,9 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT TIPO FROM tipo WHERE TIPO= ? ";
+                com.CommandText = "SELECT TIPO FROM tipo WHERE TIPOANIMAL= ? ";
 
-                com.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = txtTipo.Text;
+                com.Parameters.Add("@TipoAnimal", MySqlDbType.VarChar, 45).Value = txtTipo.Text;
                
                 com.CommandType = CommandType.Text;
 
@@ -214,10 +214,10 @@ namespace HomeFarm
 
 
                 Conecta.Open();
-                MySqlCommand Comando = new MySqlCommand("DELETE FROM tipo WHERE tipo = ?", Conecta);
+                MySqlCommand Comando = new MySqlCommand("DELETE FROM tipo WHERE tipoanimal = ?", Conecta);
                 Comando.Parameters.Clear();
 
-                Comando.Parameters.Add("@tipo", MySqlDbType.VarChar, 85).Value = txtTipo.Text;
+                Comando.Parameters.Add("@TipoAnimal", MySqlDbType.VarChar, 85).Value = txtTipo.Text;
 
                 Comando.CommandType = CommandType.Text;
                 Comando.ExecuteNonQuery();
@@ -238,6 +238,11 @@ namespace HomeFarm
         private void ImgFechar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

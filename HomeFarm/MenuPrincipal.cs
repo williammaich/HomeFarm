@@ -31,8 +31,8 @@ namespace HomeFarm
 
         private void ImgCadastros_Click(object sender, EventArgs e)
         {
-            TelaCadastros Cadastro = new TelaCadastros();
-            Cadastro.Show();
+            TelaCadastros Cadastros = new TelaCadastros();
+            Cadastros.Show();
             this.Visible = false;
 
         }

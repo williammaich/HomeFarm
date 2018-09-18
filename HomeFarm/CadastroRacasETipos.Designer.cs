@@ -118,7 +118,7 @@
             this.btnExcluiTipo.TabIndex = 57;
             this.btnExcluiTipo.Text = "Excluir";
             this.btnExcluiTipo.UseVisualStyleBackColor = true;
-            this.btnExcluiTipo.Click += new System.EventHandler(this.button1_Click);
+            this.btnExcluiTipo.Click += new System.EventHandler(this.btnExcluiTipo_Click);
             // 
             // btnRegistraTipo
             // 
@@ -237,7 +237,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(291, 33);
             this.txtNome.TabIndex = 5;
-            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
+          
             // 
             // label4
             // 

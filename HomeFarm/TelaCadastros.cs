@@ -50,5 +50,12 @@ namespace HomeFarm
             cadRacasETipos.Show();
             this.Visible = false;
         }
+
+        private void ImgFuncionarios_Click(object sender, EventArgs e)
+        {
+            CadastroFuncionarios cadFuncionarios = new CadastroFuncionarios();
+            cadFuncionarios.Show();
+            this.Visible = false;
+        }
     }
 }

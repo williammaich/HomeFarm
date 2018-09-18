@@ -1,0 +1,250 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
+namespace HomeFarm
+{
+    public partial class CadastroFuncionarios : Form
+    {
+        public CadastroFuncionarios()
+        {
+            InitializeComponent();
+
+            comboAdm.Items.Add("Sim");
+            comboAdm.Items.Add("Não");
+
+            ImgFechar.Parent = ImgLogo;
+            ImgFechar.BackColor = Color.Transparent;
+            ImgMinimizar.Parent = ImgLogo;
+            ImgMinimizar.BackColor = Color.Transparent;
+        }
+
+        private void ImgHome_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            this.Visible = false;
+        }
+
+        private void ImgCadastros_Click(object sender, EventArgs e)
+        {
+            TelaCadastros cad = new TelaCadastros();
+            cad.Show();
+            this.Visible = false;
+        }
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+
+            String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conexao = new MySqlConnection(Conection);
+
+            //verificação se a conexão foi ok ele insere os dados se não apresenta erro
+            try
+            {
+                Conexao.Open();
+
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin)", Conexao);
+                INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
+                INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
+
+
+
+                if (txtEmail.Text == txtCEmail.Text)
+                {
+                    INSERT.Parameters.AddWithValue("@Login", txtEmail.Text);
+                    if (txtSenha.Text == txtCSenha.Text)
+                    {
+                        INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+
+                        INSERT.Parameters.Add("@Admin", MySqlDbType.VarChar, 45).Value = comboAdm.SelectedItem.ToString();
+
+
+                        INSERT.ExecuteNonQuery();
+                        Conexao.Close();
+
+                        MessageBox.Show("seu cadastro foi concluido");
+
+                        txtNome.Text = " ";
+                        txtSobrenome.Text = " ";
+                        txtEmail.Text = " ";
+                        txtCEmail.Text = " ";
+                        txtSenha.Text = "";
+                        txtCSenha.Text = "";
+                        comboAdm.Text = " ";
+                    }
+                    else
+                    {
+                        MessageBox.Show(" Senha não conferem");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Email ou Senha não conferem");
+                }
+
+            }
+            catch
+            {
+
+
+                MessageBox.Show("ERRO DE CONEXÃO");
+
+            }
+
+
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            txtNome.Text = " ";
+            txtSobrenome.Text = " ";
+            txtEmail.Text = " ";
+            txtCEmail.Text = " ";
+            txtSenha.Text = "";
+            txtCSenha.Text = "";
+            comboAdm.Text = " ";
+        }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+
+
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conecta = new MySqlConnection(Conector);
+            try
+            {
+                Conecta.Open();
+
+                MySqlCommand comando = new MySqlCommand("UPDATE usuario SET NOME=?,SOBRENOME=?,LOGIN=?,SENHA=?,ADMIN=? WHERE ID", Conecta);
+
+                comando.Parameters.Clear();
+
+
+
+                
+                comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
+                comando.Parameters.Add("@sobrenome", MySqlDbType.VarChar, 45).Value = txtSobrenome.Text;
+                comando.Parameters.Add("@login", MySqlDbType.VarChar, 85).Value = txtEmail.Text;
+                comando.Parameters.Add("@senha", MySqlDbType.VarChar, 85).Value = txtSenha.Text;
+                comando.Parameters.Add("@admin", MySqlDbType.VarChar, 45).Value = comboAdm.SelectedItem.ToString();
+                
+
+
+                comando.CommandType = CommandType.Text;
+                comando.ExecuteNonQuery();
+
+                Conecta.Close();
+                MessageBox.Show("Atualizado com sucesso!");
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("ERRO DE CONEXÃO " + erro);
+            }
+
+        }
+
+        private void ImgRaca_Click(object sender, EventArgs e)
+        {
+            CadastroRacasETipos raca = new CadastroRacasETipos();
+            raca.Show();
+            this.Visible = false;
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conecta = new MySqlConnection(Conector);
+
+            try
+            {
+
+
+                Conecta.Open();
+                MySqlCommand Comando = new MySqlCommand("DELETE FROM usuario WHERE nome = ? or login = ?", Conecta);
+                Comando.Parameters.Clear();
+                
+                Comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
+                Comando.Parameters.Add("@login", MySqlDbType.VarChar, 45).Value = txtEmail.Text;
+                Comando.CommandType = CommandType.Text;
+                Comando.ExecuteNonQuery();
+                MessageBox.Show("Registro removido !");
+                Conecta.Close();
+
+                txtNome.Text = " ";
+                txtSobrenome.Text = " ";
+                txtEmail.Text = " ";
+                txtCEmail.Text = " ";
+                txtSenha.Text = "";
+                txtCSenha.Text = "";
+                comboAdm.Text = " ";
+
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("Erro " + erro);
+            }
+
+        }
+
+        private void ImgProcurar_Click(object sender, EventArgs e)
+        {
+            String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Ligar = new MySqlConnection(Conector);
+            try
+            {
+                Ligar.Open();
+
+                MySqlCommand com = new MySqlCommand();
+                com.Connection = Ligar;
+                com.CommandText = "SELECT NOME,SOBRENOME,LOGIN,SENHA,ADMIN FROM usuario WHERE NOME= ? OR LOGIN = ?";
+
+                com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
+                com.Parameters.Add("@login", MySqlDbType.VarChar, 80).Value = txtEmail.Text;
+                com.CommandType = CommandType.Text;
+
+                MySqlDataReader dr;
+                dr = com.ExecuteReader();
+
+                dr.Read();
+
+
+                
+                txtNome.Text = dr.GetString(0);
+                txtSobrenome.Text = dr.GetString(1);
+                txtEmail.Text = dr.GetString(2);
+                txtCEmail.Text = dr.GetString(2);
+                txtSenha.Text = dr.GetString(3);
+                txtCSenha.Text = dr.GetString(3);
+                comboAdm.Text = dr.GetString(4);
+                
+
+
+
+                Ligar.Close();
+            }
+            catch 
+            {
+
+                MessageBox.Show("Registro não encontrado!!");
+            }
+
+        }
+    }
+}

@@ -85,7 +85,7 @@ namespace HomeFarm
                 Conexao.Open();
                 MySqlCommand INSERT = new MySqlCommand("INSERT INTO tipo (TIPOANIMAL) VALUES (@TipoAnimal )", Conexao);
 
-                INSERT.Parameters.AddWithValue("@TipoAnimal", txtNome.Text);
+                INSERT.Parameters.AddWithValue("@TipoAnimal", txtTipo.Text);
                 
 
                 INSERT.ExecuteNonQuery();
@@ -204,7 +204,7 @@ namespace HomeFarm
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnExcluiTipo_Click(object sender, EventArgs e)
         {
             String Conector = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conecta = new MySqlConnection(Conector);

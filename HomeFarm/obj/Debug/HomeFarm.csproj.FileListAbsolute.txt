@@ -35,3 +35,4 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\MySql.
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.csproj.CopyComplete
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.CadastroRacasETipos.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.ConfirmaAnimais.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.CadastroFuncionarios.resources

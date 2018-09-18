@@ -194,6 +194,7 @@
             this.ImgFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgFuncionarios.TabIndex = 4;
             this.ImgFuncionarios.TabStop = false;
+            this.ImgFuncionarios.Click += new System.EventHandler(this.ImgFuncionarios_Click);
             // 
             // ImgAnimais
             // 

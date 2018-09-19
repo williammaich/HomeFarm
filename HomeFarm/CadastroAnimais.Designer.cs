@@ -162,6 +162,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(767, 726);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // ImgRaca
             // 
@@ -281,6 +282,7 @@
             this.comboMorto.Name = "comboMorto";
             this.comboMorto.Size = new System.Drawing.Size(158, 33);
             this.comboMorto.TabIndex = 44;
+            this.comboMorto.SelectedIndexChanged += new System.EventHandler(this.comboMorto_SelectedIndexChanged);
             // 
             // comboSexo
             // 
@@ -290,6 +292,7 @@
             this.comboSexo.Name = "comboSexo";
             this.comboSexo.Size = new System.Drawing.Size(158, 33);
             this.comboSexo.TabIndex = 43;
+            this.comboSexo.SelectedIndexChanged += new System.EventHandler(this.comboSexo_SelectedIndexChanged);
             // 
             // txtPeso
             // 
@@ -298,6 +301,7 @@
             this.txtPeso.Name = "txtPeso";
             this.txtPeso.Size = new System.Drawing.Size(252, 33);
             this.txtPeso.TabIndex = 40;
+            this.txtPeso.TextChanged += new System.EventHandler(this.txtPeso_TextChanged);
             // 
             // txtNomeMae
             // 
@@ -306,6 +310,7 @@
             this.txtNomeMae.Name = "txtNomeMae";
             this.txtNomeMae.Size = new System.Drawing.Size(313, 33);
             this.txtNomeMae.TabIndex = 39;
+            this.txtNomeMae.TextChanged += new System.EventHandler(this.txtNomeMae_TextChanged);
             // 
             // txtNomePai
             // 
@@ -314,6 +319,7 @@
             this.txtNomePai.Name = "txtNomePai";
             this.txtNomePai.Size = new System.Drawing.Size(313, 33);
             this.txtNomePai.TabIndex = 38;
+            this.txtNomePai.TextChanged += new System.EventHandler(this.txtNomePai_TextChanged);
             // 
             // txtDataNascimento
             // 
@@ -322,6 +328,7 @@
             this.txtDataNascimento.Name = "txtDataNascimento";
             this.txtDataNascimento.Size = new System.Drawing.Size(252, 33);
             this.txtDataNascimento.TabIndex = 37;
+            this.txtDataNascimento.TextChanged += new System.EventHandler(this.txtDataNascimento_TextChanged);
             // 
             // txtNome
             // 
@@ -330,6 +337,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(313, 33);
             this.txtNome.TabIndex = 36;
+            this.txtNome.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // txtCodigo
             // 
@@ -338,6 +346,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(252, 33);
             this.txtCodigo.TabIndex = 35;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // label15
             // 
@@ -349,6 +358,7 @@
             this.label15.Size = new System.Drawing.Size(79, 30);
             this.label15.TabIndex = 34;
             this.label15.Text = "Código";
+            this.label15.Click += new System.EventHandler(this.label15_Click);
             // 
             // label14
             // 
@@ -360,6 +370,7 @@
             this.label14.Size = new System.Drawing.Size(174, 30);
             this.label14.TabIndex = 33;
             this.label14.Text = "Data Nascimento";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // label13
             // 
@@ -371,6 +382,7 @@
             this.label13.Size = new System.Drawing.Size(104, 30);
             this.label13.TabIndex = 32;
             this.label13.Text = "Nome Pai";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // label12
             // 
@@ -382,6 +394,7 @@
             this.label12.Size = new System.Drawing.Size(117, 30);
             this.label12.TabIndex = 31;
             this.label12.Text = "Nome Mãe";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label11
             // 
@@ -393,6 +406,7 @@
             this.label11.Size = new System.Drawing.Size(57, 30);
             this.label11.TabIndex = 30;
             this.label11.Text = "Sexo";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label10
             // 
@@ -404,6 +418,7 @@
             this.label10.Size = new System.Drawing.Size(57, 30);
             this.label10.TabIndex = 29;
             this.label10.Text = "Peso";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // label9
             // 
@@ -415,6 +430,7 @@
             this.label9.Size = new System.Drawing.Size(70, 30);
             this.label9.TabIndex = 28;
             this.label9.Text = "Morto";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -470,6 +486,7 @@
             this.label3.Size = new System.Drawing.Size(70, 30);
             this.label3.TabIndex = 23;
             this.label3.Text = "Nome";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label7
             // 

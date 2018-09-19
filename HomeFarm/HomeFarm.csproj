@@ -81,6 +81,12 @@
     <Compile Include="CadastroFuncionarios.Designer.cs">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadastroPropriedades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroPropriedades.Designer.cs">
+      <DependentUpon>CadastroPropriedades.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadastroRacasETipos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,6 +130,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroFuncionarios.resx">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroPropriedades.resx">
+      <DependentUpon>CadastroPropriedades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroRacasETipos.resx">
       <DependentUpon>CadastroRacasETipos.cs</DependentUpon>

@@ -21,6 +21,26 @@ namespace HomeFarm
         {
             Application.Exit();
 
+            ImgFechar.Parent = ImgLogo;
+            ImgFechar.BackColor = Color.Transparent;
+            ImgMinimizar.Parent = ImgLogo;
+            ImgMinimizar.BackColor = Color.Transparent;
+        }
+
+        private void ImgAnimais_Click(object sender, EventArgs e)
+        {
+            ListagemAnimais listaAnimais = new ListagemAnimais();
+            listaAnimais.Show();
+            this.Visible = false;
+
+        }
+
+        private void ImgHome_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            this.Visible = false;
+
         }
     }
 }

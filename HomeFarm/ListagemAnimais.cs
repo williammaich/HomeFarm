@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace HomeFarm
 {
-    public partial class MenuPrincipal : Form
+    public partial class ListagemAnimais : Form
     {
-        public MenuPrincipal()
+        public ListagemAnimais()
         {
             InitializeComponent();
 
@@ -22,26 +22,23 @@ namespace HomeFarm
             ImgMinimizar.BackColor = Color.Transparent;
         }
 
-  
-
-        private void ImgFechar_Click(object sender, EventArgs e)
+        private void ImgHome_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void ImgCadastros_Click(object sender, EventArgs e)
-        {
-            TelaCadastros Cadastros = new TelaCadastros();
-            Cadastros.Show();
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
             this.Visible = false;
-
         }
 
-        private void ImgListagem_Click(object sender, EventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
             Listagem lista = new Listagem();
             lista.Show();
             this.Visible = false;
+        }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

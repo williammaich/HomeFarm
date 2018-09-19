@@ -57,5 +57,12 @@ namespace HomeFarm
             cadFuncionarios.Show();
             this.Visible = false;
         }
+
+        private void ImgCampos_Click(object sender, EventArgs e)
+        {
+            CadastroPropriedades propriedades = new CadastroPropriedades();
+            propriedades.Show();
+            this.Visible = false;
+        }
     }
 }

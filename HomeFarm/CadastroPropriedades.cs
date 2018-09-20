@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace HomeFarm
 {
@@ -40,6 +42,46 @@ namespace HomeFarm
             MenuPrincipal menu = new MenuPrincipal();
             menu.Show();
             this.Visible = false;
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
+            String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+            MySqlConnection Conexao = new MySqlConnection(Conection);
+
+
+            try
+            {
+                Conexao.Open();
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO propriedade (CEP,LOGRADOURO,NUMERO,COMPLEMENTO,BAIRRO,CIDADE,ESTADO) VALUES (@cep,@logradouro,@numero,@complemento, @bairro,@cidade,@estado )", Conexao);
+
+                INSERT.Parameters.AddWithValue("@cep", txtCep.Text);
+                INSERT.Parameters.AddWithValue("@logradouro", txtLogradouro.Text);
+
+                INSERT.Parameters.AddWithValue("@numero", txtNumero.Text);
+                INSERT.Parameters.AddWithValue("@complemento", txtComplemento.Text);
+                INSERT.Parameters.AddWithValue("@bairro", txtBairro.Text);
+                INSERT.Parameters.AddWithValue("@cidade", txtCidade.Text);
+                INSERT.Parameters.AddWithValue("@estado", txtEstado.Text);
+
+
+
+
+
+                INSERT.ExecuteNonQuery();
+                Conexao.Close();
+
+                MessageBox.Show("Cadastro Realizado com Sucesso!!");
+            }
+            catch (Exception erro)
+            {
+
+
+                MessageBox.Show("ERRO DE CONEXÃO " + erro);
+
+            }
+
         }
     }
 }

@@ -33,28 +33,28 @@
             this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ImgProcurarProp = new System.Windows.Forms.PictureBox();
+            this.ImgProcurar = new System.Windows.Forms.PictureBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dataGridAnimais = new System.Windows.Forms.DataGridView();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.ImgProcurar = new System.Windows.Forms.PictureBox();
-            this.ImgProcurarProp = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurarProp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimais)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurarProp)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -107,7 +107,7 @@
             this.panel2.Controls.Add(this.ImgProcurar);
             this.panel2.Controls.Add(this.textBox2);
             this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dataGridAnimais);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.label1);
@@ -118,6 +118,75 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 494);
             this.panel2.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(150, 170);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(167, 21);
+            this.label5.TabIndex = 62;
+            this.label5.Text = "Busca Por Propriedade";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(150, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(112, 21);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "Busca Por Tipo";
+            // 
+            // ImgProcurarProp
+            // 
+            this.ImgProcurarProp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgProcurarProp.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
+            this.ImgProcurarProp.Location = new System.Drawing.Point(485, 194);
+            this.ImgProcurarProp.Name = "ImgProcurarProp";
+            this.ImgProcurarProp.Size = new System.Drawing.Size(49, 36);
+            this.ImgProcurarProp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgProcurarProp.TabIndex = 60;
+            this.ImgProcurarProp.TabStop = false;
+            // 
+            // ImgProcurar
+            // 
+            this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
+            this.ImgProcurar.Location = new System.Drawing.Point(485, 114);
+            this.ImgProcurar.Name = "ImgProcurar";
+            this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
+            this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgProcurar.TabIndex = 59;
+            this.ImgProcurar.TabStop = false;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(154, 194);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(279, 33);
+            this.textBox2.TabIndex = 12;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(154, 117);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(279, 33);
+            this.textBox1.TabIndex = 11;
+            // 
+            // dataGridAnimais
+            // 
+            this.dataGridAnimais.AllowUserToOrderColumns = true;
+            this.dataGridAnimais.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridAnimais.Location = new System.Drawing.Point(154, 250);
+            this.dataGridAnimais.Name = "dataGridAnimais";
+            this.dataGridAnimais.Size = new System.Drawing.Size(634, 232);
+            this.dataGridAnimais.TabIndex = 10;
             // 
             // label3
             // 
@@ -176,75 +245,6 @@
             this.ImgHome.TabStop = false;
             this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(154, 250);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(634, 232);
-            this.dataGridView1.TabIndex = 10;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(154, 117);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(279, 33);
-            this.textBox1.TabIndex = 11;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(154, 194);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(279, 33);
-            this.textBox2.TabIndex = 12;
-            // 
-            // ImgProcurar
-            // 
-            this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurar.Location = new System.Drawing.Point(485, 114);
-            this.ImgProcurar.Name = "ImgProcurar";
-            this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
-            this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgProcurar.TabIndex = 59;
-            this.ImgProcurar.TabStop = false;
-            // 
-            // ImgProcurarProp
-            // 
-            this.ImgProcurarProp.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgProcurarProp.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurarProp.Location = new System.Drawing.Point(485, 194);
-            this.ImgProcurarProp.Name = "ImgProcurarProp";
-            this.ImgProcurarProp.Size = new System.Drawing.Size(49, 36);
-            this.ImgProcurarProp.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgProcurarProp.TabIndex = 60;
-            this.ImgProcurarProp.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(150, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 21);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Busca Por Tipo";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(150, 170);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(167, 21);
-            this.label5.TabIndex = 62;
-            this.label5.Text = "Busca Por Propriedade";
-            // 
             // ListagemAnimais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -262,11 +262,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurarProp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridAnimais)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgProcurarProp)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -285,7 +285,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridAnimais;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox ImgProcurarProp;

@@ -33,7 +33,13 @@ namespace HomeFarm
 
             comboPo.Items.Add("Sim");
             comboPo.Items.Add("Não");
+
+            CarregaComboRaca();
+            CarregaComboTipo();
         }
+
+
+     
 
         private void ImgHome_Click(object sender, EventArgs e)
         {
@@ -49,6 +55,28 @@ namespace HomeFarm
             this.Visible = false;
         }
 
+
+        //carrega combo
+        private void CarregaComboRaca()
+        {
+            comboRaca.DataSource = RacaDAL.RetornaLista();
+            comboRaca.DisplayMember = "RACA";
+            comboRaca.ValueMember = "ID";
+        }
+
+        private void CarregaComboTipo()
+        {
+            comboTipo.DataSource = DALL.RetornaListaTipo();
+            comboTipo.DisplayMember = "TIPOANIMAL";
+            comboTipo.ValueMember = "ID";
+        }
+
+
+
+
+
+
+
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
 
@@ -59,7 +87,7 @@ namespace HomeFarm
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO) VALUES (@codigo,@nome,@datanasc,@nomepai, @nomemae,@sexo,@peso,@morto,@vendida,@po,@raca,@tipo )", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO animal (CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO) VALUES (@codigo,@nome,@datanasc,@nomepai, @nomemae,@sexo,@peso,@morto,@vendida,@po )", Conexao);
 
                 INSERT.Parameters.AddWithValue("@codigo", txtCodigo.Text);
                 INSERT.Parameters.AddWithValue("@nome", txtNome.Text);
@@ -83,13 +111,13 @@ namespace HomeFarm
 
 
 
-                INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value =  comboRaca.Text;
+                //INSERT.Parameters.Add("@raca",MySqlDbType.VarChar,45).Value =  comboRaca.SelectedItem.ToString();
 
 
-                INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = comboTipo.Text;
+                //INSERT.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = comboTipo.SelectedItem.ToString();
 
 
-
+                //INSERT.Parameters.Add("@propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedItem.ToString();
 
 
 
@@ -98,6 +126,10 @@ namespace HomeFarm
                 Conexao.Close();
 
                 MessageBox.Show("Cadastro Realizado com Sucesso!!");
+
+                
+
+
             }
             catch (Exception erro)
             {
@@ -135,7 +167,7 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
+                com.CommandText = "SELECT CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA_ID,TIPO_ID,PROPRIEDADE_ID FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
 
                 com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
                 com.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtCodigo.Text;
@@ -159,6 +191,7 @@ namespace HomeFarm
                 comboPo.Text = dr.GetString(9);
                 comboRaca.Text = dr.GetString(10);
                 comboTipo.Text = dr.GetString(11);
+                comboPropriedade.Text = dr.GetString(12);
 
 
 
@@ -212,7 +245,7 @@ namespace HomeFarm
             {
                 Conecta.Open();
 
-                MySqlCommand comando = new MySqlCommand("UPDATE animal SET CODIGOBRINCO=?, NOME=?,DATANASCIMENTO=?,NOMEPAI=?,NOMEMAE=?,SEXO=?,PESO=?,MORTO=?,VENDIDA=?,PO=?,RACA=?,TIPO= ? WHERE ID", Conecta);
+                MySqlCommand comando = new MySqlCommand("UPDATE animal SET CODIGOBRINCO=?, NOME=?,DATANASCIMENTO=?,NOMEPAI=?,NOMEMAE=?,SEXO=?,PESO=?,MORTO=?,VENDIDA=?,PO=?,RACA_ID=?,TIPO_ID= ?,PROPRIEDADE_ID WHERE ID", Conecta);
 
                 comando.Parameters.Clear();
 
@@ -228,9 +261,9 @@ namespace HomeFarm
                 comando.Parameters.Add("@morto", MySqlDbType.VarChar, 45).Value = comboMorto.SelectedItem.ToString();
                 comando.Parameters.Add("@vendida", MySqlDbType.VarChar, 45).Value = comboVendida.SelectedItem.ToString();
                 comando.Parameters.Add("@po", MySqlDbType.VarChar, 45).Value = comboPo.SelectedItem.ToString();
-                comando.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = comboRaca.Text;
+                comando.Parameters.Add("@raca", MySqlDbType.VarChar, 45).Value = comboRaca.SelectedItem.ToString();
                 comando.Parameters.Add("@tipo", MySqlDbType.VarChar, 45).Value = comboTipo.SelectedItem.ToString();
-
+                comando.Parameters.Add("@propriedade", MySqlDbType.VarChar, 45).Value = comboTipo.SelectedItem.ToString();
 
                 comando.CommandType = CommandType.Text;
                 comando.ExecuteNonQuery();

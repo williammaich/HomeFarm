@@ -20,7 +20,25 @@ namespace HomeFarm
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+
+
+            DLL dll = new DLL();
+            try
+            {
+
+                dataGridAnimais.DataSource = dll.ExibirDadosDal();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
         }
+
+       
 
         private void ImgHome_Click(object sender, EventArgs e)
         {

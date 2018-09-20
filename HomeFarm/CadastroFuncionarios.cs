@@ -51,7 +51,7 @@ namespace HomeFarm
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN,PROPRIEDADE_ID) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin,@Propriedade)", Conexao);
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
 
@@ -65,7 +65,7 @@ namespace HomeFarm
                         INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
 
                         INSERT.Parameters.Add("@Admin", MySqlDbType.VarChar, 45).Value = comboAdm.SelectedItem.ToString();
-
+                        INSERT.Parameters.Add("@Propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedItem.ToString();
 
                         INSERT.ExecuteNonQuery();
                         Conexao.Close();
@@ -79,6 +79,7 @@ namespace HomeFarm
                         txtSenha.Text = "";
                         txtCSenha.Text = "";
                         comboAdm.Text = " ";
+                        comboPropriedade.Text = " ";
                     }
                     else
                     {
@@ -112,6 +113,7 @@ namespace HomeFarm
             txtSenha.Text = "";
             txtCSenha.Text = "";
             comboAdm.Text = " ";
+            comboPropriedade.Text = " ";
         }
 
         private void ImgFechar_Click(object sender, EventArgs e)
@@ -130,7 +132,7 @@ namespace HomeFarm
             {
                 Conecta.Open();
 
-                MySqlCommand comando = new MySqlCommand("UPDATE usuario SET NOME=?,SOBRENOME=?,LOGIN=?,SENHA=?,ADMIN=? WHERE ID", Conecta);
+                MySqlCommand comando = new MySqlCommand("UPDATE usuario SET NOME=?,SOBRENOME=?,LOGIN=?,SENHA=?,ADMIN=?,PROPRIEDADE_ID WHERE ID", Conecta);
 
                 comando.Parameters.Clear();
 
@@ -142,7 +144,8 @@ namespace HomeFarm
                 comando.Parameters.Add("@login", MySqlDbType.VarChar, 85).Value = txtEmail.Text;
                 comando.Parameters.Add("@senha", MySqlDbType.VarChar, 85).Value = txtSenha.Text;
                 comando.Parameters.Add("@admin", MySqlDbType.VarChar, 45).Value = comboAdm.SelectedItem.ToString();
-                
+                comando.Parameters.Add("@propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedItem.ToString();
+
 
 
                 comando.CommandType = CommandType.Text;
@@ -192,6 +195,7 @@ namespace HomeFarm
                 txtSenha.Text = "";
                 txtCSenha.Text = "";
                 comboAdm.Text = " ";
+                comboPropriedade.Text = " ";
 
 
 
@@ -213,7 +217,7 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT NOME,SOBRENOME,LOGIN,SENHA,ADMIN FROM usuario WHERE NOME= ? OR LOGIN = ?";
+                com.CommandText = "SELECT NOME,SOBRENOME,LOGIN,SENHA,ADMIN,PROPRIEDADE_ID FROM usuario WHERE NOME= ? OR LOGIN = ?";
 
                 com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
                 com.Parameters.Add("@login", MySqlDbType.VarChar, 80).Value = txtEmail.Text;
@@ -233,6 +237,7 @@ namespace HomeFarm
                 txtSenha.Text = dr.GetString(3);
                 txtCSenha.Text = dr.GetString(3);
                 comboAdm.Text = dr.GetString(4);
+                comboPropriedade.Text = dr.GetString(5); 
                 
 
 
@@ -245,6 +250,13 @@ namespace HomeFarm
                 MessageBox.Show("Registro não encontrado!!");
             }
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            CadastroPropriedades cadPropriedades = new CadastroPropriedades();
+            cadPropriedades.Show();
+            this.Visible = false;
         }
     }
 }

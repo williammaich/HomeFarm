@@ -100,6 +100,8 @@
     <Compile Include="ConfirmaAnimais.Designer.cs">
       <DependentUpon>ConfirmaAnimais.cs</DependentUpon>
     </Compile>
+    <Compile Include="DALL.cs" />
+    <Compile Include="DLL.cs" />
     <Compile Include="Listagem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +120,8 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Raca.cs" />
+    <Compile Include="RacaDAL.cs" />
     <Compile Include="Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +142,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tipo.cs" />
     <EmbeddedResource Include="CadastroAnimais.resx">
       <DependentUpon>CadastroAnimais.cs</DependentUpon>
     </EmbeddedResource>

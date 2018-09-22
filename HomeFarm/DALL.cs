@@ -11,6 +11,7 @@ namespace HomeFarm
 {
     class DALL
     {
+        
         string conectaBanco = "server=localhost; userid=root; database=homefarm; SslMode=none";
         MySqlConnection conexao = null;
         MySqlCommand comando;
@@ -40,16 +41,16 @@ namespace HomeFarm
             }
         }
 
-        public static List<Tipo> RetornaListaTipo()
+        public static List<Propriedade> RetornaListaPropriedade()
         {
 
             MySqlConnection conn = new MySqlConnection("server=localhost; userid=root; database=homefarm; SslMode=none");
 
-            var sql = "SELECT ID, TIPOANIMAL FROM tipo";
+            var sql = "SELECT ID, LOGRADOURO FROM propriedade";
 
             var cmd = new MySqlCommand(sql, conn);
 
-            var lista = new List<Tipo>();
+            var lista = new List<Propriedade>();
 
             conn.Open();
 
@@ -59,12 +60,13 @@ namespace HomeFarm
             {
                 while (leitor.Read())
                 {
-                    var tipo = new Tipo();
-                    tipo.ID = Convert.ToInt32(leitor["ID"]);
-                    tipo.TIPOANIMAL = leitor["TIPOANIMAL"].ToString();
-                  
+                    var propriedade = new Propriedade();
+                    
+                   propriedade.ID = Convert.ToInt32(leitor["ID"]);
+                    propriedade.LOGRADOURO = leitor["LOGRADOURO"].ToString();
 
-                    lista.Add(tipo);
+
+                    lista.Add(propriedade);
                 }
             }
             conn.Close();
@@ -77,4 +79,77 @@ namespace HomeFarm
 
 
 
+    /*
+    public static List<Tipo> RetornaListaTipo()
+    {
+
+        MySqlConnection conn = new MySqlConnection("server=localhost; userid=root; database=homefarm; SslMode=none");
+
+        var sql = "SELECT ID, TIPOANIMAL FROM tipo";
+
+        var cmd = new MySqlCommand(sql, conn);
+
+        var lista = new List<Tipo>();
+
+        conn.Open();
+
+        var leitor = cmd.ExecuteReader();
+
+        if (leitor.HasRows)
+        {
+            while (leitor.Read())
+            {
+                var tipo = new Tipo();
+                tipo.ID = Convert.ToInt32(leitor["ID"]);
+                tipo.TIPOANIMAL = leitor["TIPOANIMAL"].ToString();
+
+
+                lista.Add(tipo);
+            }
+        }
+        conn.Close();
+
+        return lista;
+
+    }
+
+
+    public static List<Propriedade> RetornaListaPropriedade()
+    {
+
+        MySqlConnection conn = new MySqlConnection("server=localhost; userid=root; database=homefarm; SslMode=none");
+
+        var sql = "SELECT ID, LOGRADOURO FROM propriedade";
+
+        var cmd = new MySqlCommand(sql, conn);
+
+        var lista = new List<Propriedade>();
+
+        conn.Open();
+
+        var leitor = cmd.ExecuteReader();
+
+        if (leitor.HasRows)
+        {
+            while (leitor.Read())
+            {
+                var propriedade = new Propriedade();
+                propriedade.ID = Convert.ToInt32(leitor["ID"]);
+                propriedade.LOGRADOURO = leitor["LOGRADOURO"].ToString();
+
+
+                lista.Add(propriedade);
+            }
+        }
+        conn.Close();
+
+        return lista;
+
+    }
+
 }
+*/
+
+}
+
+

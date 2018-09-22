@@ -29,29 +29,32 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgFace = new System.Windows.Forms.PictureBox();
-            this.ImgLogin = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnRecuperar = new System.Windows.Forms.Button();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnEntrar = new System.Windows.Forms.Button();
-            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
-            this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
+            this.ImgFechar = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ImgFace = new System.Windows.Forms.PictureBox();
+            this.ImgLogin = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.ImgFace);
             this.panel1.Controls.Add(this.ImgLogin);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -59,26 +62,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(258, 450);
             this.panel1.TabIndex = 0;
-            // 
-            // ImgFace
-            // 
-            this.ImgFace.Image = global::HomeFarm.Properties.Resources.oie_transparent;
-            this.ImgFace.Location = new System.Drawing.Point(12, 409);
-            this.ImgFace.Name = "ImgFace";
-            this.ImgFace.Size = new System.Drawing.Size(33, 29);
-            this.ImgFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgFace.TabIndex = 7;
-            this.ImgFace.TabStop = false;
-            // 
-            // ImgLogin
-            // 
-            this.ImgLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgLogin.Image = global::HomeFarm.Properties.Resources.logijn;
-            this.ImgLogin.Location = new System.Drawing.Point(0, 0);
-            this.ImgLogin.Name = "ImgLogin";
-            this.ImgLogin.Size = new System.Drawing.Size(258, 450);
-            this.ImgLogin.TabIndex = 0;
-            this.ImgLogin.TabStop = false;
             // 
             // panel2
             // 
@@ -137,26 +120,6 @@
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
             // 
-            // ImgMinimizar
-            // 
-            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
-            this.ImgMinimizar.Location = new System.Drawing.Point(467, 3);
-            this.ImgMinimizar.Name = "ImgMinimizar";
-            this.ImgMinimizar.Size = new System.Drawing.Size(33, 29);
-            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgMinimizar.TabIndex = 6;
-            this.ImgMinimizar.TabStop = false;
-            // 
-            // ImgFechar
-            // 
-            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
-            this.ImgFechar.Location = new System.Drawing.Point(506, 3);
-            this.ImgFechar.Name = "ImgFechar";
-            this.ImgFechar.Size = new System.Drawing.Size(33, 29);
-            this.ImgFechar.TabIndex = 5;
-            this.ImgFechar.TabStop = false;
-            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
-            // 
             // txtSenha
             // 
             this.txtSenha.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -207,6 +170,56 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
+            // ImgMinimizar
+            // 
+            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
+            this.ImgMinimizar.Location = new System.Drawing.Point(467, 3);
+            this.ImgMinimizar.Name = "ImgMinimizar";
+            this.ImgMinimizar.Size = new System.Drawing.Size(33, 29);
+            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgMinimizar.TabIndex = 6;
+            this.ImgMinimizar.TabStop = false;
+            // 
+            // ImgFechar
+            // 
+            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
+            this.ImgFechar.Location = new System.Drawing.Point(506, 3);
+            this.ImgFechar.Name = "ImgFechar";
+            this.ImgFechar.Size = new System.Drawing.Size(33, 29);
+            this.ImgFechar.TabIndex = 5;
+            this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.will__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 63);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 246);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ImgFace
+            // 
+            this.ImgFace.Image = global::HomeFarm.Properties.Resources.oie_transparent;
+            this.ImgFace.Location = new System.Drawing.Point(12, 409);
+            this.ImgFace.Name = "ImgFace";
+            this.ImgFace.Size = new System.Drawing.Size(33, 29);
+            this.ImgFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgFace.TabIndex = 7;
+            this.ImgFace.TabStop = false;
+            // 
+            // ImgLogin
+            // 
+            this.ImgLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImgLogin.Image = global::HomeFarm.Properties.Resources.logijn;
+            this.ImgLogin.Location = new System.Drawing.Point(0, 0);
+            this.ImgLogin.Name = "ImgLogin";
+            this.ImgLogin.Size = new System.Drawing.Size(258, 450);
+            this.ImgLogin.TabIndex = 0;
+            this.ImgLogin.TabStop = false;
+            // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -219,12 +232,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -245,6 +259,7 @@
         private System.Windows.Forms.Button BtnRecuperar;
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnEntrar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

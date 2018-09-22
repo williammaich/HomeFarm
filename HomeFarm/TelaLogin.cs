@@ -20,6 +20,9 @@ namespace HomeFarm
             ImgFace.Parent = ImgLogin;
             ImgFace.BackColor = Color.Transparent;
 
+            logoHome.Parent = ImgLogin;
+            logoHome.BackColor = Color.Transparent;
+
         }
 
         private void BtnEntrar_Click(object sender, EventArgs e)

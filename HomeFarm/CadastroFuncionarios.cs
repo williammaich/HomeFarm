@@ -24,8 +24,46 @@ namespace HomeFarm
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+
+            /*
+            MySqlConnection cn = new MySqlConnection();
+            cn.ConnectionString = ("server=localhost; userid=root; database=homefarm; SslMode=none");
+            cn.Open();
+            MySqlCommand com = new MySqlCommand();
+            com.Connection = cn;
+            com.CommandText = "SELECT ID,LOGRADOURO FROM PROPRIEDADE";
+            MySqlDataReader dr = com.ExecuteReader();
+            DataTable dt = new DataTable();
+            dt.Load(dr);
+            comboPropriedade.ValueMember = "ID";
+            comboPropriedade.DisplayMember = "LOGRADOURO";
+            comboPropriedade.DataSource = dt;
+
+
+
+            CarregaComboPropriedade();
+            */
+
+            comboPropriedade.Items.Add  ("Vila Pantanoso");
+            comboPropriedade.Items.Add  ("Cerro do estado");
+            comboPropriedade.Items.Add  ("Cerro das almas");
+            comboPropriedade.Items.Add  ("Pavão");
+            comboPropriedade.Items.Add  ("Vila Ferreira");
+            comboPropriedade.Items.Add  ("Vila Florida");
+
         }
 
+
+        private void CarregaComboPropriedade()
+        {
+            comboPropriedade.ValueMember = "ID";
+            comboPropriedade.DisplayMember = "LOGRADOURO";
+            
+            comboPropriedade.DataSource = DALL.RetornaListaPropriedade();
+        }
+
+    
         private void ImgHome_Click(object sender, EventArgs e)
         {
             MenuPrincipal menu = new MenuPrincipal();
@@ -40,6 +78,8 @@ namespace HomeFarm
             this.Visible = false;
         }
 
+
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
@@ -51,7 +91,7 @@ namespace HomeFarm
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN,PROPRIEDADE_ID) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin,@Propriedade)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN,PROPRIEDADE) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin,@Propriedade)", Conexao);
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
 
@@ -92,11 +132,11 @@ namespace HomeFarm
                 }
 
             }
-            catch
+            catch(Exception erro)
             {
 
 
-                MessageBox.Show("ERRO DE CONEXÃO");
+                MessageBox.Show("ERRO DE CONEXÃO" + erro);
 
             }
 
@@ -132,7 +172,7 @@ namespace HomeFarm
             {
                 Conecta.Open();
 
-                MySqlCommand comando = new MySqlCommand("UPDATE usuario SET NOME=?,SOBRENOME=?,LOGIN=?,SENHA=?,ADMIN=?,PROPRIEDADE_ID WHERE ID", Conecta);
+                MySqlCommand comando = new MySqlCommand("UPDATE usuario SET NOME=?,SOBRENOME=?,LOGIN=?,SENHA=?,ADMIN=?,PROPRIEDADE=? WHERE ID", Conecta);
 
                 comando.Parameters.Clear();
 
@@ -217,7 +257,7 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT NOME,SOBRENOME,LOGIN,SENHA,ADMIN,PROPRIEDADE_ID FROM usuario WHERE NOME= ? OR LOGIN = ?";
+                com.CommandText = "SELECT ID,NOME,SOBRENOME,LOGIN,SENHA,ADMIN,PROPRIEDADE FROM usuario WHERE NOME= ? OR LOGIN = ?";
 
                 com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
                 com.Parameters.Add("@login", MySqlDbType.VarChar, 80).Value = txtEmail.Text;
@@ -230,14 +270,14 @@ namespace HomeFarm
 
 
                 
-                txtNome.Text = dr.GetString(0);
-                txtSobrenome.Text = dr.GetString(1);
-                txtEmail.Text = dr.GetString(2);
-                txtCEmail.Text = dr.GetString(2);
-                txtSenha.Text = dr.GetString(3);
-                txtCSenha.Text = dr.GetString(3);
-                comboAdm.Text = dr.GetString(4);
-                comboPropriedade.Text = dr.GetString(5); 
+                txtNome.Text = dr.GetString(1);
+                txtSobrenome.Text = dr.GetString(2);
+                txtEmail.Text = dr.GetString(3);
+                txtCEmail.Text = dr.GetString(3);
+                txtSenha.Text = dr.GetString(4);
+                txtCSenha.Text = dr.GetString(4);
+                comboAdm.Text = dr.GetString(5);
+                comboPropriedade.Text = dr.GetString(6); 
                 
 
 

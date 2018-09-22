@@ -102,6 +102,7 @@
     </Compile>
     <Compile Include="DALL.cs" />
     <Compile Include="DLL.cs" />
+    <Compile Include="Funcionario.cs" />
     <Compile Include="Listagem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +121,7 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Propriedade.cs" />
     <Compile Include="Raca.cs" />
     <Compile Include="RacaDAL.cs" />
     <Compile Include="Registrar.cs">
@@ -258,6 +260,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\raca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\will_semfundo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\will %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

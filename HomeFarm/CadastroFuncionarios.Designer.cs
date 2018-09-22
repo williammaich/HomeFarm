@@ -33,6 +33,10 @@
             this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboPropriedade = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.ImgProcurar = new System.Windows.Forms.PictureBox();
@@ -57,19 +61,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboPropriedade = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -149,6 +149,49 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(828, 503);
             this.panel2.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(19, 379);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(87, 17);
+            this.label12.TabIndex = 56;
+            this.label12.Text = "Propriedades";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.oie_transparent_8_;
+            this.pictureBox1.Location = new System.Drawing.Point(19, 287);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(87, 85);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // comboPropriedade
+            // 
+            this.comboPropriedade.FormattingEnabled = true;
+            this.comboPropriedade.Location = new System.Drawing.Point(346, 363);
+            this.comboPropriedade.Name = "comboPropriedade";
+            this.comboPropriedade.Size = new System.Drawing.Size(362, 33);
+            this.comboPropriedade.TabIndex = 54;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(153, 366);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(116, 25);
+            this.label11.TabIndex = 53;
+            this.label11.Text = "Propriedade";
             // 
             // btnExcluir
             // 
@@ -416,49 +459,6 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Cadastro Funcionários";
             // 
-            // comboPropriedade
-            // 
-            this.comboPropriedade.FormattingEnabled = true;
-            this.comboPropriedade.Location = new System.Drawing.Point(346, 363);
-            this.comboPropriedade.Name = "comboPropriedade";
-            this.comboPropriedade.Size = new System.Drawing.Size(362, 33);
-            this.comboPropriedade.TabIndex = 54;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(153, 366);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(116, 25);
-            this.label11.TabIndex = 53;
-            this.label11.Text = "Propriedade";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(19, 379);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(87, 17);
-            this.label12.TabIndex = 56;
-            this.label12.Text = "Propriedades";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.oie_transparent_8_;
-            this.pictureBox1.Location = new System.Drawing.Point(19, 287);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(87, 85);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 55;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // CadastroFuncionarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 25F);
@@ -478,10 +478,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

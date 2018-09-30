@@ -34,7 +34,7 @@
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.ImgLote = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.ImgRemedios = new System.Windows.Forms.PictureBox();
             this.ImgRaca = new System.Windows.Forms.PictureBox();
@@ -53,7 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).BeginInit();
@@ -107,7 +107,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.ImgLote);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.ImgRemedios);
             this.panel2.Controls.Add(this.ImgRaca);
@@ -138,16 +138,17 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "Lote";
             // 
-            // pictureBox1
+            // ImgLote
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.lote;
-            this.pictureBox1.Location = new System.Drawing.Point(561, 209);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(96, 78);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.ImgLote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgLote.Image = global::HomeFarm.Properties.Resources.lote;
+            this.ImgLote.Location = new System.Drawing.Point(561, 209);
+            this.ImgLote.Name = "ImgLote";
+            this.ImgLote.Size = new System.Drawing.Size(96, 78);
+            this.ImgLote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgLote.TabIndex = 18;
+            this.ImgLote.TabStop = false;
+            this.ImgLote.Click += new System.EventHandler(this.ImgLote_Click);
             // 
             // label7
             // 
@@ -170,6 +171,7 @@
             this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgRemedios.TabIndex = 16;
             this.ImgRemedios.TabStop = false;
+            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
             // 
             // ImgRaca
             // 
@@ -314,7 +316,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).EndInit();
@@ -346,6 +348,6 @@
         private System.Windows.Forms.PictureBox ImgRemedios;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox ImgLote;
     }
 }

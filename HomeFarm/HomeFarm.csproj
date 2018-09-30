@@ -76,12 +76,7 @@
     <Compile Include="CadastroLote.Designer.cs">
       <DependentUpon>CadastroLote.cs</DependentUpon>
     </Compile>
-    <Compile Include="vds.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include=".Designer.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include=".Designer.cs" />
     <Compile Include="CadastroAnimais.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,9 +166,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroLote.resx">
       <DependentUpon>CadastroLote.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="vds.resx">
-      <DependentUpon>vds.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroPropriedades.resx">
       <DependentUpon>CadastroPropriedades.cs</DependentUpon>

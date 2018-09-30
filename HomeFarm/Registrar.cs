@@ -33,7 +33,7 @@ namespace HomeFarm
         
 
 
-            private void btnConfirmar_Click(object sender, EventArgs e)
+            private void BtnConfirmar_Click(object sender, EventArgs e)
         {
             //estabelece conexão com o bando de dados
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
@@ -87,7 +87,7 @@ namespace HomeFarm
             }
         }
 
-        private void btnCancelar_Click(object sender, EventArgs e)
+        private void BtnCancelar_Click(object sender, EventArgs e)
         {
             txtNome.Text = " ";
             txtSobrenome.Text = " ";

@@ -79,5 +79,10 @@ namespace HomeFarm
 
             }
         }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

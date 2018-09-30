@@ -64,5 +64,19 @@ namespace HomeFarm
             propriedades.Show();
             this.Visible = false;
         }
+
+        private void ImgRemedios_Click(object sender, EventArgs e)
+        {
+            CadastroRemedios remedio = new CadastroRemedios();
+            remedio.Show();
+            this.Visible = false;
+        }
+
+        private void ImgLote_Click(object sender, EventArgs e)
+        {
+            CadastroLote lote = new CadastroLote();
+            lote.Show();
+            this.Visible = false;
+        }
     }
 }

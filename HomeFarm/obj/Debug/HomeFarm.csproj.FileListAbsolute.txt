@@ -39,3 +39,5 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFa
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.CadastroPropriedades.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Listagem.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.ListagemAnimais.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.CadastroLote.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.CadastroRemedios.resources

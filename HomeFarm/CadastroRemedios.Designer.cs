@@ -237,6 +237,7 @@
             this.ImgFechar.Size = new System.Drawing.Size(33, 31);
             this.ImgFechar.TabIndex = 5;
             this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
             // 
             // ImgLogo
             // 
@@ -296,6 +297,7 @@
             this.ImgLote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgLote.TabIndex = 33;
             this.ImgLote.TabStop = false;
+            this.ImgLote.Click += new System.EventHandler(this.ImgLote_Click);
             // 
             // ImgCadastros
             // 

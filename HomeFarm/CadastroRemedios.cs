@@ -72,5 +72,17 @@ namespace HomeFarm
 
             }
         }
+
+        private void ImgLote_Click(object sender, EventArgs e)
+        {
+            CadastroLote lote = new CadastroLote();
+            lote.Show();
+            this.Visible = false;
+        }
+
+        private void ImgFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

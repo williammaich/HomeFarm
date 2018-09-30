@@ -195,7 +195,7 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT ID,CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO,PROPRIEDADE FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
+                com.CommandText = "SELECT CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,RACA,TIPO,PROPRIEDADE FROM animal WHERE NOME= ? OR CODIGOBRINCO = ?";
 
                 com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
                 com.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtCodigo.Text;
@@ -206,20 +206,19 @@ namespace HomeFarm
 
                 dr.Read();
 
-
-                txtCodigo.Text = dr.GetString(1);
-                txtNome.Text = dr.GetString(2);
-                txtDataNascimento.Text = dr.GetString(3);
-                txtNomePai.Text = dr.GetString(4);
-                txtNomeMae.Text = dr.GetString(5);
-                comboSexo.Text = dr.GetString(6);
-                txtPeso.Text = dr.GetString(7);
-                comboMorto.Text = dr.GetString(8);
-                comboVendida.Text = dr.GetString(9);
-                comboPo.Text = dr.GetString(10);
-                comboRaca.Text = dr.GetString(11);
-                comboTipo.Text = dr.GetString(12);
-                comboPropriedade.Text = dr.GetString(13);
+                txtCodigo.Text = dr.GetString(0);
+                txtNome.Text = dr.GetString(1);
+                txtDataNascimento.Text = dr.GetString(2);
+                txtNomePai.Text = dr.GetString(3);
+                txtNomeMae.Text = dr.GetString(4);
+                comboSexo.Text = dr.GetString(5);
+                txtPeso.Text = dr.GetString(6);
+                comboMorto.Text = dr.GetString(7);
+                comboVendida.Text = dr.GetString(8);
+                comboPo.Text = dr.GetString(9);
+                comboRaca.Text = dr.GetString(10);
+                comboTipo.Text = dr.GetString(11);
+                comboPropriedade.Text = dr.GetString(12);
                  
 
 

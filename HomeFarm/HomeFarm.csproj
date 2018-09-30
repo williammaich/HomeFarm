@@ -70,6 +70,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CadastroLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroLote.Designer.cs">
+      <DependentUpon>CadastroLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="vds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include=".Designer.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="CadastroAnimais.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +105,12 @@
     </Compile>
     <Compile Include="CadastroRacasETipos.Designer.cs">
       <DependentUpon>CadastroRacasETipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CadastroRemedios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadastroRemedios.Designer.cs">
+      <DependentUpon>CadastroRemedios.cs</DependentUpon>
     </Compile>
     <Compile Include="ConfirmaAnimais.cs">
       <SubType>Form</SubType>
@@ -151,11 +169,20 @@
     <EmbeddedResource Include="CadastroFuncionarios.resx">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CadastroLote.resx">
+      <DependentUpon>CadastroLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vds.resx">
+      <DependentUpon>vds.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CadastroPropriedades.resx">
       <DependentUpon>CadastroPropriedades.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadastroRacasETipos.resx">
       <DependentUpon>CadastroRacasETipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadastroRemedios.resx">
+      <DependentUpon>CadastroRemedios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ConfirmaAnimais.resx">
       <DependentUpon>ConfirmaAnimais.cs</DependentUpon>
@@ -266,6 +293,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\will %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lote.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\health1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

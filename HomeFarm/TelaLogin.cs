@@ -20,8 +20,8 @@ namespace HomeFarm
             ImgFace.Parent = ImgLogin;
             ImgFace.BackColor = Color.Transparent;
 
-            logoHome.Parent = ImgLogin;
-            logoHome.BackColor = Color.Transparent;
+            LogoHome.Parent = ImgLogin;
+            LogoHome.BackColor = Color.Transparent;
 
         }
 

@@ -41,6 +41,27 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosFuncionarios()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT NOME,SOBRENOME,LOGIN,ADMIN,PROPRIEDADE_ID FROM usuario ;", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         public static List<Propriedade> RetornaListaPropriedade()
         {
 
@@ -76,6 +97,8 @@ namespace HomeFarm
         }
 
     }
+
+
 
 
 

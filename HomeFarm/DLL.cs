@@ -27,7 +27,24 @@ namespace HomeFarm
                 throw erro;
             }
         }
-        
+
+        public DataTable ExibirDadosDalFuncionario()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosFuncionarios();
+                return DataT;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         /*
         public DataTable ExibirDadosDalUsuario()
         {

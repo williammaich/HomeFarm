@@ -42,5 +42,25 @@ namespace HomeFarm
             this.Visible = false;
 
         }
+
+        private void ImgFuncionarios_Click(object sender, EventArgs e)
+        {
+            ListagemFuncionarios listafun = new ListagemFuncionarios();
+            listafun.Show();
+            this.Visible = false;
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ImgRemedios_Click(object sender, EventArgs e)
+        {
+            ListagemRemedios lestaRemedios = new ListagemRemedios();
+            listaRemedios.Show();
+            this.Visible = false;
+        }
     }
 }

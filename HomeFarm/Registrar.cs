@@ -93,8 +93,8 @@ namespace HomeFarm
             txtSobrenome.Text = " ";
             txtEmail.Text = " ";
             txtCEmail.Text = " ";
-            txtSenha.Text = " ";
-            txtCSenha.Text = " ";
+            txtSenha.Text = "";
+            txtCSenha.Text = "";
 
             
         }

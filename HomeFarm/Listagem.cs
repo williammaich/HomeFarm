@@ -58,9 +58,17 @@ namespace HomeFarm
 
         private void ImgRemedios_Click(object sender, EventArgs e)
         {
-            ListagemRemedios lestaRemedios = new ListagemRemedios();
+            ListagemRemedios listaRemedios = new ListagemRemedios();
             listaRemedios.Show();
             this.Visible = false;
+        }
+
+        private void ImgCampos_Click(object sender, EventArgs e)
+        {
+            ListagemPropriedades propriedades = new ListagemPropriedades();
+            propriedades.Show();
+            this.Visible = false;
+
         }
     }
 }

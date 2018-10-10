@@ -25,7 +25,7 @@ namespace HomeFarm
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT * FROM animal ;", conexao);
+                comando = new MySqlCommand("SELECT CODIGOBRINCO,NOME,DATANASCIMENTO,NOMEPAI,NOMEMAE,SEXO,PESO,MORTO,VENDIDA,PO,TIPOANIMAL,RACA,LOGRADOURO FROM animal INNER JOIN tipo ON animal.TIPO_ID = tipo.ID INNER JOIN raca ON animal.RACA_ID=raca.ID INNER JOIN propriedade ON animal.PROPRIEDADE_ID=propriedade.ID;", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;
@@ -46,7 +46,7 @@ namespace HomeFarm
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT NOME,SOBRENOME,LOGIN,ADMIN,PROPRIEDADE_ID FROM usuario ;", conexao);
+                comando = new MySqlCommand("SELECT NOME,SOBRENOME,LOGIN,ADMIN,LOGRADOURO FROM usuario INNER JOIN propriedade ON usuario.PROPRIEDADE_ID = propriedade.ID;", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;
@@ -61,6 +61,53 @@ namespace HomeFarm
                 throw erro;
             }
         }
+
+
+        public DataTable ExibirDadosPropriedades()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT CEP,LOGRADOURO,NUMERO,COMPLEMENTO,BAIRRO,CIDADE,ESTADO FROM propriedade;", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+
+        public DataTable ExibirDadosMedicamentos()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT NOME,DESCRICAO,ESTOCADO,NUMEROLOTE,LOGRADOURO FROM medicamento  INNER JOIN lote ON medicamento.LOTE_ID = lote.ID INNER JOIN propriedade ON medicamento.PROPRIEDADE_ID = propriedade.ID;", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+
+
 
         public static List<Propriedade> RetornaListaPropriedade()
         {

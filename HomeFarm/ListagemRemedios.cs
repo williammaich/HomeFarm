@@ -15,6 +15,22 @@ namespace HomeFarm
         public ListagemRemedios()
         {
             InitializeComponent();
+
+
+
+
+            DLL dll = new DLL();
+            try
+            {
+
+                dataGridRemedios.DataSource = dll.ExibirDadosDalMedicamentos();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
         }
 
         private void ListagemRemedios_Load(object sender, EventArgs e)

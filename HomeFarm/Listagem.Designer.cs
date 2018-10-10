@@ -33,6 +33,8 @@
             this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.ImgRemedios = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,18 +44,16 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ImgRemedios = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -117,6 +117,30 @@
             this.panel2.Size = new System.Drawing.Size(800, 411);
             this.panel2.TabIndex = 1;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(648, 232);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(120, 32);
+            this.label7.TabIndex = 24;
+            this.label7.Text = "Remedios";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
+            // 
+            // ImgRemedios
+            // 
+            this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
+            this.ImgRemedios.Location = new System.Drawing.Point(644, 115);
+            this.ImgRemedios.Name = "ImgRemedios";
+            this.ImgRemedios.Size = new System.Drawing.Size(135, 114);
+            this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgRemedios.TabIndex = 23;
+            this.ImgRemedios.TabStop = false;
+            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -160,6 +184,7 @@
             this.ImgCampos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgCampos.TabIndex = 18;
             this.ImgCampos.TabStop = false;
+            this.ImgCampos.Click += new System.EventHandler(this.ImgCampos_Click);
             // 
             // ImgFuncionarios
             // 
@@ -219,30 +244,6 @@
             this.ImgHome.TabStop = false;
             this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(648, 232);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 32);
-            this.label7.TabIndex = 24;
-            this.label7.Text = "Remedios";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
-            // 
-            // ImgRemedios
-            // 
-            this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
-            this.ImgRemedios.Location = new System.Drawing.Point(644, 115);
-            this.ImgRemedios.Name = "ImgRemedios";
-            this.ImgRemedios.Size = new System.Drawing.Size(135, 114);
-            this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgRemedios.TabIndex = 23;
-            this.ImgRemedios.TabStop = false;
-            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
-            // 
             // Listagem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -260,11 +261,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).EndInit();
             this.ResumeLayout(false);
 
         }

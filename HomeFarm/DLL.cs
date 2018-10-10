@@ -45,6 +45,41 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosDalPropriedades()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosPropriedades();
+                return DataT;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+
+        public DataTable ExibirDadosDalMedicamentos()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosMedicamentos();
+                return DataT;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         /*
         public DataTable ExibirDadosDalUsuario()
         {

@@ -152,6 +152,18 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProducaoCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProducaoCadastro.Designer.cs">
+      <DependentUpon>ProducaoCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProducaoListagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProducaoListagem.Designer.cs">
+      <DependentUpon>ProducaoListagem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Propriedade.cs" />
     <Compile Include="Raca.cs" />
     <Compile Include="RacaDAL.cs" />
@@ -175,6 +187,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelaProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaProducao.Designer.cs">
+      <DependentUpon>TelaProducao.cs</DependentUpon>
+    </Compile>
     <Compile Include="Tipo.cs" />
     <EmbeddedResource Include="CadastroAnimais.resx">
       <DependentUpon>CadastroAnimais.cs</DependentUpon>
@@ -215,6 +233,12 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProducaoCadastro.resx">
+      <DependentUpon>ProducaoCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProducaoListagem.resx">
+      <DependentUpon>ProducaoListagem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -233,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaProducao.resx">
+      <DependentUpon>TelaProducao.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -321,6 +348,33 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\health1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2813%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2814%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cabeca-vista-lateral-cavalo-preto-com-crina-de-cavalo_318-49143.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2815%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oie_transparent%2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\raca1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

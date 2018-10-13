@@ -191,7 +191,7 @@
             // ImgRaca
             // 
             this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRaca.Image = global::HomeFarm.Properties.Resources.raca;
+            this.ImgRaca.Image = global::HomeFarm.Properties.Resources.raca1;
             this.ImgRaca.Location = new System.Drawing.Point(27, 333);
             this.ImgRaca.Name = "ImgRaca";
             this.ImgRaca.Size = new System.Drawing.Size(88, 79);

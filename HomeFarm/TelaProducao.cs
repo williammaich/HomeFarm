@@ -63,7 +63,9 @@ namespace HomeFarm
 
         private void ImgImgListagem_Click(object sender, EventArgs e)
         {
-
+            ProducaoListagem listagem = new ProducaoListagem();
+            listagem.Show();
+            this.Visible = false;
         }
 
         private void ImgCadProd_Click(object sender, EventArgs e)

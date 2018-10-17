@@ -25,8 +25,8 @@ namespace HomeFarm
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
 
-
-            /*
+              /*
+            
             MySqlConnection cn = new MySqlConnection();
             cn.ConnectionString = ("server=localhost; userid=root; database=homefarm; SslMode=none");
             cn.Open();
@@ -39,19 +39,19 @@ namespace HomeFarm
             comboPropriedade.ValueMember = "ID";
             comboPropriedade.DisplayMember = "LOGRADOURO";
             comboPropriedade.DataSource = dt;
-
+            */
 
 
             CarregaComboPropriedade();
-            */
-
+            
+            /*
             comboPropriedade.Items.Add  ("Vila Pantanoso");
             comboPropriedade.Items.Add  ("Cerro do estado");
             comboPropriedade.Items.Add  ("Cerro das almas");
             comboPropriedade.Items.Add  ("Pavão");
             comboPropriedade.Items.Add  ("Vila Ferreira");
             comboPropriedade.Items.Add  ("Vila Florida");
-
+            */
         }
 
 
@@ -91,7 +91,7 @@ namespace HomeFarm
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN,PROPRIEDADE) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin,@Propriedade)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN,PROPRIEDADE_ID) VALUES (@Nome, @Sobrenome, @Login, @Senha, @Admin,@Propriedade)", Conexao);
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
 
@@ -105,7 +105,10 @@ namespace HomeFarm
                         INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
 
                         INSERT.Parameters.Add("@Admin", MySqlDbType.VarChar, 45).Value = comboAdm.SelectedItem.ToString();
-                        INSERT.Parameters.Add("@Propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedItem.ToString();
+
+
+
+                        INSERT.Parameters.Add("@Propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedValue.ToString();
 
                         INSERT.ExecuteNonQuery();
                         Conexao.Close();
@@ -184,7 +187,7 @@ namespace HomeFarm
                 comando.Parameters.Add("@login", MySqlDbType.VarChar, 85).Value = txtEmail.Text;
                 comando.Parameters.Add("@senha", MySqlDbType.VarChar, 85).Value = txtSenha.Text;
                 comando.Parameters.Add("@admin", MySqlDbType.VarChar, 45).Value = comboAdm.SelectedItem.ToString();
-                comando.Parameters.Add("@propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedItem.ToString();
+                comando.Parameters.Add("@propriedade", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedValue.ToString();
 
 
 
@@ -257,7 +260,7 @@ namespace HomeFarm
 
                 MySqlCommand com = new MySqlCommand();
                 com.Connection = Ligar;
-                com.CommandText = "SELECT ID,NOME,SOBRENOME,LOGIN,SENHA,ADMIN,PROPRIEDADE FROM usuario WHERE NOME= ? OR LOGIN = ?";
+                com.CommandText = "SELECT ID,NOME,SOBRENOME,LOGIN,SENHA,ADMIN,PROPRIEDADE_ID FROM usuario WHERE NOME= ? OR LOGIN = ?";
 
                 com.Parameters.Add("@nome", MySqlDbType.VarChar, 45).Value = txtNome.Text;
                 com.Parameters.Add("@login", MySqlDbType.VarChar, 80).Value = txtEmail.Text;
@@ -296,6 +299,13 @@ namespace HomeFarm
         {
             CadastroPropriedades cadPropriedades = new CadastroPropriedades();
             cadPropriedades.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ConfirmaAnimais teste = new ConfirmaAnimais();
+            teste.Show();
             this.Visible = false;
         }
     }

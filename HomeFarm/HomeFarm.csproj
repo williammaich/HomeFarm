@@ -114,6 +114,7 @@
       <DependentUpon>ConfirmaAnimais.cs</DependentUpon>
     </Compile>
     <Compile Include="DALL.cs" />
+    <Compile Include="DALLTipo.cs" />
     <Compile Include="DLL.cs" />
     <Compile Include="Funcionario.cs" />
     <Compile Include="Listagem.cs">

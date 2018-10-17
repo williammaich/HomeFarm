@@ -23,6 +23,10 @@ namespace HomeFarm
 
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+            CarregaComboLote();
+            CarregaComboPropriedade();
+
         }
 
         private void ImgHome_Click(object sender, EventArgs e)
@@ -39,6 +43,20 @@ namespace HomeFarm
             this.Visible = false;
         }
 
+        private void CarregaComboLote()
+        {
+            comboLote.DataSource = RemedioDALL.RetornaLista();
+            comboLote.DisplayMember = "NUMEROLOTE";
+            comboLote.ValueMember = "ID";
+        }
+
+        private void CarregaComboPropriedade()
+        {
+            comboPropriedade.DataSource = DALL.RetornaListaPropriedade();
+            comboPropriedade.DisplayMember = "LOGRADOURO";
+            comboPropriedade.ValueMember = "ID";
+        }
+
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
@@ -49,15 +67,17 @@ namespace HomeFarm
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO medicamento (NOME, DESCRICAO, ESTOCADO, LOTE_ID) VALUES (@Nome, @Descricao, @Estocado, @Obs, @loteid)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO medicamento (NOME, DESCRICAO, ESTOCADO, LOTE_ID, PROPRIEDADE_ID) VALUES (@Nome, @Descricao, @Estocado, @Loteid, @Propriedadeid)", Conexao);
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Descricao", txtDescricao.Text);
                 INSERT.Parameters.AddWithValue("@Estocado", txtEstocado.Text);
-                INSERT.Parameters.Add("@Loteid", MySqlDbType.VarChar, 45).Value = comboLote.SelectedItem.ToString();
-
+                INSERT.Parameters.Add("@Loteid", MySqlDbType.VarChar, 45).Value = comboLote.SelectedValue.ToString();
+                INSERT.Parameters.Add("@Propriedadeid", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedValue.ToString();
 
                 INSERT.ExecuteNonQuery();
                 Conexao.Close();
+
+                MessageBox.Show("Cadastro Realizado com Sucesso!!");
 
                 txtNome.Text = "";
                 txtDescricao.Text = "";
@@ -66,9 +86,9 @@ namespace HomeFarm
               
 
             }
-            catch
+            catch(Exception erro)
             {
-                MessageBox.Show("erro de conexao");
+                MessageBox.Show("erro de conexao" + erro);
 
             }
         }

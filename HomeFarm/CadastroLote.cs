@@ -12,8 +12,13 @@ using MySql.Data;
 
 namespace HomeFarm
 {
+
+
     public partial class CadastroLote : Form
     {
+     
+      
+
         public CadastroLote()
         {
             InitializeComponent();
@@ -23,6 +28,9 @@ namespace HomeFarm
 
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+            txtDataCadastro.Text = DateTime.Now.ToString();
+
         }
 
         private void ImgRemedios_Click(object sender, EventArgs e)
@@ -60,17 +68,19 @@ namespace HomeFarm
                 INSERT.Parameters.AddWithValue("@Numero", txtNLote.Text);
                 INSERT.Parameters.AddWithValue("@DataFab", txtDataFabricacao.Text);
                 INSERT.Parameters.AddWithValue("@DataVal", txtDataValidade.Text);
-                INSERT.Parameters.AddWithValue("@Obs", txtObservacao.Text);
+                INSERT.Parameters.AddWithValue("@Obs", txtObservacao.Text);            
                 INSERT.Parameters.AddWithValue("@DataCad", txtDataCadastro.Text);
 
                 INSERT.ExecuteNonQuery();
                 Conexao.Close();
 
+                MessageBox.Show("Cadastro Realizado com Sucesso!!");
+
                 txtNLote.Text = "";
                 txtDataFabricacao.Text = "";
                 txtDataValidade.Text = "";
                 txtObservacao.Text = "";
-                txtDataCadastro.Text = "";
+               // txtDataCadastro.Text = "";
                 
             }
             catch

@@ -194,6 +194,7 @@
             this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgProducao.TabIndex = 17;
             this.ImgProducao.TabStop = false;
+            this.ImgProducao.Click += new System.EventHandler(this.ImgProducao_Click);
             // 
             // label6
             // 

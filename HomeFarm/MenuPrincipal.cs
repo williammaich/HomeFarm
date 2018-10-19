@@ -43,5 +43,12 @@ namespace HomeFarm
             lista.Show();
             this.Visible = false;
         }
+
+        private void ImgProducao_Click(object sender, EventArgs e)
+        {
+            TelaProducao prod = new TelaProducao();
+            prod.Show();
+            this.Visible = false;
+        }
     }
 }

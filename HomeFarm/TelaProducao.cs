@@ -70,7 +70,7 @@ namespace HomeFarm
 
         private void ImgCadProd_Click(object sender, EventArgs e)
         {
-            ProducaoCadastro cad = new ProducaoCadastro();
+            ProducaoCad cad = new ProducaoCad();
             cad.Show();
             this.Visible = false;
         }

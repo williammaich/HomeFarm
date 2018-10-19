@@ -10,27 +10,19 @@ using System.Windows.Forms;
 
 namespace HomeFarm
 {
-    public partial class ProducaoCadastro : Form
+    public partial class ProducaoCad : Form
     {
-        public ProducaoCadastro()
+        public ProducaoCad()
         {
             InitializeComponent();
 
-            InitializeComponent();
             ImgFechar.Parent = ImgLogo;
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
-        }
 
-        private void comboSexo_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
+            txtDataCadastro.Text = DateTime.Now.ToString();
         }
 
         private void ImgFechar_Click(object sender, EventArgs e)

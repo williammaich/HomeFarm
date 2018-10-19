@@ -153,11 +153,11 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProducaoCadastro.cs">
+    <Compile Include="ProducaoCad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProducaoCadastro.Designer.cs">
-      <DependentUpon>ProducaoCadastro.cs</DependentUpon>
+    <Compile Include="ProducaoCad.Designer.cs">
+      <DependentUpon>ProducaoCad.cs</DependentUpon>
     </Compile>
     <Compile Include="ProducaoListagem.cs">
       <SubType>Form</SubType>
@@ -236,8 +236,8 @@
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProducaoCadastro.resx">
-      <DependentUpon>ProducaoCadastro.cs</DependentUpon>
+    <EmbeddedResource Include="ProducaoCad.resx">
+      <DependentUpon>ProducaoCad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProducaoListagem.resx">
       <DependentUpon>ProducaoListagem.cs</DependentUpon>

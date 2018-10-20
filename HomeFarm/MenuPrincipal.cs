@@ -50,5 +50,13 @@ namespace HomeFarm
             prod.Show();
             this.Visible = false;
         }
+
+        private void ImgRelatorios_Click(object sender, EventArgs e)
+        {
+            TelaRelatorios relatorios = new TelaRelatorios();
+            relatorios.Show();
+            this.Visible = false;
+
+        }
     }
 }

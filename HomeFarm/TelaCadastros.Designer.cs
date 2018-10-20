@@ -107,6 +107,7 @@
             this.label8.Size = new System.Drawing.Size(61, 32);
             this.label8.TabIndex = 19;
             this.label8.Text = "Lote";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
             // label7
             // 
@@ -140,6 +141,7 @@
             this.label5.Size = new System.Drawing.Size(158, 32);
             this.label5.TabIndex = 13;
             this.label5.Text = "Raças e Tipos";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // label4
             // 
@@ -151,6 +153,7 @@
             this.label4.Size = new System.Drawing.Size(150, 32);
             this.label4.TabIndex = 12;
             this.label4.Text = "Funcionários";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -162,6 +165,7 @@
             this.label3.Size = new System.Drawing.Size(99, 32);
             this.label3.TabIndex = 11;
             this.label3.Text = "Animais";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -173,6 +177,7 @@
             this.label2.Size = new System.Drawing.Size(43, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Home";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 

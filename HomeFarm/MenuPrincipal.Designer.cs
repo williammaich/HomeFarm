@@ -261,6 +261,7 @@
             this.ImgRelatorios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgRelatorios.TabIndex = 11;
             this.ImgRelatorios.TabStop = false;
+            this.ImgRelatorios.Click += new System.EventHandler(this.ImgRelatorios_Click);
             // 
             // label3
             // 

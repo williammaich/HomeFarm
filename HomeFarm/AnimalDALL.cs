@@ -7,19 +7,18 @@ using MySql.Data.MySqlClient;
 
 namespace HomeFarm
 {
-    class DALLTipo
+    class AnimalDALL
     {
-
-        public static List<Tipo> RetornaListaAnimal()
+        public static List<Animal> RetornaListaAnimal()
         {
 
             MySqlConnection conn = new MySqlConnection("server=localhost; userid=root; database=homefarm; SslMode=none");
 
-            var sql = "SELECT ID, TIPOANIMAL FROM tipo";
+            var sql = "SELECT ID, NOME FROM animal";
 
             var cmd = new MySqlCommand(sql, conn);
 
-            var listaTipo = new List<Tipo>();
+            var lista = new List<Animal>();
 
             conn.Open();
 
@@ -29,21 +28,21 @@ namespace HomeFarm
             {
                 while (leitor.Read())
                 {
-                    var tipo = new Tipo();
-                    tipo.ID = Convert.ToInt32(leitor["ID"]);
-                    tipo.TIPOANIMAL = leitor["TIPOANIMAL"].ToString();
+                    var animal = new Animal();
+                    animal.ID = Convert.ToInt32(leitor["ID"]);
+                    animal.NOME = leitor["NOME"].ToString();
+                    
 
-
-                    listaTipo.Add(tipo);
+                    lista.Add(animal);
                 }
             }
             conn.Close();
 
-            return listaTipo;
+            return lista;
 
         }
 
     }
-}
 
+}
 

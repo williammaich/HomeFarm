@@ -29,32 +29,30 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgLogo = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.ImgMinimizar = new System.Windows.Forms.PictureBox();
             this.ImgFechar = new System.Windows.Forms.PictureBox();
+            this.ImgLogo = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboAnimais = new System.Windows.Forms.ComboBox();
-            this.txtDataAlteracao = new System.Windows.Forms.TextBox();
+            this.comboAnimal = new System.Windows.Forms.ComboBox();
             this.txtDataCadastro = new System.Windows.Forms.TextBox();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
             this.txtDataRealizada = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,42 +66,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(800, 34);
             this.panel1.TabIndex = 0;
-            // 
-            // ImgLogo
-            // 
-            this.ImgLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgLogo.Image = global::HomeFarm.Properties.Resources.greeen_horizonte;
-            this.ImgLogo.Location = new System.Drawing.Point(0, 0);
-            this.ImgLogo.Name = "ImgLogo";
-            this.ImgLogo.Size = new System.Drawing.Size(800, 34);
-            this.ImgLogo.TabIndex = 0;
-            this.ImgLogo.TabStop = false;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.btnExcluir);
-            this.panel2.Controls.Add(this.btnRegistrar);
-            this.panel2.Controls.Add(this.txtObservacao);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.comboAnimais);
-            this.panel2.Controls.Add(this.txtDataAlteracao);
-            this.panel2.Controls.Add(this.txtDataCadastro);
-            this.panel2.Controls.Add(this.txtQuantidade);
-            this.panel2.Controls.Add(this.txtDataRealizada);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.ImgHome);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 34);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(800, 416);
-            this.panel2.TabIndex = 1;
             // 
             // ImgMinimizar
             // 
@@ -125,6 +87,40 @@
             this.ImgFechar.TabStop = false;
             this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
             // 
+            // ImgLogo
+            // 
+            this.ImgLogo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImgLogo.Image = global::HomeFarm.Properties.Resources.greeen_horizonte;
+            this.ImgLogo.Location = new System.Drawing.Point(0, 0);
+            this.ImgLogo.Name = "ImgLogo";
+            this.ImgLogo.Size = new System.Drawing.Size(800, 34);
+            this.ImgLogo.TabIndex = 0;
+            this.ImgLogo.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.btnExcluir);
+            this.panel2.Controls.Add(this.btnRegistrar);
+            this.panel2.Controls.Add(this.txtObservacao);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.comboAnimal);
+            this.panel2.Controls.Add(this.txtDataCadastro);
+            this.panel2.Controls.Add(this.txtQuantidade);
+            this.panel2.Controls.Add(this.txtDataRealizada);
+            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.ImgHome);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 34);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(800, 416);
+            this.panel2.TabIndex = 1;
+            // 
             // btnExcluir
             // 
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -136,6 +132,7 @@
             this.btnExcluir.TabIndex = 80;
             this.btnExcluir.Text = "Cancelar";
             this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // btnRegistrar
             // 
@@ -148,11 +145,12 @@
             this.btnRegistrar.TabIndex = 79;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // txtObservacao
             // 
             this.txtObservacao.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtObservacao.Location = new System.Drawing.Point(335, 240);
+            this.txtObservacao.Location = new System.Drawing.Point(335, 205);
             this.txtObservacao.Name = "txtObservacao";
             this.txtObservacao.Size = new System.Drawing.Size(313, 29);
             this.txtObservacao.TabIndex = 78;
@@ -162,28 +160,20 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(194, 240);
+            this.label4.Location = new System.Drawing.Point(194, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(99, 21);
             this.label4.TabIndex = 77;
             this.label4.Text = "Observações";
             // 
-            // comboAnimais
+            // comboAnimal
             // 
-            this.comboAnimais.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboAnimais.FormattingEnabled = true;
-            this.comboAnimais.Location = new System.Drawing.Point(335, 275);
-            this.comboAnimais.Name = "comboAnimais";
-            this.comboAnimais.Size = new System.Drawing.Size(313, 29);
-            this.comboAnimais.TabIndex = 76;
-            // 
-            // txtDataAlteracao
-            // 
-            this.txtDataAlteracao.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataAlteracao.Location = new System.Drawing.Point(335, 205);
-            this.txtDataAlteracao.Name = "txtDataAlteracao";
-            this.txtDataAlteracao.Size = new System.Drawing.Size(252, 29);
-            this.txtDataAlteracao.TabIndex = 75;
+            this.comboAnimal.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboAnimal.FormattingEnabled = true;
+            this.comboAnimal.Location = new System.Drawing.Point(335, 240);
+            this.comboAnimal.Name = "comboAnimal";
+            this.comboAnimal.Size = new System.Drawing.Size(313, 29);
+            this.comboAnimal.TabIndex = 76;
             // 
             // txtDataCadastro
             // 
@@ -231,23 +221,12 @@
             this.label14.TabIndex = 70;
             this.label14.Text = "Data de cadastro";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(194, 205);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(111, 21);
-            this.label13.TabIndex = 69;
-            this.label13.Text = "Data Alteração";
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(194, 275);
+            this.label12.Location = new System.Drawing.Point(194, 240);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 21);
             this.label12.TabIndex = 68;
@@ -296,6 +275,7 @@
             this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgHome.TabIndex = 64;
             this.ImgHome.TabStop = false;
+            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
             // ProducaoCad
             // 
@@ -309,11 +289,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ProducaoCad";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             this.ResumeLayout(false);
 
@@ -330,14 +310,12 @@
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.TextBox txtObservacao;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboAnimais;
-        private System.Windows.Forms.TextBox txtDataAlteracao;
+        private System.Windows.Forms.ComboBox comboAnimal;
         private System.Windows.Forms.TextBox txtDataCadastro;
         private System.Windows.Forms.TextBox txtQuantidade;
         private System.Windows.Forms.TextBox txtDataRealizada;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;

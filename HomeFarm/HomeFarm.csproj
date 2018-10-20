@@ -70,6 +70,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Animal.cs" />
+    <Compile Include="AnimalDALL.cs" />
     <Compile Include="CadastroLote.cs">
       <SubType>Form</SubType>
     </Compile>

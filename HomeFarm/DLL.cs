@@ -80,6 +80,23 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosDalProducao()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosProducao();
+                return DataT;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         /*
         public DataTable ExibirDadosDalUsuario()
         {

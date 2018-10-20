@@ -89,7 +89,7 @@ namespace HomeFarm
 
         private void CarregaComboTipo()
         {
-            comboTipo.DataSource = DALLTipo.RetornaListaTipo();
+            comboTipo.DataSource = DALLTipo.RetornaListaAnimal();
             comboTipo.DisplayMember = "TIPOANIMAL";
             comboTipo.ValueMember = "ID";
         }

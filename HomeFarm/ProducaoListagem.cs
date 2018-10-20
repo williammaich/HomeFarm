@@ -21,6 +21,17 @@ namespace HomeFarm
 
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+
+            DLL dll = new DLL();
+            try
+            {
+                dataGridProducao.DataSource = dll.ExibirDadosDalProducao();
+            }
+            catch(Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
         }
 
         private void label1_Click(object sender, EventArgs e)

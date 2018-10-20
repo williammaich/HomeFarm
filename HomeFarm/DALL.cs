@@ -90,7 +90,7 @@ namespace HomeFarm
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT NOME,DESCRICAO,ESTOCADO,NUMEROLOTE,LOGRADOURO FROM medicamento  INNER JOIN lote ON medicamento.LOTE_ID = lote.ID INNER JOIN propriedade ON medicamento.PROPRIEDADE_ID = propriedade.ID;", conexao);
+                comando = new MySqlCommand("SELECT NOME,DESCRICAO,ESTOCADO,NUMEROLOTE,LOGRADOURO,DATAVALIDADE FROM medicamento  INNER JOIN lote ON medicamento.LOTE_ID = lote.ID INNER JOIN propriedade ON medicamento.PROPRIEDADE_ID = propriedade.ID;", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;
@@ -106,8 +106,28 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosProducao()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT DATAREALIZADA,QUANTIDADE,DATADECADASTRO,DATAALTERACAO,OBSERVACAO,NOME,TIPOANIMAL,LOGRADOURO,RACA FROM producao  INNER JOIN animal ON producao.ANIMAL_ID = animal.ID INNER JOIN tipo ON animal.TIPO_ID = tipo.ID INNER JOIN propriedade ON animal.PROPRIEDADE_ID = propriedade.ID INNER JOIN raca ON animal.RACA_ID = raca.ID; ", conexao);
 
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
 
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+        //Listagem dos combobox
 
         public static List<Propriedade> RetornaListaPropriedade()
         {

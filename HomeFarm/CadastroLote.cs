@@ -29,7 +29,9 @@ namespace HomeFarm
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
 
-            txtDataCadastro.Text = DateTime.Now.ToString();
+            txtDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            
+
 
         }
 
@@ -64,12 +66,13 @@ namespace HomeFarm
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO lote (NUMEROLOTE, DATAFABRICACAO, DATAVALIDADE, OBSERVACAO,DATACADASTRO) VALUES (@Numero, @DataFab, @DataVal, @Obs, @DataCad)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO lote (NUMEROLOTE, DATAFABRICACAO, DATAVALIDADE, OBSERVACAO,DATACADASTRO,DATAALTERACAO) VALUES (@Numero, @DataFab, @DataVal, @Obs, @DataCad,@Dataa)", Conexao);
                 INSERT.Parameters.AddWithValue("@Numero", txtNLote.Text);
                 INSERT.Parameters.AddWithValue("@DataFab", txtDataFabricacao.Text);
                 INSERT.Parameters.AddWithValue("@DataVal", txtDataValidade.Text);
                 INSERT.Parameters.AddWithValue("@Obs", txtObservacao.Text);            
                 INSERT.Parameters.AddWithValue("@DataCad", txtDataCadastro.Text);
+                INSERT.Parameters.AddWithValue("@Dataa",DateTime.Now.ToString("dd/MM/yyyy"));
 
                 INSERT.ExecuteNonQuery();
                 Conexao.Close();

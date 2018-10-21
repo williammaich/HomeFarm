@@ -120,55 +120,57 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Animal.cs" />
-    <Compile Include="AnimalDALL.cs" />
-    <Compile Include="CadastroLote.cs">
+    <Compile Include="Clases\Animal.cs" />
+    <Compile Include="Clases\AnimalDALL.cs" />
+    <Compile Include="BaseDeDados\HOMEFARM.cs">
+      <DependentUpon>HOMEFARM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BaseDeDados\HOMEFARM.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HOMEFARM.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\CadastroLote.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroLote.Designer.cs">
+    <Compile Include="Cadastros\CadastroLote.Designer.cs">
       <DependentUpon>CadastroLote.cs</DependentUpon>
     </Compile>
     <Compile Include=".Designer.cs" />
-    <Compile Include="CadastroAnimais.cs">
+    <Compile Include="Cadastros\CadastroAnimais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroAnimais.Designer.cs">
+    <Compile Include="Cadastros\CadastroAnimais.Designer.cs">
       <DependentUpon>CadastroAnimais.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroFuncionarios.cs">
+    <Compile Include="Cadastros\CadastroFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroFuncionarios.Designer.cs">
+    <Compile Include="Cadastros\CadastroFuncionarios.Designer.cs">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroPropriedades.cs">
+    <Compile Include="Cadastros\CadastroPropriedades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroPropriedades.Designer.cs">
+    <Compile Include="Cadastros\CadastroPropriedades.Designer.cs">
       <DependentUpon>CadastroPropriedades.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroRacasETipos.cs">
+    <Compile Include="Cadastros\CadastroRacasETipos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroRacasETipos.Designer.cs">
+    <Compile Include="Cadastros\CadastroRacasETipos.Designer.cs">
       <DependentUpon>CadastroRacasETipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroRemedios.cs">
+    <Compile Include="Cadastros\CadastroRemedios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroRemedios.Designer.cs">
+    <Compile Include="Cadastros\CadastroRemedios.Designer.cs">
       <DependentUpon>CadastroRemedios.cs</DependentUpon>
     </Compile>
-    <Compile Include="ConfirmaAnimais.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ConfirmaAnimais.Designer.cs">
-      <DependentUpon>ConfirmaAnimais.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DALL.cs" />
-    <Compile Include="DALLTipo.cs" />
-    <Compile Include="DLL.cs" />
-    <Compile Include="Funcionario.cs" />
+    <Compile Include="Clases\DALL.cs" />
+    <Compile Include="Clases\DALLTipo.cs" />
+    <Compile Include="Clases\DLL.cs" />
+    <Compile Include="Clases\Funcionario.cs" />
     <Compile Include="homefarmDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -179,61 +181,66 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>homefarmDataSet1.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Listagem.cs">
+    <Compile Include="homefarmDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>homefarmDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Listagem\Listagem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Listagem.Designer.cs">
+    <Compile Include="Listagem\Listagem.Designer.cs">
       <DependentUpon>Listagem.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListagemAnimais.cs">
+    <Compile Include="Listagem\ListagemAnimais.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListagemAnimais.Designer.cs">
+    <Compile Include="Listagem\ListagemAnimais.Designer.cs">
       <DependentUpon>ListagemAnimais.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListagemFuncionarios.cs">
+    <Compile Include="Listagem\ListagemFuncionarios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListagemFuncionarios.Designer.cs">
+    <Compile Include="Listagem\ListagemFuncionarios.Designer.cs">
       <DependentUpon>ListagemFuncionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListagemPropriedades.cs">
+    <Compile Include="Listagem\ListagemPropriedades.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListagemPropriedades.Designer.cs">
+    <Compile Include="Listagem\ListagemPropriedades.Designer.cs">
       <DependentUpon>ListagemPropriedades.cs</DependentUpon>
     </Compile>
-    <Compile Include="ListagemRemedios.cs">
+    <Compile Include="Listagem\ListagemRemedios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ListagemRemedios.Designer.cs">
+    <Compile Include="Listagem\ListagemRemedios.Designer.cs">
       <DependentUpon>ListagemRemedios.cs</DependentUpon>
     </Compile>
-    <Compile Include="MenuPrincipal.cs">
+    <Compile Include="Views\MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MenuPrincipal.Designer.cs">
+    <Compile Include="Views\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProducaoCad.cs">
+    <Compile Include="Views\ProducaoCad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProducaoCad.Designer.cs">
+    <Compile Include="Views\ProducaoCad.Designer.cs">
       <DependentUpon>ProducaoCad.cs</DependentUpon>
     </Compile>
-    <Compile Include="ProducaoListagem.cs">
+    <Compile Include="Views\ProducaoListagem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ProducaoListagem.Designer.cs">
+    <Compile Include="Views\ProducaoListagem.Designer.cs">
       <DependentUpon>ProducaoListagem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Propriedade.cs" />
-    <Compile Include="Raca.cs" />
-    <Compile Include="RacaDAL.cs" />
-    <Compile Include="Registrar.cs">
+    <Compile Include="Clases\Propriedade.cs" />
+    <Compile Include="Clases\Raca.cs" />
+    <Compile Include="Clases\RacaDAL.cs" />
+    <Compile Include="Views\Registrar.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Registrar.Designer.cs">
+    <Compile Include="Views\Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
     </Compile>
     <Compile Include="Relatorios\TelaRelatorioUsuario.cs">
@@ -242,79 +249,76 @@
     <Compile Include="Relatorios\TelaRelatorioUsuario.Designer.cs">
       <DependentUpon>TelaRelatorioUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="Remedio.cs" />
-    <Compile Include="RemedioDALL.cs" />
+    <Compile Include="Clases\Remedio.cs" />
+    <Compile Include="Clases\RemedioDALL.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="TelaCadastros.cs">
+    <Compile Include="Views\TelaCadastros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaCadastros.Designer.cs">
+    <Compile Include="Views\TelaCadastros.Designer.cs">
       <DependentUpon>TelaCadastros.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaLogin.cs">
+    <Compile Include="Views\TelaLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaLogin.Designer.cs">
+    <Compile Include="Views\TelaLogin.Designer.cs">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Clases\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TelaProducao.cs">
+    <Compile Include="Views\TelaProducao.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaProducao.Designer.cs">
+    <Compile Include="Views\TelaProducao.Designer.cs">
       <DependentUpon>TelaProducao.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaRelatorios.cs">
+    <Compile Include="Views\TelaRelatorios.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaRelatorios.Designer.cs">
+    <Compile Include="Views\TelaRelatorios.Designer.cs">
       <DependentUpon>TelaRelatorios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Tipo.cs" />
-    <EmbeddedResource Include="CadastroAnimais.resx">
+    <Compile Include="Clases\Tipo.cs" />
+    <EmbeddedResource Include="Cadastros\CadastroAnimais.resx">
       <DependentUpon>CadastroAnimais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroFuncionarios.resx">
+    <EmbeddedResource Include="Cadastros\CadastroFuncionarios.resx">
       <DependentUpon>CadastroFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroLote.resx">
+    <EmbeddedResource Include="Cadastros\CadastroLote.resx">
       <DependentUpon>CadastroLote.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroPropriedades.resx">
+    <EmbeddedResource Include="Cadastros\CadastroPropriedades.resx">
       <DependentUpon>CadastroPropriedades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroRacasETipos.resx">
+    <EmbeddedResource Include="Cadastros\CadastroRacasETipos.resx">
       <DependentUpon>CadastroRacasETipos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroRemedios.resx">
+    <EmbeddedResource Include="Cadastros\CadastroRemedios.resx">
       <DependentUpon>CadastroRemedios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ConfirmaAnimais.resx">
-      <DependentUpon>ConfirmaAnimais.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Listagem.resx">
+    <EmbeddedResource Include="Listagem\Listagem.resx">
       <DependentUpon>Listagem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListagemAnimais.resx">
+    <EmbeddedResource Include="Listagem\ListagemAnimais.resx">
       <DependentUpon>ListagemAnimais.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListagemFuncionarios.resx">
+    <EmbeddedResource Include="Listagem\ListagemFuncionarios.resx">
       <DependentUpon>ListagemFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListagemPropriedades.resx">
+    <EmbeddedResource Include="Listagem\ListagemPropriedades.resx">
       <DependentUpon>ListagemPropriedades.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ListagemRemedios.resx">
+    <EmbeddedResource Include="Listagem\ListagemRemedios.resx">
       <DependentUpon>ListagemRemedios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MenuPrincipal.resx">
+    <EmbeddedResource Include="Views\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProducaoCad.resx">
+    <EmbeddedResource Include="Views\ProducaoCad.resx">
       <DependentUpon>ProducaoCad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ProducaoListagem.resx">
+    <EmbeddedResource Include="Views\ProducaoListagem.resx">
       <DependentUpon>ProducaoListagem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -327,25 +331,36 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Registrar.resx">
+    <EmbeddedResource Include="Views\Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\Report1.rdlc" />
     <EmbeddedResource Include="Relatorios\TelaRelatorioUsuario.resx">
       <DependentUpon>TelaRelatorioUsuario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaCadastros.resx">
+    <EmbeddedResource Include="Views\TelaCadastros.resx">
       <DependentUpon>TelaCadastros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaLogin.resx">
+    <EmbeddedResource Include="Views\TelaLogin.resx">
       <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaProducao.resx">
+    <EmbeddedResource Include="Views\TelaProducao.resx">
       <DependentUpon>TelaProducao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaRelatorios.resx">
+    <EmbeddedResource Include="Views\TelaRelatorios.resx">
       <DependentUpon>TelaRelatorios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="BaseDeDados\HOMEFARM.xsc">
+      <DependentUpon>HOMEFARM.xsd</DependentUpon>
+    </None>
+    <None Include="BaseDeDados\HOMEFARM.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HOMEFARM.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BaseDeDados\HOMEFARM.xss">
+      <DependentUpon>HOMEFARM.xsd</DependentUpon>
+    </None>
     <None Include="homefarmDataSet.xsc">
       <DependentUpon>homefarmDataSet.xsd</DependentUpon>
     </None>
@@ -367,6 +382,17 @@
     </None>
     <None Include="homefarmDataSet1.xss">
       <DependentUpon>homefarmDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="homefarmDataSet2.xsc">
+      <DependentUpon>homefarmDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="homefarmDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>homefarmDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="homefarmDataSet2.xss">
+      <DependentUpon>homefarmDataSet2.xsd</DependentUpon>
     </None>
     <None Include="HomeFarm_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -512,5 +538,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

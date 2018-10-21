@@ -37,6 +37,8 @@ namespace HomeFarm
                 CarregaComboRaca();
                   CarregaComboTipo();
                   CarregaComboPropriedade();
+
+            
                   
             /*
             comboPropriedade.Items.Add("Vila Pantanoso");

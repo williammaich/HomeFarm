@@ -302,11 +302,6 @@ namespace HomeFarm
             this.Visible = false;
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            ConfirmaAnimais teste = new ConfirmaAnimais();
-            teste.Show();
-            this.Visible = false;
-        }
+       
     }
 }

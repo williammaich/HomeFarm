@@ -47,12 +47,14 @@
             this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.comboPropriedade = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.ImgProcurar = new System.Windows.Forms.PictureBox();
             this.ImgLote = new System.Windows.Forms.PictureBox();
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
             this.ImgHome = new System.Windows.Forms.PictureBox();
-            this.comboPropriedade = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
@@ -69,7 +71,7 @@
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(471, 360);
+            this.btnExcluir.Location = new System.Drawing.Point(468, 415);
             this.btnExcluir.Name = "btnExcluir";
             this.btnExcluir.Size = new System.Drawing.Size(116, 39);
             this.btnExcluir.TabIndex = 60;
@@ -81,7 +83,7 @@
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(311, 360);
+            this.btnRegistrar.Location = new System.Drawing.Point(308, 415);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(116, 39);
             this.btnRegistrar.TabIndex = 59;
@@ -254,6 +256,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.txtValor);
+            this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.comboPropriedade);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.ImgProcurar);
@@ -279,6 +283,26 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(812, 466);
             this.panel2.TabIndex = 3;
+            // 
+            // comboPropriedade
+            // 
+            this.comboPropriedade.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboPropriedade.FormattingEnabled = true;
+            this.comboPropriedade.Location = new System.Drawing.Point(406, 337);
+            this.comboPropriedade.Name = "comboPropriedade";
+            this.comboPropriedade.Size = new System.Drawing.Size(291, 33);
+            this.comboPropriedade.TabIndex = 63;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(205, 334);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(144, 32);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Propriedade";
             // 
             // ImgProcurar
             // 
@@ -327,25 +351,24 @@
             this.ImgHome.TabStop = false;
             this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
-            // comboPropriedade
+            // txtValor
             // 
-            this.comboPropriedade.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboPropriedade.FormattingEnabled = true;
-            this.comboPropriedade.Location = new System.Drawing.Point(406, 287);
-            this.comboPropriedade.Name = "comboPropriedade";
-            this.comboPropriedade.Size = new System.Drawing.Size(291, 33);
-            this.comboPropriedade.TabIndex = 63;
+            this.txtValor.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(406, 287);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(291, 33);
+            this.txtValor.TabIndex = 65;
             // 
-            // label2
+            // label10
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(205, 284);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(144, 32);
-            this.label2.TabIndex = 62;
-            this.label2.Text = "Propriedade";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(205, 284);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 32);
+            this.label10.TabIndex = 64;
+            this.label10.Text = "Valor";
             // 
             // CadastroRemedios
             // 
@@ -399,5 +422,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboPropriedade;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Label label10;
     }
 }

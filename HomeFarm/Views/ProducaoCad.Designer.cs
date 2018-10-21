@@ -48,6 +48,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
@@ -100,6 +102,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.txtValor);
+            this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.btnExcluir);
             this.panel2.Controls.Add(this.btnRegistrar);
             this.panel2.Controls.Add(this.txtObservacao);
@@ -170,10 +174,11 @@
             // 
             this.comboAnimal.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboAnimal.FormattingEnabled = true;
-            this.comboAnimal.Location = new System.Drawing.Point(335, 240);
+            this.comboAnimal.Location = new System.Drawing.Point(335, 276);
             this.comboAnimal.Name = "comboAnimal";
             this.comboAnimal.Size = new System.Drawing.Size(313, 29);
             this.comboAnimal.TabIndex = 76;
+            //this.comboAnimal.SelectedIndexChanged += new System.EventHandler(this.comboAnimal_SelectedIndexChanged);
             // 
             // txtDataCadastro
             // 
@@ -226,11 +231,12 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(194, 240);
+            this.label12.Location = new System.Drawing.Point(194, 276);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(59, 21);
             this.label12.TabIndex = 68;
             this.label12.Text = "Animal";
+            //this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // label3
             // 
@@ -277,6 +283,25 @@
             this.ImgHome.TabStop = false;
             this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
+            // txtValor
+            // 
+            this.txtValor.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(335, 240);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(313, 29);
+            this.txtValor.TabIndex = 82;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(194, 240);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(47, 21);
+            this.label5.TabIndex = 81;
+            this.label5.Text = "Valor";
+            // 
             // ProducaoCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -321,5 +346,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox ImgHome;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.Label label5;
     }
 }

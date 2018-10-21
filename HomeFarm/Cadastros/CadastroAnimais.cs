@@ -16,6 +16,7 @@ namespace HomeFarm
         public CadastroAnimais()
         {
             InitializeComponent();
+
            ImgFechar.Parent = ImgLogo;
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;

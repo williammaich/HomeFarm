@@ -52,7 +52,7 @@ namespace HomeFarm
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO producao (DATAREALIZADA,QUANTIDADE,DATADECADASTRO,DATAALTERACAO,OBSERVACAO,ANIMAL_ID) VALUES (@datar,@quantidade,@datac,@dataa, @observacao,@animal)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO producao (DATAREALIZADA,QUANTIDADE,DATADECADASTRO,DATAALTERACAO,OBSERVACAO,VALOR,ANIMAL_ID) VALUES (@datar,@quantidade,@datac,@dataa, @observacao,@valor,@animal)", Conexao);
 
 
                 INSERT.Parameters.AddWithValue("@datar", txtDataRealizada.Text);
@@ -60,6 +60,7 @@ namespace HomeFarm
                 INSERT.Parameters.AddWithValue("@datac", txtDataCadastro.Text);
                 INSERT.Parameters.AddWithValue("@dataa", DateTime.Now.ToString("dd/MM/yyyy"));
                 INSERT.Parameters.AddWithValue("@observacao", txtObservacao.Text);
+                INSERT.Parameters.AddWithValue("@valor", txtValor.Text);
                 INSERT.Parameters.Add("@animal", MySqlDbType.VarChar, 45).Value = comboAnimal.SelectedValue.ToString();
 
                 INSERT.ExecuteNonQuery();
@@ -96,5 +97,7 @@ namespace HomeFarm
             txtDataCadastro.Text = "";         
             txtObservacao.Text = "";
         }
+
+   
     }
 }

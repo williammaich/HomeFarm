@@ -67,11 +67,12 @@ namespace HomeFarm
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO medicamento (NOME, DESCRICAO, ESTOCADO, LOTE_ID, PROPRIEDADE_ID) VALUES (@Nome, @Descricao, @Estocado, @Loteid, @Propriedadeid)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO medicamento (NOME, DESCRICAO, ESTOCADO, LOTE_ID,VALOR, PROPRIEDADE_ID) VALUES (@Nome, @Descricao, @Estocado, @Loteid,@Valor, @Propriedadeid)", Conexao);
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Descricao", txtDescricao.Text);
                 INSERT.Parameters.AddWithValue("@Estocado", txtEstocado.Text);
                 INSERT.Parameters.Add("@Loteid", MySqlDbType.VarChar, 45).Value = comboLote.SelectedValue.ToString();
+                INSERT.Parameters.AddWithValue("@Valor", txtValor.Text);
                 INSERT.Parameters.Add("@Propriedadeid", MySqlDbType.VarChar, 45).Value = comboPropriedade.SelectedValue.ToString();
 
                 INSERT.ExecuteNonQuery();

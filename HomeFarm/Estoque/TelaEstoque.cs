@@ -41,5 +41,12 @@ namespace HomeFarm.Estoque
             cadastro.Show();
             this.Visible = false;
         }
+
+        private void ImgImgListagem_Click(object sender, EventArgs e)
+        {
+            EstoqueList lista = new EstoqueList();
+            lista.Show();
+            this.Visible = false;
+        }
     }
 }

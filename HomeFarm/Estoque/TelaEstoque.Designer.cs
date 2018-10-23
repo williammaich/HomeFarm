@@ -131,6 +131,7 @@
             this.ImgImgListagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgImgListagem.TabIndex = 15;
             this.ImgImgListagem.TabStop = false;
+            this.ImgImgListagem.Click += new System.EventHandler(this.ImgImgListagem_Click);
             // 
             // ImgCadEstoque
             // 

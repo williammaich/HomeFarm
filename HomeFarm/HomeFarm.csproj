@@ -361,7 +361,6 @@
     <EmbeddedResource Include="Views\Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorios\Report1.rdlc" />
     <EmbeddedResource Include="Relatorios\TelaRelatorioUsuario.resx">
       <DependentUpon>TelaRelatorioUsuario.cs</DependentUpon>
     </EmbeddedResource>

@@ -23,7 +23,7 @@ namespace HomeFarm
             try
             {
 
-                dataGridRemedios.DataSource = dll.ExibirDadosDalMedicamentos();
+                dataGridRemedios.DataSource = dll.ExibirDadosDalEstoque();
 
 
             }

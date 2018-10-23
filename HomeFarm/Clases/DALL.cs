@@ -127,6 +127,27 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosRacao()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT NOME,TIPO,QUANTIDADE,DESCRICAO,NUMEROLOTE,LOGRADOURO FROM racao  INNER JOIN lote ON racao.LOTE_ID = lote.ID INNER JOIN propriedade ON racao.PROPRIEDADE_ID = propriedade.ID; ", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         //Listagem dos combobox
 
         public static List<Propriedade> RetornaListaPropriedade()

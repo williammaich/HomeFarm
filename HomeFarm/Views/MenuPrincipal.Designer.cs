@@ -239,6 +239,7 @@
             this.ImgEstoque.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgEstoque.TabIndex = 13;
             this.ImgEstoque.TabStop = false;
+            this.ImgEstoque.Click += new System.EventHandler(this.ImgEstoque_Click);
             // 
             // label4
             // 

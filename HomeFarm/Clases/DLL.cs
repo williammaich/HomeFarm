@@ -63,7 +63,7 @@ namespace HomeFarm
         }
 
 
-        public DataTable ExibirDadosDalMedicamentos()
+        public DataTable ExibirDadosDalEstoque()
         {
             try
             {
@@ -92,6 +92,22 @@ namespace HomeFarm
 
             }
             catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+        public DataTable ExibirDadosDalRacao()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosRacao();
+                return DataT;
+            }
+            catch(Exception erro)
             {
                 throw erro;
             }

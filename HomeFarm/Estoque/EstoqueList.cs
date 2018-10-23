@@ -21,11 +21,41 @@ namespace HomeFarm.Estoque
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
 
+
+            DLL dll = new DLL();
+            try
+            {
+
+                dataGridRacao.DataSource = dll.ExibirDadosDalRacao();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
         }
 
         private void ImgFechar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void ImgHome_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            this.Visible = false;
+        }
+
+        private void ImgListagem_Click(object sender, EventArgs e)
+        {
+            TelaEstoque estoque = new TelaEstoque();
+            estoque.Show();
+            this.Visible = false;
+
+
         }
     }
 }

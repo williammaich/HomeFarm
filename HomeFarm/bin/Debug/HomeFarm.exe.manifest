@@ -208,7 +208,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>w2BKS1LU9CJJbkawsoG1m1wmBfD9USlGkArvyQOalzE=</dsig:DigestValue>
+        <dsig:DigestValue>JAWczHzxYClzq+Y8hlhK7xPOFYMxW6mN6UHRfpGZWZs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -220,7 +220,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ipzIcQE4uch9Ie5c7y1S6lBja15O9yX95UApciIhuK8=</dsig:DigestValue>
+        <dsig:DigestValue>Y0Pn1BJxdxhWaa55moIeR096Zfj4uXBzsrR9I2vDx9Y=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -237,14 +237,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HomeFarm.exe" size="2792944">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HomeFarm.exe" size="2826736">
       <assemblyIdentity name="HomeFarm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>bRiknyCGVsUvxb01N+Cpp3m751MZG8y6UlXDKzWmpJg=</dsig:DigestValue>
+        <dsig:DigestValue>QHlvudcBDLdPKTeN9T5YogEAKsvN/zMKCpbNWuROvew=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1000,7 +1000,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>te0NXgEGGaDYt5OqrIzXod3zRAeFNKT29XfYtrVTGX8=</dsig:DigestValue>
+        <dsig:DigestValue>hLoL1Wc0rVykrwrW3ehgmFp5WkpH1Ebry0wpkfjtpsI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1161,14 +1161,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.VSHelp.dll" size="27360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.VisualStudio.VSHelp.dll" size="27368">
       <assemblyIdentity name="Microsoft.VisualStudio.VSHelp" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ecu7F3sM4fxCqW4Ve+nq7gr1jETa/oaBQ26jn4yM01s=</dsig:DigestValue>
+        <dsig:DigestValue>Wp7uwfE+EnUQCj5qgNTmd9rWWqvvW9Fd4yztXXDEHmo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1264,7 +1264,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>rGmMssiW8gGwtStzwqYgcNCFNq0Ep42tTlnFRp6rWeA=</dsig:DigestValue>
+        <dsig:DigestValue>IPt0bQHcNVxdlk/EVgAlYjdDLtQjUdydHQTiomo7Q1E=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1288,19 +1288,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>yf3wn3KOB01nyfB5S6qlfYtxTnBsNMbTyrJGBHZ3jho=</dsig:DigestValue>
+        <dsig:DigestValue>SFyuA6n2KOlswoTqtuBxKNmOpUwRzr9JHRfkHYG9bAU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VSLangProj2.dll" size="35992">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="VSLangProj2.dll" size="36000">
       <assemblyIdentity name="VSLangProj2" version="7.0.5000.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>9YB83tam3d/JOGixOKwQfLnq2D+4i4WdvfcobGPbJCY=</dsig:DigestValue>
+        <dsig:DigestValue>uLo7ILQu63Ap2M22/KywhZ53RWt7OrtrzRc6PYDXR7I=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1312,7 +1312,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>x85U6DaCu2JSpF2HNYBR//djZrBe7HK+k0qdRF/tfeY=</dsig:DigestValue>
+        <dsig:DigestValue>3VRtjpE6hgzeH5s2kAdkwniQjhoz1GMX68gc4USuLlQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1322,7 +1322,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>mgODN5KHb/NBS+2EXq9bFU3Ik9VX8yvoo2pxySPlckU=</dsig:DigestValue>
+      <dsig:DigestValue>w7yJv79HHQZ/P5k1GDi9EPkfr1be39aGYiwrSuLSih8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="SqlServerTypes\readme.htm" size="2369">

@@ -21,7 +21,26 @@ namespace HomeFarm.Estoque
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
+
+            CarregaComboLote();
+            CarregaComboPropriedade();
         }
+
+
+        private void CarregaComboLote()
+        {
+            comboLote.DataSource = RemedioDALL.RetornaLista();
+            comboLote.DisplayMember = "NUMEROLOTE";
+            comboLote.ValueMember = "ID";
+        }
+
+        private void CarregaComboPropriedade()
+        {
+            comboPropriedade.DataSource = DALL.RetornaListaPropriedade();
+            comboPropriedade.DisplayMember = "LOGRADOURO";
+            comboPropriedade.ValueMember = "ID";
+        }
+
 
         private void ImgFechar_Click(object sender, EventArgs e)
         {

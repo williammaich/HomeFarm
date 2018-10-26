@@ -33,7 +33,9 @@ namespace HomeFarm
 
         private void ImgAnimais_Click(object sender, EventArgs e)
         {
-
+            TelaRelatorioAnimais animais = new TelaRelatorioAnimais();
+            animais.Show();
+            this.Visible = false;
         }
 
         private void ImgFuncionarios_Click(object sender, EventArgs e)

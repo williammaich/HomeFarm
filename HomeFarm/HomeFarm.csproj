@@ -204,6 +204,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>homefarmDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="homefarmDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>homefarmDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Listagem\Listagem.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +238,12 @@
     </Compile>
     <Compile Include="Listagem\ListagemRemedios.Designer.cs">
       <DependentUpon>ListagemRemedios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorios\TelaRelatorioAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorios\TelaRelatorioAnimais.Designer.cs">
+      <DependentUpon>TelaRelatorioAnimais.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -339,6 +350,11 @@
     <EmbeddedResource Include="Listagem\ListagemRemedios.resx">
       <DependentUpon>ListagemRemedios.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\animalRel.rdlc" />
+    <EmbeddedResource Include="Relatorios\TelaRelatorioAnimais.resx">
+      <DependentUpon>TelaRelatorioAnimais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorios\usuarioRel.rdlc" />
     <EmbeddedResource Include="Views\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -419,6 +435,17 @@
     </None>
     <None Include="homefarmDataSet2.xss">
       <DependentUpon>homefarmDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="homefarmDataSet3.xsc">
+      <DependentUpon>homefarmDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="homefarmDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>homefarmDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="homefarmDataSet3.xss">
+      <DependentUpon>homefarmDataSet3.xsd</DependentUpon>
     </None>
     <None Include="HomeFarm_TemporaryKey.pfx" />
     <None Include="packages.config" />
@@ -550,6 +577,9 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\logo transparent.png" />
+    <None Include="Resources\homeLogo.png" />
+    <None Include="Resources\Ltrans.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -28,27 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastros));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.ImgLote = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.ImgRemedios = new System.Windows.Forms.PictureBox();
+            this.ImgRaca = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ImgLote = new System.Windows.Forms.PictureBox();
-            this.ImgRemedios = new System.Windows.Forms.PictureBox();
-            this.ImgRaca = new System.Windows.Forms.PictureBox();
             this.ImgCampos = new System.Windows.Forms.PictureBox();
             this.ImgFuncionarios = new System.Windows.Forms.PictureBox();
             this.ImgAnimais = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
-            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
-            this.ImgFechar = new System.Windows.Forms.PictureBox();
-            this.ImgLogo = new System.Windows.Forms.PictureBox();
-            this.panel1.SuspendLayout();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).BeginInit();
@@ -57,21 +54,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.ImgMinimizar);
-            this.panel1.Controls.Add(this.ImgFechar);
-            this.panel1.Controls.Add(this.ImgLogo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(796, 39);
-            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -91,14 +75,16 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.ImgHome);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 39);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(796, 362);
+            this.panel2.Size = new System.Drawing.Size(796, 401);
             this.panel2.TabIndex = 1;
             // 
             // label8
             // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
@@ -109,8 +95,22 @@
             this.label8.Text = "Lote";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
+            // ImgLote
+            // 
+            this.ImgLote.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgLote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgLote.Image = global::HomeFarm.Properties.Resources.lote;
+            this.ImgLote.Location = new System.Drawing.Point(561, 209);
+            this.ImgLote.Name = "ImgLote";
+            this.ImgLote.Size = new System.Drawing.Size(96, 78);
+            this.ImgLote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgLote.TabIndex = 18;
+            this.ImgLote.TabStop = false;
+            this.ImgLote.Click += new System.EventHandler(this.ImgLote_Click);
+            // 
             // label7
             // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
@@ -120,8 +120,35 @@
             this.label7.TabIndex = 17;
             this.label7.Text = "Remedios";
             // 
+            // ImgRemedios
+            // 
+            this.ImgRemedios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
+            this.ImgRemedios.Location = new System.Drawing.Point(148, 209);
+            this.ImgRemedios.Name = "ImgRemedios";
+            this.ImgRemedios.Size = new System.Drawing.Size(96, 78);
+            this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgRemedios.TabIndex = 16;
+            this.ImgRemedios.TabStop = false;
+            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
+            // 
+            // ImgRaca
+            // 
+            this.ImgRaca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgRaca.Image = global::HomeFarm.Properties.Resources.raca1;
+            this.ImgRaca.Location = new System.Drawing.Point(561, 82);
+            this.ImgRaca.Name = "ImgRaca";
+            this.ImgRaca.Size = new System.Drawing.Size(90, 78);
+            this.ImgRaca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgRaca.TabIndex = 15;
+            this.ImgRaca.TabStop = false;
+            this.ImgRaca.Click += new System.EventHandler(this.ImgRaca_Click);
+            // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
@@ -133,6 +160,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
@@ -145,6 +173,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -157,6 +186,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -166,6 +196,45 @@
             this.label3.TabIndex = 11;
             this.label3.Text = "Animais";
             this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // ImgCampos
+            // 
+            this.ImgCampos.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgCampos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgCampos.Image = global::HomeFarm.Properties.Resources.oie_transparent_8_;
+            this.ImgCampos.Location = new System.Drawing.Point(344, 209);
+            this.ImgCampos.Name = "ImgCampos";
+            this.ImgCampos.Size = new System.Drawing.Size(96, 78);
+            this.ImgCampos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgCampos.TabIndex = 6;
+            this.ImgCampos.TabStop = false;
+            this.ImgCampos.Click += new System.EventHandler(this.ImgCampos_Click);
+            // 
+            // ImgFuncionarios
+            // 
+            this.ImgFuncionarios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgFuncionarios.Image = global::HomeFarm.Properties.Resources.enable_user;
+            this.ImgFuncionarios.Location = new System.Drawing.Point(349, 77);
+            this.ImgFuncionarios.Name = "ImgFuncionarios";
+            this.ImgFuncionarios.Size = new System.Drawing.Size(91, 78);
+            this.ImgFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgFuncionarios.TabIndex = 4;
+            this.ImgFuncionarios.TabStop = false;
+            this.ImgFuncionarios.Click += new System.EventHandler(this.ImgFuncionarios_Click);
+            // 
+            // ImgAnimais
+            // 
+            this.ImgAnimais.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgAnimais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgAnimais.Image = global::HomeFarm.Properties.Resources.cow_white;
+            this.ImgAnimais.Location = new System.Drawing.Point(148, 77);
+            this.ImgAnimais.Name = "ImgAnimais";
+            this.ImgAnimais.Size = new System.Drawing.Size(91, 78);
+            this.ImgAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgAnimais.TabIndex = 3;
+            this.ImgAnimais.TabStop = false;
+            this.ImgAnimais.Click += new System.EventHandler(this.ImgAnimais_Click);
             // 
             // label2
             // 
@@ -190,78 +259,6 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Cadastros";
             // 
-            // ImgLote
-            // 
-            this.ImgLote.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgLote.Image = global::HomeFarm.Properties.Resources.lote;
-            this.ImgLote.Location = new System.Drawing.Point(561, 209);
-            this.ImgLote.Name = "ImgLote";
-            this.ImgLote.Size = new System.Drawing.Size(96, 78);
-            this.ImgLote.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgLote.TabIndex = 18;
-            this.ImgLote.TabStop = false;
-            this.ImgLote.Click += new System.EventHandler(this.ImgLote_Click);
-            // 
-            // ImgRemedios
-            // 
-            this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
-            this.ImgRemedios.Location = new System.Drawing.Point(148, 209);
-            this.ImgRemedios.Name = "ImgRemedios";
-            this.ImgRemedios.Size = new System.Drawing.Size(96, 78);
-            this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgRemedios.TabIndex = 16;
-            this.ImgRemedios.TabStop = false;
-            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
-            // 
-            // ImgRaca
-            // 
-            this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRaca.Image = global::HomeFarm.Properties.Resources.raca1;
-            this.ImgRaca.Location = new System.Drawing.Point(561, 82);
-            this.ImgRaca.Name = "ImgRaca";
-            this.ImgRaca.Size = new System.Drawing.Size(90, 78);
-            this.ImgRaca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgRaca.TabIndex = 15;
-            this.ImgRaca.TabStop = false;
-            this.ImgRaca.Click += new System.EventHandler(this.ImgRaca_Click);
-            // 
-            // ImgCampos
-            // 
-            this.ImgCampos.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgCampos.Image = global::HomeFarm.Properties.Resources.oie_transparent_8_;
-            this.ImgCampos.Location = new System.Drawing.Point(344, 209);
-            this.ImgCampos.Name = "ImgCampos";
-            this.ImgCampos.Size = new System.Drawing.Size(96, 78);
-            this.ImgCampos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgCampos.TabIndex = 6;
-            this.ImgCampos.TabStop = false;
-            this.ImgCampos.Click += new System.EventHandler(this.ImgCampos_Click);
-            // 
-            // ImgFuncionarios
-            // 
-            this.ImgFuncionarios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgFuncionarios.Image = global::HomeFarm.Properties.Resources.enable_user;
-            this.ImgFuncionarios.Location = new System.Drawing.Point(349, 77);
-            this.ImgFuncionarios.Name = "ImgFuncionarios";
-            this.ImgFuncionarios.Size = new System.Drawing.Size(91, 78);
-            this.ImgFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgFuncionarios.TabIndex = 4;
-            this.ImgFuncionarios.TabStop = false;
-            this.ImgFuncionarios.Click += new System.EventHandler(this.ImgFuncionarios_Click);
-            // 
-            // ImgAnimais
-            // 
-            this.ImgAnimais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgAnimais.Image = global::HomeFarm.Properties.Resources.cow_white;
-            this.ImgAnimais.Location = new System.Drawing.Point(148, 77);
-            this.ImgAnimais.Name = "ImgAnimais";
-            this.ImgAnimais.Size = new System.Drawing.Size(91, 78);
-            this.ImgAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgAnimais.TabIndex = 3;
-            this.ImgAnimais.TabStop = false;
-            this.ImgAnimais.Click += new System.EventHandler(this.ImgAnimais_Click);
-            // 
             // ImgHome
             // 
             this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -274,35 +271,16 @@
             this.ImgHome.TabStop = false;
             this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
-            // ImgMinimizar
+            // pictureBox1
             // 
-            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
-            this.ImgMinimizar.Location = new System.Drawing.Point(714, 5);
-            this.ImgMinimizar.Name = "ImgMinimizar";
-            this.ImgMinimizar.Size = new System.Drawing.Size(31, 28);
-            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgMinimizar.TabIndex = 3;
-            this.ImgMinimizar.TabStop = false;
-            // 
-            // ImgFechar
-            // 
-            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
-            this.ImgFechar.Location = new System.Drawing.Point(751, 5);
-            this.ImgFechar.Name = "ImgFechar";
-            this.ImgFechar.Size = new System.Drawing.Size(33, 31);
-            this.ImgFechar.TabIndex = 2;
-            this.ImgFechar.TabStop = false;
-            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
-            // 
-            // ImgLogo
-            // 
-            this.ImgLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgLogo.Image = global::HomeFarm.Properties.Resources.greeen_horizonte;
-            this.ImgLogo.Location = new System.Drawing.Point(0, 0);
-            this.ImgLogo.Name = "ImgLogo";
-            this.ImgLogo.Size = new System.Drawing.Size(796, 39);
-            this.ImgLogo.TabIndex = 0;
-            this.ImgLogo.TabStop = false;
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.Ltrans;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(796, 401);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 20;
+            this.pictureBox1.TabStop = false;
             // 
             // TelaCadastros
             // 
@@ -310,12 +288,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(796, 401);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCadastros";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TelaCadastros";
-            this.panel1.ResumeLayout(false);
+            this.Text = "Cadastros";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLote)).EndInit();
@@ -325,20 +301,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ImgLogo;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.PictureBox ImgMinimizar;
-        private System.Windows.Forms.PictureBox ImgFechar;
         private System.Windows.Forms.PictureBox ImgFuncionarios;
         private System.Windows.Forms.PictureBox ImgAnimais;
         private System.Windows.Forms.Label label2;
@@ -354,5 +323,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox ImgLote;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

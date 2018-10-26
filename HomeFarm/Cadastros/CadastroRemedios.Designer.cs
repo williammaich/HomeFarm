@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroRemedios));
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
@@ -42,32 +43,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
-            this.ImgFechar = new System.Windows.Forms.PictureBox();
-            this.ImgLogo = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.comboPropriedade = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.ImgProcurar = new System.Windows.Forms.PictureBox();
             this.ImgLote = new System.Windows.Forms.PictureBox();
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
             this.ImgHome = new System.Windows.Forms.PictureBox();
-            this.txtValor = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLote)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnExcluir
             // 
+            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExcluir.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExcluir.ForeColor = System.Drawing.Color.White;
@@ -80,6 +76,7 @@
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
@@ -126,6 +123,7 @@
             // 
             // comboLote
             // 
+            this.comboLote.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboLote.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboLote.FormattingEnabled = true;
             this.comboLote.Location = new System.Drawing.Point(406, 237);
@@ -135,6 +133,7 @@
             // 
             // label6
             // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
@@ -146,6 +145,7 @@
             // 
             // txtEstocado
             // 
+            this.txtEstocado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtEstocado.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEstocado.Location = new System.Drawing.Point(406, 182);
             this.txtEstocado.Name = "txtEstocado";
@@ -154,6 +154,7 @@
             // 
             // label5
             // 
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
@@ -165,6 +166,7 @@
             // 
             // txtDescricao
             // 
+            this.txtDescricao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtDescricao.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDescricao.Location = new System.Drawing.Point(406, 129);
             this.txtDescricao.Name = "txtDescricao";
@@ -173,6 +175,7 @@
             // 
             // txtNome
             // 
+            this.txtNome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtNome.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNome.Location = new System.Drawing.Point(406, 75);
             this.txtNome.Name = "txtNome";
@@ -181,6 +184,7 @@
             // 
             // label4
             // 
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -192,6 +196,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -210,48 +215,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(355, 45);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Cadastros de Remedios";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.ImgMinimizar);
-            this.panel1.Controls.Add(this.ImgFechar);
-            this.panel1.Controls.Add(this.ImgLogo);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(812, 42);
-            this.panel1.TabIndex = 2;
-            // 
-            // ImgMinimizar
-            // 
-            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
-            this.ImgMinimizar.Location = new System.Drawing.Point(736, 3);
-            this.ImgMinimizar.Name = "ImgMinimizar";
-            this.ImgMinimizar.Size = new System.Drawing.Size(31, 28);
-            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgMinimizar.TabIndex = 6;
-            this.ImgMinimizar.TabStop = false;
-            // 
-            // ImgFechar
-            // 
-            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
-            this.ImgFechar.Location = new System.Drawing.Point(773, 3);
-            this.ImgFechar.Name = "ImgFechar";
-            this.ImgFechar.Size = new System.Drawing.Size(33, 31);
-            this.ImgFechar.TabIndex = 5;
-            this.ImgFechar.TabStop = false;
-            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
-            // 
-            // ImgLogo
-            // 
-            this.ImgLogo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgLogo.Image = global::HomeFarm.Properties.Resources.greeen_horizonte;
-            this.ImgLogo.Location = new System.Drawing.Point(0, 0);
-            this.ImgLogo.Name = "ImgLogo";
-            this.ImgLogo.Size = new System.Drawing.Size(812, 42);
-            this.ImgLogo.TabIndex = 4;
-            this.ImgLogo.TabStop = false;
+            this.label1.Text = "Cadastros de Remédios";
             // 
             // panel2
             // 
@@ -278,14 +242,37 @@
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(812, 466);
             this.panel2.TabIndex = 3;
             // 
+            // txtValor
+            // 
+            this.txtValor.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtValor.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(406, 287);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.Size = new System.Drawing.Size(291, 33);
+            this.txtValor.TabIndex = 65;
+            // 
+            // label10
+            // 
+            this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(205, 284);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 32);
+            this.label10.TabIndex = 64;
+            this.label10.Text = "Valor";
+            // 
             // comboPropriedade
             // 
+            this.comboPropriedade.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboPropriedade.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPropriedade.FormattingEnabled = true;
             this.comboPropriedade.Location = new System.Drawing.Point(406, 337);
@@ -295,6 +282,7 @@
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
@@ -306,6 +294,7 @@
             // 
             // ImgProcurar
             // 
+            this.ImgProcurar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
             this.ImgProcurar.Location = new System.Drawing.Point(736, 72);
@@ -351,46 +340,34 @@
             this.ImgHome.TabStop = false;
             this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
-            // txtValor
+            // pictureBox1
             // 
-            this.txtValor.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValor.Location = new System.Drawing.Point(406, 287);
-            this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(291, 33);
-            this.txtValor.TabIndex = 65;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(205, 284);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 32);
-            this.label10.TabIndex = 64;
-            this.label10.Text = "Valor";
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.Ltrans;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(812, 466);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 66;
+            this.pictureBox1.TabStop = false;
             // 
             // CadastroRemedios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 466);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadastroRemedios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "CadastroRemedios";
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogo)).EndInit();
+            this.Text = "Cadastro De Remédios";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLote)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -407,8 +384,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.ComboBox comboLote;
-        private System.Windows.Forms.PictureBox ImgMinimizar;
-        private System.Windows.Forms.PictureBox ImgFechar;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtEstocado;
         private System.Windows.Forms.Label label5;
@@ -417,12 +392,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox ImgLogo;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.ComboBox comboPropriedade;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

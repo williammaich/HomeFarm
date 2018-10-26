@@ -18,18 +18,10 @@ namespace HomeFarm
         {
             InitializeComponent();
 
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+        
         }
 
   
-
-        private void ImgFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void ImgCadastros_Click(object sender, EventArgs e)
         {

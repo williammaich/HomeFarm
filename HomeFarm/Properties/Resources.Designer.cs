@@ -413,6 +413,16 @@ namespace HomeFarm.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap WhatsApp_Image_2018_10_07_at_14_28_47 {
+            get {
+                object obj = ResourceManager.GetObject("WhatsApp Image 2018-10-07 at 14.28.47", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap will__1_ {
             get {
                 object obj = ResourceManager.GetObject("will (1)", resourceCulture);

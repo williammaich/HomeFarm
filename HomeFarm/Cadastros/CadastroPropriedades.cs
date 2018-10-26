@@ -18,10 +18,7 @@ namespace HomeFarm
         {
             InitializeComponent();
 
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+       
 
         }
 

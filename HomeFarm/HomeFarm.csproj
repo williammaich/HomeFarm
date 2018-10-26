@@ -580,6 +580,7 @@
     <None Include="Resources\logo transparent.png" />
     <None Include="Resources\homeLogo.png" />
     <None Include="Resources\Ltrans.png" />
+    <None Include="Resources\WhatsApp Image 2018-10-07 at 14.28.47.jpeg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -17,10 +17,7 @@ namespace HomeFarm
         {
             InitializeComponent();
 
-           ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+
 
             comboSexo.Items.Add("Macho");
             comboSexo.Items.Add("Femea");

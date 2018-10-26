@@ -22,12 +22,7 @@ namespace HomeFarm
         public CadastroLote()
         {
             InitializeComponent();
-
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+            
 
             txtDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
             

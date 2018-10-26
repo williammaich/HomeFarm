@@ -16,10 +16,7 @@ namespace HomeFarm
         {
             InitializeComponent();
 
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+       
 
             DLL dll = new DLL();
             try
@@ -52,10 +49,7 @@ namespace HomeFarm
             this.Visible = false;
         }
 
-        private void ImgFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+     
 
         private void ImgProcurar_Click(object sender, EventArgs e)
         {

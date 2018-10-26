@@ -17,12 +17,7 @@ namespace HomeFarm
         {
             InitializeComponent();
 
-            ImgFechar.Parent = pictureBox1;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = pictureBox1;
-            ImgMinimizar.BackColor = Color.Transparent;
-
-           
+                
 
         }
 
@@ -235,10 +230,6 @@ namespace HomeFarm
             }
         }
 
-        private void ImgFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void txtNome_TextChanged(object sender, EventArgs e)
         {

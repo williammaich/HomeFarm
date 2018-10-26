@@ -16,11 +16,7 @@ namespace HomeFarm.Relatorios
         {
             InitializeComponent();
 
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+ 
         }
 
         private void TelaRelatorioAnimais_Load(object sender, EventArgs e)
@@ -35,9 +31,6 @@ namespace HomeFarm.Relatorios
 
         }
 
-        private void ImgFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+       
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
 using MySql.Data.MySqlClient;
 
 namespace HomeFarm
@@ -16,12 +17,14 @@ namespace HomeFarm
         public ProducaoCad()
         {
             InitializeComponent();
-
+/*
             ImgFechar.Parent = ImgLogo;
             ImgFechar.BackColor = Color.Transparent;
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
-
+            ImgMax.Parent = ImgLogo;
+            ImgMax.BackColor = Color.Transparent; 
+            */
             txtDataRealizada.Text = DateTime.Now.ToString("dd/MM/yyyy");
             txtDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
           
@@ -98,6 +101,6 @@ namespace HomeFarm
             txtObservacao.Text = "";
         }
 
-   
+     
     }
 }

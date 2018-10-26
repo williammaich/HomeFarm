@@ -16,10 +16,7 @@ namespace HomeFarm.Estoque
         {
             InitializeComponent();
 
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+          
 
 
             DLL dll = new DLL();
@@ -37,10 +34,6 @@ namespace HomeFarm.Estoque
 
         }
 
-        private void ImgFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
         private void ImgHome_Click(object sender, EventArgs e)
         {

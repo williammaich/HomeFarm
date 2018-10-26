@@ -17,15 +17,7 @@ namespace HomeFarm
             InitializeComponent();
         }
 
-        private void ImgFechar_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
-        }
+       
 
         private void ImgAnimais_Click(object sender, EventArgs e)
         {
@@ -51,10 +43,6 @@ namespace HomeFarm
 
         }
 
-        private void label7_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void ImgRemedios_Click(object sender, EventArgs e)
         {

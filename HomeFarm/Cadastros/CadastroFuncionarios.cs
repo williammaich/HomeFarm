@@ -20,10 +20,7 @@ namespace HomeFarm
             comboAdm.Items.Add("Sim");
             comboAdm.Items.Add("Não");
 
-            ImgFechar.Parent = ImgLogo;
-            ImgFechar.BackColor = Color.Transparent;
-            ImgMinimizar.Parent = ImgLogo;
-            ImgMinimizar.BackColor = Color.Transparent;
+          
 
               /*
             

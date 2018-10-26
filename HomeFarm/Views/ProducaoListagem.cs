@@ -15,14 +15,14 @@ namespace HomeFarm
         public ProducaoListagem()
         {
             InitializeComponent();
-
+/*
             ImgFechar.Parent = ImgLogo;
             ImgFechar.BackColor = Color.Transparent;
 
             ImgMinimizar.Parent = ImgLogo;
             ImgMinimizar.BackColor = Color.Transparent;
 
-
+    */
             DLL dll = new DLL();
             try
             {

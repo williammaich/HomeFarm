@@ -1,4 +1,5 @@
 ﻿using HomeFarm.Estoque;
+using HomeFarm.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,6 +58,13 @@ namespace HomeFarm
         {
             TelaEstoque estoque = new TelaEstoque();
             estoque.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AplicacaoMedicamento aplicacao = new AplicacaoMedicamento();
+            aplicacao.Show();
             this.Visible = false;
         }
     }

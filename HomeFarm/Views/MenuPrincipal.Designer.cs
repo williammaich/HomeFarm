@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
             this.ImgListagem = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -47,6 +49,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgListagem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProducao)).BeginInit();
@@ -60,6 +63,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.label9);
+            this.panel2.Controls.Add(this.pictureBox2);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.ImgListagem);
             this.panel2.Controls.Add(this.label7);
@@ -81,6 +86,31 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(392, 331);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(148, 17);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Aplicação Medicamento";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox2.Image = global::HomeFarm.Properties.Resources.ap;
+            this.pictureBox2.Location = new System.Drawing.Point(412, 230);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(108, 98);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 24;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label8
             // 
@@ -163,7 +193,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(419, 331);
+            this.label6.Location = new System.Drawing.Point(564, 331);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(92, 17);
             this.label6.TabIndex = 16;
@@ -174,7 +204,7 @@
             this.ImgConfiguracao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgConfiguracao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgConfiguracao.Image = global::HomeFarm.Properties.Resources.configuracos;
-            this.ImgConfiguracao.Location = new System.Drawing.Point(412, 230);
+            this.ImgConfiguracao.Location = new System.Drawing.Point(557, 230);
             this.ImgConfiguracao.Name = "ImgConfiguracao";
             this.ImgConfiguracao.Size = new System.Drawing.Size(108, 98);
             this.ImgConfiguracao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -289,6 +319,7 @@
             this.Text = "Menu";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgListagem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProducao)).EndInit();
@@ -319,5 +350,7 @@
         private System.Windows.Forms.PictureBox ImgProducao;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

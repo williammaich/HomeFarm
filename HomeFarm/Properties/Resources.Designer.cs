@@ -73,6 +73,26 @@ namespace HomeFarm.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ap {
+            get {
+                object obj = ResourceManager.GetObject("ap", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aplicacao {
+            get {
+                object obj = ResourceManager.GetObject("aplicacao", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cabeca_vista_lateral_cavalo_preto_com_crina_de_cavalo_318_49143 {
             get {
                 object obj = ResourceManager.GetObject("cabeca-vista-lateral-cavalo-preto-com-crina-de-cavalo_318-49143", resourceCulture);

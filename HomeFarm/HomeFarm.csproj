@@ -171,6 +171,9 @@
     <Compile Include="Clases\DALLTipo.cs" />
     <Compile Include="Clases\DLL.cs" />
     <Compile Include="Clases\Funcionario.cs" />
+    <Compile Include="Clases\FuncionarioDall.cs" />
+    <Compile Include="Clases\Medicamento.cs" />
+    <Compile Include="Clases\MedicamentoDall.cs" />
     <Compile Include="Estoque\EstoqueCad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -244,6 +247,12 @@
     </Compile>
     <Compile Include="Relatorios\TelaRelatorioAnimais.Designer.cs">
       <DependentUpon>TelaRelatorioAnimais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AplicacaoMedicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AplicacaoMedicamento.Designer.cs">
+      <DependentUpon>AplicacaoMedicamento.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -355,6 +364,9 @@
       <DependentUpon>TelaRelatorioAnimais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Relatorios\usuarioRel.rdlc" />
+    <EmbeddedResource Include="Views\AplicacaoMedicamento.resx">
+      <DependentUpon>AplicacaoMedicamento.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -581,6 +593,8 @@
     <None Include="Resources\homeLogo.png" />
     <None Include="Resources\Ltrans.png" />
     <None Include="Resources\WhatsApp Image 2018-10-07 at 14.28.47.jpeg" />
+    <None Include="Resources\aplicacao.png" />
+    <None Include="Resources\ap.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

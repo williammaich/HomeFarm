@@ -158,3 +158,4 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFa
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Estoque.EstoqueList.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Estoque.TelaEstoque.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Relatorios.TelaRelatorioAnimais.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Views.AplicacaoMedicamento.resources

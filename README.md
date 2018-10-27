@@ -17,3 +17,8 @@ Home Farm projeto para gerenciamento e auxílio ao homem do campo, ele se propõ
  
  * Fazer um registro de usuário ou pode entrar com o usuário padrão que é login "admin" e senha "admin" 
  
+ ## Link para Artigo
+ 
+ Link para o artigo do sistema.
+ 
+ [Click aqui](https://www.overleaf.com/read/xvqdsdyrhcwf) 

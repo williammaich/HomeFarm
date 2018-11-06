@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaRelatorioAnimais));
             this.animalBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.homefarmDataSet3BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.homefarmDataSet3 = new HomeFarm.homefarmDataSet3();
@@ -65,7 +66,7 @@
             reportDataSource1.Name = "animalDataSet";
             reportDataSource1.Value = this.animalBindingSource;
             this.reportViewerAnimais.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewerAnimais.LocalReport.ReportEmbeddedResource = "HomeFarm.Relatorios.animalRel.rdlc";
+            this.reportViewerAnimais.LocalReport.ReportEmbeddedResource = "HomeFarm.Relatorios.RelatorioAnimal.rdlc";
             this.reportViewerAnimais.Location = new System.Drawing.Point(0, 0);
             this.reportViewerAnimais.Name = "reportViewerAnimais";
             this.reportViewerAnimais.ServerReport.BearerToken = null;
@@ -92,6 +93,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewerAnimais);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaRelatorioAnimais";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relatório De Animais";

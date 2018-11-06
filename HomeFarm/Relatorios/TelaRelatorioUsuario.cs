@@ -23,6 +23,8 @@ namespace HomeFarm.Relatorios
 
         private void TelaRelatorioUsuario_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'homefarmDataSet3.usuario'. Você pode movê-la ou removê-la conforme necessário.
+            this.usuarioTableAdapter.Fill(this.homefarmDataSet3.usuario);
             // TODO: esta linha de código carrega dados na tabela 'homefarmDataSet31.usuario'. Você pode movê-la ou removê-la conforme necessário.
             this.usuarioTableAdapter1.Fill(this.homefarmDataSet31.usuario);
             // TODO: esta linha de código carrega dados na tabela 'homefarmDataSet1.usuario'. Você pode movê-la ou removê-la conforme necessário.

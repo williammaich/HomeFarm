@@ -113,6 +113,22 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosDalAgenda()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosAgenda();
+                return DataT;
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         /*
         public DataTable ExibirDadosDalUsuario()
         {

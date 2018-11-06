@@ -148,6 +148,27 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosAgenda()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT DATAINICIO,DATAFINAL,EVENTO FROM agenda WHERE DATAFINAL > NOW();", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         //Listagem dos combobox
 
         public static List<Propriedade> RetornaListaPropriedade()

@@ -159,3 +159,8 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFa
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Estoque.TelaEstoque.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Relatorios.TelaRelatorioAnimais.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Views.AplicacaoMedicamento.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Relatorios.TelaRelatorioProducao.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Relatorios.TelaRelatorioMedicamento.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Relatorios.TelaRelatorioPropriedade.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Relatorios.TelaRelatorioRacao.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Calendario.CalendarioAgenda.resources

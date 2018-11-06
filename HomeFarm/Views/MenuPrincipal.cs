@@ -1,5 +1,7 @@
-﻿using HomeFarm.Estoque;
+﻿using HomeFarm.Calendario;
+using HomeFarm.Estoque;
 using HomeFarm.Views;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +68,18 @@ namespace HomeFarm
             AplicacaoMedicamento aplicacao = new AplicacaoMedicamento();
             aplicacao.Show();
             this.Visible = false;
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+            CalendarioAgenda cal = new CalendarioAgenda();
+            cal.Show();
+            this.Visible = false;
+
+
+        
+
         }
     }
 }

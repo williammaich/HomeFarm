@@ -52,6 +52,7 @@
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataAgenda = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -64,11 +65,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgRelatorios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataAgenda)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.dataAgenda);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Controls.Add(this.label11);
@@ -94,7 +97,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(912, 450);
+            this.panel2.Size = new System.Drawing.Size(938, 550);
             this.panel2.TabIndex = 1;
             // 
             // label10
@@ -103,7 +106,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(686, 190);
+            this.label10.Location = new System.Drawing.Point(715, 157);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(53, 17);
             this.label10.TabIndex = 29;
@@ -114,7 +117,7 @@
             this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox3.Image = global::HomeFarm.Properties.Resources.calen;
-            this.pictureBox3.Location = new System.Drawing.Point(665, 89);
+            this.pictureBox3.Location = new System.Drawing.Point(694, 56);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(108, 98);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -128,7 +131,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(672, 362);
+            this.label11.Location = new System.Drawing.Point(701, 329);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(92, 17);
             this.label11.TabIndex = 27;
@@ -139,7 +142,7 @@
             this.pictureBox4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox4.Image = global::HomeFarm.Properties.Resources.breedings;
-            this.pictureBox4.Location = new System.Drawing.Point(522, 261);
+            this.pictureBox4.Location = new System.Drawing.Point(551, 228);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(108, 98);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +155,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(357, 362);
+            this.label9.Location = new System.Drawing.Point(386, 329);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(148, 17);
             this.label9.TabIndex = 25;
@@ -163,7 +166,7 @@
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox2.Image = global::HomeFarm.Properties.Resources.ap;
-            this.pictureBox2.Location = new System.Drawing.Point(377, 261);
+            this.pictureBox2.Location = new System.Drawing.Point(406, 228);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(108, 98);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -177,7 +180,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(400, 190);
+            this.label8.Location = new System.Drawing.Point(429, 157);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 17);
             this.label8.TabIndex = 22;
@@ -188,7 +191,7 @@
             this.ImgListagem.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgListagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgListagem.Image = global::HomeFarm.Properties.Resources.oie_transparent_6_;
-            this.ImgListagem.Location = new System.Drawing.Point(377, 89);
+            this.ImgListagem.Location = new System.Drawing.Point(406, 56);
             this.ImgListagem.Name = "ImgListagem";
             this.ImgListagem.Size = new System.Drawing.Size(108, 98);
             this.ImgListagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -202,7 +205,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(254, 190);
+            this.label7.Location = new System.Drawing.Point(283, 157);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 17);
             this.label7.TabIndex = 20;
@@ -213,7 +216,7 @@
             this.ImgCadastros.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgCadastros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgCadastros.Image = global::HomeFarm.Properties.Resources.oie_transparent_5_;
-            this.ImgCadastros.Location = new System.Drawing.Point(234, 89);
+            this.ImgCadastros.Location = new System.Drawing.Point(263, 56);
             this.ImgCadastros.Name = "ImgCadastros";
             this.ImgCadastros.Size = new System.Drawing.Size(108, 98);
             this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -227,7 +230,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(543, 190);
+            this.label1.Location = new System.Drawing.Point(572, 157);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 17);
             this.label1.TabIndex = 18;
@@ -238,7 +241,7 @@
             this.ImgProducao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgProducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgProducao.Image = global::HomeFarm.Properties.Resources.oie_transparent_7_;
-            this.ImgProducao.Location = new System.Drawing.Point(522, 89);
+            this.ImgProducao.Location = new System.Drawing.Point(551, 56);
             this.ImgProducao.Name = "ImgProducao";
             this.ImgProducao.Size = new System.Drawing.Size(108, 98);
             this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -252,7 +255,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(549, 362);
+            this.label6.Location = new System.Drawing.Point(578, 329);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(58, 17);
             this.label6.TabIndex = 16;
@@ -263,7 +266,7 @@
             this.ImgConfiguracao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgConfiguracao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgConfiguracao.Image = global::HomeFarm.Properties.Resources.configuracos;
-            this.ImgConfiguracao.Location = new System.Drawing.Point(665, 261);
+            this.ImgConfiguracao.Location = new System.Drawing.Point(694, 228);
             this.ImgConfiguracao.Name = "ImgConfiguracao";
             this.ImgConfiguracao.Size = new System.Drawing.Size(108, 98);
             this.ImgConfiguracao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -276,7 +279,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(257, 362);
+            this.label5.Location = new System.Drawing.Point(286, 329);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 17);
             this.label5.TabIndex = 14;
@@ -287,7 +290,7 @@
             this.ImgEstoque.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgEstoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgEstoque.Image = global::HomeFarm.Properties.Resources.estoque;
-            this.ImgEstoque.Location = new System.Drawing.Point(234, 261);
+            this.ImgEstoque.Location = new System.Drawing.Point(263, 228);
             this.ImgEstoque.Name = "ImgEstoque";
             this.ImgEstoque.Size = new System.Drawing.Size(108, 98);
             this.ImgEstoque.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -301,7 +304,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(108, 362);
+            this.label4.Location = new System.Drawing.Point(137, 329);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 17);
             this.label4.TabIndex = 12;
@@ -312,7 +315,7 @@
             this.ImgRelatorios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgRelatorios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgRelatorios.Image = global::HomeFarm.Properties.Resources.relatorios;
-            this.ImgRelatorios.Location = new System.Drawing.Point(88, 261);
+            this.ImgRelatorios.Location = new System.Drawing.Point(117, 228);
             this.ImgRelatorios.Name = "ImgRelatorios";
             this.ImgRelatorios.Size = new System.Drawing.Size(108, 98);
             this.ImgRelatorios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -326,7 +329,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(123, 190);
+            this.label3.Location = new System.Drawing.Point(152, 157);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 17);
             this.label3.TabIndex = 10;
@@ -337,7 +340,7 @@
             this.ImgHome.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(88, 89);
+            this.ImgHome.Location = new System.Drawing.Point(117, 56);
             this.ImgHome.Name = "ImgHome";
             this.ImgHome.Size = new System.Drawing.Size(108, 98);
             this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -361,16 +364,25 @@
             this.pictureBox1.Image = global::HomeFarm.Properties.Resources.Ltrans;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(912, 450);
+            this.pictureBox1.Size = new System.Drawing.Size(938, 550);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
+            // 
+            // dataAgenda
+            // 
+            this.dataAgenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dataAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataAgenda.Location = new System.Drawing.Point(117, 367);
+            this.dataAgenda.Name = "dataAgenda";
+            this.dataAgenda.Size = new System.Drawing.Size(685, 177);
+            this.dataAgenda.TabIndex = 30;
             // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 450);
+            this.ClientSize = new System.Drawing.Size(938, 550);
             this.Controls.Add(this.panel2);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuPrincipal";
@@ -389,6 +401,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgRelatorios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataAgenda)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -417,5 +430,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.DataGridView dataAgenda;
     }
 }

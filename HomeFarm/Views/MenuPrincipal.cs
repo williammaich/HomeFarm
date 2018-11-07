@@ -21,10 +21,23 @@ namespace HomeFarm
         {
             InitializeComponent();
 
-        
+            DLL dll = new DLL();
+            try
+            {
+
+                dataAgenda.DataSource = dll.ExibirDadosDalAgenda();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
+
         }
 
-  
+
 
         private void ImgCadastros_Click(object sender, EventArgs e)
         {

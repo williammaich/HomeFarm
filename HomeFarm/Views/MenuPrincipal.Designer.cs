@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuPrincipal));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dataAgenda = new System.Windows.Forms.DataGridView();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -52,8 +53,8 @@
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataAgenda = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataAgenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -65,7 +66,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgRelatorios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataAgenda)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -100,6 +100,15 @@
             this.panel2.Size = new System.Drawing.Size(938, 550);
             this.panel2.TabIndex = 1;
             // 
+            // dataAgenda
+            // 
+            this.dataAgenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.dataAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataAgenda.Location = new System.Drawing.Point(117, 367);
+            this.dataAgenda.Name = "dataAgenda";
+            this.dataAgenda.Size = new System.Drawing.Size(685, 177);
+            this.dataAgenda.TabIndex = 30;
+            // 
             // label10
             // 
             this.label10.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -131,11 +140,11 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(701, 329);
+            this.label11.Location = new System.Drawing.Point(715, 329);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(92, 17);
+            this.label11.Size = new System.Drawing.Size(56, 17);
             this.label11.TabIndex = 27;
-            this.label11.Text = "Configurações";
+            this.label11.Text = "Graficos";
             // 
             // pictureBox4
             // 
@@ -148,6 +157,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // label9
             // 
@@ -265,13 +275,14 @@
             // 
             this.ImgConfiguracao.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgConfiguracao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgConfiguracao.Image = global::HomeFarm.Properties.Resources.configuracos;
+            this.ImgConfiguracao.Image = global::HomeFarm.Properties.Resources.oie_transparent_18_;
             this.ImgConfiguracao.Location = new System.Drawing.Point(694, 228);
             this.ImgConfiguracao.Name = "ImgConfiguracao";
             this.ImgConfiguracao.Size = new System.Drawing.Size(108, 98);
             this.ImgConfiguracao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgConfiguracao.TabIndex = 15;
             this.ImgConfiguracao.TabStop = false;
+            this.ImgConfiguracao.Click += new System.EventHandler(this.ImgConfiguracao_Click);
             // 
             // label5
             // 
@@ -369,15 +380,6 @@
             this.pictureBox1.TabIndex = 23;
             this.pictureBox1.TabStop = false;
             // 
-            // dataAgenda
-            // 
-            this.dataAgenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.dataAgenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataAgenda.Location = new System.Drawing.Point(117, 367);
-            this.dataAgenda.Name = "dataAgenda";
-            this.dataAgenda.Size = new System.Drawing.Size(685, 177);
-            this.dataAgenda.TabIndex = 30;
-            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -390,6 +392,7 @@
             this.Text = "Menu";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataAgenda)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -401,7 +404,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgRelatorios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataAgenda)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -183,6 +183,24 @@
     <Compile Include="Clases\FuncionarioDall.cs" />
     <Compile Include="Clases\Medicamento.cs" />
     <Compile Include="Clases\MedicamentoDall.cs" />
+    <Compile Include="Controle\MenuControle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle\MenuControle.Designer.cs">
+      <DependentUpon>MenuControle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\TelaBaixas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle\TelaBaixas.Designer.cs">
+      <DependentUpon>TelaBaixas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controle\TelaPrenhes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controle\TelaPrenhes.Designer.cs">
+      <DependentUpon>TelaPrenhes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Estoque\EstoqueCad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +218,12 @@
     </Compile>
     <Compile Include="Estoque\TelaEstoque.Designer.cs">
       <DependentUpon>TelaEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graficos\MenuGraficos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficos\MenuGraficos.Designer.cs">
+      <DependentUpon>MenuGraficos.cs</DependentUpon>
     </Compile>
     <Compile Include="homefarmDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -371,6 +395,15 @@
     <EmbeddedResource Include="Calendario\CalendarioAgenda.resx">
       <DependentUpon>CalendarioAgenda.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Controle\MenuControle.resx">
+      <DependentUpon>MenuControle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle\TelaBaixas.resx">
+      <DependentUpon>TelaBaixas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controle\TelaPrenhes.resx">
+      <DependentUpon>TelaPrenhes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Estoque\EstoqueCad.resx">
       <DependentUpon>EstoqueCad.cs</DependentUpon>
     </EmbeddedResource>
@@ -379,6 +412,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estoque\TelaEstoque.resx">
       <DependentUpon>TelaEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficos\MenuGraficos.resx">
+      <DependentUpon>MenuGraficos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Listagem\Listagem.resx">
       <DependentUpon>Listagem.cs</DependentUpon>
@@ -650,6 +686,8 @@
     <None Include="Resources\calendario.jpg" />
     <None Include="Resources\calen.png" />
     <None Include="Resources\breedings.png" />
+    <None Include="Resources\breedings1.png" />
+    <None Include="Resources\oie_transparent%2818%29.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

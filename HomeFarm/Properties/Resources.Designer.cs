@@ -103,6 +103,16 @@ namespace HomeFarm.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap breedings1 {
+            get {
+                object obj = ResourceManager.GetObject("breedings1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cabeca_vista_lateral_cavalo_preto_com_crina_de_cavalo_318_49143 {
             get {
                 object obj = ResourceManager.GetObject("cabeca-vista-lateral-cavalo-preto-com-crina-de-cavalo_318-49143", resourceCulture);
@@ -346,6 +356,16 @@ namespace HomeFarm.Properties {
         internal static System.Drawing.Bitmap oie_transparent_16_ {
             get {
                 object obj = ResourceManager.GetObject("oie_transparent(16)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap oie_transparent_18_ {
+            get {
+                object obj = ResourceManager.GetObject("oie_transparent(18)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

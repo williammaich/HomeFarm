@@ -1,5 +1,7 @@
 ﻿using HomeFarm.Calendario;
+using HomeFarm.Controle;
 using HomeFarm.Estoque;
+using HomeFarm.Graficos;
 using HomeFarm.Views;
 
 using System;
@@ -93,6 +95,20 @@ namespace HomeFarm
 
         
 
+        }
+
+        private void ImgConfiguracao_Click(object sender, EventArgs e)
+        {
+            MenuGraficos menu = new MenuGraficos();
+            menu.Show();
+            this.Visible = false;
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            MenuControle controle = new MenuControle();
+            controle.Show();
+            this.Visible = false;
         }
     }
 }

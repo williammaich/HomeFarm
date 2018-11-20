@@ -32,7 +32,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.DataMorte = new System.Windows.Forms.DateTimePicker();
+            this.DataCobrimento = new System.Windows.Forms.DateTimePicker();
             this.comboNome = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -40,9 +40,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DataPrevista = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.comboPai = new System.Windows.Forms.ComboBox();
+            this.comboTipo = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -80,16 +82,16 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Prenhes";
             // 
-            // DataMorte
+            // DataCobrimento
             // 
-            this.DataMorte.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.DataMorte.CustomFormat = "dd-MM-yyyy";
-            this.DataMorte.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DataMorte.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DataMorte.Location = new System.Drawing.Point(244, 94);
-            this.DataMorte.Name = "DataMorte";
-            this.DataMorte.Size = new System.Drawing.Size(230, 29);
-            this.DataMorte.TabIndex = 53;
+            this.DataCobrimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataCobrimento.CustomFormat = "dd-MM-yyyy";
+            this.DataCobrimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataCobrimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DataCobrimento.Location = new System.Drawing.Point(244, 94);
+            this.DataCobrimento.Name = "DataCobrimento";
+            this.DataCobrimento.Size = new System.Drawing.Size(230, 29);
+            this.DataCobrimento.TabIndex = 53;
             // 
             // comboNome
             // 
@@ -107,7 +109,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(122, 199);
+            this.label5.Location = new System.Drawing.Point(122, 252);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 21);
             this.label5.TabIndex = 56;
@@ -171,17 +173,18 @@
             this.btnRegistrar.TabIndex = 60;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
-            // dateTimePicker1
+            // DataPrevista
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(244, 146);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(230, 29);
-            this.dateTimePicker1.TabIndex = 62;
+            this.DataPrevista.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataPrevista.CustomFormat = "dd-MM-yyyy";
+            this.DataPrevista.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataPrevista.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DataPrevista.Location = new System.Drawing.Point(244, 199);
+            this.DataPrevista.Name = "DataPrevista";
+            this.DataPrevista.Size = new System.Drawing.Size(230, 29);
+            this.DataPrevista.TabIndex = 62;
             // 
             // label6
             // 
@@ -189,7 +192,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(122, 152);
+            this.label6.Location = new System.Drawing.Point(122, 205);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(109, 21);
             this.label6.TabIndex = 63;
@@ -200,10 +203,32 @@
             this.comboPai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboPai.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPai.FormattingEnabled = true;
-            this.comboPai.Location = new System.Drawing.Point(244, 199);
+            this.comboPai.Location = new System.Drawing.Point(244, 252);
             this.comboPai.Name = "comboPai";
             this.comboPai.Size = new System.Drawing.Size(230, 29);
             this.comboPai.TabIndex = 64;
+            // 
+            // comboTipo
+            // 
+            this.comboTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTipo.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboTipo.FormattingEnabled = true;
+            this.comboTipo.Location = new System.Drawing.Point(244, 152);
+            this.comboTipo.Name = "comboTipo";
+            this.comboTipo.Size = new System.Drawing.Size(230, 29);
+            this.comboTipo.TabIndex = 66;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(122, 152);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(40, 21);
+            this.label7.TabIndex = 65;
+            this.label7.Text = "Tipo";
             // 
             // TelaPrenhes
             // 
@@ -212,13 +237,15 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(931, 405);
+            this.Controls.Add(this.comboTipo);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.comboPai);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.DataPrevista);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.DataMorte);
+            this.Controls.Add(this.DataCobrimento);
             this.Controls.Add(this.comboNome);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -229,6 +256,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrenhes";
             this.Text = "TelaPrenhes";
+            //this.Load += new System.EventHandler(this.TelaPrenhes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -241,7 +269,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker DataMorte;
+        private System.Windows.Forms.DateTimePicker DataCobrimento;
         private System.Windows.Forms.ComboBox comboNome;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -249,8 +277,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DataPrevista;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ComboBox comboPai;
+        private System.Windows.Forms.ComboBox comboTipo;
+        private System.Windows.Forms.Label label7;
     }
 }

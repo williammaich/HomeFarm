@@ -30,6 +30,8 @@ namespace HomeFarm.Controle
         }
 
 
+
+
         private void ImgHome_Click(object sender, EventArgs e)
         {
             MenuPrincipal menu = new MenuPrincipal();

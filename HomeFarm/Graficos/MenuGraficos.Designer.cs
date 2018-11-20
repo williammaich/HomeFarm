@@ -83,17 +83,17 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(209, 333);
+            this.label7.Location = new System.Drawing.Point(235, 333);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 32);
+            this.label7.Size = new System.Drawing.Size(80, 32);
             this.label7.TabIndex = 46;
-            this.label7.Text = "Remedios";
+            this.label7.Text = "Baixas";
             // 
             // ImgRemedios
             // 
             this.ImgRemedios.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
+            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
             this.ImgRemedios.Location = new System.Drawing.Point(224, 252);
             this.ImgRemedios.Name = "ImgRemedios";
             this.ImgRemedios.Size = new System.Drawing.Size(96, 78);

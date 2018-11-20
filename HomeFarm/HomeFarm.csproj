@@ -109,6 +109,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -176,6 +177,8 @@
     <Compile Include="Cadastros\CadastroRemedios.Designer.cs">
       <DependentUpon>CadastroRemedios.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\AnimalFemeaDALL.cs" />
+    <Compile Include="Clases\AnimalMachoDALL.cs" />
     <Compile Include="Clases\DALL.cs" />
     <Compile Include="Clases\DALLTipo.cs" />
     <Compile Include="Clases\DLL.cs" />
@@ -218,6 +221,12 @@
     </Compile>
     <Compile Include="Estoque\TelaEstoque.Designer.cs">
       <DependentUpon>TelaEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graficos\GrafAnimais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficos\GrafAnimais.Designer.cs">
+      <DependentUpon>GrafAnimais.cs</DependentUpon>
     </Compile>
     <Compile Include="Graficos\MenuGraficos.cs">
       <SubType>Form</SubType>
@@ -412,6 +421,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Estoque\TelaEstoque.resx">
       <DependentUpon>TelaEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficos\GrafAnimais.resx">
+      <DependentUpon>GrafAnimais.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Graficos\MenuGraficos.resx">
       <DependentUpon>MenuGraficos.cs</DependentUpon>

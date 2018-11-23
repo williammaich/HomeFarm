@@ -44,10 +44,13 @@ namespace HomeFarm
         }
 
         private void btnRegistrarRaca_Click(object sender, EventArgs e)
-        {
 
+        { 
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conexao = new MySqlConnection(Conection);
+            
+
+
 
 
             try

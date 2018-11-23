@@ -37,9 +37,7 @@
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.comboAnimal = new System.Windows.Forms.ComboBox();
-            this.txtDataCadastro = new System.Windows.Forms.TextBox();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
-            this.txtDataRealizada = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -48,6 +46,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimeDatacadastro = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeRealizada = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,6 +56,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.dateTimeRealizada);
+            this.panel2.Controls.Add(this.dateTimeDatacadastro);
             this.panel2.Controls.Add(this.txtValor);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.btnExcluir);
@@ -63,9 +65,7 @@
             this.panel2.Controls.Add(this.txtObservacao);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.comboAnimal);
-            this.panel2.Controls.Add(this.txtDataCadastro);
             this.panel2.Controls.Add(this.txtQuantidade);
-            this.panel2.Controls.Add(this.txtDataRealizada);
             this.panel2.Controls.Add(this.label15);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
@@ -160,15 +160,6 @@
             this.comboAnimal.Size = new System.Drawing.Size(313, 29);
             this.comboAnimal.TabIndex = 76;
             // 
-            // txtDataCadastro
-            // 
-            this.txtDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataCadastro.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataCadastro.Location = new System.Drawing.Point(335, 170);
-            this.txtDataCadastro.Name = "txtDataCadastro";
-            this.txtDataCadastro.Size = new System.Drawing.Size(252, 29);
-            this.txtDataCadastro.TabIndex = 74;
-            // 
             // txtQuantidade
             // 
             this.txtQuantidade.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -177,15 +168,6 @@
             this.txtQuantidade.Name = "txtQuantidade";
             this.txtQuantidade.Size = new System.Drawing.Size(313, 29);
             this.txtQuantidade.TabIndex = 73;
-            // 
-            // txtDataRealizada
-            // 
-            this.txtDataRealizada.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataRealizada.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataRealizada.Location = new System.Drawing.Point(335, 100);
-            this.txtDataRealizada.Name = "txtDataRealizada";
-            this.txtDataRealizada.Size = new System.Drawing.Size(252, 29);
-            this.txtDataRealizada.TabIndex = 72;
             // 
             // label15
             // 
@@ -280,6 +262,26 @@
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
             // 
+            // dateTimeDatacadastro
+            // 
+            this.dateTimeDatacadastro.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeDatacadastro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeDatacadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDatacadastro.Location = new System.Drawing.Point(335, 170);
+            this.dateTimeDatacadastro.Name = "dateTimeDatacadastro";
+            this.dateTimeDatacadastro.Size = new System.Drawing.Size(200, 29);
+            this.dateTimeDatacadastro.TabIndex = 84;
+            // 
+            // dateTimeRealizada
+            // 
+            this.dateTimeRealizada.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeRealizada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeRealizada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeRealizada.Location = new System.Drawing.Point(335, 100);
+            this.dateTimeRealizada.Name = "dateTimeRealizada";
+            this.dateTimeRealizada.Size = new System.Drawing.Size(200, 29);
+            this.dateTimeRealizada.TabIndex = 85;
+            // 
             // ProducaoCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,9 +307,7 @@
         private System.Windows.Forms.TextBox txtObservacao;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox comboAnimal;
-        private System.Windows.Forms.TextBox txtDataCadastro;
         private System.Windows.Forms.TextBox txtQuantidade;
-        private System.Windows.Forms.TextBox txtDataRealizada;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
@@ -318,5 +318,7 @@
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dateTimeRealizada;
+        private System.Windows.Forms.DateTimePicker dateTimeDatacadastro;
     }
 }

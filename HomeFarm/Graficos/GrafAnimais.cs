@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace HomeFarm.Graficos
 {
@@ -15,6 +16,75 @@ namespace HomeFarm.Graficos
         public GrafAnimais()
         {
             InitializeComponent();
+
+            CarregaComboAnimal();
+            CarregaComboPropriedade();
+        }
+
+        static String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+        MySqlConnection conexao = new MySqlConnection(Conection);
+
+        private void CarregaComboPropriedade()
+        {
+            comboPropriedade.DataSource = DALL.RetornaListaPropriedade();
+            comboPropriedade.DisplayMember = "LOGRADOURO";
+            comboPropriedade.ValueMember = "ID";
+        }
+
+        private void CarregaComboAnimal()
+        {
+            comboAnimal.DataSource = AnimalDALL.RetornaListaAnimal();
+            comboAnimal.DisplayMember = "NOME";
+            comboAnimal.ValueMember = "ID";
+        }
+
+        private void ImgHome_Click(object sender, EventArgs e)
+        {
+            MenuPrincipal menu = new MenuPrincipal();
+            menu.Show();
+            this.Visible = false;
+        }
+
+        private void GrafAnimais_Load(object sender, EventArgs e)
+        {
+
+           
+        }
+
+        public void chart()
+        {
+            conexao.Open();
+            try
+            {
+                MySqlCommand cmd = conexao.CreateCommand();
+                cmd.CommandText = "SELECT DATAREALIZADA,QUANTIDADE FROM PRODUCAO WHERE ANIMAL_ID = "+comboAnimal.SelectedValue.ToString()+"";
+                MySqlDataReader reader;
+
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    chart1.Series["QUANTIDADE"].Points.Add(reader.GetDouble("QUANTIDADE")); 
+                }
+            }
+            catch(Exception erro)
+            {
+                MessageBox.Show("Erro!!"+ erro);
+            }
+            finally
+            {
+                if (conexao.State == ConnectionState.Open)
+                {
+                    conexao.Close();
+                }
+            }
+
+        }
+
+        private void ImgProcurar_Click(object sender, EventArgs e)
+        {
+            chart1.Series["QUANTIDADE"].Points.Clear();
+
+            chart();
         }
     }
 }

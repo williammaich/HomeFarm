@@ -54,8 +54,6 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\SqlSer
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\SqlServerTypes\x86\msvcr120.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
-C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Devart.Data.dll
-C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Devart.Data.MySql.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Microsoft.ReportViewer.Common.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Microsoft.ReportViewer.Design.dll
@@ -70,8 +68,6 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Micros
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Microsoft.MSXML.dll
-C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Devart.Data.xml
-C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\Devart.Data.MySql.xml
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -168,3 +164,4 @@ C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFa
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Controle.TelaBaixas.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Graficos.MenuGraficos.resources
 C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Controle.TelaPrenhes.resources
+C:\Users\william\Desktop\HomeFarmTCC\HomeFarm\HomeFarm\HomeFarm\obj\Debug\HomeFarm.Graficos.GrafAnimais.resources

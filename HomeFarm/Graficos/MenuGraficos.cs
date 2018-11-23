@@ -23,5 +23,12 @@ namespace HomeFarm.Graficos
             menu.Show();
             this.Visible = false;
         }
+
+        private void ImgAnimais_Click(object sender, EventArgs e)
+        {
+            GrafAnimais animais = new GrafAnimais();
+            animais.Show();
+            this.Visible = false;
+        }
     }
 }

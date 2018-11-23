@@ -196,6 +196,7 @@
             this.ImgAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgAnimais.TabIndex = 37;
             this.ImgAnimais.TabStop = false;
+            this.ImgAnimais.Click += new System.EventHandler(this.ImgAnimais_Click);
             // 
             // label2
             // 

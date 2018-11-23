@@ -25,8 +25,7 @@ namespace HomeFarm
             ImgMax.Parent = ImgLogo;
             ImgMax.BackColor = Color.Transparent; 
             */
-            txtDataRealizada.Text = DateTime.Now.ToString("dd/MM/yyyy");
-            txtDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
+            
           
 
             CarregaComboAnimal();
@@ -58,10 +57,10 @@ namespace HomeFarm
                 MySqlCommand INSERT = new MySqlCommand("INSERT INTO producao (DATAREALIZADA,QUANTIDADE,DATADECADASTRO,DATAALTERACAO,OBSERVACAO,VALOR,ANIMAL_ID) VALUES (@datar,@quantidade,@datac,@dataa, @observacao,@valor,@animal)", Conexao);
 
 
-                INSERT.Parameters.AddWithValue("@datar", txtDataRealizada.Text);
+                INSERT.Parameters.AddWithValue("@datar", this.dateTimeRealizada.Value.ToString("yyyy/MM/dd"));
                 INSERT.Parameters.AddWithValue("@quantidade", txtQuantidade.Text);
-                INSERT.Parameters.AddWithValue("@datac", txtDataCadastro.Text);
-                INSERT.Parameters.AddWithValue("@dataa", DateTime.Now.ToString("dd/MM/yyyy"));
+                INSERT.Parameters.AddWithValue("@datac", this.dateTimeDatacadastro.Value.ToString("yyyy/MM/dd"));
+                INSERT.Parameters.AddWithValue("@dataa", DateTime.Now.ToString("yyyy/MM/dd"));
                 INSERT.Parameters.AddWithValue("@observacao", txtObservacao.Text);
                 INSERT.Parameters.AddWithValue("@valor", txtValor.Text);
                 INSERT.Parameters.Add("@animal", MySqlDbType.VarChar, 45).Value = comboAnimal.SelectedValue.ToString();
@@ -71,9 +70,9 @@ namespace HomeFarm
 
                 MessageBox.Show("Cadastro Realizado com Sucesso!!");
 
-                txtDataRealizada.Text = "";
+             
                 txtQuantidade.Text = "";
-                txtDataCadastro.Text = "";
+               
                 
                 txtObservacao.Text = "";
 
@@ -95,9 +94,9 @@ namespace HomeFarm
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            txtDataRealizada.Text = "";
+        
             txtQuantidade.Text = "";
-            txtDataCadastro.Text = "";         
+          
             txtObservacao.Text = "";
         }
 

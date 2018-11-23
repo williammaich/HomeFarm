@@ -47,7 +47,6 @@
             this.txtPeso = new System.Windows.Forms.TextBox();
             this.txtNomeMae = new System.Windows.Forms.TextBox();
             this.txtNomePai = new System.Windows.Forms.TextBox();
-            this.txtDataNascimento = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
@@ -68,6 +67,7 @@
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dateTimeDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
@@ -79,6 +79,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.dateTimeDataNascimento);
             this.panel2.Controls.Add(this.comboPropriedade);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.ImgRaca);
@@ -96,7 +97,6 @@
             this.panel2.Controls.Add(this.txtPeso);
             this.panel2.Controls.Add(this.txtNomeMae);
             this.panel2.Controls.Add(this.txtNomePai);
-            this.panel2.Controls.Add(this.txtDataNascimento);
             this.panel2.Controls.Add(this.txtNome);
             this.panel2.Controls.Add(this.txtCodigo);
             this.panel2.Controls.Add(this.label15);
@@ -315,16 +315,6 @@
             this.txtNomePai.Size = new System.Drawing.Size(313, 29);
             this.txtNomePai.TabIndex = 38;
             this.txtNomePai.TextChanged += new System.EventHandler(this.txtNomePai_TextChanged);
-            // 
-            // txtDataNascimento
-            // 
-            this.txtDataNascimento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataNascimento.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataNascimento.Location = new System.Drawing.Point(362, 130);
-            this.txtDataNascimento.Name = "txtDataNascimento";
-            this.txtDataNascimento.Size = new System.Drawing.Size(252, 29);
-            this.txtDataNascimento.TabIndex = 37;
-            this.txtDataNascimento.TextChanged += new System.EventHandler(this.txtDataNascimento_TextChanged);
             // 
             // txtNome
             // 
@@ -566,6 +556,16 @@
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
+            // dateTimeDataNascimento
+            // 
+            this.dateTimeDataNascimento.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeDataNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDataNascimento.Location = new System.Drawing.Point(362, 130);
+            this.dateTimeDataNascimento.Name = "dateTimeDataNascimento";
+            this.dateTimeDataNascimento.Size = new System.Drawing.Size(200, 29);
+            this.dateTimeDataNascimento.TabIndex = 85;
+            // 
             // CadastroAnimais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -600,7 +600,6 @@
         private System.Windows.Forms.TextBox txtPeso;
         private System.Windows.Forms.TextBox txtNomeMae;
         private System.Windows.Forms.TextBox txtNomePai;
-        private System.Windows.Forms.TextBox txtDataNascimento;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label15;
@@ -627,5 +626,6 @@
         private System.Windows.Forms.ComboBox comboPropriedade;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dateTimeDataNascimento;
     }
 }

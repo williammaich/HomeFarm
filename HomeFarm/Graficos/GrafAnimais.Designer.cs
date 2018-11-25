@@ -35,8 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboPropriedade = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
             this.comboAnimal = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
@@ -80,34 +78,12 @@
             this.label1.TabIndex = 37;
             this.label1.Text = "Graficos";
             // 
-            // comboPropriedade
-            // 
-            this.comboPropriedade.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.comboPropriedade.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboPropriedade.FormattingEnabled = true;
-            this.comboPropriedade.Location = new System.Drawing.Point(358, 28);
-            this.comboPropriedade.Name = "comboPropriedade";
-            this.comboPropriedade.Size = new System.Drawing.Size(252, 29);
-            this.comboPropriedade.TabIndex = 59;
-            // 
-            // label17
-            // 
-            this.label17.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(217, 28);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(95, 21);
-            this.label17.TabIndex = 58;
-            this.label17.Text = "Propriedade";
-            // 
             // comboAnimal
             // 
             this.comboAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboAnimal.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboAnimal.FormattingEnabled = true;
-            this.comboAnimal.Location = new System.Drawing.Point(358, 77);
+            this.comboAnimal.Location = new System.Drawing.Point(352, 33);
             this.comboAnimal.Name = "comboAnimal";
             this.comboAnimal.Size = new System.Drawing.Size(252, 29);
             this.comboAnimal.TabIndex = 61;
@@ -118,7 +94,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(217, 77);
+            this.label3.Location = new System.Drawing.Point(211, 33);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(66, 21);
             this.label3.TabIndex = 60;
@@ -135,6 +111,7 @@
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "QUANTIDADE";
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
             this.chart1.Series.Add(series1);
             this.chart1.Size = new System.Drawing.Size(666, 277);
             this.chart1.TabIndex = 62;
@@ -145,7 +122,7 @@
             this.ImgProcurar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurar.Location = new System.Drawing.Point(671, 77);
+            this.ImgProcurar.Location = new System.Drawing.Point(665, 33);
             this.ImgProcurar.Name = "ImgProcurar";
             this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
             this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,8 +140,6 @@
             this.Controls.Add(this.chart1);
             this.Controls.Add(this.comboAnimal);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboPropriedade);
-            this.Controls.Add(this.label17);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.ImgHome);
             this.Controls.Add(this.label1);
@@ -184,8 +159,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboPropriedade;
-        private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox comboAnimal;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;

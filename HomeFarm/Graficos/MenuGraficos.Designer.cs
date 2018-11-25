@@ -112,6 +112,7 @@
             this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgProducao.TabIndex = 44;
             this.ImgProducao.TabStop = false;
+            this.ImgProducao.Click += new System.EventHandler(this.ImgProducao_Click);
             // 
             // label6
             // 
@@ -184,6 +185,7 @@
             this.ImgFuncionarios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgFuncionarios.TabIndex = 38;
             this.ImgFuncionarios.TabStop = false;
+            this.ImgFuncionarios.Click += new System.EventHandler(this.ImgFuncionarios_Click);
             // 
             // ImgAnimais
             // 
@@ -255,6 +257,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuGraficos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Graficos";
             ((System.ComponentModel.ISupportInitialize)(this.ImgEstoque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).EndInit();

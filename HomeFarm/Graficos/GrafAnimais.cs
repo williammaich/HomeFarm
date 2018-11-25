@@ -18,19 +18,22 @@ namespace HomeFarm.Graficos
             InitializeComponent();
 
             CarregaComboAnimal();
-            CarregaComboPropriedade();
+           
+            
+
+           
         }
+
+       
+
+
+        
+
 
         static String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
         MySqlConnection conexao = new MySqlConnection(Conection);
 
-        private void CarregaComboPropriedade()
-        {
-            comboPropriedade.DataSource = DALL.RetornaListaPropriedade();
-            comboPropriedade.DisplayMember = "LOGRADOURO";
-            comboPropriedade.ValueMember = "ID";
-        }
-
+       
         private void CarregaComboAnimal()
         {
             comboAnimal.DataSource = AnimalDALL.RetornaListaAnimal();
@@ -57,13 +60,15 @@ namespace HomeFarm.Graficos
             try
             {
                 MySqlCommand cmd = conexao.CreateCommand();
-                cmd.CommandText = "SELECT DATAREALIZADA,QUANTIDADE FROM PRODUCAO WHERE ANIMAL_ID = "+comboAnimal.SelectedValue.ToString()+"";
+                cmd.CommandText = "SELECT PRODUCAO.DATAREALIZADA,PRODUCAO.QUANTIDADE,PROPRIEDADE.LOGRADOURO FROM PRODUCAO,PROPRIEDADE WHERE ANIMAL_ID = "+comboAnimal.SelectedValue.ToString()+";";
                 MySqlDataReader reader;
 
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
-                    chart1.Series["QUANTIDADE"].Points.Add(reader.GetDouble("QUANTIDADE")); 
+                    //chart1.Series["QUANTIDADE"].Points.Add(reader.GetDouble("QUANTIDADE"));
+                    chart1.Series["QUANTIDADE"].Points.AddXY(reader.GetDateTime("DATAREALIZADA"),reader.GetDouble("QUANTIDADE"));
+                    //chart1.Series["QUANTIDADE"].Points.AddY(reader.GetDateTime("DATAREALIZADA"));
                 }
             }
             catch(Exception erro)

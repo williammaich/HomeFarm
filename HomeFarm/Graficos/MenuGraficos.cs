@@ -30,5 +30,19 @@ namespace HomeFarm.Graficos
             animais.Show();
             this.Visible = false;
         }
+
+        private void ImgFuncionarios_Click(object sender, EventArgs e)
+        {
+            GrafFuncionarios func = new GrafFuncionarios();
+            func.Show();
+            this.Visible = false;
+        }
+
+        private void ImgProducao_Click(object sender, EventArgs e)
+        {
+            GrafProducao func = new GrafProducao();
+            func.Show();
+            this.Visible = false;
+        }
     }
 }

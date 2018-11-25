@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using HomeFarm.Views;
 using MySql.Data.MySqlClient;
 
 namespace HomeFarm
@@ -31,6 +32,7 @@ namespace HomeFarm
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
             MySqlConnection Conexao = new MySqlConnection(Conection);
             int i;
+            int b;
 
             if ((txtSenha.Text == "admin") && (txtEmail.Text == "admin"))
             {
@@ -43,14 +45,16 @@ namespace HomeFarm
 
                 try
                 {
+                    b = 0;
                     i = 0;
+                 
                     Conexao.Open();
 
                     MySqlCommand com = Conexao.CreateCommand();
 
-                    com.CommandType = CommandType.Text;
+                   
 
-                    com.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "'";
+                    com.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "';";
                     com.ExecuteNonQuery();
 
                     DataTable dt = new DataTable();
@@ -61,27 +65,65 @@ namespace HomeFarm
 
                     if (i == 0)
                     {
+
                         MessageBox.Show("Usuario não encotrado!   Login ou Senha invalidas!");
+
                     }
                     else
                     {
 
-                        MenuPrincipal telaSis = new MenuPrincipal();
-                        telaSis.Show();
-                        this.Visible = false;
+
+                
+                        MySqlCommand comm = Conexao.CreateCommand();
+                        comm.CommandType = CommandType.Text;
+                        comm.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "' and admin = 'não';";
+                        comm.ExecuteNonQuery();
+
+                        DataTable dp = new DataTable();
+                        MySqlDataAdapter db = new MySqlDataAdapter(comm);
+                        db.Fill(dp);
+
+                        b = Convert.ToInt32(dt.Rows.Count.ToString());
+
+
+                        if (b == 0)
+                        {
+
+                            MenuFunc telaSi = new MenuFunc();
+                            telaSi.Show();
+                            this.Visible = false;
+
+
+                            Conexao.Close();
+
+                        }
+                        else
+                        {
+                          
+
+
+                            MenuPrincipal telaSis = new MenuPrincipal();
+                            telaSis.Show();
+                            this.Visible = false;
+
+                            Conexao.Close();
+                        }
+
+                        
 
                     }
 
-                    Conexao.Close();
+
+
 
                 }
-                catch
+                catch(Exception erro)
                 {
 
 
 
 
-                    MessageBox.Show("Login ou Senha invalidas ");
+                    MessageBox.Show("Login ou Senha invalidas " +  erro);
                 }
 
 

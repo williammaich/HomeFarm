@@ -34,12 +34,7 @@ namespace HomeFarm
             this.Visible = false;
         }
 
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-        }
+      
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {

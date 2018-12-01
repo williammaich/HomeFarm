@@ -45,7 +45,7 @@ namespace HomeFarm
         {
             TelaCadastros Cadastros = new TelaCadastros();
             Cadastros.Show();
-            this.Visible = false;
+            
 
         }
 
@@ -53,21 +53,21 @@ namespace HomeFarm
         {
             Listagem lista = new Listagem();
             lista.Show();
-            this.Visible = false;
+            
         }
 
         private void ImgProducao_Click(object sender, EventArgs e)
         {
             TelaProducao prod = new TelaProducao();
             prod.Show();
-            this.Visible = false;
+       
         }
 
         private void ImgRelatorios_Click(object sender, EventArgs e)
         {
             TelaRelatorios relatorios = new TelaRelatorios();
             relatorios.Show();
-            this.Visible = false;
+            
 
         }
 
@@ -75,14 +75,14 @@ namespace HomeFarm
         {
             TelaEstoque estoque = new TelaEstoque();
             estoque.Show();
-            this.Visible = false;
+        
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             AplicacaoMedicamento aplicacao = new AplicacaoMedicamento();
             aplicacao.Show();
-            this.Visible = false;
+            
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace HomeFarm
 
             CalendarioAgenda cal = new CalendarioAgenda();
             cal.Show();
-            this.Visible = false;
+         
 
 
         
@@ -101,14 +101,14 @@ namespace HomeFarm
         {
             MenuGraficos menu = new MenuGraficos();
             menu.Show();
-            this.Visible = false;
+            
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             MenuControle controle = new MenuControle();
             controle.Show();
-            this.Visible = false;
+           
         }
     }
 }

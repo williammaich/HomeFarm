@@ -169,6 +169,50 @@ namespace HomeFarm
             }
         }
 
+
+
+        public DataTable ExibirDadosPrenhes()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT NOME, DATADOCOBRIMENTO, PAI, DATAPREVISTA FROM prenhes INNERJOIN  animal ON prenhes.ANIMAL_ID = animal.ID;", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+        public DataTable ExibirDadosBaixas()
+        {
+            try
+            {
+                conexao = new MySqlConnection(conectaBanco);
+                comando = new MySqlCommand("SELECT NOME, DATADAMORTE, DOENCA FROM baixas INNERJOIN  animal ON baixas.ANIMAL_ID = animal.ID;", conexao);
+
+                MySqlDataAdapter Da = new MySqlDataAdapter();
+                Da.SelectCommand = comando;
+
+                DataTable Dt = new DataTable();
+                Da.Fill(Dt);
+                return Dt;
+
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
         //Listagem dos combobox
 
         public static List<Propriedade> RetornaListaPropriedade()

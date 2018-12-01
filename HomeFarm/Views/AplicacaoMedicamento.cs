@@ -147,5 +147,12 @@ namespace HomeFarm.Views
         {
 
         }
+
+        private void ImgCadastros_Click(object sender, EventArgs e)
+        {
+            TelaCadastros cad = new TelaCadastros();
+            cad.Show();
+            this.Visible = false;
+        }
     }
 }

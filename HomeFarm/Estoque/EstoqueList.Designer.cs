@@ -37,14 +37,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.ImgListagem = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridRacao)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgListagem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,8 +55,6 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.ImgListagem);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.ImgHome);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -109,7 +104,7 @@
             this.dataGridRacao.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridRacao.Location = new System.Drawing.Point(154, 166);
             this.dataGridRacao.Name = "dataGridRacao";
-            this.dataGridRacao.Size = new System.Drawing.Size(634, 232);
+            this.dataGridRacao.Size = new System.Drawing.Size(634, 272);
             this.dataGridRacao.TabIndex = 67;
             // 
             // label3
@@ -117,7 +112,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(35, 260);
+            this.label3.Location = new System.Drawing.Point(44, 155);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 17);
             this.label3.TabIndex = 66;
@@ -127,7 +122,7 @@
             // 
             this.ImgListagem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgListagem.Image = global::HomeFarm.Properties.Resources.estoque;
-            this.ImgListagem.Location = new System.Drawing.Point(12, 186);
+            this.ImgListagem.Location = new System.Drawing.Point(21, 81);
             this.ImgListagem.Name = "ImgListagem";
             this.ImgListagem.Size = new System.Drawing.Size(88, 71);
             this.ImgListagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -145,29 +140,6 @@
             this.label1.Size = new System.Drawing.Size(242, 45);
             this.label1.TabIndex = 64;
             this.label1.Text = "Listagem Ração";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 155);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 63;
-            this.label2.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(12, 81);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 62;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
             // pictureBox1
             // 
@@ -195,7 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridRacao)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgListagem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -210,8 +181,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox ImgListagem;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

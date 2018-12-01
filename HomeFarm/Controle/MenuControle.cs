@@ -17,12 +17,7 @@ namespace HomeFarm.Controle
             InitializeComponent();
         }
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-        }
+      
 
         private void ImgBaixas_Click(object sender, EventArgs e)
         {

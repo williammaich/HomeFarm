@@ -38,13 +38,7 @@ namespace HomeFarm
 
         }
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-
-        }
+      
 
         private void ImgListagem_Click(object sender, EventArgs e)
         {

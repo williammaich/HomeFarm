@@ -39,15 +39,12 @@
             this.ImgFuncionarios = new System.Windows.Forms.PictureBox();
             this.ImgAnimais = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,8 +60,6 @@
             this.panel2.Controls.Add(this.ImgFuncionarios);
             this.panel2.Controls.Add(this.ImgAnimais);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.ImgHome);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -183,29 +178,6 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Listagem";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 189);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(12, 115);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 3;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -233,7 +205,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -241,8 +212,6 @@
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label4;

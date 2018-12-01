@@ -19,7 +19,21 @@ namespace HomeFarm.Controle
 
 
             CarregaComboAnimal();
-      
+
+
+            DLL dll = new DLL();
+            try
+            {
+
+                dataGridBaixas.DataSource = dll.ExibirDadosDalBaixas();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
+
         }
 
         private void CarregaComboAnimal()
@@ -32,13 +46,7 @@ namespace HomeFarm.Controle
 
 
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-        }
-
+     
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
@@ -50,9 +58,9 @@ namespace HomeFarm.Controle
 
                 MySqlCommand INSERT = new MySqlCommand("INSERT INTO baixas (ANIMAL_ID, DATADAMORTE, DOENCA) VALUES (@animal, @datamorte, @doenca)", Conexao);
 
-                INSERT.Parameters.AddWithValue("@dataInicial", comboNome.SelectedValue.ToString());
+                INSERT.Parameters.AddWithValue("@animal", comboNome.SelectedValue.ToString());
                 INSERT.Parameters.AddWithValue("@datamorte", this.DataMorte.Value.ToString("yyyy/MM/dd"));
-                INSERT.Parameters.AddWithValue("@evento", txtDoenca.Text);
+                INSERT.Parameters.AddWithValue("@doenca", txtDoenca.Text);
                 INSERT.ExecuteNonQuery();
                 Conexao.Close();
 

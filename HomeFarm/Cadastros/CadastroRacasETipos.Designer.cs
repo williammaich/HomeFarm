@@ -43,8 +43,6 @@
             this.ImgAnimais = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.txtOrigem = new System.Windows.Forms.TextBox();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,8 +74,6 @@
             this.panel2.Controls.Add(this.ImgAnimais);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.ImgCadastros);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.ImgHome);
             this.panel2.Controls.Add(this.txtOrigem);
             this.panel2.Controls.Add(this.txtNome);
             this.panel2.Controls.Add(this.label4);
@@ -212,7 +207,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(12, 366);
+            this.label6.Location = new System.Drawing.Point(7, 262);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 17);
             this.label6.TabIndex = 28;
@@ -222,7 +217,7 @@
             // 
             this.ImgAnimais.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgAnimais.Image = global::HomeFarm.Properties.Resources.cow_white;
-            this.ImgAnimais.Location = new System.Drawing.Point(28, 291);
+            this.ImgAnimais.Location = new System.Drawing.Point(23, 187);
             this.ImgAnimais.Name = "ImgAnimais";
             this.ImgAnimais.Size = new System.Drawing.Size(89, 72);
             this.ImgAnimais.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +230,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(38, 252);
+            this.label7.Location = new System.Drawing.Point(33, 148);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 17);
             this.label7.TabIndex = 26;
@@ -245,36 +240,13 @@
             // 
             this.ImgCadastros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgCadastros.Image = global::HomeFarm.Properties.Resources.oie_transparent_5_;
-            this.ImgCadastros.Location = new System.Drawing.Point(28, 164);
+            this.ImgCadastros.Location = new System.Drawing.Point(23, 60);
             this.ImgCadastros.Name = "ImgCadastros";
             this.ImgCadastros.Size = new System.Drawing.Size(87, 85);
             this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgCadastros.TabIndex = 25;
             this.ImgCadastros.TabStop = false;
             this.ImgCadastros.Click += new System.EventHandler(this.ImgCadastros_Click);
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(51, 129);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 17);
-            this.label5.TabIndex = 24;
-            this.label5.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(28, 55);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 23;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
             // txtOrigem
             // 
@@ -368,7 +340,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -384,8 +355,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox ImgCadastros;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.PictureBox ImgAnimais;
         private System.Windows.Forms.Button btnExcluiTipo;

@@ -41,7 +41,7 @@ namespace HomeFarm
 
         private void ImgHome_Click(object sender, EventArgs e)
         {
-            MenuPrincipal Menu = new MenuPrincipal();
+            TelaProducao Menu = new TelaProducao();
             Menu.Show();
             this.Visible = false;
         }

@@ -38,54 +38,14 @@ namespace HomeFarm.Views
         }
 
 
-        private void ImgCadastros_Click(object sender, EventArgs e)
-        {
-            TelaCadastros Cadastros = new TelaCadastros();
-            Cadastros.Show();
-            this.Visible = false;
-
-        }
-
-        private void ImgListagem_Click(object sender, EventArgs e)
-        {
-            Listagem lista = new Listagem();
-            lista.Show();
-            this.Visible = false;
-        }
-
-        private void ImgProducao_Click(object sender, EventArgs e)
-        {
-            TelaProducao prod = new TelaProducao();
-            prod.Show();
-            this.Visible = false;
-        }
-
-     
-        private void ImgEstoque_Click(object sender, EventArgs e)
-        {
-            TelaEstoque estoque = new TelaEstoque();
-            estoque.Show();
-            this.Visible = false;
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            AplicacaoMedicamento aplicacao = new AplicacaoMedicamento();
-            aplicacao.Show();
-            this.Visible = false;
-        }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-
-            CalendarioAgenda cal = new CalendarioAgenda();
-            cal.Show();
-            this.Visible = false;
+      
 
 
 
+  
 
-        }
+
+    
 
       
 
@@ -93,7 +53,56 @@ namespace HomeFarm.Views
         {
             MenuControle controle = new MenuControle();
             controle.Show();
-            this.Visible = false;
+            
+        }
+
+        private void ImgCadastros_Click_1(object sender, EventArgs e)
+        {
+            TelaCadastros Cadastros = new TelaCadastros();
+            Cadastros.Show();
+            
+        }
+
+        private void ImgListagem_Click_1(object sender, EventArgs e)
+        {
+            Listagem lista = new Listagem();
+            lista.Show();
+            
+        }
+
+        private void ImgProducao_Click(object sender, EventArgs e)
+        {
+            TelaProducao prod = new TelaProducao();
+            prod.Show();
+            
+        }
+
+        private void ImgEstoque_Click(object sender, EventArgs e)
+        {
+            TelaEstoque estoque = new TelaEstoque();
+            estoque.Show();
+            
+        }
+
+        private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+            CalendarioAgenda cal = new CalendarioAgenda();
+            cal.Show();
+            
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            AplicacaoMedicamento aplicacao = new AplicacaoMedicamento();
+            aplicacao.Show();
+            
+        }
+
+        private void pictureBox4_Click_1(object sender, EventArgs e)
+        {
+            MenuControle controle = new MenuControle();
+            controle.Show();
+           
         }
     }
 

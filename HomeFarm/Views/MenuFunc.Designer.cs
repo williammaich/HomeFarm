@@ -90,6 +90,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 46;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click_1);
             // 
             // pictureBox4
             // 
@@ -102,6 +103,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 45;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click_1);
             // 
             // label9
             // 
@@ -126,6 +128,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 43;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label8
             // 
@@ -150,6 +153,7 @@
             this.ImgListagem.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgListagem.TabIndex = 41;
             this.ImgListagem.TabStop = false;
+            this.ImgListagem.Click += new System.EventHandler(this.ImgListagem_Click_1);
             // 
             // label7
             // 
@@ -174,6 +178,7 @@
             this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgCadastros.TabIndex = 39;
             this.ImgCadastros.TabStop = false;
+            this.ImgCadastros.Click += new System.EventHandler(this.ImgCadastros_Click_1);
             // 
             // label1
             // 
@@ -198,6 +203,7 @@
             this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgProducao.TabIndex = 37;
             this.ImgProducao.TabStop = false;
+            this.ImgProducao.Click += new System.EventHandler(this.ImgProducao_Click);
             // 
             // label6
             // 
@@ -234,6 +240,7 @@
             this.ImgEstoque.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgEstoque.TabIndex = 34;
             this.ImgEstoque.TabStop = false;
+            this.ImgEstoque.Click += new System.EventHandler(this.ImgEstoque_Click);
             // 
             // label3
             // 

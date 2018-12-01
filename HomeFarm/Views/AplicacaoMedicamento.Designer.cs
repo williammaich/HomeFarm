@@ -48,13 +48,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,8 +76,6 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.ImgCadastros);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.ImgHome);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -285,7 +280,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(20, 263);
+            this.label7.Location = new System.Drawing.Point(22, 154);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 17);
             this.label7.TabIndex = 26;
@@ -295,34 +290,13 @@
             // 
             this.ImgCadastros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgCadastros.Image = global::HomeFarm.Properties.Resources.oie_transparent_5_;
-            this.ImgCadastros.Location = new System.Drawing.Point(10, 175);
+            this.ImgCadastros.Location = new System.Drawing.Point(12, 66);
             this.ImgCadastros.Name = "ImgCadastros";
             this.ImgCadastros.Size = new System.Drawing.Size(87, 85);
             this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgCadastros.TabIndex = 25;
             this.ImgCadastros.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(33, 140);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 24;
-            this.label2.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(10, 66);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 23;
-            this.ImgHome.TabStop = false;
+            this.ImgCadastros.Click += new System.EventHandler(this.ImgCadastros_Click);
             // 
             // label1
             // 
@@ -358,7 +332,6 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -371,8 +344,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox ImgCadastros;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.ComboBox comboAnimal;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnCancelar;

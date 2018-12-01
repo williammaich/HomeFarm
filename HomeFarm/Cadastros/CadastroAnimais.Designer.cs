@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroAnimais));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimeDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.comboPropriedade = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.ImgRaca = new System.Windows.Forms.PictureBox();
@@ -63,16 +64,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimeDataNascimento = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,8 +110,6 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.ImgCadastros);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.ImgHome);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -123,6 +118,17 @@
             this.panel2.Size = new System.Drawing.Size(761, 626);
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // dateTimeDataNascimento
+            // 
+            this.dateTimeDataNascimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dateTimeDataNascimento.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeDataNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDataNascimento.Location = new System.Drawing.Point(362, 130);
+            this.dateTimeDataNascimento.Name = "dateTimeDataNascimento";
+            this.dateTimeDataNascimento.Size = new System.Drawing.Size(200, 29);
+            this.dateTimeDataNascimento.TabIndex = 85;
             // 
             // comboPropriedade
             // 
@@ -150,7 +156,7 @@
             // 
             this.ImgRaca.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgRaca.Image = global::HomeFarm.Properties.Resources.raca1;
-            this.ImgRaca.Location = new System.Drawing.Point(27, 333);
+            this.ImgRaca.Location = new System.Drawing.Point(28, 186);
             this.ImgRaca.Name = "ImgRaca";
             this.ImgRaca.Size = new System.Drawing.Size(88, 79);
             this.ImgRaca.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,7 +169,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.White;
-            this.label16.Location = new System.Drawing.Point(5, 415);
+            this.label16.Location = new System.Drawing.Point(6, 268);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(146, 17);
             this.label16.TabIndex = 54;
@@ -493,7 +499,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(37, 301);
+            this.label7.Location = new System.Drawing.Point(38, 154);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(67, 17);
             this.label7.TabIndex = 22;
@@ -503,36 +509,13 @@
             // 
             this.ImgCadastros.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgCadastros.Image = global::HomeFarm.Properties.Resources.oie_transparent_5_;
-            this.ImgCadastros.Location = new System.Drawing.Point(27, 213);
+            this.ImgCadastros.Location = new System.Drawing.Point(28, 66);
             this.ImgCadastros.Name = "ImgCadastros";
             this.ImgCadastros.Size = new System.Drawing.Size(87, 85);
             this.ImgCadastros.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgCadastros.TabIndex = 21;
             this.ImgCadastros.TabStop = false;
             this.ImgCadastros.Click += new System.EventHandler(this.ImgCadastros_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(50, 178);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(27, 104);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 3;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
             // label1
             // 
@@ -556,16 +539,6 @@
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
-            // dateTimeDataNascimento
-            // 
-            this.dateTimeDataNascimento.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeDataNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDataNascimento.Location = new System.Drawing.Point(362, 130);
-            this.dateTimeDataNascimento.Name = "dateTimeDataNascimento";
-            this.dateTimeDataNascimento.Size = new System.Drawing.Size(200, 29);
-            this.dateTimeDataNascimento.TabIndex = 85;
-            // 
             // CadastroAnimais
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -581,7 +554,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgRaca)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -590,8 +562,6 @@
         #endregion
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.PictureBox ImgProcurar;
         private System.Windows.Forms.ComboBox comboPo;
         private System.Windows.Forms.ComboBox comboVendida;

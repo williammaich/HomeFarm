@@ -19,12 +19,7 @@ namespace HomeFarm
         
         }
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal Menu  = new MenuPrincipal();
-            Menu.Show();
-            this.Visible = false;
-        }
+       
 
         private void ImgAnimais_Click(object sender, EventArgs e)
         {

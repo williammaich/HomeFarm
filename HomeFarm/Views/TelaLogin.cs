@@ -29,77 +29,70 @@ namespace HomeFarm
         private void BtnEntrar_Click(object sender, EventArgs e)
         {
 
-            String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
-            MySqlConnection Conexao = new MySqlConnection(Conection);
-            int i;
-            int b;
-
-            if ((txtSenha.Text == "admin") && (txtEmail.Text == "admin"))
-            {
-                  MenuPrincipal telaSis = new MenuPrincipal();
-                telaSis.Show();
-                this.Visible = false;
-            }
-            else
-            {
-
-                try
-                {
-                    b = 0;
-                    i = 0;
-                 
-                    Conexao.Open();
-
-                    MySqlCommand com = Conexao.CreateCommand();
-
-                   
-
-                    com.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "';";
-                    com.ExecuteNonQuery();
-
-                    DataTable dt = new DataTable();
-                    MySqlDataAdapter da = new MySqlDataAdapter(com);
-                    da.Fill(dt);
-
-                    i = Convert.ToInt32(dt.Rows.Count.ToString());
-
-                    if (i == 0)
-                    {
-
-                        MessageBox.Show("Usuario não encotrado!   Login ou Senha invalidas!");
-
-                    }
-                    else
-                    {
 
 
+
+            if (admin.Checked ){
+
+
+                String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+                MySqlConnection Conexao = new MySqlConnection(Conection);
+                int i;
                 
-                        MySqlCommand comm = Conexao.CreateCommand();
-                        comm.CommandType = CommandType.Text;
-                        comm.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "' and admin = 'não';";
-                        comm.ExecuteNonQuery();
 
-                        DataTable dp = new DataTable();
-                        MySqlDataAdapter db = new MySqlDataAdapter(comm);
-                        db.Fill(dp);
+                if ((txtSenha.Text == "admin") && (txtEmail.Text == "admin"))
+                {
+                    MenuPrincipal telaSis = new MenuPrincipal();
+                    telaSis.Show();
+                    this.Visible = false;
+                }
+                else
+                {
 
-                        b = Convert.ToInt32(dt.Rows.Count.ToString());
+                    try
+                    {
+                       
+                        i = 0;
+
+                        Conexao.Open();
+
+                        MySqlCommand com = Conexao.CreateCommand();
 
 
-                        if (b == 0)
+
+                        com.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "' and admin = 'sim';";
+                        com.ExecuteNonQuery();
+
+                        DataTable dt = new DataTable();
+                        MySqlDataAdapter da = new MySqlDataAdapter(com);
+                        da.Fill(dt);
+
+                        i = Convert.ToInt32(dt.Rows.Count.ToString());
+
+                        if (i == 0)
                         {
 
-                            MenuFunc telaSi = new MenuFunc();
-                            telaSi.Show();
-                            this.Visible = false;
-
-
-                            Conexao.Close();
+                            MessageBox.Show("Usuario não encotrado!   Login ou Senha invalidas!");
 
                         }
                         else
                         {
-                          
+
+
+
+
+
+
+                            /*
+                                MenuFunc telaSi = new MenuFunc();
+                                telaSi.Show();
+                                this.Visible = false;
+
+
+                                Conexao.Close();
+                                */
+
+
 
 
                             MenuPrincipal telaSis = new MenuPrincipal();
@@ -109,27 +102,109 @@ namespace HomeFarm
                             Conexao.Close();
                         }
 
-                        
 
+
+
+
+
+
+
+                    }
+                    catch (Exception erro)
+                    {
+
+
+
+
+                        MessageBox.Show("Login ou Senha invalidas " + erro);
                     }
 
 
-
-
                 }
-                catch(Exception erro)
-                {
-
-
-
-
-                    MessageBox.Show("Login ou Senha invalidas " +  erro);
-                }
-
 
             }
+            else
+            {
+
+                String Conection = "server=localhost; userid=root; database=homefarm; SslMode=none";
+                MySqlConnection Conexao = new MySqlConnection(Conection);
+                int i;
 
 
+                if ((txtSenha.Text == "admin") && (txtEmail.Text == "admin"))
+                {
+                    MenuPrincipal telaSis = new MenuPrincipal();
+                    telaSis.Show();
+                    this.Visible = false;
+                }
+                else
+                {
+
+                    try
+                    {
+
+                        i = 0;
+
+                        Conexao.Open();
+
+                        MySqlCommand com = Conexao.CreateCommand();
+
+
+
+                        com.CommandText = "select * from usuario where login='" + txtEmail.Text + "' and senha='" + txtSenha.Text + "' and admin = 'não';";
+                        com.ExecuteNonQuery();
+
+                        DataTable dt = new DataTable();
+                        MySqlDataAdapter da = new MySqlDataAdapter(com);
+                        da.Fill(dt);
+
+                        i = Convert.ToInt32(dt.Rows.Count.ToString());
+
+                        if (i == 0)
+                        {
+
+                            MessageBox.Show("Usuario não encotrado!   Login ou Senha invalidas!");
+
+                        }
+                        else
+                        {
+
+
+
+
+
+
+                            
+                                MenuFunc telaSi = new MenuFunc();
+                                telaSi.Show();
+                                this.Visible = false;
+
+
+                                Conexao.Close();
+                                
+                        }
+
+
+
+
+
+
+
+
+                    }
+                    catch (Exception erro)
+                    {
+
+
+
+
+                        MessageBox.Show("Login ou Senha invalidas " + erro);
+                    }
+
+
+                }
+
+            }
 
 
 
@@ -144,7 +219,7 @@ namespace HomeFarm
         {
             Registrar Registro = new Registrar();
             Registro.Show();
-            this.Visible = false;
+            
         }
 
         private void ImgFechar_Click(object sender, EventArgs e)

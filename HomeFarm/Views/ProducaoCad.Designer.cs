@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProducaoCad));
             this.panel2 = new System.Windows.Forms.Panel();
+            this.dateTimeRealizada = new System.Windows.Forms.DateTimePicker();
+            this.dateTimeDatacadastro = new System.Windows.Forms.DateTimePicker();
             this.txtValor = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.btnExcluir = new System.Windows.Forms.Button();
@@ -42,14 +44,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dateTimeDatacadastro = new System.Windows.Forms.DateTimePicker();
-            this.dateTimeRealizada = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,15 +67,33 @@
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.ImgHome);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 1;
+            // 
+            // dateTimeRealizada
+            // 
+            this.dateTimeRealizada.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeRealizada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeRealizada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeRealizada.Location = new System.Drawing.Point(335, 100);
+            this.dateTimeRealizada.Name = "dateTimeRealizada";
+            this.dateTimeRealizada.Size = new System.Drawing.Size(200, 29);
+            this.dateTimeRealizada.TabIndex = 85;
+            // 
+            // dateTimeDatacadastro
+            // 
+            this.dateTimeDatacadastro.CustomFormat = "dd/MM/yyyy";
+            this.dateTimeDatacadastro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeDatacadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeDatacadastro.Location = new System.Drawing.Point(335, 170);
+            this.dateTimeDatacadastro.Name = "dateTimeDatacadastro";
+            this.dateTimeDatacadastro.Size = new System.Drawing.Size(200, 29);
+            this.dateTimeDatacadastro.TabIndex = 84;
             // 
             // txtValor
             // 
@@ -217,17 +232,6 @@
             this.label3.TabIndex = 67;
             this.label3.Text = "Quantidade";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(35, 174);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 66;
-            this.label2.Text = "Home";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -239,18 +243,6 @@
             this.label1.TabIndex = 65;
             this.label1.Text = "Cadastro de produção";
             // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(12, 100);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 64;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -261,26 +253,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
-            // 
-            // dateTimeDatacadastro
-            // 
-            this.dateTimeDatacadastro.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeDatacadastro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeDatacadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDatacadastro.Location = new System.Drawing.Point(335, 170);
-            this.dateTimeDatacadastro.Name = "dateTimeDatacadastro";
-            this.dateTimeDatacadastro.Size = new System.Drawing.Size(200, 29);
-            this.dateTimeDatacadastro.TabIndex = 84;
-            // 
-            // dateTimeRealizada
-            // 
-            this.dateTimeRealizada.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeRealizada.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeRealizada.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeRealizada.Location = new System.Drawing.Point(335, 100);
-            this.dateTimeRealizada.Name = "dateTimeRealizada";
-            this.dateTimeRealizada.Size = new System.Drawing.Size(200, 29);
-            this.dateTimeRealizada.TabIndex = 85;
             // 
             // ProducaoCad
             // 
@@ -294,7 +266,6 @@
             this.Text = "Cadastro de Produção";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -312,9 +283,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.TextBox txtValor;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox1;

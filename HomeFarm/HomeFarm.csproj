@@ -22,7 +22,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationRevision>3</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -234,12 +234,6 @@
     <Compile Include="Graficos\GrafFuncionarios.Designer.cs">
       <DependentUpon>GrafFuncionarios.cs</DependentUpon>
     </Compile>
-    <Compile Include="Graficos\GrafProducao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Graficos\GrafProducao.Designer.cs">
-      <DependentUpon>GrafProducao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Graficos\MenuGraficos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -446,9 +440,6 @@
     <EmbeddedResource Include="Graficos\GrafFuncionarios.resx">
       <DependentUpon>GrafFuncionarios.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Graficos\GrafProducao.resx">
-      <DependentUpon>GrafProducao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Graficos\MenuGraficos.resx">
       <DependentUpon>MenuGraficos.cs</DependentUpon>
     </EmbeddedResource>
@@ -531,6 +522,9 @@
     <EmbeddedResource Include="Views\TelaRelatorios.resx">
       <DependentUpon>TelaRelatorios.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="App1.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="BaseDeDados\HOMEFARM.xsc">
       <DependentUpon>HOMEFARM.xsd</DependentUpon>
     </None>
@@ -727,6 +721,7 @@
     <None Include="Resources\breedings.png" />
     <None Include="Resources\breedings1.png" />
     <None Include="Resources\oie_transparent%2818%29.png" />
+    <None Include="Resources\cruz.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

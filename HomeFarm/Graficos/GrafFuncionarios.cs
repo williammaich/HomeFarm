@@ -32,7 +32,7 @@ namespace HomeFarm.Graficos
 
         private void ImgHome_Click(object sender, EventArgs e)
         {
-            MenuPrincipal menu = new MenuPrincipal();
+            MenuGraficos menu = new MenuGraficos();
             menu.Show();
             this.Visible = false;
         }

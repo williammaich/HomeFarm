@@ -17,12 +17,7 @@ namespace HomeFarm.Graficos
             InitializeComponent();
         }
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-        }
+        
 
         private void ImgAnimais_Click(object sender, EventArgs e)
         {
@@ -38,11 +33,11 @@ namespace HomeFarm.Graficos
             this.Visible = false;
         }
 
-        private void ImgProducao_Click(object sender, EventArgs e)
+      
+
+        private void label2_Click(object sender, EventArgs e)
         {
-            GrafProducao func = new GrafProducao();
-            func.Show();
-            this.Visible = false;
+
         }
     }
 }

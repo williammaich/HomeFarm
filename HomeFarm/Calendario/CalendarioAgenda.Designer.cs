@@ -39,11 +39,8 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dataGVagenda = new System.Windows.Forms.DataGridView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVagenda)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,7 +50,7 @@
             this.dataInicial.CustomFormat = "dd-MM-yyyy";
             this.dataInicial.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataInicial.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dataInicial.Location = new System.Drawing.Point(292, 137);
+            this.dataInicial.Location = new System.Drawing.Point(225, 79);
             this.dataInicial.Name = "dataInicial";
             this.dataInicial.Size = new System.Drawing.Size(149, 29);
             this.dataInicial.TabIndex = 2;
@@ -64,7 +61,7 @@
             this.dataFinal.CustomFormat = "dd-MM-yyyy";
             this.dataFinal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataFinal.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dataFinal.Location = new System.Drawing.Point(292, 188);
+            this.dataFinal.Location = new System.Drawing.Point(225, 130);
             this.dataFinal.Name = "dataFinal";
             this.dataFinal.Size = new System.Drawing.Size(149, 29);
             this.dataFinal.TabIndex = 3;
@@ -72,10 +69,10 @@
             // txtEvento
             // 
             this.txtEvento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEvento.Location = new System.Drawing.Point(90, 286);
+            this.txtEvento.Location = new System.Drawing.Point(90, 246);
             this.txtEvento.Multiline = true;
             this.txtEvento.Name = "txtEvento";
-            this.txtEvento.Size = new System.Drawing.Size(409, 99);
+            this.txtEvento.Size = new System.Drawing.Size(409, 144);
             this.txtEvento.TabIndex = 4;
             // 
             // label3
@@ -84,7 +81,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(152, 137);
+            this.label3.Location = new System.Drawing.Point(85, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(106, 25);
             this.label3.TabIndex = 8;
@@ -96,7 +93,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(152, 188);
+            this.label1.Location = new System.Drawing.Point(85, 130);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(96, 25);
             this.label1.TabIndex = 9;
@@ -108,7 +105,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(85, 258);
+            this.label2.Location = new System.Drawing.Point(85, 218);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 10;
@@ -161,29 +158,6 @@
             this.dataGVagenda.Size = new System.Drawing.Size(395, 361);
             this.dataGVagenda.TabIndex = 63;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(43, 169);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 17);
-            this.label5.TabIndex = 65;
-            this.label5.Text = "Home";
-            // 
-            // ImgHome
-            // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(20, 95);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 64;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -201,8 +175,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(922, 492);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.ImgHome);
             this.Controls.Add(this.dataGVagenda);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnRegistrar);
@@ -219,7 +191,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Calendario";
             ((System.ComponentModel.ISupportInitialize)(this.dataGVagenda)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,8 +208,6 @@
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.DataGridView dataGVagenda;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

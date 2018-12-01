@@ -28,22 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaRelatorios));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
+            this.ImgEstoque = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.ImgRemedios = new System.Windows.Forms.PictureBox();
+            this.ImgProducao = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.ImgEstoque = new System.Windows.Forms.PictureBox();
-            this.ImgRemedios = new System.Windows.Forms.PictureBox();
-            this.ImgProducao = new System.Windows.Forms.PictureBox();
             this.ImgCampos = new System.Windows.Forms.PictureBox();
             this.ImgFuncionarios = new System.Windows.Forms.PictureBox();
             this.ImgAnimais = new System.Windows.Forms.PictureBox();
-            this.ImgHome = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgEstoque)).BeginInit();
@@ -52,7 +51,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,8 +69,6 @@
             this.panel2.Controls.Add(this.ImgCampos);
             this.panel2.Controls.Add(this.ImgFuncionarios);
             this.panel2.Controls.Add(this.ImgAnimais);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.ImgHome);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -93,6 +89,19 @@
             this.label8.TabIndex = 33;
             this.label8.Text = "Estoque";
             // 
+            // ImgEstoque
+            // 
+            this.ImgEstoque.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgEstoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgEstoque.Image = global::HomeFarm.Properties.Resources.estoque;
+            this.ImgEstoque.Location = new System.Drawing.Point(637, 236);
+            this.ImgEstoque.Name = "ImgEstoque";
+            this.ImgEstoque.Size = new System.Drawing.Size(96, 78);
+            this.ImgEstoque.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgEstoque.TabIndex = 32;
+            this.ImgEstoque.TabStop = false;
+            this.ImgEstoque.Click += new System.EventHandler(this.ImgEstoque_Click);
+            // 
             // label7
             // 
             this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -104,6 +113,32 @@
             this.label7.Size = new System.Drawing.Size(120, 32);
             this.label7.TabIndex = 31;
             this.label7.Text = "Remedios";
+            // 
+            // ImgRemedios
+            // 
+            this.ImgRemedios.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
+            this.ImgRemedios.Location = new System.Drawing.Point(224, 236);
+            this.ImgRemedios.Name = "ImgRemedios";
+            this.ImgRemedios.Size = new System.Drawing.Size(96, 78);
+            this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgRemedios.TabIndex = 30;
+            this.ImgRemedios.TabStop = false;
+            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
+            // 
+            // ImgProducao
+            // 
+            this.ImgProducao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgProducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgProducao.Image = global::HomeFarm.Properties.Resources.oie_transparent_7_;
+            this.ImgProducao.Location = new System.Drawing.Point(637, 84);
+            this.ImgProducao.Name = "ImgProducao";
+            this.ImgProducao.Size = new System.Drawing.Size(90, 78);
+            this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgProducao.TabIndex = 29;
+            this.ImgProducao.TabStop = false;
+            this.ImgProducao.Click += new System.EventHandler(this.ImgProducao_Click);
             // 
             // label6
             // 
@@ -153,67 +188,6 @@
             this.label3.TabIndex = 25;
             this.label3.Text = "Animais";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(43, 181);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 17);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Home";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 45);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Relatórios";
-            // 
-            // ImgEstoque
-            // 
-            this.ImgEstoque.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ImgEstoque.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgEstoque.Image = global::HomeFarm.Properties.Resources.estoque;
-            this.ImgEstoque.Location = new System.Drawing.Point(637, 236);
-            this.ImgEstoque.Name = "ImgEstoque";
-            this.ImgEstoque.Size = new System.Drawing.Size(96, 78);
-            this.ImgEstoque.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgEstoque.TabIndex = 32;
-            this.ImgEstoque.TabStop = false;
-            this.ImgEstoque.Click += new System.EventHandler(this.ImgEstoque_Click);
-            // 
-            // ImgRemedios
-            // 
-            this.ImgRemedios.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ImgRemedios.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgRemedios.Image = global::HomeFarm.Properties.Resources.health;
-            this.ImgRemedios.Location = new System.Drawing.Point(224, 236);
-            this.ImgRemedios.Name = "ImgRemedios";
-            this.ImgRemedios.Size = new System.Drawing.Size(96, 78);
-            this.ImgRemedios.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgRemedios.TabIndex = 30;
-            this.ImgRemedios.TabStop = false;
-            this.ImgRemedios.Click += new System.EventHandler(this.ImgRemedios_Click);
-            // 
-            // ImgProducao
-            // 
-            this.ImgProducao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ImgProducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgProducao.Image = global::HomeFarm.Properties.Resources.oie_transparent_7_;
-            this.ImgProducao.Location = new System.Drawing.Point(637, 84);
-            this.ImgProducao.Name = "ImgProducao";
-            this.ImgProducao.Size = new System.Drawing.Size(90, 78);
-            this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgProducao.TabIndex = 29;
-            this.ImgProducao.TabStop = false;
-            this.ImgProducao.Click += new System.EventHandler(this.ImgProducao_Click);
-            // 
             // ImgCampos
             // 
             this.ImgCampos.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -253,17 +227,16 @@
             this.ImgAnimais.TabStop = false;
             this.ImgAnimais.Click += new System.EventHandler(this.ImgAnimais_Click);
             // 
-            // ImgHome
+            // label1
             // 
-            this.ImgHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ImgHome.Image = global::HomeFarm.Properties.Resources.home2;
-            this.ImgHome.Location = new System.Drawing.Point(20, 107);
-            this.ImgHome.Name = "ImgHome";
-            this.ImgHome.Size = new System.Drawing.Size(88, 71);
-            this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgHome.TabIndex = 20;
-            this.ImgHome.TabStop = false;
-            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Symbol", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 45);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Relatórios";
             // 
             // pictureBox1
             // 
@@ -282,6 +255,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(810, 447);
             this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaRelatorios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Relatórios";
@@ -293,7 +267,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.ImgCampos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFuncionarios)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgAnimais)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -314,8 +287,6 @@
         private System.Windows.Forms.PictureBox ImgCampos;
         private System.Windows.Forms.PictureBox ImgFuncionarios;
         private System.Windows.Forms.PictureBox ImgAnimais;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.PictureBox ImgHome;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

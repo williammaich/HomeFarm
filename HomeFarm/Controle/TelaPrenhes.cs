@@ -26,7 +26,20 @@ namespace HomeFarm.Controle
             comboTipo.Items.Add("Suino");
             comboTipo.Items.Add("Ovino");
             comboTipo.Items.Add("Aves");
-           
+
+
+            DLL dll = new DLL();
+            try
+            {
+
+                dataGridPrenhes.DataSource = dll.ExibirDadosDalPrenhes();
+
+
+            }
+            catch (Exception erro)
+            {
+                MessageBox.Show("erro" + erro);
+            }
         }
 
         private void CarregaComboNomeAnimal()
@@ -52,7 +65,7 @@ namespace HomeFarm.Controle
             try
             {
                 Conexao.Open();
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO prenhes (ANIMAL_ID,DATACOBRIMENTO,PAI,DATAPREVISTA) VALUES (@nome,@datacobrimento,@pai,@dataprevista )", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO prenhes (ANIMAL_ID,DATADOCOBRIMENTO,PAI,DATAPREVISTA) VALUES (@nome,@datacobrimento,@pai,@dataprevista )", Conexao);
 
                 INSERT.Parameters.AddWithValue("@nome", comboNome.SelectedValue.ToString());
                 INSERT.Parameters.AddWithValue("@datacobrimento", this.DataCobrimento.Value.ToString("yyyy-MM-dd"));

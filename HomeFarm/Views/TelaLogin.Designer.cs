@@ -29,27 +29,31 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.ImgFace = new System.Windows.Forms.PictureBox();
+            this.ImgLogin = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.BtnRecuperar = new System.Windows.Forms.Button();
             this.BtnRegistrar = new System.Windows.Forms.Button();
             this.BtnEntrar = new System.Windows.Forms.Button();
+            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
+            this.ImgFechar = new System.Windows.Forms.PictureBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.ImgMinimizar = new System.Windows.Forms.PictureBox();
-            this.ImgFechar = new System.Windows.Forms.PictureBox();
-            this.Logo = new System.Windows.Forms.PictureBox();
-            this.ImgFace = new System.Windows.Forms.PictureBox();
-            this.ImgLogin = new System.Windows.Forms.PictureBox();
+            this.groupPremisoes = new System.Windows.Forms.GroupBox();
+            this.admin = new System.Windows.Forms.RadioButton();
+            this.func = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).BeginInit();
+            this.groupPremisoes.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -63,9 +67,41 @@
             this.panel1.Size = new System.Drawing.Size(258, 450);
             this.panel1.TabIndex = 0;
             // 
+            // Logo
+            // 
+            this.Logo.BackColor = System.Drawing.Color.Transparent;
+            this.Logo.Image = global::HomeFarm.Properties.Resources.Ltrans;
+            this.Logo.Location = new System.Drawing.Point(-30, 35);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(307, 302);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 8;
+            this.Logo.TabStop = false;
+            // 
+            // ImgFace
+            // 
+            this.ImgFace.Image = global::HomeFarm.Properties.Resources.oie_transparent;
+            this.ImgFace.Location = new System.Drawing.Point(12, 409);
+            this.ImgFace.Name = "ImgFace";
+            this.ImgFace.Size = new System.Drawing.Size(33, 29);
+            this.ImgFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgFace.TabIndex = 7;
+            this.ImgFace.TabStop = false;
+            // 
+            // ImgLogin
+            // 
+            this.ImgLogin.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImgLogin.Image = global::HomeFarm.Properties.Resources.logijn;
+            this.ImgLogin.Location = new System.Drawing.Point(0, 0);
+            this.ImgLogin.Name = "ImgLogin";
+            this.ImgLogin.Size = new System.Drawing.Size(258, 450);
+            this.ImgLogin.TabIndex = 0;
+            this.ImgLogin.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.groupPremisoes);
             this.panel2.Controls.Add(this.BtnRecuperar);
             this.panel2.Controls.Add(this.BtnRegistrar);
             this.panel2.Controls.Add(this.BtnEntrar);
@@ -87,7 +123,7 @@
             this.BtnRecuperar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRecuperar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRecuperar.ForeColor = System.Drawing.Color.White;
-            this.BtnRecuperar.Location = new System.Drawing.Point(305, 351);
+            this.BtnRecuperar.Location = new System.Drawing.Point(305, 388);
             this.BtnRecuperar.Name = "BtnRecuperar";
             this.BtnRecuperar.Size = new System.Drawing.Size(214, 39);
             this.BtnRecuperar.TabIndex = 9;
@@ -99,7 +135,7 @@
             this.BtnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnRegistrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.BtnRegistrar.Location = new System.Drawing.Point(174, 351);
+            this.BtnRegistrar.Location = new System.Drawing.Point(174, 388);
             this.BtnRegistrar.Name = "BtnRegistrar";
             this.BtnRegistrar.Size = new System.Drawing.Size(105, 39);
             this.BtnRegistrar.TabIndex = 8;
@@ -112,13 +148,33 @@
             this.BtnEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnEntrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEntrar.ForeColor = System.Drawing.Color.White;
-            this.BtnEntrar.Location = new System.Drawing.Point(53, 351);
+            this.BtnEntrar.Location = new System.Drawing.Point(53, 388);
             this.BtnEntrar.Name = "BtnEntrar";
             this.BtnEntrar.Size = new System.Drawing.Size(91, 39);
             this.BtnEntrar.TabIndex = 7;
             this.BtnEntrar.Text = "Entrar";
             this.BtnEntrar.UseVisualStyleBackColor = true;
             this.BtnEntrar.Click += new System.EventHandler(this.BtnEntrar_Click);
+            // 
+            // ImgMinimizar
+            // 
+            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
+            this.ImgMinimizar.Location = new System.Drawing.Point(467, 3);
+            this.ImgMinimizar.Name = "ImgMinimizar";
+            this.ImgMinimizar.Size = new System.Drawing.Size(33, 29);
+            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgMinimizar.TabIndex = 6;
+            this.ImgMinimizar.TabStop = false;
+            // 
+            // ImgFechar
+            // 
+            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
+            this.ImgFechar.Location = new System.Drawing.Point(506, 3);
+            this.ImgFechar.Name = "ImgFechar";
+            this.ImgFechar.Size = new System.Drawing.Size(33, 29);
+            this.ImgFechar.TabIndex = 5;
+            this.ImgFechar.TabStop = false;
+            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
             // 
             // txtSenha
             // 
@@ -170,56 +226,43 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Login";
             // 
-            // ImgMinimizar
+            // groupPremisoes
             // 
-            this.ImgMinimizar.Image = global::HomeFarm.Properties.Resources.oie_transparent_4_;
-            this.ImgMinimizar.Location = new System.Drawing.Point(467, 3);
-            this.ImgMinimizar.Name = "ImgMinimizar";
-            this.ImgMinimizar.Size = new System.Drawing.Size(33, 29);
-            this.ImgMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgMinimizar.TabIndex = 6;
-            this.ImgMinimizar.TabStop = false;
+            this.groupPremisoes.Controls.Add(this.func);
+            this.groupPremisoes.Controls.Add(this.admin);
+            this.groupPremisoes.Location = new System.Drawing.Point(53, 332);
+            this.groupPremisoes.Name = "groupPremisoes";
+            this.groupPremisoes.Size = new System.Drawing.Size(272, 41);
+            this.groupPremisoes.TabIndex = 10;
+            this.groupPremisoes.TabStop = false;
             // 
-            // ImgFechar
+            // admin
             // 
-            this.ImgFechar.Image = global::HomeFarm.Properties.Resources.oie_transparent_2_;
-            this.ImgFechar.Location = new System.Drawing.Point(506, 3);
-            this.ImgFechar.Name = "ImgFechar";
-            this.ImgFechar.Size = new System.Drawing.Size(33, 29);
-            this.ImgFechar.TabIndex = 5;
-            this.ImgFechar.TabStop = false;
-            this.ImgFechar.Click += new System.EventHandler(this.ImgFechar_Click);
+            this.admin.AutoSize = true;
+            this.admin.BackColor = System.Drawing.Color.Transparent;
+            this.admin.Checked = true;
+            this.admin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.admin.ForeColor = System.Drawing.Color.White;
+            this.admin.Location = new System.Drawing.Point(7, 14);
+            this.admin.Name = "admin";
+            this.admin.Size = new System.Drawing.Size(109, 21);
+            this.admin.TabIndex = 0;
+            this.admin.TabStop = true;
+            this.admin.Text = "Administrador";
+            this.admin.UseVisualStyleBackColor = false;
             // 
-            // Logo
+            // func
             // 
-            this.Logo.BackColor = System.Drawing.Color.Transparent;
-            this.Logo.Image = global::HomeFarm.Properties.Resources.Ltrans;
-            this.Logo.Location = new System.Drawing.Point(-30, 35);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(307, 302);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 8;
-            this.Logo.TabStop = false;
-            // 
-            // ImgFace
-            // 
-            this.ImgFace.Image = global::HomeFarm.Properties.Resources.oie_transparent;
-            this.ImgFace.Location = new System.Drawing.Point(12, 409);
-            this.ImgFace.Name = "ImgFace";
-            this.ImgFace.Size = new System.Drawing.Size(33, 29);
-            this.ImgFace.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.ImgFace.TabIndex = 7;
-            this.ImgFace.TabStop = false;
-            // 
-            // ImgLogin
-            // 
-            this.ImgLogin.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ImgLogin.Image = global::HomeFarm.Properties.Resources.logijn;
-            this.ImgLogin.Location = new System.Drawing.Point(0, 0);
-            this.ImgLogin.Name = "ImgLogin";
-            this.ImgLogin.Size = new System.Drawing.Size(258, 450);
-            this.ImgLogin.TabIndex = 0;
-            this.ImgLogin.TabStop = false;
+            this.func.AutoSize = true;
+            this.func.BackColor = System.Drawing.Color.Transparent;
+            this.func.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.func.ForeColor = System.Drawing.Color.White;
+            this.func.Location = new System.Drawing.Point(162, 14);
+            this.func.Name = "func";
+            this.func.Size = new System.Drawing.Size(93, 21);
+            this.func.TabIndex = 1;
+            this.func.Text = "Funcionário";
+            this.func.UseVisualStyleBackColor = false;
             // 
             // TelaLogin
             // 
@@ -233,13 +276,15 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgFechar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgFace)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ImgLogin)).EndInit();
+            this.groupPremisoes.ResumeLayout(false);
+            this.groupPremisoes.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -261,6 +306,9 @@
         private System.Windows.Forms.Button BtnRegistrar;
         private System.Windows.Forms.Button BtnEntrar;
         private System.Windows.Forms.PictureBox Logo;
+        private System.Windows.Forms.GroupBox groupPremisoes;
+        private System.Windows.Forms.RadioButton func;
+        private System.Windows.Forms.RadioButton admin;
     }
 }
 

@@ -129,6 +129,38 @@ namespace HomeFarm
             }
         }
 
+        public DataTable ExibirDadosDalPrenhes()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosPrenhes();
+                return DataT;
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
+
+
+        public DataTable ExibirDadosDalBaixas()
+        {
+            try
+            {
+                DataTable DataT = new DataTable();
+                dal = new DALL();
+
+                DataT = dal.ExibirDadosBaixas();
+                return DataT;
+            }
+            catch (Exception erro)
+            {
+                throw erro;
+            }
+        }
         /*
         public DataTable ExibirDadosDalUsuario()
         {

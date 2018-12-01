@@ -48,12 +48,7 @@ namespace HomeFarm.Estoque
             this.Visible = false;
         }
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-        }
+     
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
@@ -112,6 +107,11 @@ namespace HomeFarm.Estoque
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
         {
 
         }

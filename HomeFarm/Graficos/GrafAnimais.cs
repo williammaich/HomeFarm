@@ -41,13 +41,8 @@ namespace HomeFarm.Graficos
             comboAnimal.ValueMember = "ID";
         }
 
-        private void ImgHome_Click(object sender, EventArgs e)
-        {
-            MenuPrincipal menu = new MenuPrincipal();
-            menu.Show();
-            this.Visible = false;
-        }
 
+       
         private void GrafAnimais_Load(object sender, EventArgs e)
         {
 
@@ -90,6 +85,13 @@ namespace HomeFarm.Graficos
             chart1.Series["QUANTIDADE"].Points.Clear();
 
             chart();
+        }
+
+        private void ImgGraf_Click(object sender, EventArgs e)
+        {
+            MenuGraficos graf = new MenuGraficos();
+            graf.Show();
+            this.Visible = false;
         }
     }
 }

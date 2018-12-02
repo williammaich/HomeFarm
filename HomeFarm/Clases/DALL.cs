@@ -176,7 +176,7 @@ namespace HomeFarm
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT NOME, DATADOCOBRIMENTO, PAI, DATAPREVISTA FROM prenhes INNERJOIN  animal ON prenhes.ANIMAL_ID = animal.ID;", conexao);
+                comando = new MySqlCommand("SELECT NOME, DATADOCOBRIMENTO, NOMEPAI, DATAPREVISTA FROM prenhes INNER JOIN  animal ON prenhes.ANIMAL_ID = animal.ID;", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;
@@ -197,7 +197,7 @@ namespace HomeFarm
             try
             {
                 conexao = new MySqlConnection(conectaBanco);
-                comando = new MySqlCommand("SELECT NOME, DATADAMORTE, DOENCA FROM baixas INNERJOIN  animal ON baixas.ANIMAL_ID = animal.ID;", conexao);
+                comando = new MySqlCommand("SELECT NOME, DATADAMORTE, DOENCA FROM baixas INNER JOIN  animal ON baixas.animal_ID = animal.ID;", conexao);
 
                 MySqlDataAdapter Da = new MySqlDataAdapter();
                 Da.SelectCommand = comando;

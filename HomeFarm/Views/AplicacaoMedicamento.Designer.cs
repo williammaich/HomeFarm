@@ -39,7 +39,6 @@
             this.txtCarencia = new System.Windows.Forms.TextBox();
             this.txtObs = new System.Windows.Forms.TextBox();
             this.txtQuantidade = new System.Windows.Forms.TextBox();
-            this.txtDataAplicacao = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -50,6 +49,7 @@
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dataAplicacao = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,6 +58,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel1.Controls.Add(this.dataAplicacao);
             this.panel1.Controls.Add(this.comboFuncionario);
             this.panel1.Controls.Add(this.comboMedicamento);
             this.panel1.Controls.Add(this.comboAnimal);
@@ -67,7 +68,6 @@
             this.panel1.Controls.Add(this.txtCarencia);
             this.panel1.Controls.Add(this.txtObs);
             this.panel1.Controls.Add(this.txtQuantidade);
-            this.panel1.Controls.Add(this.txtDataAplicacao);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
@@ -181,16 +181,6 @@
             this.txtQuantidade.Size = new System.Drawing.Size(362, 29);
             this.txtQuantidade.TabIndex = 39;
             this.txtQuantidade.TextChanged += new System.EventHandler(this.txtSobrenome_TextChanged);
-            // 
-            // txtDataAplicacao
-            // 
-            this.txtDataAplicacao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataAplicacao.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataAplicacao.Location = new System.Drawing.Point(414, 66);
-            this.txtDataAplicacao.Name = "txtDataAplicacao";
-            this.txtDataAplicacao.Size = new System.Drawing.Size(362, 29);
-            this.txtDataAplicacao.TabIndex = 38;
-            this.txtDataAplicacao.TextChanged += new System.EventHandler(this.txtNome_TextChanged);
             // 
             // label3
             // 
@@ -320,6 +310,17 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // dataAplicacao
+            // 
+            this.dataAplicacao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataAplicacao.CustomFormat = "dd-MM-yyyy";
+            this.dataAplicacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataAplicacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dataAplicacao.Location = new System.Drawing.Point(414, 63);
+            this.dataAplicacao.Name = "dataAplicacao";
+            this.dataAplicacao.Size = new System.Drawing.Size(177, 29);
+            this.dataAplicacao.TabIndex = 50;
+            // 
             // AplicacaoMedicamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -328,6 +329,7 @@
             this.Controls.Add(this.panel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AplicacaoMedicamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Aplicacao de Medicamento";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -351,7 +353,6 @@
         private System.Windows.Forms.TextBox txtCarencia;
         private System.Windows.Forms.TextBox txtObs;
         private System.Windows.Forms.TextBox txtQuantidade;
-        private System.Windows.Forms.TextBox txtDataAplicacao;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -360,5 +361,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboFuncionario;
         private System.Windows.Forms.ComboBox comboMedicamento;
+        private System.Windows.Forms.DateTimePicker dataAplicacao;
     }
 }

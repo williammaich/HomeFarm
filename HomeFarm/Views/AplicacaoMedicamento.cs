@@ -18,7 +18,7 @@ namespace HomeFarm.Views
         {
             InitializeComponent();
 
-            txtDataAplicacao.Text =  DateTime.Now.ToString("dd/MM/yyyy");
+           
 
             CarregaComboFuncionario();
             CarregaComboMedicamento();
@@ -59,7 +59,7 @@ namespace HomeFarm.Views
                 Conexao.Open();
 
                 MySqlCommand INSERT = new MySqlCommand("INSERT INTO aplicacao_medicamento (DATAAPLICACAO, QUANTIDADE, OBSERVACAO, USUARIO_ID,MEDICAMENTO_ID,CARENCIA,ANIMAL_ID) VALUES (@Dataa, @Quantidade, @Obs, @CFuncionario, @CMedicamento,@Carencia, @CAnimal)", Conexao);
-                INSERT.Parameters.AddWithValue("@Dataa", DateTime.Now.ToString("dd/MM/yyyy"));
+                INSERT.Parameters.AddWithValue("@Dataa", this.dataAplicacao.Value.ToString("yyyy/MM/dd"));
                 INSERT.Parameters.AddWithValue("@Quantidade", txtQuantidade.Text);
                 INSERT.Parameters.AddWithValue("@Obs", txtObs.Text);
                 INSERT.Parameters.AddWithValue("@CFuncionario", comboFuncionario.SelectedValue.ToString());

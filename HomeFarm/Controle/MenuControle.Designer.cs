@@ -35,8 +35,10 @@
             this.Prenhes = new System.Windows.Forms.Label();
             this.ImgPrenhes = new System.Windows.Forms.PictureBox();
             this.ImgBaixas = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.ImgPrenhes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBaixas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +54,7 @@
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -73,6 +76,7 @@
             // 
             // Prenhes
             // 
+            this.Prenhes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Prenhes.AutoSize = true;
             this.Prenhes.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Prenhes.ForeColor = System.Drawing.Color.White;
@@ -84,6 +88,7 @@
             // 
             // ImgPrenhes
             // 
+            this.ImgPrenhes.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgPrenhes.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgPrenhes.Image = global::HomeFarm.Properties.Resources.breedings1;
             this.ImgPrenhes.Location = new System.Drawing.Point(439, 143);
@@ -96,6 +101,7 @@
             // 
             // ImgBaixas
             // 
+            this.ImgBaixas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ImgBaixas.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgBaixas.Image = global::HomeFarm.Properties.Resources.cruz;
             this.ImgBaixas.Location = new System.Drawing.Point(158, 143);
@@ -105,6 +111,17 @@
             this.ImgBaixas.TabIndex = 8;
             this.ImgBaixas.TabStop = false;
             this.ImgBaixas.Click += new System.EventHandler(this.ImgBaixas_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::HomeFarm.Properties.Resources.Ltrans;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(800, 450);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuControle
             // 
@@ -118,12 +135,14 @@
             this.Controls.Add(this.ImgPrenhes);
             this.Controls.Add(this.ImgBaixas);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MenuControle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu Controle";
             ((System.ComponentModel.ISupportInitialize)(this.ImgPrenhes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgBaixas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +155,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label Prenhes;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

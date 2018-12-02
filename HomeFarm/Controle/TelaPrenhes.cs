@@ -92,6 +92,13 @@ namespace HomeFarm.Controle
 
         }
 
+        private void ImgControle_Click(object sender, EventArgs e)
+        {
+            MenuControle cont = new MenuControle();
+            cont.Show();
+            this.Visible = false;
+        }
+
         /*
         private void TelaPrenhes_Load(object sender, EventArgs e)
         {

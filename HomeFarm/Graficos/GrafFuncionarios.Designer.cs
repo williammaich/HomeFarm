@@ -48,10 +48,10 @@
             // 
             // ImgProcurar
             // 
-            this.ImgProcurar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ImgProcurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ImgProcurar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.ImgProcurar.Image = global::HomeFarm.Properties.Resources.oie_transparent_9_;
-            this.ImgProcurar.Location = new System.Drawing.Point(654, 69);
+            this.ImgProcurar.Location = new System.Drawing.Point(651, 89);
             this.ImgProcurar.Name = "ImgProcurar";
             this.ImgProcurar.Size = new System.Drawing.Size(49, 36);
             this.ImgProcurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,21 +83,23 @@
             // 
             // comboPropriedade
             // 
-            this.comboPropriedade.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboPropriedade.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.comboPropriedade.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPropriedade.FormattingEnabled = true;
-            this.comboPropriedade.Location = new System.Drawing.Point(341, 69);
+            this.comboPropriedade.Location = new System.Drawing.Point(338, 89);
             this.comboPropriedade.Name = "comboPropriedade";
             this.comboPropriedade.Size = new System.Drawing.Size(252, 29);
             this.comboPropriedade.TabIndex = 68;
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(200, 69);
+            this.label3.Location = new System.Drawing.Point(197, 89);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 21);
             this.label3.TabIndex = 67;

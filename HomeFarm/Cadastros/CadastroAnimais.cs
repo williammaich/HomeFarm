@@ -121,7 +121,7 @@ namespace HomeFarm
                 INSERT.Parameters.AddWithValue("@codigo", txtCodigo.Text);
                 INSERT.Parameters.AddWithValue("@nome", txtNome.Text);
 
-                INSERT.Parameters.AddWithValue("@datanasc", this.dateTimeDataNascimento.Value.ToString("yyyy/MM/dd"));
+                INSERT.Parameters.AddWithValue("@datanasc", this.DataNascimento.Value.ToString("yyyy/MM/dd"));
                 INSERT.Parameters.AddWithValue("@nomepai", txtNomePai.Text);
                 INSERT.Parameters.AddWithValue("@nomemae", txtNomeMae.Text);
 
@@ -209,7 +209,7 @@ namespace HomeFarm
 
                 txtCodigo.Text = dr.GetString(0);
                 txtNome.Text = dr.GetString(1);
-                dateTimeDataNascimento.Text = dr.GetString(2);
+                DataNascimento.Text = dr.GetString(2);
                 txtNomePai.Text = dr.GetString(3);
                 txtNomeMae.Text = dr.GetString(4);
                 comboSexo.Text = dr.GetString(5);
@@ -282,7 +282,7 @@ namespace HomeFarm
 
                 comando.Parameters.Add("@codigo", MySqlDbType.VarChar, 45).Value = txtCodigo.Text;
                 comando.Parameters.Add("@nome", MySqlDbType.VarChar, 85).Value = txtNome.Text;
-                comando.Parameters.Add("@dadanascimento", MySqlDbType.VarChar, 45).Value = this.dateTimeDataNascimento.Value.ToString("yyyy/MM/dd");
+                comando.Parameters.Add("@dadanascimento", MySqlDbType.VarChar, 45).Value = this.DataNascimento.Value.ToString("yyyy/MM/dd");
                 comando.Parameters.Add("@nomepai", MySqlDbType.VarChar, 85).Value = txtNomePai.Text;
                 comando.Parameters.Add("@nomemae", MySqlDbType.VarChar, 85).Value = txtNomeMae.Text;
                 comando.Parameters.Add("@sexo", MySqlDbType.VarChar, 45).Value = comboSexo.SelectedItem.ToString();

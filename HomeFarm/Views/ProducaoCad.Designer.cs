@@ -46,14 +46,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ImgProducao = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProducao)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.dateTimeRealizada);
+            this.panel2.Controls.Add(this.ImgProducao);
             this.panel2.Controls.Add(this.dateTimeDatacadastro);
             this.panel2.Controls.Add(this.txtValor);
             this.panel2.Controls.Add(this.label5);
@@ -254,6 +259,29 @@
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(17, 159);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Produção";
+            // 
+            // ImgProducao
+            // 
+            this.ImgProducao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgProducao.Image = global::HomeFarm.Properties.Resources.oie_transparent_7_;
+            this.ImgProducao.Location = new System.Drawing.Point(12, 85);
+            this.ImgProducao.Name = "ImgProducao";
+            this.ImgProducao.Size = new System.Drawing.Size(88, 71);
+            this.ImgProducao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgProducao.TabIndex = 7;
+            this.ImgProducao.TabStop = false;
+            this.ImgProducao.Click += new System.EventHandler(this.ImgProducao_Click);
+            // 
             // ProducaoCad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -267,6 +295,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgProducao)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -289,5 +318,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DateTimePicker dateTimeRealizada;
         private System.Windows.Forms.DateTimePicker dateTimeDatacadastro;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox ImgProducao;
     }
 }

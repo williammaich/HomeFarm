@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroAnimais));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimeDataNascimento = new System.Windows.Forms.DateTimePicker();
+            this.DataNascimento = new System.Windows.Forms.DateTimePicker();
             this.comboPropriedade = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.ImgRaca = new System.Windows.Forms.PictureBox();
@@ -76,7 +76,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.dateTimeDataNascimento);
+            this.panel2.Controls.Add(this.DataNascimento);
             this.panel2.Controls.Add(this.comboPropriedade);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.ImgRaca);
@@ -119,16 +119,16 @@
             this.panel2.TabIndex = 1;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
-            // dateTimeDataNascimento
+            // DataNascimento
             // 
-            this.dateTimeDataNascimento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dateTimeDataNascimento.CustomFormat = "dd/MM/yyyy";
-            this.dateTimeDataNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeDataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeDataNascimento.Location = new System.Drawing.Point(362, 130);
-            this.dateTimeDataNascimento.Name = "dateTimeDataNascimento";
-            this.dateTimeDataNascimento.Size = new System.Drawing.Size(200, 29);
-            this.dateTimeDataNascimento.TabIndex = 85;
+            this.DataNascimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataNascimento.CustomFormat = "dd/MM/yyyy";
+            this.DataNascimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DataNascimento.Location = new System.Drawing.Point(362, 130);
+            this.DataNascimento.Name = "DataNascimento";
+            this.DataNascimento.Size = new System.Drawing.Size(200, 29);
+            this.DataNascimento.TabIndex = 85;
             // 
             // comboPropriedade
             // 
@@ -596,6 +596,6 @@
         private System.Windows.Forms.ComboBox comboPropriedade;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.DateTimePicker dateTimeDataNascimento;
+        private System.Windows.Forms.DateTimePicker DataNascimento;
     }
 }

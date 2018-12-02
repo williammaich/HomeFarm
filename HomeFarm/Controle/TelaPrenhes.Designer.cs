@@ -44,8 +44,11 @@
             this.comboTipo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ImgControle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPrenhes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgControle)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,7 +64,7 @@
             // 
             // DataCobrimento
             // 
-            this.DataCobrimento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataCobrimento.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DataCobrimento.CustomFormat = "dd-MM-yyyy";
             this.DataCobrimento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataCobrimento.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -72,7 +75,7 @@
             // 
             // comboNome
             // 
-            this.comboNome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboNome.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboNome.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboNome.FormattingEnabled = true;
             this.comboNome.Location = new System.Drawing.Point(262, 58);
@@ -82,7 +85,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
@@ -94,7 +97,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -106,7 +109,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -118,7 +121,9 @@
             // 
             // dataGridPrenhes
             // 
-            this.dataGridPrenhes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridPrenhes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridPrenhes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridPrenhes.Location = new System.Drawing.Point(533, 8);
             this.dataGridPrenhes.Name = "dataGridPrenhes";
@@ -127,11 +132,11 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.btnAtualizar.Location = new System.Drawing.Point(281, 336);
+            this.btnAtualizar.Location = new System.Drawing.Point(337, 335);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(116, 39);
             this.btnAtualizar.TabIndex = 61;
@@ -140,11 +145,11 @@
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(115, 336);
+            this.btnRegistrar.Location = new System.Drawing.Point(171, 335);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(116, 39);
             this.btnRegistrar.TabIndex = 60;
@@ -154,7 +159,7 @@
             // 
             // DataPrevista
             // 
-            this.DataPrevista.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataPrevista.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DataPrevista.CustomFormat = "dd-MM-yyyy";
             this.DataPrevista.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataPrevista.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -165,7 +170,7 @@
             // 
             // label6
             // 
-            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
@@ -177,7 +182,7 @@
             // 
             // comboPai
             // 
-            this.comboPai.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboPai.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboPai.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboPai.FormattingEnabled = true;
             this.comboPai.Location = new System.Drawing.Point(262, 270);
@@ -187,7 +192,7 @@
             // 
             // comboTipo
             // 
-            this.comboTipo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboTipo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboTipo.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboTipo.FormattingEnabled = true;
             this.comboTipo.Location = new System.Drawing.Point(262, 170);
@@ -197,7 +202,7 @@
             // 
             // label7
             // 
-            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
@@ -218,6 +223,29 @@
             this.pictureBox1.TabIndex = 67;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(35, 140);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 17);
+            this.label2.TabIndex = 69;
+            this.label2.Text = "Controle";
+            // 
+            // ImgControle
+            // 
+            this.ImgControle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgControle.Image = global::HomeFarm.Properties.Resources.breedings1;
+            this.ImgControle.Location = new System.Drawing.Point(19, 66);
+            this.ImgControle.Name = "ImgControle";
+            this.ImgControle.Size = new System.Drawing.Size(88, 71);
+            this.ImgControle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgControle.TabIndex = 68;
+            this.ImgControle.TabStop = false;
+            this.ImgControle.Click += new System.EventHandler(this.ImgControle_Click);
+            // 
             // TelaPrenhes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,6 +253,8 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(931, 405);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ImgControle);
             this.Controls.Add(this.comboTipo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.comboPai);
@@ -242,9 +272,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaPrenhes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrenhes";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridPrenhes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgControle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -266,5 +298,7 @@
         private System.Windows.Forms.ComboBox comboTipo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox ImgControle;
     }
 }

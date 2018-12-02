@@ -24,7 +24,7 @@ namespace HomeFarm
             InitializeComponent();
             
 
-            txtDataCadastro.Text = DateTime.Now.ToString("dd/MM/yyyy");
+           
             
 
 
@@ -58,11 +58,11 @@ namespace HomeFarm
 
                 MySqlCommand INSERT = new MySqlCommand("INSERT INTO lote (NUMEROLOTE, DATAFABRICACAO, DATAVALIDADE, OBSERVACAO,DATACADASTRO,DATAALTERACAO) VALUES (@Numero, @DataFab, @DataVal, @Obs, @DataCad,@Dataa)", Conexao);
                 INSERT.Parameters.AddWithValue("@Numero", txtNLote.Text);
-                INSERT.Parameters.AddWithValue("@DataFab", txtDataFabricacao.Text);
-                INSERT.Parameters.AddWithValue("@DataVal", txtDataValidade.Text);
+                INSERT.Parameters.AddWithValue("@DataFab", this.DataFabricacao.Value.ToString("yyyy/MM/dd"));
+                INSERT.Parameters.AddWithValue("@DataVal", this.dataValidade.Value.ToString("yyyy/MM/dd"));
                 INSERT.Parameters.AddWithValue("@Obs", txtObservacao.Text);            
-                INSERT.Parameters.AddWithValue("@DataCad", txtDataCadastro.Text);
-                INSERT.Parameters.AddWithValue("@Dataa",DateTime.Now.ToString("dd/MM/yyyy"));
+                INSERT.Parameters.AddWithValue("@DataCad", this.dataCadastro.Value.ToString("yyyy/MM/dd"));
+                INSERT.Parameters.AddWithValue("@Dataa",DateTime.Now.ToString("yyyy/MM/dd"));
 
                 INSERT.ExecuteNonQuery();
                 Conexao.Close();
@@ -70,8 +70,7 @@ namespace HomeFarm
                 MessageBox.Show("Cadastro Realizado com Sucesso!!");
 
                 txtNLote.Text = "";
-                txtDataFabricacao.Text = "";
-                txtDataValidade.Text = "";
+               
                 txtObservacao.Text = "";
                // txtDataCadastro.Text = "";
                 

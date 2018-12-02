@@ -40,8 +40,11 @@
             this.DataMorte = new System.Windows.Forms.DateTimePicker();
             this.dataGridBaixas = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ImgControle = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBaixas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgControle)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -57,7 +60,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
@@ -69,7 +72,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
@@ -81,7 +84,7 @@
             // 
             // txtDoenca
             // 
-            this.txtDoenca.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtDoenca.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtDoenca.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDoenca.Location = new System.Drawing.Point(270, 147);
             this.txtDoenca.Multiline = true;
@@ -91,7 +94,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
@@ -103,24 +106,25 @@
             // 
             // btnAtualizar
             // 
-            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtualizar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.btnAtualizar.Location = new System.Drawing.Point(283, 291);
+            this.btnAtualizar.Location = new System.Drawing.Point(384, 301);
             this.btnAtualizar.Name = "btnAtualizar";
             this.btnAtualizar.Size = new System.Drawing.Size(116, 39);
             this.btnAtualizar.TabIndex = 51;
             this.btnAtualizar.Text = "Atualizar";
             this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRegistrar.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.btnRegistrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrar.ForeColor = System.Drawing.Color.White;
-            this.btnRegistrar.Location = new System.Drawing.Point(117, 291);
+            this.btnRegistrar.Location = new System.Drawing.Point(218, 301);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(116, 39);
             this.btnRegistrar.TabIndex = 50;
@@ -130,7 +134,7 @@
             // 
             // comboNome
             // 
-            this.comboNome.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboNome.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.comboNome.Font = new System.Drawing.Font("Segoe UI Symbol", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboNome.FormattingEnabled = true;
             this.comboNome.Location = new System.Drawing.Point(270, 35);
@@ -140,7 +144,7 @@
             // 
             // DataMorte
             // 
-            this.DataMorte.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataMorte.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.DataMorte.CustomFormat = "dd-MM-yyyy";
             this.DataMorte.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataMorte.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -151,7 +155,9 @@
             // 
             // dataGridBaixas
             // 
-            this.dataGridBaixas.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridBaixas.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridBaixas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridBaixas.Location = new System.Drawing.Point(547, 9);
             this.dataGridBaixas.Name = "dataGridBaixas";
@@ -169,12 +175,37 @@
             this.pictureBox1.TabIndex = 55;
             this.pictureBox1.TabStop = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(36, 142);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(58, 17);
+            this.label2.TabIndex = 57;
+            this.label2.Text = "Controle";
+            // 
+            // ImgControle
+            // 
+            this.ImgControle.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ImgControle.Image = global::HomeFarm.Properties.Resources.breedings1;
+            this.ImgControle.Location = new System.Drawing.Point(20, 68);
+            this.ImgControle.Name = "ImgControle";
+            this.ImgControle.Size = new System.Drawing.Size(88, 71);
+            this.ImgControle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ImgControle.TabIndex = 56;
+            this.ImgControle.TabStop = false;
+            this.ImgControle.Click += new System.EventHandler(this.ImgControle_Click);
+            // 
             // TelaBaixas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(945, 393);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.ImgControle);
             this.Controls.Add(this.dataGridBaixas);
             this.Controls.Add(this.DataMorte);
             this.Controls.Add(this.comboNome);
@@ -188,9 +219,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaBaixas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaBaixas";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBaixas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ImgControle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -208,5 +241,7 @@
         private System.Windows.Forms.DateTimePicker DataMorte;
         private System.Windows.Forms.DataGridView dataGridBaixas;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox ImgControle;
     }
 }

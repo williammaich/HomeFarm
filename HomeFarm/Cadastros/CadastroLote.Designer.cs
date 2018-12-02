@@ -34,21 +34,21 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtDataValidade = new System.Windows.Forms.TextBox();
-            this.txtDataFabricacao = new System.Windows.Forms.TextBox();
             this.txtNLote = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txtDataCadastro = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtObservacao = new System.Windows.Forms.TextBox();
             this.ImgProcurar = new System.Windows.Forms.PictureBox();
             this.ImgRemedios = new System.Windows.Forms.PictureBox();
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.DataFabricacao = new System.Windows.Forms.DateTimePicker();
+            this.dataValidade = new System.Windows.Forms.DateTimePicker();
+            this.dataCadastro = new System.Windows.Forms.DateTimePicker();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgProcurar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ImgRemedios)).BeginInit();
@@ -117,24 +117,6 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "Observação";
             // 
-            // txtDataValidade
-            // 
-            this.txtDataValidade.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataValidade.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataValidade.Location = new System.Drawing.Point(406, 182);
-            this.txtDataValidade.Name = "txtDataValidade";
-            this.txtDataValidade.Size = new System.Drawing.Size(291, 33);
-            this.txtDataValidade.TabIndex = 14;
-            // 
-            // txtDataFabricacao
-            // 
-            this.txtDataFabricacao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataFabricacao.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataFabricacao.Location = new System.Drawing.Point(406, 129);
-            this.txtDataFabricacao.Name = "txtDataFabricacao";
-            this.txtDataFabricacao.Size = new System.Drawing.Size(291, 33);
-            this.txtDataFabricacao.TabIndex = 10;
-            // 
             // txtNLote
             // 
             this.txtNLote.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -194,7 +176,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel2.Controls.Add(this.txtDataCadastro);
+            this.panel2.Controls.Add(this.dataCadastro);
+            this.panel2.Controls.Add(this.dataValidade);
+            this.panel2.Controls.Add(this.DataFabricacao);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtObservacao);
             this.panel2.Controls.Add(this.ImgProcurar);
@@ -205,9 +189,7 @@
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.ImgCadastros);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.txtDataValidade);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.txtDataFabricacao);
             this.panel2.Controls.Add(this.txtNLote);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Controls.Add(this.label3);
@@ -218,15 +200,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 450);
             this.panel2.TabIndex = 7;
-            // 
-            // txtDataCadastro
-            // 
-            this.txtDataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtDataCadastro.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDataCadastro.Location = new System.Drawing.Point(406, 282);
-            this.txtDataCadastro.Name = "txtDataCadastro";
-            this.txtDataCadastro.Size = new System.Drawing.Size(291, 33);
-            this.txtDataCadastro.TabIndex = 64;
             // 
             // label2
             // 
@@ -296,6 +269,39 @@
             this.pictureBox2.TabIndex = 66;
             this.pictureBox2.TabStop = false;
             // 
+            // DataFabricacao
+            // 
+            this.DataFabricacao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.DataFabricacao.CustomFormat = "dd/MM/yyyy";
+            this.DataFabricacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataFabricacao.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DataFabricacao.Location = new System.Drawing.Point(406, 128);
+            this.DataFabricacao.Name = "DataFabricacao";
+            this.DataFabricacao.Size = new System.Drawing.Size(200, 29);
+            this.DataFabricacao.TabIndex = 86;
+            // 
+            // dataValidade
+            // 
+            this.dataValidade.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataValidade.CustomFormat = "dd/MM/yyyy";
+            this.dataValidade.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataValidade.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dataValidade.Location = new System.Drawing.Point(406, 179);
+            this.dataValidade.Name = "dataValidade";
+            this.dataValidade.Size = new System.Drawing.Size(200, 29);
+            this.dataValidade.TabIndex = 87;
+            // 
+            // dataCadastro
+            // 
+            this.dataCadastro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataCadastro.CustomFormat = "dd/MM/yyyy";
+            this.dataCadastro.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataCadastro.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dataCadastro.Location = new System.Drawing.Point(406, 279);
+            this.dataCadastro.Name = "dataCadastro";
+            this.dataCadastro.Size = new System.Drawing.Size(200, 29);
+            this.dataCadastro.TabIndex = 88;
+            // 
             // CadastroLote
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -325,17 +331,17 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox ImgCadastros;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtDataValidade;
-        private System.Windows.Forms.TextBox txtDataFabricacao;
         private System.Windows.Forms.TextBox txtNLote;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txtDataCadastro;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtObservacao;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.DateTimePicker dataCadastro;
+        private System.Windows.Forms.DateTimePicker dataValidade;
+        private System.Windows.Forms.DateTimePicker DataFabricacao;
     }
 }

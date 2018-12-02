@@ -95,6 +95,11 @@ namespace HomeFarm
             txtObservacao.Text = "";
         }
 
-     
+        private void ImgProducao_Click(object sender, EventArgs e)
+        {
+            TelaProducao prod = new TelaProducao();
+            prod.Show();
+            this.Visible = false;
+        }
     }
 }

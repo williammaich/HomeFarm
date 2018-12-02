@@ -36,10 +36,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.dataGVagenda = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVagenda)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -69,7 +69,7 @@
             // txtEvento
             // 
             this.txtEvento.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtEvento.Location = new System.Drawing.Point(90, 246);
+            this.txtEvento.Location = new System.Drawing.Point(90, 204);
             this.txtEvento.Multiline = true;
             this.txtEvento.Name = "txtEvento";
             this.txtEvento.Size = new System.Drawing.Size(409, 144);
@@ -105,7 +105,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(85, 218);
+            this.label2.Location = new System.Drawing.Point(85, 176);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 25);
             this.label2.TabIndex = 10;
@@ -121,19 +121,6 @@
             this.label4.Size = new System.Drawing.Size(130, 45);
             this.label4.TabIndex = 11;
             this.label4.Text = "Agenda";
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnExcluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExcluir.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExcluir.ForeColor = System.Drawing.Color.White;
-            this.btnExcluir.Location = new System.Drawing.Point(496, 426);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(116, 39);
-            this.btnExcluir.TabIndex = 62;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
             // btnRegistrar
             // 
@@ -169,14 +156,28 @@
             this.pictureBox1.TabIndex = 66;
             this.pictureBox1.TabStop = false;
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtualizar.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtualizar.ForeColor = System.Drawing.Color.White;
+            this.btnAtualizar.Location = new System.Drawing.Point(481, 426);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(116, 39);
+            this.btnAtualizar.TabIndex = 67;
+            this.btnAtualizar.Text = "Atualizar";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // CalendarioAgenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.ClientSize = new System.Drawing.Size(922, 492);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.dataGVagenda);
-            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
@@ -205,9 +206,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.DataGridView dataGVagenda;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

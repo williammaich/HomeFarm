@@ -40,11 +40,13 @@ namespace HomeFarm
             MySqlConnection Conexao = new MySqlConnection(Conection);
 
             //verificação se a conexão foi ok ele insere os dados se não apresenta erro
+
+            string confirma = "sim";
             try
             {
                 Conexao.Open();
 
-                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA) VALUES (@Nome, @Sobrenome, @Login, @Senha)", Conexao);
+                MySqlCommand INSERT = new MySqlCommand("INSERT INTO usuario (NOME, SOBRENOME, LOGIN, SENHA,ADMIN) VALUES (@Nome, @Sobrenome, @Login, @Senha,@Adm)", Conexao);
                 INSERT.Parameters.AddWithValue("@Nome", txtNome.Text);
                 INSERT.Parameters.AddWithValue("@Sobrenome", txtSobrenome.Text);
                 
@@ -56,6 +58,7 @@ namespace HomeFarm
                     if (txtSenha.Text == txtCSenha.Text)
                     {
                         INSERT.Parameters.AddWithValue("@Senha", txtSenha.Text);
+                        INSERT.Parameters.AddWithValue("@Adm", confirma.ToString());
 
 
 

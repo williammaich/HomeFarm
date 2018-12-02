@@ -357,6 +357,7 @@
             this.ImgHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ImgHome.TabIndex = 9;
             this.ImgHome.TabStop = false;
+            this.ImgHome.Click += new System.EventHandler(this.ImgHome_Click);
             // 
             // label2
             // 

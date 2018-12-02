@@ -104,6 +104,13 @@ namespace HomeFarm.Views
             controle.Show();
            
         }
+
+        private void ImgHome_Click(object sender, EventArgs e)
+        {
+            MenuFunc menu = new MenuFunc();
+            menu.Show();
+            this.Visible = false;
+        }
     }
 
 

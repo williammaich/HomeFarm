@@ -78,14 +78,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HomeFarm.exe" size="5130224">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HomeFarm.exe" size="5131248">
       <assemblyIdentity name="HomeFarm" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4LsSAoj69aJCVRWnh6XmbmXUzoQ6ngulCnETP6ppzp8=</dsig:DigestValue>
+        <dsig:DigestValue>C4dLZWDl5Emg4g0IJAd9aR1fLfhOYDcEgF6xhE/9RQc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

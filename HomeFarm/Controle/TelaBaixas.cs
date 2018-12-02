@@ -87,7 +87,9 @@ namespace HomeFarm.Controle
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-
+            TelaBaixas baixa = new TelaBaixas();
+            baixa.Show();
+            this.Visible = false;
         }
     }
 }

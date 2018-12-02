@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AplicacaoMedicamento));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dataAplicacao = new System.Windows.Forms.DateTimePicker();
             this.comboFuncionario = new System.Windows.Forms.ComboBox();
             this.comboMedicamento = new System.Windows.Forms.ComboBox();
             this.comboAnimal = new System.Windows.Forms.ComboBox();
@@ -49,7 +50,6 @@
             this.ImgCadastros = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dataAplicacao = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImgCadastros)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,31 +84,45 @@
             this.panel1.Size = new System.Drawing.Size(800, 450);
             this.panel1.TabIndex = 0;
             // 
+            // dataAplicacao
+            // 
+            this.dataAplicacao.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.dataAplicacao.CustomFormat = "dd-MM-yyyy";
+            this.dataAplicacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataAplicacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dataAplicacao.Location = new System.Drawing.Point(414, 63);
+            this.dataAplicacao.Name = "dataAplicacao";
+            this.dataAplicacao.Size = new System.Drawing.Size(177, 29);
+            this.dataAplicacao.TabIndex = 50;
+            // 
             // comboFuncionario
             // 
             this.comboFuncionario.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboFuncionario.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboFuncionario.FormattingEnabled = true;
             this.comboFuncionario.Location = new System.Drawing.Point(414, 192);
             this.comboFuncionario.Name = "comboFuncionario";
-            this.comboFuncionario.Size = new System.Drawing.Size(362, 21);
+            this.comboFuncionario.Size = new System.Drawing.Size(362, 29);
             this.comboFuncionario.TabIndex = 49;
             // 
             // comboMedicamento
             // 
             this.comboMedicamento.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboMedicamento.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboMedicamento.FormattingEnabled = true;
             this.comboMedicamento.Location = new System.Drawing.Point(414, 230);
             this.comboMedicamento.Name = "comboMedicamento";
-            this.comboMedicamento.Size = new System.Drawing.Size(362, 21);
+            this.comboMedicamento.Size = new System.Drawing.Size(362, 29);
             this.comboMedicamento.TabIndex = 48;
             // 
             // comboAnimal
             // 
             this.comboAnimal.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.comboAnimal.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboAnimal.FormattingEnabled = true;
-            this.comboAnimal.Location = new System.Drawing.Point(414, 318);
+            this.comboAnimal.Location = new System.Drawing.Point(414, 310);
             this.comboAnimal.Name = "comboAnimal";
-            this.comboAnimal.Size = new System.Drawing.Size(362, 21);
+            this.comboAnimal.Size = new System.Drawing.Size(362, 29);
             this.comboAnimal.TabIndex = 47;
             this.comboAnimal.SelectedIndexChanged += new System.EventHandler(this.comboAdm_SelectedIndexChanged);
             // 
@@ -119,7 +133,7 @@
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label8.Font = new System.Drawing.Font("Segoe UI Symbol", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(127, 321);
+            this.label8.Location = new System.Drawing.Point(127, 313);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 25);
             this.label8.TabIndex = 46;
@@ -309,17 +323,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // dataAplicacao
-            // 
-            this.dataAplicacao.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.dataAplicacao.CustomFormat = "dd-MM-yyyy";
-            this.dataAplicacao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataAplicacao.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dataAplicacao.Location = new System.Drawing.Point(414, 63);
-            this.dataAplicacao.Name = "dataAplicacao";
-            this.dataAplicacao.Size = new System.Drawing.Size(177, 29);
-            this.dataAplicacao.TabIndex = 50;
             // 
             // AplicacaoMedicamento
             // 

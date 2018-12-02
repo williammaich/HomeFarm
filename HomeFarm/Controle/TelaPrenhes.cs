@@ -99,6 +99,13 @@ namespace HomeFarm.Controle
             this.Visible = false;
         }
 
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            TelaPrenhes prenha = new TelaPrenhes();
+            prenha.Show();
+            this.Visible = false;
+        }
+
         /*
         private void TelaPrenhes_Load(object sender, EventArgs e)
         {

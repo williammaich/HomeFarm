@@ -82,6 +82,11 @@ namespace HomeFarm.Calendario
 
         }
 
-      
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            CalendarioAgenda cal = new CalendarioAgenda();
+            cal.Show();
+            this.Visible = false;
+        }
     }
 }

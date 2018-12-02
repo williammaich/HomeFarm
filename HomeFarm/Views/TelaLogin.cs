@@ -77,24 +77,7 @@ namespace HomeFarm
                         }
                         else
                         {
-
-
-
-
-
-
-                            /*
-                                MenuFunc telaSi = new MenuFunc();
-                                telaSi.Show();
-                                this.Visible = false;
-
-
-                                Conexao.Close();
-                                */
-
-
-
-
+                       
                             MenuPrincipal telaSis = new MenuPrincipal();
                             telaSis.Show();
                             this.Visible = false;
@@ -168,11 +151,6 @@ namespace HomeFarm
                         }
                         else
                         {
-
-
-
-
-
 
                             
                                 MenuFunc telaSi = new MenuFunc();

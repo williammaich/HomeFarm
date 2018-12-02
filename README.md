@@ -7,8 +7,20 @@ Home Farm projeto para gerenciamento e auxílio ao homem do campo, ele se propõ
 
 * Fazer download do arquivo rar
 
- [Download](https://drive.google.com/open?id=1uMLO7-JmIj_OwXa2IDyQVB2sLKvlMCam)
+ versão 1.0.5
  
- * No mysql copiar o script do arquivo e rodar no myql
+ [Download](https://drive.google.com/file/d/1XGVXhihirjKoL7gWcBGiCHxXunW-sAtI/view?usp=sharing)
  
- * Executar o sistema "homefarm"
+ * No mysql copiar o script do arquivo e rodar no mysql
+ 
+ * Executar o xampp
+ 
+ * Executar o sistema "setup" ou "homefarmSD"
+ 
+ * Fazer um registro de usuário ou pode entrar com o usuário padrão que é login "admin" e senha "admin" 
+ 
+ ## Link para Artigo
+ 
+ Link para o artigo do sistema.
+ 
+ [Click aqui](https://www.overleaf.com/read/xvqdsdyrhcwf) 
